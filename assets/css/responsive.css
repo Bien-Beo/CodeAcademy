@@ -1,0 +1,26 @@
+@media only screen and (min-width: 1200px) {
+    .Box__Header-Nav {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+    .Box__Header-Normal, .Box__Header-Animation {
+        display: block;
+    }
+    :root {
+        --headerHeight: 5rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .Box__Header-Nav {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    .Box__Header-Nav {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
