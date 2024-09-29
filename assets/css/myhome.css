@@ -1,4 +1,4 @@
-.Header-Position {
+.Header__Position {
     position: sticky;
     top: 0;
     z-index: var(--elements-headerZ);
@@ -53,7 +53,7 @@
     list-style: none;
 }
 
-.logo-header {
+.Logo__Header {
     border: none;
     padding: 0.25rem 0px;
     font-size: inherit;
@@ -64,29 +64,71 @@
     color: var(--color-text);
     background-color: transparent;
 }
+
+.Logo__Header:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--color-primary);
+}
     
-.logo-header img {
+.Logo__Header-Img {
     height: 47px;
     vertical-align: text-bottom;
 }
 
-.li-Box {
+.Nav__Ele {
     margin-right: 0.5rem;
     margin-left: 0.5rem;
-    -webkit-box-pack: center;
     justify-content: center;
     flex-direction: column;
     display: flex;
     position: relative;
 }
 
-.ButtonComponent {
+.Nav__Ele-Link {
+    border: none;
+    padding: 1rem 0px;
+    font-size: inherit;
+    box-shadow: none;
+    position: relative;
+    color: var(--color-text);
+    background-color: transparent;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-weight: normal;
+    line-height: 1.5;
+    text-align: left;
+    white-space: nowrap;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    min-width: 0px;
+    text-decoration: none;
+}
+
+.Nav__Ele-Link:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.Nav__Ele-Link::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    bottom: -4px;
+    left: -4px;
+    z-index: 0;
+    opacity: 0;
+    border-color: var(--color-primary);
+    border-radius: 4px;
+}
+
+.Button__Component {
     cursor: pointer;
     box-shadow: none;
-    -webkit-font-smoothing: antialiased;
-    -webkit-box-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
     align-items: center;
     display: inline-flex;
     position: relative;
@@ -107,23 +149,198 @@
     border-color: transparent;
 }
 
-.gamut-ye9ted {
+.Button__Component::before {
+    content: "";
+    transition: opacity 150ms linear;
+    border: 2px solid var(--color-secondary);
+    position: absolute;
+    inset: -5px;
+    z-index: 0;
+    opacity: 0;
+    border-radius: 8px;
+}
+
+.Button__Component-Content {
     position: relative;
     display: table;
 }
 
-.gamut-ye9ted .e1u51ndw1 {
+.Avatar__Size {
+    width: 40px;
+    height: 40px;
     position: relative;
     border-radius: 50%;
     object-fit: cover;
-}
-
-.set-avatar {
-    width: 40px;
-    height: 40px;
-}
-
-img {
     vertical-align: middle;
     border-style: none;
+}
+
+.Button__Nav {
+    cursor: pointer;
+    background: none transparent;
+    text-decoration: none;
+    border: none;
+    font-size: inherit;
+    box-shadow: none;
+    position: relative;
+    color: var(--color-text);
+    padding: 0.5rem 0px;
+    text-align: center;
+    white-space: nowrap;
+    align-items: center;
+    display: flex;
+    text-transform: none;
+    overflow: visible;
+}
+
+.Button__Nav:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.Button__Nav::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    bottom: -4px;
+    left: -4px;
+    z-index: 0;
+    opacity: 0;
+    border-color: var(--color-primary);
+    border-radius: 4px;
+}
+
+.Button__Nav-Text {
+    font-size: inherit;
+    display: inline-block;
+    margin: 0px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.Button__Nav-Icon {
+    width: 12px;
+    height: 12px;
+    margin-left: 0.3125rem;
+    margin-bottom: 0.3125rem;
+    transition: transform 0.35s ease-out;
+    transform-origin: center 0.3125rem;
+}
+
+.Nav__Ele-Button {
+    display: inline-flex;
+    position: relative;
+}
+
+.Nav__Ele-Button-Container {
+    cursor: pointer;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.Nav__Ele-Button-Container:before {
+    content: '';
+    border: 2px solid var(--color-secondary);
+    border-color: var(--color-primary);
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    z-index: 0;
+    opacity: 0;
+    border-radius: 4px;
+}
+
+.Nav__Ele-Button-Component {
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+    font-size: inherit;
+    text-decoration: none;
+    box-shadow: none;
+    color: var(--color-text);
+    transition: border-color 150ms ease-in, color 150ms ease-in, background-color 150ms ease-in, box-shadow 150ms ease-in;
+    border: 2px solid var(--color-secondary);
+    border-color: transparent;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    position: relative;
+    border-radius: 4px;
+    width: 40px;
+    height: 40px;
+    border-color: transparent;
+    color: var(--color-text);
+}
+
+.Nav__Ele-Button-Component:before {
+    content: "";
+    -webkit-transition: opacity 150ms linear;
+    transition: opacity 150ms linear;
+    border: 2px solid var(--color-secondary);
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    z-index: 0;
+    opacity: 0;
+    border-radius: 8px;
+}
+
+.Nav__Ele-Button-Component:hover {
+    transition: background-color 150ms ease-in, box-shadow 150ms ease-in;
+    color: var( --color-primary);
+    background-color: var(--color-background-hover);
+}
+
+.Button__Start {
+    cursor: pointer;
+    box-shadow: none;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    position: relative;
+    font-weight: 700;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    font-size: 1rem;
+    min-width: 40px;
+    height: 40px;
+    color: var(--color-background);
+    background: var(--color-primary);
+    text-decoration: none;
+    transition: border-color 150ms ease-in, color 150ms ease-in, background-color 150ms ease-in, box-shadow 150ms ease-in;
+    border-color: transparent;
+    white-space: nowrap;
+    border-radius: 4px;
+}
+
+.Button__Start::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 150ms linear;
+    border: 2px solid var(--color-secondary);
+    border-radius: 8px;
+    border-color: var(--color-primary);
+}
+
+.Button__Star:hover {
+    transition: background-color 150ms ease-in, box-shadow 150ms ease-in;
+    color: var(--color-background);
+    background-color: #5533FF;
 }
