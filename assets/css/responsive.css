@@ -1,4 +1,7 @@
 @media only screen and (min-width: 1200px) {
+    :root {
+        --headerHeight: 5rem;
+    }
     .Box__Header-Nav {
         padding-left: 6rem;
         padding-right: 6rem;
@@ -6,8 +9,13 @@
     .Box__Header-Normal, .Box__Header-Animation {
         display: block;
     }
-    :root {
-        --headerHeight: 5rem;
+    .Nav__Ele:first-of-type {
+        margin-left: 0px;
+    }
+    .Nav__Ele-Link {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1px;
     }
 }
 
