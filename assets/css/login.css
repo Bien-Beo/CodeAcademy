@@ -1,12 +1,12 @@
-div.login{
+div.login {
     margin-left: 42%;
     margin-bottom: 80px;
 }
 
-div.login .title{
+div.login .title {
     margin-top: 100px;
 }
-div.login .submit input{
+div.login .submit input {
     font-weight: bolder;
     background-color: blue;
     color: aliceblue;
@@ -15,16 +15,16 @@ div.login .submit input{
     height: 40px;
 }
 
-input.username, input.password{
+input.username, input.password {
     width: 360px;
     height: 50px;
 }
 
-.login-method{
+.login-method {
     display: flex;
     flex-direction: row;
 }
-.login-method div{
+.login-method div {
     border-style: solid;
     border-width: 1px;
     margin-right: 10px;
