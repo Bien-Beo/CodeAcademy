@@ -1,0 +1,267 @@
+.Container__Box {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 1440px;
+}
+
+.Container {
+    margin-top: 0.75rem;
+    display: flex;
+}
+
+.SideBar__Box {
+    display: flex;
+    margin-right: 0.75rem;
+    padding-bottom: 1.5rem;
+    display: none;
+    width: 288px;
+    align-self: flex-start;
+    position: sticky;
+    top: calc(var(--headerHeight) + 16px);
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.SideBar__List {
+    padding-left: 1.5rem;
+    display: inline-block;
+    width: 100%;
+    background-color: inherit;
+    list-style: none;
+    border: 1px solid var(--color-text);
+    padding: 0;
+    min-width: 192px;
+    border-radius: 2px;
+    background-color: var(--color-background);
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    border: none;
+    background-color: var(--color-background-current);
+}
+
+.SideBar__Button {
+    border: none;
+    background: none;
+    padding: 0;
+    font-size: inherit;
+    text-decoration: none;
+    box-shadow: none;
+    color: var(--color-text);
+    cursor: pointer;
+    transition: color 150ms linear, background-color 150ms linear, border-color 150ms linear;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    font-weight: 700;
+    background-color: var(--color-background-selected);
+    font-size: 1rem;
+    min-height: 48px;
+    font-size: 1.125rem;
+}
+
+.SideBar__Button:hover {
+    color: var(--color-primary);
+}
+
+.SideBar__Button::before {
+    min-height: 48px;
+    content: '';
+    background-color: var(--color-text) !important;
+    display: inline-block;
+    width: 6px;
+    position: absolute;
+    left: 0;
+    background-color: inherit;
+}
+
+.SideBar__Button::after {
+    content: '';
+    border: 2px solid var(--color-text);
+    border-color: var(--color-primary);
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    bottom: 4px;
+    left: 4px;
+    z-index: -1;
+    opacity: 0;
+    border-radius: 4px;
+}
+
+.SideBar__Button-Img {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.75rem;
+}
+
+.SideBar__Footer {
+    display: flex;
+    border: solid;
+    border-width: 1px;
+    border-color: var(--color-secondary);
+    background: #FFFAE5;
+    padding: 1.5rem;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    border-radius: 8px;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.SideBar__Footer-Content {
+    display: flex;
+    gap: 0.25rem;
+    align-self: stretch;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.SideBar__Footer-Content > h2 {
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 2.75rem;
+    font-weight: 700;
+    line-height: 1.3;
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.SideBar__Footer-Content > span {
+    font-size: inherit;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 0.875rem;
+    margin: 0;
+}
+
+.SideBar__Footer > button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+    font-size: inherit;
+    text-decoration: none;
+    box-shadow: none;
+    color: var(--color-text);
+    transition: border-color 150ms ease-in, color 150ms ease-in, background-color 150ms ease-in, box-shadow 150ms ease-in;
+    border: 2px solid var(--color-secondary);
+    border-color: transparent;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    position: relative;
+    border-radius: 4px;
+    font-weight: 700;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    font-size: 1rem;
+    min-width: 40px;
+    height: 40px;
+    color: var(--color-background);
+    background-color: var(--color-secondary);
+    align-self: stretch;
+}
+
+.SideBar__Footer > button:hover {
+    transition: background-color 150ms ease-in, box-shadow 150ms ease-in;
+    color: var(--color-background);
+    background-color: rgba(16, 22, 47, 0.86);
+}
+
+.Content {
+    padding-top: 1rem;
+    width: 100%;
+}
+
+.Content__Box {
+    min-height: calc(100vh - var(--headerHeight));
+}
+
+.Content__Item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+}
+
+.Content__Item-Header {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+.Content__Item-Header > h2 {
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 2.75rem;
+    font-weight: 700;
+    line-height: 1.3;
+    font-size: 1.625rem;
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+
+.Content__Item-Progress-Wrapper {
+    --color-background-current: var(--color-white);
+    color: var(--color-text);
+    border: none;
+    border-color: var(--color-navy);
+    padding: 0;
+    background-color: var(--color-background-current);
+    margin-bottom: 1rem;
+    border-radius: 16px;
+}
+
+.Content__Item-Progress-Bar {
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--color-navy);
+    background-color: var(--color-gray-100);
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    height: 36px;
+    border-radius: 16px;
+    background-color: transparent;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.Content__Item-Progress-Bar > label {
+    border: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    left: -9999px;
+    color: transparent;
+    margin: 0;
+}
+
+.Content__Item-Progress-Bar > img {
+    width: 100%;
+    object-fit: cover;
+}
