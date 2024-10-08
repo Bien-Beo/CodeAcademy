@@ -107,6 +107,25 @@
     margin-right: 0.75rem;
 }
 
+.SideBar__Button-Upgrade {
+    margin-left: 0.5rem;
+    margin-top: 4px;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    font-family: "Suisse", "Apercu", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-weight: 400;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: min-content;
+    border-radius: 16px;
+    color: var(--color-background);
+    background-color: rgba(16, 22, 47, 0.75);
+    font-size: 10px;
+    height: 1rem;
+}
+
 .SideBar__Footer {
     display: flex;
     border: solid;
@@ -261,7 +280,552 @@
     margin: 0;
 }
 
-.Content__Item-Progress-Bar > img {
+.Content__Item-Progress-Bar > .bgr {
     width: 100%;
-    object-fit: cover;
+    background-repeat: repeat-x;
+    background-image: url(../../img/zigzag.png);
+}
+
+.Content__Item-Container {
+    border: 1px solid var(--color-secondary);
+    border-top: none;
+    border-bottom: none;
+    background-color: var(--color-background);
+}
+
+.Content__Item-Box {
+    padding: 0;
+    width: 100%;
+}
+
+.Content__Item-Box-Grid {
+    display: grid;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    grid-template-rows: repeat(3, min-content);
+}
+
+.Content__Item-Box-Flex {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.Content__Item-Box-Flex > p:nth-child(1) {
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 0.875rem;
+    margin: 0;
+    font-family: "Suisse", "Apercu", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.Content__Item-Box-Flex > h3:nth-child(2) {
+    font-weight: 700;
+    line-height: 1.3;
+    font-size: 2.125rem;
+    font-weight: 700;
+    line-height: 1.3;
+    font-size: 1.25rem;
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+
+.Content__Item-Box-Flex > p:nth-child(3) {
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.Content__Item-Button {
+    display: flex;
+    border: 1px solid var(--color-secondary);
+    width: 100%;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    color: var(--color-text);
+}
+
+.Content__Item-Button > a:first-child {
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+    font-size: inherit;
+    text-decoration: none;
+    box-shadow: none;
+    color: var(--color-text);
+    transition: border-color 150ms ease-in, color 150ms ease-in, background-color 150ms ease-in, box-shadow 150ms ease-in;
+    border: 2px solid var(--color-secondary);
+    border-color: transparent;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    position: relative;
+    border-radius: 4px;
+    border-color: transparent;
+    color: var(--color-secondary);
+    font-weight: 700;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    font-size: 1rem;
+    min-width: 40px;
+    height: 40px;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    width: 100%;
+    margin-right: 0;
+}
+
+.Content__Item-Button > a:first-child:before {
+    border-color: var(--color-secondary);
+    content: "";
+    -webkit-transition: opacity 150ms linear;
+    transition: opacity 150ms linear;
+    border: 2px solid var(--color-secondary);
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    z-index: 0;
+    opacity: 0;
+    border-radius: 8px;
+}
+
+.Content__Item-Button > a:first-child:hover {
+    transition: background-color 150ms ease-in, box-shadow 150ms ease-in;
+    color: var(--color-secondary);
+    background-color: var(--color-background-hover);
+    text-decoration: none;
+}
+
+.Content__Item-Button > a:last-child {
+    cursor: pointer;
+    box-shadow: none;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    position: relative;
+    font-weight: 700;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1rem;
+    min-width: 40px;
+    height: 52px;
+    color: var(--color-background);
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    width: 100%;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 0px;
+    background: none;
+    background-color: rgb(58, 16, 229);
+    text-decoration: none;
+    transition: border-color 150ms ease-in, color 150ms ease-in, background-color 150ms ease-in, box-shadow 150ms ease-in;
+    border-color: transparent;
+    white-space: nowrap;
+}
+
+.Content__Item-Button > a:last-child::before {
+    border-color: var(--color-primary);
+}
+
+.Content__Item-Button > a:last-child::before {
+    content: "";
+    transition: opacity 150ms linear;
+    border: 2px solid var(--color-secondary);
+    position: absolute;
+    inset: -5px;
+    z-index: 0;
+    opacity: 0;
+    border-radius: 8px;
+}
+
+.Content__Item-Button > a:last-child:hover {
+    transition: background-color 150ms ease-in, box-shadow 150ms ease-in;
+    color: var(--color-background);
+    background-color: #5533FF;
+}
+
+.Content__Item-Icon {
+    display: flex;
+    padding: 0.25rem;
+    margin-left: 0.75rem;
+    border-radius: 999px;
+    background-color: #FFFFFF;
+}
+
+.Content__Item-SVG {
+    width: 16px;
+    height: 16px;
+    color: #3A10E5;
+}
+
+.Button__Component-View {
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+    font-size: inherit;
+    text-decoration: none;
+    box-shadow: none;
+    color: var(--color-text);
+    transition: border-color 150ms ease-in, color 150ms ease-in, background-color 150ms ease-in, box-shadow 150ms ease-in;
+    border: 2px solid var(--color-secondary);
+    border-color: transparent;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    position: relative;
+    border-radius: 4px;
+    border-color: transparent;
+    color: var(--color-primary);
+    font-weight: 700;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    font-size: 1rem;
+    min-width: 40px;
+    max-width: 275px;
+    height: 40px;
+    column-gap: 0.5rem;
+}
+
+.Button__Component-View:before {
+    content: "";
+    -webkit-transition: opacity 150ms linear;
+    transition: opacity 150ms linear;
+    border: 2px solid var(--color-secondary);
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    z-index: 0;
+    opacity: 0;
+    border-radius: 8px;
+}
+
+.Button__Component-View:hover {
+    transition: background-color 150ms ease-in, box-shadow 150ms ease-in;
+    color: var(--color-primary);
+    background-color: var(--color-background-hover);
+}
+
+.Layout__Grid {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    display: grid;
+    width: 100%;
+    margin-top: 0.5rem;
+    row-gap: 1rem;
+}
+
+.Layout__Grid-Item-Left {
+    grid-column-end: span 12;
+    grid-template-columns: minmax(0, 1fr);
+    display: grid;
+}
+
+.Layout__Grid-Item-Left-Box {
+    display: grid;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--color-border);
+    padding: 2rem;
+    border-radius: 16px;
+    height: fit-content;
+    background-color: var(--color-background);
+    grid-template-rows: min-content min-content 1fr;
+}
+
+.Layout__Grid-Item-Left-Child1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 0.5rem;
+}
+
+.Layout__Grid-Item-Left-Child1 > span {
+    font-size: inherit;
+    display: inline-block;
+    font-weight: 700;
+    line-height: 1.3;
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.Layout__Grid-Item-Left-Child2 {
+    margin-top: 0.75rem;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(16, 22, 47, 0.12);
+}
+
+.Flex__Box-Width {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.Skills__Content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    max-width: 408px;
+    text-align: center;
+}
+
+.Skills__Content > span:nth-child(1) {
+    display: inline-block;
+    line-height: 1.5;
+    font-size: 1rem;
+    margin: 0px 0px 0.25rem;
+    font-weight: 700;
+}
+
+.Skills__Content > span:nth-child(2) {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 1rem;
+    margin: 0px 0px 0.5rem;
+}
+
+.Skills__Content > a {
+    border: none;
+    padding: 0px;
+    font-size: inherit;
+    white-space: initial;
+    box-shadow: none;
+    display: inline;
+    position: relative;
+    color: var(--color-primary);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.Skills__Content > a:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.Layout__Grid-Item-Right {
+    grid-column-end: span 12;
+    grid-template-columns: minmax(0, 1fr);
+    display: grid;
+    grid-column-end: span 12;
+}
+
+.Layout__Grid-Item-Right-Box {
+    display: grid;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--color-border);
+    padding: 2rem;
+    border-radius: 16px;
+    height: fit-content;
+    background-color: var(--color-background);
+    grid-template-rows: min-content 1fr;
+}
+
+.Layout__Grid-Item-Right-Child1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 0.5rem;
+}
+
+.Layout__Grid-Item-Right-Child1 > span {
+    font-size: inherit;
+    display: inline-block;
+    font-weight: 700;
+    line-height: 1.3;
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.Button__SetTarget {
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+    font-size: inherit;
+    text-decoration: none;
+    box-shadow: none;
+    color: var(--color-text);
+    transition: border-color 150ms ease-in, color 150ms ease-in, background-color 150ms ease-in, box-shadow 150ms ease-in;
+    border: 2px solid var(--color-border);
+    border-color: transparent;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    position: relative;
+    border-radius: 4px;
+    font-weight: 700;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    font-size: 1rem;
+    min-width: 40px;
+    height: 40px;
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+    background-color: transparent;
+    margin-top: 1rem;
+}
+
+.Button__SetTarget:before {
+    content: "";
+    transition: opacity 150ms linear;
+    border: 2px solid var(--color-border);
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    z-index: 0;
+    opacity: 0;
+    border-radius: 8px;
+}
+
+.Button__SetTarget:hover {
+    transition: background-color 150ms ease-in, box-shadow 150ms ease-in;
+    background-color: var(--color-background-hover);
+}
+
+.Button__Edit {
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+    font-size: inherit;
+    text-decoration: none;
+    box-shadow: none;
+    color: var(--color-text);
+    transition: border-color 150ms ease-in, color 150ms ease-in, background-color 150ms ease-in, box-shadow 150ms ease-in;
+    border: 2px solid var(--color-secondary);
+    border-color: transparent;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    position: relative;
+    border-radius: 4px;
+    border-color: transparent;
+    color: var(--color-primary);
+    font-weight: 700;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    font-size: 1rem;
+    min-width: 40px;
+    height: 40px;
+    margin-left: 0.25rem;
+}
+
+.Button__Edit:before {
+    content: "";
+    transition: opacity 150ms linear;
+    border: 2px solid var(--color-border);
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    z-index: 0;
+    opacity: 0;
+    border-radius: 8px;
+}
+
+.Button__Edit:hover {
+    transition: background-color 150ms ease-in, box-shadow 150ms ease-in;
+    color: var(--color-primary);
+    background-color: var(--color-background-hover);
+}
+
+.Flex__Box-Height {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.Layout__Grid-Item-Right-Box > span {
+    font-size: inherit;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 1rem;
+    margin: 0;
+}
+
+
+.Button__ViewAchievements {
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+    font-size: inherit;
+    text-decoration: none;
+    box-shadow: none;
+    color: var(--color-text);
+    transition: border-color 150ms ease-in, color 150ms ease-in, background-color 150ms ease-in, box-shadow 150ms ease-in;
+    border: 2px solid var(--color-secondary);
+    border-color: transparent;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    position: relative;
+    border-radius: 4px;
+    border-color: transparent;
+    color: var(--color-secondary);
+    font-weight: 700;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    font-size: 1rem;
+    min-width: 40px;
+    height: 40px;
+}
+
+.Button__ViewAchievements:before {
+    content: "";
+    transition: opacity 150ms linear;
+    border: 2px solid var(--color-secondary);
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    z-index: 0;
+    opacity: 0;
+    border-radius: 8px;
+}
+
+.Button__ViewAchievements:hover {
+    transition: background-color 150ms ease-in, box-shadow 150ms ease-in;
+    color: var(--color-secondary);
+    background-color: var(--color-background-hover);
 }
