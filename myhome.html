@@ -66,14 +66,14 @@
                         <li class="Nav__Ele ml-auto">
                             <div class="Nav__Ele-Button Nav__Ele-Button-Container">
                                 <button class="Nav__Ele-Button-Component">
-                                    <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                                    <img src="./assets/img/magnifying-glass.png" alt="magnifying-glass" style="height: 32px; width: 32px;">
                                 </button>
                             </div>
                         </li>
                         <li class="Nav__Ele">
                             <div class="Nav__Ele-Button Nav__Ele-Button-Container">
                                 <button class="Nav__Ele-Button-Component">
-                                    <i class="fa-regular fa-bell fa-xl"></i>
+                                    <img src="./assets/img/notification.png" alt="notification" style="height: 25px; width: 25px;">
                                 </button>
                             </div>
                         </li>
@@ -100,29 +100,33 @@
                                 <div class="pb-05rem">
                                     <li>
                                         <button class="SideBar__Button">
-                                            <span><i class="SideBar__Button-Img fa-solid fa-table-columns"></i>Dashboard</span>
+                                            <img src="./assets/img/dashboard.png" alt="Dashboard" style="height: 22px; width: 22px;" class="mr-10">
+                                            <span>Dashboard</span>
                                         </button>
                                     </li>
                                 </div>
                                 <div class="pb-05rem">
                                     <li>
                                         <button class="SideBar__Button">
-                                            <span><i class="SideBar__Button-Img fa-solid fa-book-bookmark"></i>My learning</span>
+                                            <img src="./assets/img/book.png" alt="Book" style="height: 25px; width: 25px;" class="mr-10">
+                                            <span>My learning</span>
                                         </button>
                                     </li>
                                 </div>
                                 <div class="pb-05rem">
                                     <li>
                                         <button class="SideBar__Button">
-                                            <span><i class="SideBar__Button-Img fa-solid fa-calendar-days"></i>Events</span>
+                                            <img src="./assets/img/calendar.png" alt="Calendar" style="height: 25px; width: 25px;" class="mr-10">
+                                            <span>Events</span>
                                         </button>
                                     </li>
                                 </div>
                                 <div class="pb-05rem">
                                     <li>
                                         <button class="SideBar__Button">
-                                            <span><i class="SideBar__Button-Img fa-solid fa-puzzle-piece"></i>Projects
-                                                <span>Upgrade</span>
+                                            <img src="./assets/img/puzzle.png" alt="Puzzle" style="height: 25px; width: 25px;" class="mr-10">
+                                            <span style="display: flex;">Projects
+                                                <div class="SideBar__Button-Upgrade">Upgrade</div>
                                             </span>
                                         </button>
                                     </li>
@@ -130,7 +134,8 @@
                                 <div class="pb-05rem">
                                     <li>
                                         <button class="SideBar__Button">
-                                            <span><i class="SideBar__Button-Img fa-regular fa-file"></i>Workspaces</span>
+                                            <img src="./assets/img/workspace.png" alt="Workspaces" style="height: 22px; width: 22px;" class="mr-10">
+                                            <span>Workspaces</span>
                                         </button>
                                     </li>
                                 </div>
@@ -156,64 +161,97 @@
                             <div class="Content__Item-Progress-Wrapper">
                                 <div class="Content__Item-Progress-Bar">
                                     <label>Progress: 4%</label>
-                                    <img src="./assets/img/bgr-process-bar.jpg" alt="">
+                                    <div class="bgr"></div>
                                     <div></div>
                                 </div>
-                                <div></div>
-                                <div></div>
-                            </div>
-                            <button>
-                                View all learning in progress 
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </button>
-                        </div>
-                        <div>
-                            <div>
-                                <h2>Follow your progress</h2>
-                            </div>
-                            <div>
-                                <div>
-                                    <div>
-                                        <h2>Skills</h2>
-                                    </div>
-                                    <div>
-                                        <div>
-                                            <span>Take action to stay motivated</span>
-                                            <span>Move forward in your learning and watch your skills grow.</span>
-                                            <a href="">Continue in Learn JavaScript</a>
+                                <div class="Content__Item-Container">
+                                    <div class="Content__Item-Box">
+                                        <div class="Content__Item-Box-Grid">
+                                            <div class="Content__Item-Box-Flex">
+                                                <p>Course</p>
+                                                <h3>Learn JavaScript</h3>
+                                                <p>Current Module: Introduction</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div>
-                                    <div>
-                                        <div>
-                                            <span>No weekly target set yet</span>
-                                            <a href=""><button>Set target</button></a>
+                                <div class="Content__Item-Button">
+                                    <a href="">View syllabus</a>
+                                    <a href="">
+                                        Resume
+                                        <div class="Content__Item-Icon">
+                                            <svg class="Content__Item-SVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <button class="Button__Component-View">
+                                View all learning in progress 
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="#3A10E5" role="img" aria-hidden="true" class="" style="height: 16px; width: 16px" viewBox="0 0 320 512"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
+                            </button>
+                        </div>
+                        <div class="Content__Item">
+                            <div class="Content__Item-Header">
+                                <h2>Follow your progress</h2>
+                            </div>
+                            <div class="Layout__Grid">
+                                <div class="Layout__Grid-Item-Left">
+                                    <div class="Layout__Grid-Item-Left-Box">
+                                        <div class="Layout__Grid-Item-Left-Child1">
+                                            <span>Skills</span>
+                                        </div>
+                                        <div class="Layout__Grid-Item-Left-Child2"></div>
+                                        <div class="">
+                                            <div class="" style="margin-top: 2rem;">
+                                                <div class="Flex__Box-Width">
+                                                    <div class="Skills__Content">
+                                                        <span>Take action to stay motivated</span>
+                                                        <span>Move forward in your learning and watch your skills grow.</span>
+                                                        <a href="">Continue in Learn JavaScript</a>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div>
+                                </div>
+                                <div class="Layout__Grid-Item-Right">
+                                    <div class="Layout__Grid-Item-Right-Box">
+                                        <div class="Layout__Grid-Item-Right-Child1">
+                                            <span>No weekly target set yet</span>
+                                        </div>
                                         <div>
+                                            <a href="" class="Button__SetTarget">Set target</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Layout__Grid-Item-Right">
+                                    <div class="Layout__Grid-Item-Right-Box">
+                                        <div class="Layout__Grid-Item-Right-Child1">
                                             <span>Your goal</span>
-                                            <a href="">
-                                                Edit
-                                                <i class="fa-solid fa-pen-to-square"></i>
+                                            <a href="" class="Button__Edit">
+                                                <div class="Flex__Box-Height">
+                                                    Edit
+                                                    <i class="fa-solid fa-pen-to-square ml-10" style="margin-left: 10px;"></i>
+                                                </div>
                                             </a>
                                         </div>
                                         <span>Build a project</span>
                                     </div>
-                                    <div>
-                                        <div>
-                                            <a href="">
+                                </div>
+                                <div class="Layout__Grid-Item-Right">
+                                    <div class="" style="display: flex; justify-content: center;">
+                                        <a href="" class="Button__ViewAchievements">
+                                            <div class="Flex__Box-Height">
                                                 <span>View achievements</span>
-                                                <i class="fa-solid fa-chevron-right"></i>
-                                            </a>
-                                        </div>
+                                                <i class="fa-solid fa-chevron-right ml-10" style="margin-top: 4px;"></i>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div>
-                            <div>
+                        <div class="Content__Item">
+                            <div class="Content__Item-Header">
                                 <h2>Recommended for you</h2>
                                 <div>
                                     <div>
@@ -343,8 +381,8 @@
                                 <button>View more</button>
                             </div>
                         </div>
-                        <div>
-                            <div>
+                        <div class="Content__Item">
+                            <div class="Content__Item-Header">
                                 <h2>Discover more features</h2>
                             </div>
                             <div>

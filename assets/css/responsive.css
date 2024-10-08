@@ -1,3 +1,16 @@
+@media only screen and (min-width: 1440px) {
+    .Layout__Grid-Item-Left {
+        grid-column-end: span 8;
+    }
+    .Layout__Grid-Item-Right {
+        grid-column-end: span 4;
+        grid-column-start: 9;
+    }.Layout__Grid-Item-Right-Child1 {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
 @media only screen and (min-width: 1200px) {
     :root {
         --headerHeight: 5rem;
@@ -28,12 +41,33 @@
         border-radius: 16px;
         width: 288px;
     }
+    .Content__Item-Box-Grid {
+        column-gap: 1.5rem;
+    }
+    .Layout__Grid {
+        grid-column-gap: 1rem;
+        column-gap: min(calc(100% / 11), 1rem);
+    }
+    .Layout__Grid-Item-Left {
+        grid-row-end: span 6;
+        grid-column-end: span 8;
+    }
+    .Layout__Grid-Item-Right {
+        grid-column-end: span 4;
+    }
+    .Layout__Grid-Item-Right-Child1 {
+        flex-direction: row;
+        align-items: center;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1201px) {
     .Box__Header-Nav, .Container__Box {
         padding-left: 4rem;
         padding-right: 4rem;
+    }.Layout__Grid-Item-Right-Child1 {
+        flex-direction: row;
+        align-items: center;
     }
 }
 
@@ -41,5 +75,13 @@
     .Box__Header-Nav, .Container__Box {
         padding-left: 2rem;
         padding-right: 2rem;
+    }
+    .Layout__Grid-Item-Left-Child1 {
+        flex-direction: row;
+        align-items: center;
+    }
+    .Layout__Grid-Item-Right-Child1 {
+        flex-direction: row;
+        align-items: center;
     }
 }

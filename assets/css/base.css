@@ -43,9 +43,18 @@ button, input {
     margin-left: auto;
 }
 
+.ml-10 {
+    margin-left: 10px;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
 .pb-05rem {
     padding-bottom: 0.5rem;
 }
+
 
 
 
