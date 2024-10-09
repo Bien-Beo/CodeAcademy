@@ -9,6 +9,35 @@
         flex-direction: row;
         align-items: center;
     }
+    .Related__Topics {
+        justify-content: end;
+    }
+    .Cotainer__SkillPath {
+        display: block;
+    }
+    .Content__Item-List-Ele {
+        grid-column-end: span 6;
+    }    
+    .Footer__Container {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+    .Footer__Layout-Grid {
+        padding: 2rem 0;
+    }
+    .Footer__End {
+        align-items: baseline;
+        display: flex;
+        justify-content: space-between;
+    }
+    .Footer__End-List {
+        justify-content: flex-start;
+        display: inline-flex;
+    }
+    .Footer__End-MadeWith {
+        display: inline-block;
+        text-align: right;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -59,6 +88,38 @@
         flex-direction: row;
         align-items: center;
     }
+    .Related__Topics {
+        justify-content: end;
+    }
+    .Cotainer__SkillPath {
+        display: block;
+    }
+    .Cotainer__SkillPath-Item {
+        grid-column-end: span 4;
+    }
+    .Content__Item-List-Ele {
+        grid-column-end: span 6;
+    }
+    .Footer__Container {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+    .Footer__Layout-Grid {
+        padding: 2rem 0;
+    }
+    .Footer__End {
+        align-items: baseline;
+        display: flex;
+        justify-content: space-between;
+    }
+    .Footer__End-List {
+        justify-content: flex-start;
+        display: inline-flex;
+    }
+    .Footer__End-MadeWith {
+        display: inline-block;
+        text-align: right;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1201px) {
@@ -68,6 +129,22 @@
     }.Layout__Grid-Item-Right-Child1 {
         flex-direction: row;
         align-items: center;
+    }
+    .Related__Topics {
+        justify-content: end;
+    }
+    .Cotainer__SkillPath-Item {
+        grid-column-end: span 6;
+    }
+    .Content__Item-List-Ele {
+        grid-column-end: span 6;
+    }    
+    .Footer__Container {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .Footer__Layout-Grid {
+        padding: 2rem 0;
     }
 }
 
@@ -83,5 +160,15 @@
     .Layout__Grid-Item-Right-Child1 {
         flex-direction: row;
         align-items: center;
+    }
+    .Related__Topics {
+        justify-content: end;
+    }
+    .Cotainer__SkillPath-Item {
+        grid-column-end: span 12;
+    }
+    .Footer__Container {
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 }

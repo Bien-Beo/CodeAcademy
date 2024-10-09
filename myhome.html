@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/myhome/header.css">
     <link rel="stylesheet" href="./assets/css/myhome/container.css">
+    <link rel="stylesheet" href="./assets/css/myhome/footer.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
-    <link rel="stylesheet" href="./assets/js/myhome.js">
 </head>
 <body>
     <div class="all-display">
@@ -146,7 +146,7 @@
                                 <h2>
                                     Try Plus or Pro with a 7-day free trial
                                 </h2>
-                                <span>Go deeper and learn job-ready skills. Practice with real-world projects, take assessments, and earn certificates.</span>
+                                <span class="Style__Text-Span">Go deeper and learn job-ready skills. Practice with real-world projects, take assessments, and earn certificates.</span>
                             </div>
                             <button>Try for free</button>
                         </div>
@@ -253,17 +253,17 @@
                         <div class="Content__Item">
                             <div class="Content__Item-Header">
                                 <h2>Recommended for you</h2>
-                                <div>
-                                    <div>
+                                <div style="display: flex;">
+                                    <div class="Related__Topics">
                                         <span>Related topics:</span>
                                         <ul>
                                             <li>
                                                 <a href="">HTML & CSS</a>
-                                                <span> | </span>
+                                                <span class="Style__Text"> | </span>
                                             </li>
                                             <li>
                                                 <a href="">JavaScript</a>
-                                                <span> | </span>
+                                                <span class="Style__Text"> | </span>
                                             </li>
                                             <li>
                                                 <a href="">PHP</a>
@@ -272,35 +272,69 @@
                                     </div>
                                 </div>
                             </div>
-                            <div>
-                                <div>
-                                    <ul>
-                                        <li>
-                                            <a href="">
-                                                <div>
-                                                    <div>
+                            <div class="Cotainer__SkillPath">
+                                <div class="FlexBox__Column">
+                                    <ul class="Cotainer__SkillPath-List">
+                                        <li class="Cotainer__SkillPath-Item">
+                                            <a href="" style="text-decoration: none;">
+                                                <div class="Cotainer__SkillPath-Item-CardWrapper">
+                                                    <div class="Cotainer__SkillPath-Header">
                                                         <span>Skill path</span>
                                                     </div>
-                                                    <div>
-                                                        <div>
-                                                            <h3>Create a Back-End App with JavaScript</h3>
-                                                            <span>Learn how to build back-end web APIs using Express.js, Node.js, SQL, and a Node.js-SQLite database library.</span>
-                                                        </div>
-                                                        <div>
+                                                    <div class="Cotainer__SkillPath-GridBox">
+                                                        <div class="FlexBox__Column">
                                                             <div>
-                                                                <span>Includes <b>8 Courses</b></span>
+                                                                <h3>Create a Back-End App with JavaScript</h3>
+                                                                <span>Learn how to build back-end web APIs using Express.js, Node.js, SQL, and a Node.js-SQLite database library.</span>
                                                             </div>
-                                                            <div>
-                                                                <i class="fa-solid fa-award"></i>
-                                                                <span>With <b>Certificate</b></span>
-                                                            </div>
-                                                            <div>
-                                                                <div>
-                                                                    <i class="fa-solid fa-stairs"></i>
-                                                                    <span><b>Beginner</b>  Friendly</span>
+                                                            <div class="mt-auto">
+                                                                <div class="CheckerDense-Box">
+                                                                    <svg fill="currentColor" role="img" aria-hidden="true" class="CheckerDense">
+                                                                        <title>Checker Dense</title>
+                                                                        <pattern id="CheckerDense:" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
+                                                                            <rect width="1" height="1" fill="currentColor"></rect>
+                                                                            <rect x="2" y="2" width="1" height="1" fill="currentColor"></rect>
+                                                                        </pattern>
+                                                                        <rect width="100%" height="100%" fill="url(#CheckerDense:)"></rect>
+                                                                    </svg>
                                                                 </div>
-                                                                <div>
-                                                                    <span><b>30</b> hours</span>
+                                                                <span class="Style__Text-Span">Includes <b>8 Courses</b></span>
+                                                                <div class="CheckerDense-Box">
+                                                                    <svg fill="currentColor" role="img" aria-hidden="true" class="CheckerDense">
+                                                                        <title>Checker Dense</title>
+                                                                        <pattern id="CheckerDense:" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
+                                                                            <rect width="1" height="1" fill="currentColor"></rect>
+                                                                            <rect x="2" y="2" width="1" height="1" fill="currentColor"></rect>
+                                                                        </pattern>
+                                                                        <rect width="100%" height="100%" fill="url(#CheckerDense:)"></rect>
+                                                                    </svg>
+                                                                </div>
+                                                                <div class="FlexBox__Align-Center">
+                                                                    <div style="display: flex; padding-right: 0.25rem;">
+                                                                        <img src="./assets/img/certificate.png" alt="Certificate" style="width: 18px; height: 18px;">
+                                                                    </div>
+                                                                    <span>With <b>Certificate</b></span>
+                                                                </div>
+                                                                <div class="CheckerDense-Box">
+                                                                    <svg fill="currentColor" role="img" aria-hidden="true" class="CheckerDense">
+                                                                        <title>Checker Dense</title>
+                                                                        <pattern id="CheckerDense:" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
+                                                                            <rect width="1" height="1" fill="currentColor"></rect>
+                                                                            <rect x="2" y="2" width="1" height="1" fill="currentColor"></rect>
+                                                                        </pattern>
+                                                                        <rect width="100%" height="100%" fill="url(#CheckerDense:)"></rect>
+                                                                    </svg>
+                                                                </div>
+                                                                <div class="FlexBox__Two-Ele-Wrap">
+                                                                    <div class="FlexBox__Align-Center">
+                                                                        <div style="display: flex; padding-right: 0.25rem;">
+                                                                            <img src="./assets/img/rank.png" alt="Rank" style="width: 20px; height: 20px;">
+                                                                        </div>
+                                                                        <span><b>Beginner</b>  Friendly</span>
+                                                                    </div>
+                                                                    <div class="Hours">
+                                                                        <span><b>30</b> hours</span>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -308,32 +342,66 @@
                                                 </div>
                                             </a>
                                         </li>
-                                        <li>
-                                            <a href="">
-                                                <div>
-                                                    <div>
+                                        <li class="Cotainer__SkillPath-Item">
+                                            <a href="" style="text-decoration: none;">
+                                                <div class="Cotainer__SkillPath-Item-CardWrapper">
+                                                    <div class="Cotainer__SkillPath-Header">
                                                         <span>Skill path</span>
                                                     </div>
-                                                    <div>
-                                                        <div>
-                                                            <h3>Create a Font-End App with React</h3>
-                                                            <span>Learn how to build font-end web apps JavaScript and React.</span>
-                                                        </div>
-                                                        <div>
+                                                    <div class="Cotainer__SkillPath-GridBox">
+                                                        <div class="FlexBox__Column">
                                                             <div>
-                                                                <span>Includes <b>9 Courses</b></span>
+                                                                <h3>Create a Font-End App with React</h3>
+                                                                <span>Learn how to build font-end web apps JavaScript and React.</span>
                                                             </div>
-                                                            <div>
-                                                                <i class="fa-solid fa-award"></i>
-                                                                <span>With <b>Certificate</b></span>
-                                                            </div>
-                                                            <div>
-                                                                <div>
-                                                                    <i class="fa-solid fa-stairs"></i>
-                                                                    <span><b>Intermediate</b></span>
+                                                            <div class="mt-auto">
+                                                                <div class="CheckerDense-Box">
+                                                                    <svg fill="currentColor" role="img" aria-hidden="true" class="CheckerDense">
+                                                                        <title>Checker Dense</title>
+                                                                        <pattern id="CheckerDense:" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
+                                                                            <rect width="1" height="1" fill="currentColor"></rect>
+                                                                            <rect x="2" y="2" width="1" height="1" fill="currentColor"></rect>
+                                                                        </pattern>
+                                                                        <rect width="100%" height="100%" fill="url(#CheckerDense:)"></rect>
+                                                                    </svg>
                                                                 </div>
-                                                                <div>
-                                                                    <span><b>37</b> hours</span>
+                                                                <span class="Style__Text-Span">Includes <b>9 Courses</b></span>
+                                                                <div class="CheckerDense-Box">
+                                                                    <svg fill="currentColor" role="img" aria-hidden="true" class="CheckerDense">
+                                                                        <title>Checker Dense</title>
+                                                                        <pattern id="CheckerDense:" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
+                                                                            <rect width="1" height="1" fill="currentColor"></rect>
+                                                                            <rect x="2" y="2" width="1" height="1" fill="currentColor"></rect>
+                                                                        </pattern>
+                                                                        <rect width="100%" height="100%" fill="url(#CheckerDense:)"></rect>
+                                                                    </svg>
+                                                                </div>
+                                                                <div class="FlexBox__Align-Center">
+                                                                    <div style="display: flex; padding-right: 0.25rem;">
+                                                                        <img src="./assets/img/certificate.png" alt="Certificate" style="width: 18px; height: 18px;">
+                                                                    </div>
+                                                                    <span>With <b>Certificate</b></span>
+                                                                </div>
+                                                                <div class="CheckerDense-Box">
+                                                                    <svg fill="currentColor" role="img" aria-hidden="true" class="CheckerDense">
+                                                                        <title>Checker Dense</title>
+                                                                        <pattern id="CheckerDense:" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
+                                                                            <rect width="1" height="1" fill="currentColor"></rect>
+                                                                            <rect x="2" y="2" width="1" height="1" fill="currentColor"></rect>
+                                                                        </pattern>
+                                                                        <rect width="100%" height="100%" fill="url(#CheckerDense:)"></rect>
+                                                                    </svg>
+                                                                </div>
+                                                                <div class="FlexBox__Two-Ele-Wrap">
+                                                                    <div class="FlexBox__Align-Center">
+                                                                        <div style="display: flex; padding-right: 0.25rem;">
+                                                                            <img src="./assets/img/rank.png" alt="Rank" style="width: 20px; height: 20px;">
+                                                                        </div>
+                                                                        <span><b>Intermediate</b></span>
+                                                                    </div>
+                                                                    <div class="Hours">
+                                                                        <span><b>37</b> hours</span>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -341,32 +409,66 @@
                                                 </div>
                                             </a>
                                         </li>
-                                        <li>
-                                            <a href="">
-                                                <div>
-                                                    <div>
+                                        <li class="Cotainer__SkillPath-Item">
+                                            <a href="" style="text-decoration: none;">
+                                                <div class="Cotainer__SkillPath-Item-CardWrapper">
+                                                    <div class="Cotainer__SkillPath-Header">
                                                         <span>Skill path</span>
                                                     </div>
-                                                    <div>
-                                                        <div>
-                                                            <h3>Create Video Games with Phaser.js</h3>
-                                                            <span>It's easy to get lost in the flow of a good game. But behind every power-up and boss battle is simple code that brings the...</span>
-                                                        </div>
-                                                        <div>
+                                                    <div class="Cotainer__SkillPath-GridBox">
+                                                        <div  class="FlexBox__Column">
                                                             <div>
-                                                                <span>Includes <b>8 Courses</b></span>
+                                                                <h3>Create Video Games with Phaser.js</h3>
+                                                                <span>It's easy to get lost in the flow of a good game. But behind every power-up and boss battle is simple code that brings the...</span>
                                                             </div>
-                                                            <div>
-                                                                <i class="fa-solid fa-award"></i>
-                                                                <span>With <b>Certificate</b></span>
-                                                            </div>
-                                                            <div>
-                                                                <div>
-                                                                    <i class="fa-solid fa-stairs"></i>
-                                                                    <span><b>Beginner</b>  Friendly</span>
+                                                            <div class="mt-auto">
+                                                                <div class="CheckerDense-Box">
+                                                                    <svg fill="currentColor" role="img" aria-hidden="true" class="CheckerDense">
+                                                                        <title>Checker Dense</title>
+                                                                        <pattern id="CheckerDense:" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
+                                                                            <rect width="1" height="1" fill="currentColor"></rect>
+                                                                            <rect x="2" y="2" width="1" height="1" fill="currentColor"></rect>
+                                                                        </pattern>
+                                                                        <rect width="100%" height="100%" fill="url(#CheckerDense:)"></rect>
+                                                                    </svg>
                                                                 </div>
-                                                                <div>
-                                                                    <span><b>27</b> hours</span>
+                                                                    <span class="Style__Text-Span">Includes <b>8 Courses</b></span>
+                                                                <div class="CheckerDense-Box">
+                                                                    <svg fill="currentColor" role="img" aria-hidden="true" class="CheckerDense">
+                                                                        <title>Checker Dense</title>
+                                                                        <pattern id="CheckerDense:" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
+                                                                            <rect width="1" height="1" fill="currentColor"></rect>
+                                                                            <rect x="2" y="2" width="1" height="1" fill="currentColor"></rect>
+                                                                        </pattern>
+                                                                        <rect width="100%" height="100%" fill="url(#CheckerDense:)"></rect>
+                                                                    </svg>
+                                                                </div>
+                                                                <div class="FlexBox__Align-Center">
+                                                                    <div style="display: flex; padding-right: 0.25rem;">
+                                                                        <img src="./assets/img/certificate.png" alt="Certificate" style="width: 18px; height: 18px;">
+                                                                    </div>
+                                                                    <span>With <b>Certificate</b></span>
+                                                                </div>
+                                                                <div class="CheckerDense-Box">
+                                                                    <svg fill="currentColor" role="img" aria-hidden="true" class="CheckerDense">
+                                                                        <title>Checker Dense</title>
+                                                                        <pattern id="CheckerDense:" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
+                                                                            <rect width="1" height="1" fill="currentColor"></rect>
+                                                                            <rect x="2" y="2" width="1" height="1" fill="currentColor"></rect>
+                                                                        </pattern>
+                                                                        <rect width="100%" height="100%" fill="url(#CheckerDense:)"></rect>
+                                                                    </svg>
+                                                                </div>
+                                                                <div class="FlexBox__Two-Ele-Wrap">
+                                                                    <div class="FlexBox__Align-Center">
+                                                                        <div style="display: flex; padding-right: 0.25rem;">
+                                                                            <img src="./assets/img/rank.png" alt="Rank" style="width: 20px; height: 20px;">
+                                                                        </div>
+                                                                        <span><b>Beginner</b>  Friendly</span>
+                                                                    </div>
+                                                                    <div class="Hours">
+                                                                        <span><b>27</b> hours</span>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -375,228 +477,238 @@
                                             </a>
                                         </li>
                                     </ul>
+                                    <div class="ViewMore">
+                                        <button class="Style__Text ViewMore__Button">
+                                            <span>View more</span>
+                                            <div>
+                                                <i class="fas fa-chevron-down"></i>
+                                            </div>
+                                        </button>
+                                    </div>
                                 </div>
-                            </div>
-                            <div>
-                                <button>View more</button>
                             </div>
                         </div>
                         <div class="Content__Item">
                             <div class="Content__Item-Header">
                                 <h2>Discover more features</h2>
                             </div>
-                            <div>
-                                <div><a href="">
-                                    <div>
-                                        <div>
-                                            <i class="fa-solid fa-people-line"></i>
-                                        </div>
-                                        <div>
-                                            <div>
-                                                <span>Interview Simulator</span>
-                                                <span>Practice your interviewing skills and get real-time, AI-powered feedback.</span>
+                            <ul class="Content__Item-List">
+                                <li class="Content__Item-List-Ele">
+                                    <a href="" style="text-decoration: none;">
+                                        <div class="Content__Item-List-Ele-Box">
+                                            <div class="FlexBox__Two-Ele">
+                                                <div style="display: flex;">
+                                                    <i class="fa-solid fa-people-line" style="margin-right: 1rem;"></i>
+                                                    <div class="FlexBox__Column-Width">
+                                                        <span>Interview Simulator</span>
+                                                        <span>Practice your interviewing skills and get real-time, AI-powered feedback.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="Content__Item-Icon">
+                                                    <i class="fa-solid fa-chevron-right"></i>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div>
-                                            <i class="fa-solid fa-chevron-right"></i>
-                                        </div>
-                                    </div>
-                                </a></div>
-                                <div><a href="">
-                                    <div>
-                                        <div>
-                                            <i class="fa-regular fa-clock"></i>
-                                        </div>
-                                        <div>
-                                            <div>
-                                                <span>Job-readiness checker</span>
-                                                <span>Analyze any job posting to check for the skills you need to ... </span>
+                                    </a>
+                                </li>
+                                <li class="Content__Item-List-Ele">
+                                    <a href="" style="text-decoration: none;">
+                                        <div class="Content__Item-List-Ele-Box">
+                                            <div class="FlexBox__Two-Ele">
+                                                <div  style="display: flex;">
+                                                    <i class="fa-regular fa-clock" style="margin-right: 1rem;"></i>
+                                                    <div class="FlexBox__Column-Width">
+                                                        <span>Job-readiness checker</span>
+                                                        <span>Analyze any job posting to check for the skills you need to ... </span>
+                                                    </div>
+                                                </div>
+                                                <div  class="Content__Item-Icon">
+                                                    <i class="fa-solid fa-chevron-right"></i>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div>
-                                            <i class="fa-brands fa-discord"></i>
-                                        </div>
-                                    </div>
-                                </a></div>
-                                <div><a href="">
-                                    <div>
-                                        <div>
-                                            <div>
-                                                <span>Discord</span>
-                                                <span>connect with peers around the globe, code together, and help...</span>
+                                    </a>
+                                </li>
+                                <li class="Content__Item-List-Ele">
+                                    <a href="" style="text-decoration: none;">
+                                        <div class="Content__Item-List-Ele-Box">
+                                            <div class="FlexBox__Two-Ele">
+                                                <div  style="display: flex;">
+                                                    <i class="fa-brands fa-discord" style="margin-right: 1rem;"></i>
+                                                    <div class="FlexBox__Column-Width">
+                                                        <span>Discord</span>
+                                                        <span>connect with peers around the globe, code together, and help...</span>
+                                                    </div>
+                                                </div>
+                                                <div  class="Content__Item-Icon">
+                                                    <i class="fa-solid fa-chevron-right"></i>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </a></div>
-                            </div>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
         <footer>
-            <div  class="Box-ContentContainer">
-                <div>
+            <div class="Footer__Container">
+                <div class="Footer__Layout-Grid">
                     <div>
                         <div>
-                            <div>
-                                <h2>Company</h2>
-                                <ul>
-                                    <li><a href="">About</a></li>
-                                    <li><a href="">Careers</a></li>
-                                    <li><a href="">Affiliates</a></li>
-                                </ul>
-                                <div>
-                                    <i class="fa-brands fa-x-twitter"></i>
-                                </div>
-                                <div>
-                                    <i class="fa-brands fa-facebook-f"></i>
-                                </div>
-                                <div>
-                                    <i class="fa-brands fa-instagram"></i>
-                                </div>
-                                <div>
-                                    <i class="fa-brands fa-youtube"></i>
-                                </div>
-                                <div>
-                                    <i class="fa-brands fa-tiktok"></i>
-                                </div>
-                            </div>
-                            <div>
-                                <div>
-                                    <h2>Resources</h2>
-                                    <ul>
-                                        <li><a href="">Articles</a></li>
-                                        <li><a href="">Blog</a></li>
-                                        <li><a href="">Cheatsheets</a></li>
-                                        <li><a href="">Code challenges</a></li>
-                                        <li><a href="">Docs</a></li>
-                                        <li><a href="">Projects</a></li>
-                                        <li><a href="">Video</a></li>
-                                        <li><a href="">Workspaces</a></li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <h2>Support</h2>
-                                    <ul>
-                                        <li><a href="">Help Center</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div>
-                                <div>
-                                    <h2>Plans</h2>
-                                    <ul>
-                                        <li><a href="">For individuals</a></li>
-                                        <li><a href="">For student</a></li>
-                                        <li><a href="">For business</a></li>
-                                        <li><a href="">Discounts</a></li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <h2>Community</h2>
-                                    <ul>
-                                        <li><a href="">Clubs</a></li>
-                                        <li><a href="">Code Crew</a></li>
-                                        <li><a href="">Discord</a></li>
-                                        <li><a href="">Events</a></li>
-                                        <li><a href="">Forums</a></li>
-                                        <li><a href="">Learner Stories</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div>
-                                <img src="./assets/img/logo.png" alt="">
-                                <span>from skillsoft</span>
-                            </div>
-                        </div>
-                        <div>
-                            <div>
-                                <h2>Subjects</h2>
-                                <ul>
-                                    <li><a href="">AI</a></li>
-                                    <li><a href="">Cloud Computing</a></li>
-                                    <li><a href="">Code Foundations</a></li>
-                                    <li><a href="">Computer Science</a></li>
-                                    <li><a href="">Cybersecurity</a></li>
-                                    <li><a href="">Data Analytics</a></li>
-                                    <li><a href="">Data Science</a></li>
-                                    <li><a href="">Data Visualization</a></li>
-                                    <li><a href="">Developer Tools</a></li>
-                                    <li><a href="">DevOps</a></li>
-                                    <li><a href="">Game Development</a></li>
-                                    <li><a href="">IT</a></li>
-                                    <li><a href="">Machine Learning</a></li>
-                                    <li><a href="">Math</a></li>
-                                    <li><a href="">Mobile Development</a></li>
-                                    <li><a href="">Web Design</a></li>
-                                    <li><a href="">Web Development</a></li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h2>Languages</h2>
-                                <ul>
-                                    <li><a href="">Bash</a></li>
-                                    <li><a href="">C</a></li>
-                                    <li><a href="">C++</a></li>
-                                    <li><a href="">C#</a></li>
-                                    <li><a href="">Go</a></li>
-                                    <li><a href="">HTML & CSS</a></li>
-                                    <li><a href="">Java</a></li>
-                                    <li><a href="">JavaScript</a></li>
-                                    <li><a href="">Kotlin</a></li>
-                                    <li><a href="">PHP</a></li>
-                                    <li><a href="">Python</a></li>
-                                    <li><a href="">R</a></li>
-                                    <li><a href="">Ruby</a></li>
-                                    <li><a href="">SQL</a></li>
-                                    <li><a href="">Swift</a></li>
-                                </ul>
-                            </div>
-                            <div>
-                                <div>
-                                    <h2>Career building</h2>
-                                    <ul>
-                                        <li><a href="">Career paths</a></li>
-                                        <li><a href="">Career center</a></li>
-                                        <li><a href="">Interview prep</a></li>
-                                        <li><a href="">Professionnal cenrtificatin</a></li>
-                                        <li><a href="">Compare to bootcamps</a></li>
-                                        <li><a href="">-</a></li>
-                                        <li><a href="">Full Catalog</a></li>
-                                        <li><a href="">Beta Content</a></li>
-                                        <li><a href="">Roadmap</a></li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <h2>Mobile</h2>
-                                    <a href=""><img src="./assets/img/download.png" alt=""></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
+                            <h2>Company</h2>
                             <ul>
-                                <li><a href="">
-                                    Privacy Policy
-                                </a></li>
-                                <span> | </span>
-                                <li><a href="">
-                                    Cookie Policy
-                                </a></li>
-                                <span> | </span>
-                                <li><a href="">
-                                    Do Not Sell My Personal Information
-                                </a></li>
-                                <span> | </span>
-                                <li><a href="">
-                                    Terms
-                                </a></li>
+                                <li><a href="">About</a></li>
+                                <li><a href="">Careers</a></li>
+                                <li><a href="">Affiliates</a></li>
                             </ul>
-                            <div>Made with  <span>❤️</span> in NYC ©  2024  Codecademy</div>
+                            <div>
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-youtube"></i>
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-tiktok"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <h2>Resources</h2>
+                                <ul>
+                                    <li><a href="">Articles</a></li>
+                                    <li><a href="">Blog</a></li>
+                                    <li><a href="">Cheatsheets</a></li>
+                                    <li><a href="">Code challenges</a></li>
+                                    <li><a href="">Docs</a></li>
+                                    <li><a href="">Projects</a></li>
+                                    <li><a href="">Video</a></li>
+                                    <li><a href="">Workspaces</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2>Support</h2>
+                                <ul>
+                                    <li><a href="">Help Center</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <h2>Plans</h2>
+                                <ul>
+                                    <li><a href="">For individuals</a></li>
+                                    <li><a href="">For student</a></li>
+                                    <li><a href="">For business</a></li>
+                                    <li><a href="">Discounts</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2>Community</h2>
+                                <ul>
+                                    <li><a href="">Clubs</a></li>
+                                    <li><a href="">Code Crew</a></li>
+                                    <li><a href="">Discord</a></li>
+                                    <li><a href="">Events</a></li>
+                                    <li><a href="">Forums</a></li>
+                                    <li><a href="">Learner Stories</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="./assets/img/logo.png" alt="">
+                            <span>from skillsoft</span>
                         </div>
                     </div>
+                    <div>
+                        <div>
+                            <h2>Subjects</h2>
+                            <ul>
+                                <li><a href="">AI</a></li>
+                                <li><a href="">Cloud Computing</a></li>
+                                <li><a href="">Code Foundations</a></li>
+                                <li><a href="">Computer Science</a></li>
+                                <li><a href="">Cybersecurity</a></li>
+                                <li><a href="">Data Analytics</a></li>
+                                <li><a href="">Data Science</a></li>
+                                <li><a href="">Data Visualization</a></li>
+                                <li><a href="">Developer Tools</a></li>
+                                <li><a href="">DevOps</a></li>
+                                <li><a href="">Game Development</a></li>
+                                <li><a href="">IT</a></li>
+                                <li><a href="">Machine Learning</a></li>
+                                <li><a href="">Math</a></li>
+                                <li><a href="">Mobile Development</a></li>
+                                <li><a href="">Web Design</a></li>
+                                <li><a href="">Web Development</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2>Languages</h2>
+                            <ul>
+                                <li><a href="">Bash</a></li>
+                                <li><a href="">C</a></li>
+                                <li><a href="">C++</a></li>
+                                <li><a href="">C#</a></li>
+                                <li><a href="">Go</a></li>
+                                <li><a href="">HTML & CSS</a></li>
+                                <li><a href="">Java</a></li>
+                                <li><a href="">JavaScript</a></li>
+                                <li><a href="">Kotlin</a></li>
+                                <li><a href="">PHP</a></li>
+                                <li><a href="">Python</a></li>
+                                <li><a href="">R</a></li>
+                                <li><a href="">Ruby</a></li>
+                                <li><a href="">SQL</a></li>
+                                <li><a href="">Swift</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div>
+                                <h2>Career building</h2>
+                                <ul>
+                                    <li><a href="">Career paths</a></li>
+                                    <li><a href="">Career center</a></li>
+                                    <li><a href="">Interview prep</a></li>
+                                    <li><a href="">Professionnal cenrtificatin</a></li>
+                                    <li><a href="">Compare to bootcamps</a></li>
+                                    <li><a href="">-</a></li>
+                                    <li><a href="">Full Catalog</a></li>
+                                    <li><a href="">Beta Content</a></li>
+                                    <li><a href="">Roadmap</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2>Mobile</h2>
+                                <a href=""><img src="./assets/img/download.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Footer__End">
+                    <ul class="Footer__End-List">
+                        <li>
+                            <a href="" class="Footer__End-Item">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="" class="Footer__End-Item">Cookie Policy</a>
+                        </li>
+                        <li>
+                            <a href="" class="Footer__End-Item">Do Not Sell My Personal Information</a>
+                        </li>
+                        <li>
+                            <a href="" class="Footer__End-Item">Terms</a>
+                        </li>
+                    </ul>
+                    <div class="Footer__End-MadeWith">Made with  <span>❤️</span> in NYC ©  2024  Codecademy</div>
                 </div>
             </div>
         </footer>

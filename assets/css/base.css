@@ -5,6 +5,8 @@
 }
 
 :root {
+    --color-white: #fff;
+    --color-black: #000;
     --color-background: #fff;
     --color-background-current: #FFF0E5;
     --color-text: #10162F;
@@ -15,6 +17,7 @@
     --color-secondary: #10162F;
     --color-background-hover: rgba(16, 22, 47, 0.12);
     --color-background-selected: rgba(16, 22, 47, 0.04);
+    --color-blue-100: #D3F2FF;
 }
 
 body {
@@ -29,6 +32,10 @@ body {
 
 button, input {
     overflow: visible;
+}
+
+span {
+    font-family: "Apercu", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
 .all-display {
@@ -47,14 +54,41 @@ button, input {
     margin-left: 10px;
 }
 
-.mr-10 {
+.mr-10 { 
     margin-right: 10px;
+}
+
+.mt-auto {
+    margin-top: auto;
 }
 
 .pb-05rem {
     padding-bottom: 0.5rem;
 }
 
+.FlexBox__Column {
+    display: flex;
+    flex-direction: column;
+}
 
+.FlexBox__Align-Center {
+    display: flex;
+    align-items: center;
+}
 
+.FlexBox__Two-Ele-Wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
+.FlexBox__Two-Ele {
+    display: flex;
+    justify-content: space-between;
+}
+
+.FlexBox__Column-Width {
+    display: flex;
+    max-width: 500px;
+    flex-direction: column;
+}
