@@ -38,6 +38,73 @@
         display: inline-block;
         text-align: right;
     }
+    .Footer__Layout-Grid-Column {
+        grid-column-end: span 6;
+    }
+    .Company {
+        grid-column-end: span 4;
+    }
+    .Resources {
+        order: 2;
+        grid-column-end: span 4;
+    }
+    .Support {
+        margin-top: 1.5rem;
+        display: unset;
+    }
+    .Plans {
+        order: 3;
+        grid-column-end: span 4;
+    }
+    .Community {
+        margin-top: 1.5rem;
+    }
+    .Footer__Logo {
+        display: block;
+    }
+    .Footer__Logo-Box {
+        display: flex;
+        flex-direction: column;
+    }
+    .Footer__List-Left-Item {
+        margin: 0.15rem 0;
+    }
+    .Footer__H2 {
+        font-size: 1rem;
+        margin-top: 0;
+    }
+    .Footer__Logo-Box > span {
+        font-size: 1rem;
+        margin-top: 0;
+    }
+    .Footer__Layout-Line {
+        padding-left: 4rem;
+        border-left: 1px solid var(--color-border);
+        border-top: none;
+        margin-left: 0;
+        margin-top: 0;
+        padding-left: 2rem;
+        padding-top: 0;
+    }
+    .Subjects,
+    .Languages {
+        grid-column-end: span 4;
+    }
+    .Career {
+        grid-column-end: span 4;
+    }
+    .Footer__List-Right {
+        max-height: none;
+    }
+    .Footer__List-Right-Item {
+        margin: 0.15rem 0;
+    }
+    .Mobile {
+        display: unset;
+    }
+    .Mobile__Box {
+        width: 90%;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -120,6 +187,73 @@
         display: inline-block;
         text-align: right;
     }
+    .Footer__Layout-Grid-Column {
+        grid-column-end: span 6;
+    }
+    .Company {
+        grid-column-end: span 4;
+    }
+    .Resources {
+        order: 2;
+        grid-column-end: span 4;
+    }
+    .Support {
+        margin-top: 1.5rem;
+        display: unset;
+    }
+    .Plans {
+        order: 3;
+        grid-column-end: span 4;
+    }
+    .Community {
+        margin-top: 1.5rem;
+    }
+    .Footer__Logo {
+        display: block;
+    }
+    .Footer__Logo-Box {
+        display: flex;
+        flex-direction: column;
+    }
+    .Footer__List-Left-Item {
+        margin: 0.15rem 0;
+    }
+    .Footer__H2 {
+        font-size: 1rem;
+        margin-top: 0;
+    }
+    .Footer__Logo-Box > span {
+        font-size: 1rem;
+        margin-top: 0;
+    }
+    .Footer__Layout-Line {
+        padding-left: 4rem;
+        border-left: 1px solid var(--color-border);
+        border-top: none;
+        margin-left: 0;
+        margin-top: 0;
+        padding-left: 2rem;
+        padding-top: 0;
+    }
+    .Subjects,
+    .Languages {
+        grid-column-end: span 4;
+    }
+    .Career {
+        grid-column-end: span 4;
+    }
+    .Footer__List-Right {
+        max-height: none;
+    }
+    .Footer__List-Right-Item {
+        margin: 0.15rem 0;
+    }
+    .Mobile {
+        display: unset;
+    }
+    .Mobile__Box {
+        width: 90%;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1201px) {
@@ -145,6 +279,60 @@
     }
     .Footer__Layout-Grid {
         padding: 2rem 0;
+    }
+    .Company {
+        grid-column-end: span 4;
+    }
+    .Resources {
+        order: 2;
+        grid-column-end: span 4;
+    }
+    .Support {
+        margin-top: 1.5rem;
+        display: unset;
+    }
+    .Plans {
+        order: 3;
+        grid-column-end: span 4;
+    }
+    .Community {
+        margin-top: 1.5rem;
+    }
+    .Footer__Logo {
+        display: block;
+    }
+    .Footer__Logo-Box {
+        display: flex;
+        flex-direction: column;
+    }
+    .Footer__List-Left-Item {
+        font-size: 1rem;
+        margin: 0.25rem 0;
+    }
+    .Footer__H2 {
+        font-size: 1rem;
+        margin-top: 0;
+    }
+    .Footer__Logo-Box > span {
+        font-size: 1rem;
+        margin-top: 0;
+    }
+    .Footer__Layout-Line {
+        padding-top: 2rem;
+    }
+    .Subjects,
+    .Languages {
+        grid-column-end: span 4;
+    }
+    .Career {
+        grid-column-end: span 4;
+    }
+    .Footer__List-Right-Item {
+        font-size: 1rem;
+        margin: 0.25rem 0;
+    }
+    .Mobile {
+        display: unset;
     }
 }
 
