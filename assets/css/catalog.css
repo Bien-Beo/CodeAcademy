@@ -365,6 +365,11 @@
 
 .Main__Botton-right{
     grid-column-end: span 9;
+    grid-template-columns: minmax(0, 1fr);
+    display: -ms-grid;
+    padding-top: 0.5rem;
+    padding-bottom: 4rem;
+    row-gap: 2rem;
 }
 .Main__Botton-right-Margin{
     margin-bottom: 2rem;
@@ -375,6 +380,10 @@
 .Main__Botton-right-Header-Box{
     -webkit-box-pack: justify;
     justify-content: space-between;
+    display: flex;
+    padding-bottom: 0.5rem;
+    -webkit-box-align: baseline;
+    align-items: baseline;
 }
 
 .Main__Botton-right-Header-Box-Display{
@@ -506,6 +515,7 @@
     align-items: stretch;
     display: grid;
     width: 100%;
+    text-decoration: none;
 }
 .Border_flex_Box-Background:before{
     content: '';
@@ -545,6 +555,51 @@
     
 }
 
+.Border_flex_Box-Second{
+    --color-background-current: var(--color-white);
+    color: var(--color-text);
+    border: 1px solid var(--color-secondary);
+    border-color: var(--color-navy);
+    padding: 1rem;
+    display: flex;
+    height: 11.25rem;
+    background-color: var(--color-background-current);
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 4px;
+    background-image: url(https://static-assets.codecademy.com/assets/components/cards/explore-category-card/language/python.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: box-shadow 200ms ease, transform 200ms ease;
+    box-shadow: 0px 0px 0 currentColor;
+    position: relative;
+}
+
+.Border_flex_Box-Third{
+    --color-background-current: var(--color-white);
+    color: var(--color-text);
+    border: 1px solid var(--color-secondary);
+    border-color: var(--color-navy);
+    padding: 1rem;
+    display: flex;
+    height: 11.25rem;
+    background-color: var(--color-background-current);
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 4px;
+    background-image: url(https://static-assets.codecademy.com/assets/components/cards/explore-category-card/language/javascript.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: box-shadow 200ms ease, transform 200ms ease;
+    box-shadow: 0px 0px 0 currentColor;
+    position: relative;
+}
 .Border_flex_Box-first-Lettle{
     padding: 1.5rem;
     width: 100%;
@@ -569,4 +624,118 @@
     line-height: 1.3;
     font-size: 1.375rem;
     margin: 0;
+}
+
+/*Featured courses and paths*/
+.Border_flex-Featured{
+    display: flex;
+    padding-top: 0.25rem;
+    padding-bottom: 6px;
+    width: 100%;
+}
+
+.Border_flex-Featured-Background{
+    border: none;
+    padding: 0;
+    font-size: inherit;
+    white-space: initial;
+    box-shadow: none;
+    display: inline-block;
+    position: relative;
+    color: var(--color-text);
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+}
+
+.Border_flex-Featured-Background:before{
+    content: '';
+    border: 2px solid var(--color-secondary);
+    border-color: var(--color-primary);
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    bottom: -4px;
+    left: -4px;
+    z-index: 0;
+    opacity: 0;
+    border-radius: 4px;
+}
+
+.Border_flex-Featured-first{
+    --color-background-current: var(--color-white);
+    color: var(--color-text);
+    border: 1px solid var(--color-secondary);
+    border-color: var(--color-text);
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    height: 100%;
+    background-color: var(--color-background-current);
+    flex-direction: column;
+    border-radius: 4px;
+    transition: box-shadow 200ms ease, transform 200ms ease;
+    box-shadow: 0px 0px 0 currentColor;
+    position: relative;
+}
+
+.Border_flex-Featured-first-Lettle{
+    --color-background-current: var(--color-green-100);
+    color: var(--color-text);
+    background-color: var(--color-background-current);
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 0.75rem;
+    box-shadow: inset 0 0 0 1px var(--color-white);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.Border_flex-Featured-first-Lettle-Free{
+    display: inline-block;
+    margin: 0;
+    font-family: "Suisse", "Apercu", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 0.875rem;
+}
+
+.Border_flex-Featured-Display{
+    display: grid;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    height: 100%;
+    grid-auto-flow: column;
+}
+
+.Featured-Display-TextAlign{
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+}
+
+.Featured-Display-TextAlign-Lettle{
+    font-weight: 700;
+    line-height: 1.3;
+    font-size: 1.25rem;
+    margin: 0;
+    padding-top: 0.75rem;
+    padding-bottom: 0.25rem;
+    text-decoration: none;
+}
+
+.Featured-Display-TextAlign-Lettle-2{
+    text-overflow: ellipsis;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 0.875rem;
+    margin: 0;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    text-decoration: none;
 }
