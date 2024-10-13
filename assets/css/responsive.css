@@ -78,7 +78,7 @@
         margin-top: 0;
     }
     .Footer__Layout-Line {
-        padding-left: 4rem;
+        padding-left: 4rem !important;
         border-left: 1px solid var(--color-border);
         border-top: none;
         margin-left: 0;
