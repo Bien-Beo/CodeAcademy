@@ -105,6 +105,22 @@
     .Mobile__Box {
         width: 90%;
     }
+    .Profile__Wrapper {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+    .Profile__Wrapper-MarginTop {
+        margin-bottom: 6rem;
+    }
+    .Profile__Container-Layout-Left {
+        grid-column-end: span 3;
+    }
+    .Profile__Container-Layout-Right {
+        grid-column-end: span 6;
+    }
+    .Button__EditProfile {
+        display: unset;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -254,13 +270,30 @@
     .Mobile__Box {
         width: 90%;
     }
+    .Profile__Wrapper {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+    .Profile__Wrapper-MarginTop {
+        margin-bottom: 6rem;
+    }
+    .Profile__Container-Layout-Left {
+        grid-column-end: span 3;
+    }
+    .Profile__Container-Layout-Right {
+        grid-column-end: span 6;
+    }
+    .Button__EditProfile {
+        display: unset !important;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1201px) {
     .Box__Header-Nav, .Container__Box {
         padding-left: 4rem;
         padding-right: 4rem;
-    }.Layout__Grid-Item-Right-Child1 {
+    }
+    .Layout__Grid-Item-Right-Child1 {
         flex-direction: row;
         align-items: center;
     }
@@ -334,6 +367,22 @@
     .Mobile {
         display: unset;
     }
+    .Profile__Wrapper {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .Profile__Wrapper-MarginTop {
+        margin-bottom: 6rem;
+    }
+    .Profile__Container-Layout-Left {
+        grid-column-end: span 4;
+    }
+    .Profile__Container-Layout-Right {
+        grid-column-end: span 8;
+    }
+    .Button__EditProfile {
+        display: unset;
+    }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -356,6 +405,10 @@
         grid-column-end: span 12;
     }
     .Footer__Container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .Profile__Wrapper {
         padding-left: 2rem;
         padding-right: 2rem;
     }
