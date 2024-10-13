@@ -27,7 +27,6 @@
     --color-navy-800: #10162F;
     --color-hyper-500: #3A10E5;
     --color-text-disabled: var(--color-navy-500);
-    --color-primary: var(--color-hyper-500);
 }
 
 body {

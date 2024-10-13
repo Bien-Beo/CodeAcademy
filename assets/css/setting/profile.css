@@ -1,0 +1,128 @@
+.Profile__Wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 1440px;
+}
+
+.Profile__Wrapper-MarginTop {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.Profile__Wrapper-Layout {
+    grid-template-columns: repeat(12, minmax(0px, 1fr));
+    display: grid;
+    width: 100%;
+    gap: 2rem min(9.09091%, 2rem);
+}
+
+.Profile__Container-Layout-Left {
+    grid-template-columns: minmax(0px, 1fr);
+    display: grid;
+    align-content: start;
+    grid-column-end: span 12;
+}
+
+.Profile__Container-Avatar {
+    position: relative;
+    height: 7.5rem;
+    width: 7.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.Profile__Container-Avatar > img {
+    display: block;
+    border-radius: 99rem;
+    height: 7.5rem;
+    width: 7.5rem;
+    object-fit: cover;
+}
+
+.Profile__Container-NameID {
+    display: inline-block;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0px;
+    font-size: 1.625rem;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+.Profile__Container-FullName {
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 1rem;
+    margin: 0px;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+.Button__EditProfile {
+    display: none;
+    padding: 0.75rem 0px;
+}
+
+.Button__EditProfile-Link {
+    cursor: pointer;
+    box-shadow: none;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    position: relative;
+    font-weight: 600;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    font-size: 1rem;
+    min-width: 40px;
+    height: 40px;
+    color: var(--color-primary);
+    background: none transparent;
+    text-decoration: none;
+    transition: border-color 150ms ease-in, color 150ms ease-in, background-color 150ms ease-in, box-shadow 150ms ease-in;
+    white-space: nowrap;
+    border-radius: 4px;
+    border-color: var(--color-primary);
+    border: 2px solid;
+}
+
+.Button__EditProfile-Link::before {
+    content: "";
+    transition: opacity 150ms linear;
+    border: 2px solid var(--color-primary);
+    position: absolute;
+    inset: -5px;
+    z-index: 0;
+    opacity: 0;
+    border-radius: 8px;
+}
+
+
+.Button__EditProfile-Link:hover {
+    transition: background-color 150ms ease-in, box-shadow 150ms ease-in;
+    background-color: var(--color-background-hover);
+}
+
+.Profile__Container-Layout-Right {
+    grid-template-columns: minmax(0px, 1fr);
+    display: grid;
+    grid-column-end: span 12;
+}
+
+.Profile__Container-Layout-Right > div {
+    display: flex;
+    margin-bottom: 3rem;
+    flex-direction: column;
+}
+
+.Profile__Container-Heaader {
+    display: flex;
+    margin-bottom: 0.5rem;
+    height: 2.5rem;
+    justify-content: space-between;
+}
