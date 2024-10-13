@@ -13,11 +13,22 @@
     --elements-headerZ: 15;
     --headerHeight: 4rem;
     --color-border: #10162F;
+    --color-green-100: #EAFDC6;
     --color-primary: #3A10E5;
-    --color-secondary: #10162F;
+    --color-secondary: var(--color-navy-800);
     --color-background-hover: rgba(16, 22, 47, 0.12);
     --color-background-selected: rgba(16, 22, 47, 0.04);
     --color-blue-100: #D3F2FF;
+    --color-white-100: rgba(255, 255, 255, 0.04);
+    --color-white-400: rgba(255, 255, 255, 0.33);
+    --color-white-600: rgba(255, 255, 255, 0.65);
+    --color-blue-400: #3388FF;
+    --color-secondary: var(--color-white);
+    --color-navy-500: rgba(16, 22, 47, 0.63);
+    --color-navy-800: #10162F;
+    --color-hyper-500: #3A10E5;
+    --color-text-disabled: var(--color-navy-500);
+    --color-primary: var(--color-hyper-500);
 }
 
 body {

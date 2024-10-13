@@ -1,0 +1,741 @@
+.Main{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: clip;
+    margin-bottom: 2rem;
+    color: var(--color-white-600);
+    background-color: var(--color-text);
+    position: relative;
+    
+}
+.Banner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.Main__FlexBox-ContentContainer{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    z-index: 2;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 1440px;
+}
+.Main__FlexBox-VariableProvider{
+    color: var(--color-white);
+    padding: 1rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    background-color: var( --color-text);
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+   
+    align-items: center;
+    -webkit-flex-direction: column;
+    
+    flex-direction: column;
+    
+}
+.Main__FlexBox-VariableProvider-Title-StyledText{
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 4rem;
+    margin: 0;
+    font-size: 2.125rem;
+}
+.Main__FlexBox-VariableProvider-StyledText{
+    font-size: inherit;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 1.125rem;
+    margin: 0;
+    text-align: center;
+    margin-top: 0.5rem;
+
+}
+
+.Main__FlexBox-FourBox{
+    display: flex;
+    padding: 0;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.Main__FlexBox-FourBox-1{
+    display: block;
+    list-style-type: none;
+}
+.FourBox-ResetElement1{
+    cursor: pointer;
+    color: var(--color-white);
+    text-decoration: none;
+    box-shadow: none;
+    
+    -webkit-font-smoothing: antialiased;
+   
+    
+    transition: border-color 150ms ease-in, color 150ms ease-in, background-color 150ms ease-in, box-shadow 150ms ease-in;
+    border: 2px solid var(--color-secondary);
+    
+    
+    -webkit-box-pack: center;
+    
+    -webkit-box-align: center;
+    
+    align-items: center;
+    
+    display: inline-flex;
+    
+    border-radius: 4px;
+    
+    font-weight: 700;
+    
+    font-size: 0.875rem;
+    min-width: 32px;
+   
+   
+    justify-content: left;
+    padding: 6px 8px;
+    height: auto;
+    background: var(--color-white-100);
+    position: relative;
+    border-width: 1px;
+    border-color: var(--color-white-400);
+    white-space: normal;
+    text-align: left;
+    width: 100%;
+}
+.Main__FlexBox-FourBox-1{
+    display: block;
+    list-style-type: none;
+}
+.FourBox-banner1{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: clip;
+    border-radius: 4px;
+}
+
+.FourBox-start{
+    width: 12px;
+    height: 12px;
+    color: var(--color-blue-400);
+    margin-right: 0.5rem;
+}
+
+.Main__FlexBox-Ask{
+    width: 640px;
+    display: inline-block;
+    margin-top: 1.5rem;
+}
+.Main__FlexBox-Ask-Box{
+    color: var(--color-text);
+    position: relative;
+}
+.Main__FlexBox-Ask-Box-Input{
+    outline: none;
+    border-color: var(--color-text-disabled);
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 1rem;
+    width: 100%;
+    min-width: auto;
+    border-radius: 4px;
+    color: var(--color-text);
+    text-indent: 0;
+    padding-right: 2.3rem;
+    border: none;
+    background: var(--color-white);
+    padding-left: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.Main__FlexBox-Arrow{
+    display: flex;
+    padding-right: 0.75rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.Main__FlexBox-Arrow-svg{
+    width: 24px;
+    height: 24px;
+}
+
+.Ask{
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 0.875rem;
+    margin: 0;
+    font-family: "Suisse", "Apercu", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    margin-top: 2rem;
+}
+
+.Ask__Text-1 {
+    font-size: inherit;
+    display: inline-block;
+    margin: 0;
+}
+
+.Ask__Text-Setup{
+    border: none;
+    padding: 0;
+    font-size: inherit;
+    white-space: initial;
+    box-shadow: none;
+    display: inline-block;
+    position: relative;
+    color: var(--color-white);
+    background-color: transparent;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.Main__Botton{
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.Main__Botton-Colums{
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    display: grid;
+    width: 100%;
+}
+
+.Main__Botton-left{
+    padding-top: 0;
+    padding-bottom: 0;
+    grid-column-end: span 3;
+}
+
+.desktopMenu{
+    display:block;
+}
+
+.Main__Botton-left-Cover{
+    padding-bottom: 2rem;
+    position: relative;
+    left: -4px;
+}
+
+.Main__Botton-left-All{
+    cursor: pointer;
+    background: none;
+    text-decoration: none;
+    border: none;
+    padding: 0;
+    font-size: inherit;
+    white-space: initial;
+    box-shadow: none;
+    position: relative;
+    color: var(--color-text);
+    background-color: transparent;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    display: flex;
+}
+
+.Main__Botton-left-All-Text{
+    display: inline-block;
+    font-weight: 700;
+    line-height: 1.3;
+    font-size: 1.25rem;
+    margin: 0;
+    text-align: left;
+}
+
+.Main__Botton-left-All-SVG{
+    width: 14px;
+    height: 14px;
+    margin-left: 0.75rem;
+    position: relative;
+    top: 4px;
+    transition: transform 350ms ease-out;
+    transform: rotate(180deg);
+}
+
+.Main__Botton-left-Box{
+    overflow: hidden;
+}
+
+.Main__Botton-left-Content{
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.Main__Botton-left-Content-text{
+    border: none;
+    padding: 0;
+    font-size: inherit;
+    white-space: initial;
+    box-shadow: none;
+    position: relative;
+    color: var(--color-text);
+    background-color: transparent;
+    display: block;
+    text-decoration: none;
+}
+
+.Main__Botton-left-Content-text-letter{
+    display:flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.Main__Botton-left-Mid{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.Main__Botton-left-Mid-text{
+    border: none;
+    padding: 0;
+    font-size: inherit;
+    white-space: initial;
+    box-shadow: none;
+    position: relative;
+    color: var(--color-text);
+    background-color: transparent;
+    display: block;
+}
+
+.Main__Botton-left-Botton{
+    padding-bottom: 0;
+}
+
+.Main__Botton-left-Botton-Text{
+    cursor: pointer;
+    background: none;
+    padding: 0;
+    text-decoration: none;
+    box-shadow: none;
+    -webkit-font-smoothing: antialiased;
+    transition: border-color 150ms ease-in, color 150ms ease-in, background-color 150ms ease-in, box-shadow 150ms ease-in;
+    border: 2px solid var(--color-secondary);
+    white-space: nowrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    display: inline-flex;
+    position: relative;
+    border-radius: 4px;
+    font-weight: 700;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    font-size: 1rem;
+    min-width: 40px;
+    height: 40px;
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+    background-color: transparent;
+}
+
+.Main__Botton-right{
+    grid-column-end: span 9;
+    grid-template-columns: minmax(0, 1fr);
+    display: -ms-grid;
+    padding-top: 0.5rem;
+    padding-bottom: 4rem;
+    row-gap: 2rem;
+}
+.Main__Botton-right-Margin{
+    margin-bottom: 2rem;
+}
+.Main__Botton-right-Display{
+    display:block;
+}
+.Main__Botton-right-Header-Box{
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    display: flex;
+    padding-bottom: 0.5rem;
+    -webkit-box-align: baseline;
+    align-items: baseline;
+}
+
+.Main__Botton-right-Header-Box-Display{
+    display: flex;
+    padding-bottom: 0;
+    justify-content: space-between;
+}
+
+.Main__Botton-right-Header-SVG{
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5rem;
+}
+
+.Main__Botton-right-Header-Lettle{
+    font-weight: 700;
+    line-height: 1.3;
+    font-size: 1.375rem;
+    margin: 0;
+    padding-bottom: 0.5rem;
+}
+
+.Main__Botton-right-Header-Box-Arrow{
+    padding-right: 0;
+    display: flex;
+}
+
+.Main__Botton-right-Header-Box-Arrow-backward{
+    font-size: inherit; 
+    border: none;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    left: -9999px;
+    color: transparent;
+    margin: 0;
+}
+
+.Main__Botton-right-Header-Box-ArrowBox{
+    display: inline-flex;
+    position: relative;
+}
+
+.Header-Box-ArrowBox-TargetContainer{
+    cursor: pointer;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.Header-Box-ArrowBox-createButtonComponent{
+    color: var(--color-text-disabled);
+    background-color: transparent;
+}
+
+.Header-Box-ArrowBox-createButtonComponent-SVG{
+    width: 24px;
+    height: 24px;
+}
+
+.Main__Botton-right-Header-Box-Arrow-forward{
+    font-size: inherit;
+    border: none;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    left: -9999px;
+    color: transparent;
+    margin: 0;
+}
+.IMG_Develop{
+    margin-top: 8px;
+}
+
+.Main__Botton-right-Border-Box{
+    transform: translateX(-1rem);
+    width: calc(100% + 2rem);
+}
+
+.right-Border-BoxLanguages{
+    visibility: visible;
+    position: relative;
+}
+
+.right-Border-BoxLanguages-Padding{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.splide__list{
+    backface-visibility: hidden;
+    display: flex;
+    height: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.Border_flex{
+    display: flex;
+    flex-shrink: 0;
+}
+
+.Border_flex_Box{
+    display: flex;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-right: 0.25rem;
+    width: 100%;
+}
+
+.Border_flex_Box-Background{
+    border: none;
+    padding: 0;
+    font-size: inherit;
+    white-space: initial;
+    box-shadow: none;
+    position: relative;
+    color: var(--color-text);
+    background-color: transparent;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    display: grid;
+    width: 100%;
+    text-decoration: none;
+}
+.Border_flex_Box-Background:before{
+    content: '';
+    border: 2px solid var(--color-secondary);
+    border-color: var(--color-primary);
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    bottom: -4px;
+    left: -4px;
+    z-index: 0;
+    opacity: 0;
+    border-radius: 4px; 
+}
+
+.Border_flex_Box-first{
+    --color-background-current: var(--color-white);
+    color: var(--color-text);
+    border: 1px solid var(--color-secondary);
+    border-color: var(--color-navy);
+    padding: 1rem;
+    display: flex;
+    height: 11.25rem;
+    background-color: var(--color-background-current);
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 4px;
+    background-image: url(https://static-assets.codecademy.com/assets/components/cards/explore-category-card/subject/artificial-intelligence.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: box-shadow 200ms ease, transform 200ms ease;
+    box-shadow: 0px 0px 0 currentColor;
+    position: relative;
+    
+}
+
+.Border_flex_Box-Second{
+    --color-background-current: var(--color-white);
+    color: var(--color-text);
+    border: 1px solid var(--color-secondary);
+    border-color: var(--color-navy);
+    padding: 1rem;
+    display: flex;
+    height: 11.25rem;
+    background-color: var(--color-background-current);
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 4px;
+    background-image: url(https://static-assets.codecademy.com/assets/components/cards/explore-category-card/language/python.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: box-shadow 200ms ease, transform 200ms ease;
+    box-shadow: 0px 0px 0 currentColor;
+    position: relative;
+}
+
+.Border_flex_Box-Third{
+    --color-background-current: var(--color-white);
+    color: var(--color-text);
+    border: 1px solid var(--color-secondary);
+    border-color: var(--color-navy);
+    padding: 1rem;
+    display: flex;
+    height: 11.25rem;
+    background-color: var(--color-background-current);
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 4px;
+    background-image: url(https://static-assets.codecademy.com/assets/components/cards/explore-category-card/language/javascript.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: box-shadow 200ms ease, transform 200ms ease;
+    box-shadow: 0px 0px 0 currentColor;
+    position: relative;
+}
+.Border_flex_Box-first-Lettle{
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 17.5rem;
+    background-color: var(--color-white);
+}
+
+.Border_flex_Box-first-Lettle-Explore{
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.Box-first{
+    display: flex;
+    align-items: center;
+}
+
+.Box-first-Lettle{
+    font-weight: 700;
+    line-height: 1.3;
+    font-size: 1.375rem;
+    margin: 0;
+}
+
+/*Featured courses and paths*/
+.Border_flex-Featured{
+    display: flex;
+    padding-top: 0.25rem;
+    padding-bottom: 6px;
+    width: 100%;
+}
+
+.Border_flex-Featured-Background{
+    border: none;
+    padding: 0;
+    font-size: inherit;
+    white-space: initial;
+    box-shadow: none;
+    display: inline-block;
+    position: relative;
+    color: var(--color-text);
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+}
+
+.Border_flex-Featured-Background:before{
+    content: '';
+    border: 2px solid var(--color-secondary);
+    border-color: var(--color-primary);
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    bottom: -4px;
+    left: -4px;
+    z-index: 0;
+    opacity: 0;
+    border-radius: 4px;
+}
+
+.Border_flex-Featured-first{
+    --color-background-current: var(--color-white);
+    color: var(--color-text);
+    border: 1px solid var(--color-secondary);
+    border-color: var(--color-text);
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    height: 100%;
+    background-color: var(--color-background-current);
+    flex-direction: column;
+    border-radius: 4px;
+    transition: box-shadow 200ms ease, transform 200ms ease;
+    box-shadow: 0px 0px 0 currentColor;
+    position: relative;
+}
+
+.Border_flex-Featured-first-Lettle{
+    --color-background-current: var(--color-green-100);
+    color: var(--color-text);
+    background-color: var(--color-background-current);
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 0.75rem;
+    box-shadow: inset 0 0 0 1px var(--color-white);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.Border_flex-Featured-first-Lettle-Free{
+    display: inline-block;
+    margin: 0;
+    font-family: "Suisse", "Apercu", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 0.875rem;
+}
+
+.Border_flex-Featured-Display{
+    display: grid;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    height: 100%;
+    grid-auto-flow: column;
+}
+
+.Featured-Display-TextAlign{
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+}
+
+.Featured-Display-TextAlign-Lettle{
+    font-weight: 700;
+    line-height: 1.3;
+    font-size: 1.25rem;
+    margin: 0;
+    padding-top: 0.75rem;
+    padding-bottom: 0.25rem;
+    text-decoration: none;
+}
+
+.Featured-Display-TextAlign-Lettle-2{
+    text-overflow: ellipsis;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 0.875rem;
+    margin: 0;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    text-decoration: none;
+}
