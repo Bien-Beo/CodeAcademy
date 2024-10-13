@@ -76,7 +76,8 @@
     color: var(--color-primary);
 }
 
-.SideBar__Button::before {
+
+.Page__Current:first-child::before {
     min-height: 48px;
     content: '';
     background-color: var(--color-text) !important;
@@ -1187,7 +1188,33 @@
     text-overflow: ellipsis;
     margin: 0;
     text-align: left;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
+    overflow: hidden;   
+}
+
+.SVG__ProgressBar {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+.Data__ProgressBar {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    width: 74%;
+    box-shadow: 0.5px 0 0 0.5px var(--color-border);
+    transition: width 0.5s;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    position: relative;
+    color: var(--color-border);
+    background-color: #FFD300;
+}
+
+.Data__ProgressBar > span {
+    font-weight: bold;
+    padding: 0.5rem;
+    text-align: right;
+    width: 100%;
 }

@@ -58,7 +58,7 @@
                             </div>
                         </li>
                         <li class="Nav__Ele">
-                            <a href="" class="Nav__Ele-Link">Career Center</a>
+                            <a href="./notfound.html" class="Nav__Ele-Link">Career Center</a>
                         </li>
                         <li class="Nav__Ele">
                             <a href="" class="Nav__Ele-Link">For Business</a>
@@ -98,7 +98,7 @@
                         <nav class="SideBar__Nav">
                             <ul class="SideBar__List">
                                 <div class="pb-05rem">
-                                    <li>
+                                    <li class="Page__Current">
                                         <button class="SideBar__Button">
                                             <img src="./assets/img/dashboard.png" alt="Dashboard" style="height: 22px; width: 22px;" class="mr-10">
                                             <span>Dashboard</span>
@@ -107,7 +107,7 @@
                                 </div>
                                 <div class="pb-05rem">
                                     <li>
-                                        <button class="SideBar__Button">
+                                        <button class="SideBar__Button" style="background-color: inherit;">
                                             <img src="./assets/img/book.png" alt="Book" style="height: 25px; width: 25px;" class="mr-10">
                                             <span>My learning</span>
                                         </button>
@@ -115,7 +115,7 @@
                                 </div>
                                 <div class="pb-05rem">
                                     <li>
-                                        <button class="SideBar__Button">
+                                        <button class="SideBar__Button" style="background-color: inherit;">
                                             <img src="./assets/img/calendar.png" alt="Calendar" style="height: 25px; width: 25px;" class="mr-10">
                                             <span>Events</span>
                                         </button>
@@ -123,7 +123,7 @@
                                 </div>
                                 <div class="pb-05rem">
                                     <li>
-                                        <button class="SideBar__Button">
+                                        <button class="SideBar__Button" style="background-color: inherit;">
                                             <img src="./assets/img/puzzle.png" alt="Puzzle" style="height: 25px; width: 25px;" class="mr-10">
                                             <span style="display: flex;">Projects
                                                 <div class="SideBar__Button-Upgrade">Upgrade</div>
@@ -133,7 +133,7 @@
                                 </div>
                                 <div class="pb-05rem">
                                     <li>
-                                        <button class="SideBar__Button">
+                                        <button class="SideBar__Button" style="background-color: inherit;">
                                             <img src="./assets/img/workspace.png" alt="Workspaces" style="height: 22px; width: 22px;" class="mr-10">
                                             <span>Workspaces</span>
                                         </button>
@@ -161,8 +161,23 @@
                             <div class="Content__Item-Progress-Wrapper">
                                 <div class="Content__Item-Progress-Bar">
                                     <label>Progress: 4%</label>
-                                    <div class="bgr"></div>
-                                    <div></div>
+                                    <svg fill="currentColor" role="img" aria-hidden="true" class="SVG__ProgressBar">
+                                        <title>Diagonal A Dense</title>
+                                        <pattern id="DiagonalADense-pattern" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
+                                            <rect width="1" height="1" fill="currentColor"></rect>
+                                            <rect x="2" y="2" width="1" height="1" fill="currentColor"></rect>
+                                            <rect x="1" y="2" width="1" height="1" fill="currentColor"></rect>
+                                            <rect x="1" y="3" width="1" height="1" fill="currentColor"></rect>
+                                            <rect y="3" width="1" height="1" fill="currentColor"></rect>
+                                            <rect x="3" width="1" height="1" fill="currentColor"></rect>
+                                            <rect x="3" y="1" width="1" height="1" fill="currentColor"></rect>
+                                            <rect x="2" y="1" width="1" height="1" fill="currentColor"></rect>
+                                        </pattern>
+                                        <rect width="100%" height="100%" fill="url(#DiagonalADense-pattern)"></rect>
+                                    </svg>
+                                    <div data-testid="progress-bar-bar" class="Data__ProgressBar">
+                                        <span aria-hidden="true">74%</span>
+                                    </div>
                                 </div>
                                 <div class="Content__Item-Container">
                                     <div class="Content__Item-Box">
@@ -498,7 +513,7 @@
                                         <div class="Content__Item-List-Ele-Box">
                                             <div class="FlexBox__Two-Ele">
                                                 <div style="display: flex;">
-                                                    <i class="fa-solid fa-people-line" style="margin-right: 1rem;"></i>
+                                                    <img src="./assets/img/people.png" alt="" style="width: 24px; height: 24px; margin-right: 1rem;">
                                                     <div class="FlexBox__Column-Width">
                                                         <span>Interview Simulator</span>
                                                         <span>Practice your interviewing skills and get real-time, AI-powered feedback.</span>
@@ -516,7 +531,7 @@
                                         <div class="Content__Item-List-Ele-Box">
                                             <div class="FlexBox__Two-Ele">
                                                 <div  style="display: flex;">
-                                                    <i class="fa-regular fa-clock" style="margin-right: 1rem;"></i>
+                                                    <img src="./assets/img/gauge.png" alt="" style="width: 26px; height: 26px; margin-right: 1rem;">
                                                     <div class="FlexBox__Column-Width">
                                                         <span>Job-readiness checker</span>
                                                         <span>Analyze any job posting to check for the skills you need to ... </span>
@@ -534,14 +549,14 @@
                                         <div class="Content__Item-List-Ele-Box">
                                             <div class="FlexBox__Two-Ele">
                                                 <div  style="display: flex;">
-                                                    <i class="fa-brands fa-discord" style="margin-right: 1rem;"></i>
+                                                    <img src="./assets/img/discord.png" alt="" style="width: 24px; height: 24px; margin-right: 1rem;">
                                                     <div class="FlexBox__Column-Width">
                                                         <span>Discord</span>
                                                         <span>connect with peers around the globe, code together, and help...</span>
                                                     </div>
                                                 </div>
                                                 <div  class="Content__Item-Icon">
-                                                    <i class="fa-solid fa-chevron-right"></i>
+                                                    <img src="./assets/img/share.png" alt="" style="width: 20px; height: 20px;">
                                                 </div>
                                             </div>
                                         </div>
