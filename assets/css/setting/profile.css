@@ -126,3 +126,136 @@
     height: 2.5rem;
     justify-content: space-between;
 }
+
+.Profile__Container-Heaader-Flex {
+    display: flex;
+    align-items: center;
+}
+
+.Profile__Heaader {
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 2.75rem;
+    margin: 0;
+    font-size: 1.375rem;
+}
+
+.Services__List {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.Services__List > li > div {
+    display: flex;
+    padding: 1rem;
+    background-color: var(--color-white);
+    flex-direction: column;
+}
+
+.Services__List h3 {
+    font-weight: 700;
+    line-height: 1.3;
+    font-size: 2.125rem;
+    font-weight: 700;
+    line-height: 1.3;
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.Services__List-Box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Services__List-Box > span {
+    font-size: inherit;
+    display: inline-block;
+    margin: 0;
+    padding: 10px 0px;
+    font-size: 14px;
+}
+
+.Services__List-Box-Button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+    font-size: inherit;
+    text-decoration: none;
+    box-shadow: none;
+    color: var(--color-text);
+    transition: border-color 150ms ease-in, color 150ms ease-in, background-color 150ms ease-in, box-shadow 150ms ease-in;
+    border: 2px solid var(--color-secondary);
+    border-color: transparent;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    position: relative;
+    border-radius: 4px;
+    font-weight: 600;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    font-size: 1rem;
+    min-width: 40px;
+    height: 40px;
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+    background-color: transparent;
+    width: fit-content;
+    align-self: flex-end;
+}
+
+.Services__List-Box-Button:before {
+    content: "";
+    transition: opacity 150ms linear;
+    border: 2px solid var(--color-secondary);
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    z-index: 0;
+    opacity: 0;
+    border-radius: 8px;
+}
+
+.Services__List-Box-Button:hover {
+    transition: background-color 150ms ease-in, box-shadow 150ms ease-in;
+    background-color: var(--color-background-hover);
+}
+
+.Img__Pro {
+    height: 24px;
+    width: 24px;
+    margin-left: 10px;
+}
+
+.Profile__Container-Header-Span {
+    font-size: inherit;
+    display: inline-block;
+    margin: 0;
+}
+
+.Profile__Container-Header-Link {
+    border: none;
+    padding: 0;
+    font-size: inherit;
+    white-space: initial;
+    box-shadow: none;
+    display: inline;
+    position: relative;
+    color: var(--color-primary);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.Profile__Container-Header-Link:hover {
+    cursor: pointer;
+    text-decoration: none;
+}

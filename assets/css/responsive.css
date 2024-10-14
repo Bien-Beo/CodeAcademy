@@ -116,7 +116,7 @@
         grid-column-end: span 3;
     }
     .Profile__Container-Layout-Right {
-        grid-column-end: span 6;
+        grid-column-end: span 6 !important;
     }
     .Button__EditProfile {
         display: unset;
@@ -278,7 +278,7 @@
         margin-bottom: 6rem;
     }
     .Profile__Container-Layout-Left {
-        grid-column-end: span 3;
+        grid-column-end: span 3 !important;
     }
     .Profile__Container-Layout-Right {
         grid-column-end: span 6;
@@ -378,7 +378,7 @@
         grid-column-end: span 4;
     }
     .Profile__Container-Layout-Right {
-        grid-column-end: span 8;
+        grid-column-end: span 8 !important;
     }
     .Button__EditProfile {
         display: unset;
