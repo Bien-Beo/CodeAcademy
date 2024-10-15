@@ -646,6 +646,7 @@
     background-color: transparent;
     width: 100%;
     height: 100%;
+    text-decoration: none;
 }
 
 .Border_flex-Featured-Background:before{
@@ -670,7 +671,7 @@
     padding: 0;
     overflow: hidden;
     display: flex;
-    height: 100%;
+    height: 300px;
     background-color: var(--color-background-current);
     flex-direction: column;
     border-radius: 4px;
@@ -736,6 +737,79 @@
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
     text-decoration: none;
+}
+
+.Border_flex-Featured-Margin{
+    margin-top: auto;
+}
+
+.Border_flex-Featured-Dot{
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    height: 0;
+    position: relative;
+}
+
+.Border_flex-Featured-Dot-Svg{
+    width: 100%;
+    margin-top: -1px;
+    display: flex;
+    height: 1px;
+    position: absolute;
+}
+.Border_flex-Featured-Tail{
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+.Border_flex-Featured-Tail-Flex{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.Border_flex-Featured-Tail-PictureColums{
+    display: flex;
+    padding-right: 0.25rem;
+}
+
+.Border_flex-Featured-Tail-PictureColums-SVG{
+    width: 16px;
+    height: 16px;
+}
+
+.Border_flex-Featured-Tail-Lettle{
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 0.875rem;
+    margin: 0;
+    white-space: nowrap;
+    padding-left: 0.25rem;
+}
+
+.Border_flex-Featured-Tail-Lettle-Hours{
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 0.875rem;
+    margin: 0;
+    white-space: nowrap;
+    padding-left: 0.25rem;
+}
+
+/*Ô thứ 2 */
+
+.Border_flex-Featured-first-Lettle-2{
+    color: var(--color-white);
+    background-color: var(--color-text);
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 0.75rem;
+    box-shadow: inset 0 0 0 1px var(--color-white);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
