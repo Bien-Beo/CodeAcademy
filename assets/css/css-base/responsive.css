@@ -1,0 +1,311 @@
+@media only screen and (min-width: 480px) {
+    .Box__Header-Nav,
+    .Container__Box,
+    .Footer__Container,
+    .Profile__Wrapper {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .Cotainer__SkillPath-Item {
+        grid-column-end: span 12;
+    }
+    .Catalog__Menu-Item-1 {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .Catalog__Menu-Item-2 {
+        padding-left: 2rem;
+        grid-column-end: span 12;
+    }
+    .Catalog__Menu-Item-Layout-Column-1 {
+        grid-column-end: span 12;
+    }
+    .Catalog__Menu-Item-3 {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        grid-column-start: 1;
+    }
+    .Catalog__Menu-Item-3-Link-Content {
+        display: flex;
+    }
+    .Catalog__Menu-Career-Layout {
+        grid-column-end: span 12;
+    }
+    .Catalog__Menu-Career-Container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .Catalog__Menu-Career-List-Layout {
+        grid-column-end: span 12;
+    }
+    .Catalog__Menu-Career-List-Item {
+        padding-left: 2rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .Box__Header-Nav,
+    .Container__Box,
+    .Footer__Container,
+    .Profile__Wrapper {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .Cotainer__SkillPath-Item {
+        grid-column-end: span 6;
+    }
+    .Footer__List-Left-Item,
+    .Footer__List-Right-Item {
+        font-size: 1rem;
+        margin: 0.25rem 0;
+    }
+    .Profile__Container-Layout-Left {
+        grid-column-end: span 4;
+    }
+    .Profile__Container-Layout-Right {
+        grid-column-end: span 8 !important;
+    }
+    .Footer__Layout-Line {
+        padding-top: 2rem;
+    }
+    .Company {
+        grid-column-end: span 4;
+    }
+    .Resources {
+        order: 2;
+        grid-column-end: span 4;
+    }
+    .Plans {
+        order: 3;
+        grid-column-end: span 4;
+    }
+    .Footer__Logo {
+        display: block;
+    }
+    .Catalog__Menu-Item-1 {
+        padding: 2rem 4rem;
+    }
+    .Catalog__Menu-Item-2 {
+        padding-left: 4rem;
+    }
+    .Catalog__Menu-Item-3 {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .Catalog__Menu-Career-Container {
+        padding: 2rem 4rem;
+    }
+    .Catalog__Menu-Career-List-Item {
+        padding-left: 4rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .Catalog__Menu-Item-1 {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .Catalog__Menu-Item-2 {
+        padding-left: 3rem;
+    }
+    .Button__Explore {
+        text-align: left;
+    }
+    .Catalog__Menu-Item-3 {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .Catalog__Menu-Career-Container {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .Catalog__Menu-Career-List-Item {
+        padding-left: 3rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    :root {
+        --headerHeight: 5rem;
+    }
+    .Logo__Header-Img {
+        position: relative;
+        left: -10px;
+    }
+    .Layout__Grid-Item-Left {
+        grid-row-end: span 6;
+        grid-column-end: span 8;
+    }
+    .Box__Header-Normal {
+        display: block;
+    }
+    .Container__Box-Layout {
+        gap: 1.5rem;
+    }
+    .Box__Header-Nav,
+    .Container__Box {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+    .Nav__Ele-Link {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1px;
+    }
+    .Layout__Grid {
+        grid-column-gap: 1rem;
+        column-gap: min(calc(100% / 11), 1rem);
+    }
+    .Footer__Container,
+    .Profile__Wrapper {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+    .Profile__Container-Layout-Left {
+        grid-column-end: span 4;
+    }
+    .Profile__Container-Layout-Right {
+        grid-column-end: span 8;
+    }
+    .Cotainer__SkillPath-Item {
+        grid-column-end: span 4;
+    }
+    .Footer__Layout-Line {
+        border-left: 1px solid var(--color-navy);
+        border-top: none;
+        margin-left: 0;
+        margin-top: 0;
+        padding-top: 0;
+        padding-left: 4rem;
+    }
+    .Catalog__Menu-Item-1 {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .Catalog__Menu-Item-1-Container {
+        justify-content: space-between;
+    }
+    .Catalog__Menu-Item-2 {
+        grid-column-end: span 8;
+    }
+    .Catalog__Menu-Item-2-List {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+    .Button__Explore {
+        margin-top: 6rem;
+    }
+    .Catalog__Menu-Item-Layout-Column-1 {
+        grid-column-end: span 3;
+    }
+    .Catalog__Menu-Item-3 {
+        grid-column-start: 4;
+    }
+    .Catalog__Menu-Career-Layout {
+        grid-column-end: span 3;
+    }
+    .Catalog__Menu-Career-Container {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .Catalog__Menu-Career-List-Layout {
+        grid-column-end: span 8;
+    }
+    .Catalog__Menu-Career-List-Content {
+        grid-column-end: span 4;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .Layout__Grid-Item-Left {
+        grid-column-end: span 8;
+    }
+    .Layout__Grid-Item-Right {
+        grid-column-end: span 4;
+        grid-column-start: 9;
+    }
+    .Layout__Grid-Item-Right-Child1 {
+        flex-direction: row;
+        align-items: center;
+    }
+    .Related__Topics {
+        justify-content: end;
+    }
+    .Cotainer__SkillPath {
+        display: block;
+    }
+    .Content__Item-List-Ele {
+        grid-column-end: span 6;
+    }    
+    .Footer__Container {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+    .Footer__Layout-Grid {
+        padding: 2rem 0;
+    }
+    .Footer__End {
+        align-items: baseline;
+        display: flex;
+        justify-content: space-between;
+    }
+    .Footer__End-List {
+        justify-content: flex-start;
+        display: inline-flex;
+    }
+    .Footer__End-MadeWith {
+        display: inline-block;
+        text-align: right;
+    }
+    .Footer__Layout-Grid-Column {
+        grid-column-end: span 6;
+    }
+    .Support,
+    .Community {
+        margin-top: 1.5rem;
+    }
+    .Footer__Logo-Box {
+        display: flex;
+        flex-direction: column;
+    }
+    .Footer__List-Left-Item,
+    .Footer__List-Right-Item {
+        margin: 0.15rem 0;
+    }
+    .Footer__H2,
+    .Footer__Logo-Box > span {
+        font-size: 1rem;
+        margin-top: 0;
+    }
+    .Footer__Layout-Line {
+        border-left: 1px solid var(--color-border);
+    }
+    .Subjects,
+    .Languages,
+    .Career {
+        grid-column-end: span 4;
+    }
+    .Mobile {
+        display: unset;
+    }
+    .Mobile__Box {
+        width: 90%;
+    }
+    .Profile__Wrapper {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+    .Profile__Wrapper-MarginTop {
+        margin-bottom: 6rem;
+    }
+    .Profile__Container-Layout-Left {
+        grid-column-end: span 3;
+    }
+    .Profile__Container-Layout-Right {
+        grid-column-end: span 6 !important;
+    }
+    .Button__EditProfile {
+        display: unset;
+    }
+}
+

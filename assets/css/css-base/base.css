@@ -25,6 +25,7 @@
     --color-blue-400: #3388FF;
     --color-navy-500: rgba(16, 22, 47, 0.63);
     --color-navy-800: #10162F;
+    --color-navy-300: rgba(16, 22, 47, 0.28);
     --color-hyper-500: #3A10E5;
     --color-text-disabled: var(--color-navy-500);
 }
@@ -101,3 +102,8 @@ span {
     max-width: 500px;
     flex-direction: column;
 }
+
+.Text__Decoration {
+    text-decoration: none;
+}
+
