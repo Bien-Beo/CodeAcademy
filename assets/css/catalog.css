@@ -1291,6 +1291,7 @@
 .FIeldset_Average{
     display: flex;
     flex-direction: column;
+    border: 0;
 }
 
 .FIeldset_Average_Frame{
