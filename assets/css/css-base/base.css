@@ -101,3 +101,8 @@ span {
     max-width: 500px;
     flex-direction: column;
 }
+
+.Text__Decoration {
+    text-decoration: none;
+}
+
