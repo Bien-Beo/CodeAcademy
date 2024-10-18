@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./assets/css/css-base/base.css">
     <link rel="stylesheet" href="./assets/css/css-base/responsive.css">
     <link rel="stylesheet" href="./assets/css/index/responsive.css">
+    <link rel="stylesheet" href="./assets/animations/rorate-180.css">
 </head>
 <body>
     <div class="all-display">
@@ -28,11 +29,11 @@
                         </li>
                         <li class="Nav__Ele">
                             <div>
-                                <button class="Button__Nav">
+                                <button id="catalog" class="Button__Nav">
                                     <span class="Button__Nav-Text">Catalog</span>
                                     <i class="fas fa-caret-down Button__Nav-Icon"></i>
                                 </button>
-                                <div class="Catalog__Menu-Container" style="top: 4.5rem; min-width: 64rem; left: -15rem; border-width: 1px; height: fit-content;"> 
+                                <div id="catalogSubMenu" class="Catalog__Menu-Container" style="top: 4.5rem; min-width: 64rem; left: -15rem; border-width: 1px; height: fit-content; display: none;"> 
                                     <ul class="Catalog__Menu-Layout">
                                         <li class="Catalog__Menu-Item">
                                             <div class="Catalog__Menu-Item-Layout">
@@ -871,5 +872,7 @@
             </div>
         </footer>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>\
