@@ -80,6 +80,7 @@
 
 .SideBar__Button:hover {
     color: var(--color-primary);
+    font-weight: 700;
 }
 
 

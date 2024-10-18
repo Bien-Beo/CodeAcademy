@@ -157,26 +157,170 @@
                         </li>
                         <li class="Nav__Ele">
                             <div>
-                                <button class="Button__Nav">
+                                <button id="resources" class="Button__Nav">
                                     <span class="Button__Nav-Text">Resources</span>
                                     <i class="fas fa-caret-down Button__Nav-Icon"></i>
                                 </button>
+                                <div id="resourcesSubMenu" class="Catalog__Menu-Container" style="top: 4.5rem; min-width: 64rem; left: -20rem; border-width: 1px; height: fit-content; display: none;"> 
+                                    <ul class="Catalog__Menu-Layout">
+                                        <li class="Catalog__Menu-Item">
+                                            <div class="Catalog__Menu-Item-Layout">
+                                                <div class="Catalog__Menu-Item-Layout-Column-1">
+                                                    <div class="Catalog__Menu-Item-1">
+                                                        <div class="Catalog__Menu-Item-1-Container">
+                                                            <div style="display: flex; flex-direction: column; margin-bottom: auto;">
+                                                                <h2 class="Catalog__Menu-Item-Header">Docs</h2>
+                                                                <span class="Catalog__Menu-Item-Text">Find definitions, code syntax, and more -- or contribute your own code documentation.</span>
+                                                            </div>
+                                                            <a href="./pages/catalog.html" class="Button__Resources" style="margin-bottom: 0;">View all docs →</a>
+                                                            <a href="./pages/catalog.html" class="Button__Resources">Contribute to docs →</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="Catalog__Menu-Item-2">
+                                                    <ul class="Resources__Menu-Item-2-List">
+                                                        <li class="Resources__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">Python</a>
+                                                        </li>
+                                                        <li class="Resources__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">JavaScript</a>
+                                                        </li>
+                                                        <li class="Resources__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">HTML & CSS</a>
+                                                        </li>
+                                                        <li class="Resources__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">SQL</a>
+                                                        </li>
+                                                        <li class="Resources__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">Java</a>
+                                                        </li>
+                                                        <li class="Resources__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">C++</a>
+                                                        </li>
+                                                        <li class="Resources__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">C#</a>
+                                                        </li>
+                                                        <li class="Resources__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">Bash</a>
+                                                        </li>
+                                                        <li class="Resources__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">C</a>
+                                                        </li>
+                                                        <li class="Resources__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">PHP</a>
+                                                        </li>
+                                                        <li class="Resources__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">R</a>
+                                                        </li>
+                                                        <li class="Resources__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">Swift</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="Catalog__Menu-Item"  style="border-top: 1px solid #000;">
+                                            <div class="Catalog__Menu-Item-Layout">
+                                                <div class="Catalog__Menu-Career-Layout">
+                                                    <div class="Catalog__Menu-Career-Container">
+                                                        <div style="display: flex; flex-direction: column;">
+                                                            <h2 class="Catalog__Menu-Item-Header">Learning & practice tools</h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="Catalog__Menu-Career-List-Layout">
+                                                    <ul class="Catalog__Menu-Career-List-Item">
+                                                        <li class="Catalog__Menu-Career-List-Content">
+                                                            <a href="" class="Catalog__Menu-Career-List-Link"><h3 class="Resources__Menu-Item-Heading-3">Articles</h3></a>
+                                                            <span class="Resources__Menu-Item-Span">Learn about technical concepts.</span>
+                                                        </li>
+                                                        <li class="Catalog__Menu-Career-List-Content">
+                                                            <a href="" class="Catalog__Menu-Career-List-Link"><h3 class="Resources__Menu-Item-Heading-3">Cheatsheets</h3></a>
+                                                            <span class="Resources__Menu-Item-Span">Review concepts from your courses.</span>
+                                                        </li>
+                                                        <li class="Catalog__Menu-Career-List-Content">
+                                                            <a href="" class="Catalog__Menu-Career-List-Link"><h3 class="Resources__Menu-Item-Heading-3">Code challenges</h3></a>
+                                                            <span class="Resources__Menu-Item-Span">Test your knowledge and prep for interviews.</span>
+                                                        </li>
+                                                        <li class="Catalog__Menu-Career-List-Content">
+                                                            <a href="" class="Catalog__Menu-Career-List-Link"><h3 class="Resources__Menu-Item-Heading-3">Projects</h3></a>
+                                                            <span class="Resources__Menu-Item-Span">Practice and build your portfolio.</span>
+                                                        </li>
+                                                        <li class="Catalog__Menu-Career-List-Content">
+                                                            <a href="" class="Catalog__Menu-Career-List-Link"><h3 class="Resources__Menu-Item-Heading-3">Videos</h3></a>
+                                                            <span class="Resources__Menu-Item-Span">Watch tutorials, project walkthroughs, and more.</span>
+                                                        </li>
+                                                        <li class="Catalog__Menu-Career-List-Content">
+                                                            <a href="" class="Catalog__Menu-Career-List-Link"><h3 class="Resources__Menu-Item-Heading-3">Workspaces</h3></a>
+                                                            <span class="Resources__Menu-Item-Span">Build and share projects in your browser.</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </li>
                         <li class="Nav__Ele">
                             <div>
-                                <button class="Button__Nav">
+                                <button id="community" class="Button__Nav">
                                     <span class="Button__Nav-Text">Community</span>
                                     <i class="fas fa-caret-down Button__Nav-Icon"></i>
                                 </button>
+                                <div id="communitySubMenu" class="Button__Community-Container" style="top: 3.25rem; width: 195.25px; border-width: 1px; height: 366px; display: none;">
+                                    <div>
+                                        <ul class="Button__Community-List">
+                                            <li><a href="" class="Button__Community-Link">
+                                                <img src="./assets/img/comment.png" alt="" style="height: 24px; width: 24px; margin-right: 1rem;">
+                                                Forums
+                                            </a></li>
+                                            <li><a href="" class="Button__Community-Link">
+                                                <img src="./assets/img/discord-lite.png" alt="" style="height: 24px; width: 24px; margin-right: 1rem;">
+                                                Discord
+                                            </a></li>
+                                            <li><a href="" class="Button__Community-Link">
+                                                <img src="./assets/img/party.png" alt="" style="height: 24px; width: 24px; margin-right: 1rem;">
+                                                Clubs
+                                            </a></li>
+                                            <li><a href="" class="Button__Community-Link">
+                                                <img src="./assets/img/calendar-mini.png" alt="" style="height: 24px; width: 24px; margin-right: 1rem;">
+                                                Events
+                                            </a></li>
+                                            <li><a href="" class="Button__Community-Link">
+                                                <img src="./assets/img/book-mini.png" alt="" style="height: 24px; width: 24px; margin-right: 1rem;">
+                                                Learner Stories
+                                            </a></li>
+                                            <li><a href="" class="Button__Community-Link">
+                                                <img src="./assets/img/woman.png" alt="" style="height: 24px; width: 24px; margin-right: 1rem;">
+                                                Code Crew
+                                            </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </li>
                         <li class="Nav__Ele">
                             <div>
-                                <button class="Button__Nav">
+                                <button id="pricing" class="Button__Nav">
                                     <span class="Button__Nav-Text">Pricing</span>
                                     <i class="fas fa-caret-down Button__Nav-Icon"></i>
                                 </button>
+                                <div id="pricingSubMenu" class="Button__Community-Container" style="top: 3.25rem; width: 149.219px; border-width: 1px; height: 195px; display: none;">
+                                    <div>
+                                        <ul class="Button__Community-List">
+                                            <li><a href="" class="Button__Community-Link"> 
+                                                For Individuals
+                                            </a></li>
+                                            <li><a href="" class="Button__Community-Link"> 
+                                                For Students
+                                            </a></li>
+                                            <li><a href="" class="Button__Community-Link"> 
+                                                For Business
+                                            </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </li>
                         <li class="Nav__Ele">
