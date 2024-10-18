@@ -76,6 +76,12 @@
     vertical-align: text-bottom;
 }
 
+.Logo__Header-Img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 200ms ease-in-out;
+}
+
 .Nav__Ele {
     margin-right: 0.5rem;
     margin-left: 0.5rem;
@@ -110,6 +116,8 @@
     cursor: pointer;
     text-decoration: none;
     color: var(--color-primary);
+    transform: scale(1.1);
+    transition: transform 150ms ease-in-out;
 }
 
 .Nav__Ele-Link::before {
@@ -147,6 +155,11 @@
     white-space: nowrap;
     border-radius: 4px;
     border-color: transparent;
+}
+
+.Button__Component:hover {
+    transform: scale(1.1);
+    transition: transform 200ms ease-in-out;
 }
 
 .Button__Component::before {
@@ -197,6 +210,8 @@
     cursor: pointer;
     text-decoration: none;
     color: var(--color-primary);
+    transform: scale(1.1);
+    transition: transform 200ms ease-in-out;
 }
 
 .Button__Nav::before {
@@ -324,6 +339,12 @@
     border-radius: 4px;
 }
 
+.Button__Star:hover {
+    transition: background-color 150ms ease-in, box-shadow 150ms ease-in;
+    color: var(--color-background);
+    background-color: #5533FF;
+}
+
 .Button__Start::before {
     content: "";
     position: absolute;
@@ -338,16 +359,6 @@
     border-radius: 8px;
     border-color: var(--color-primary);
 }
-
-.Button__Star:hover {
-    transition: background-color 150ms ease-in, box-shadow 150ms ease-in;
-    color: var(--color-background);
-    background-color: #5533FF;
-}
-
-
-
-
 
 /* Sub Menu */
 .Catalog__Menu-Container {
@@ -475,7 +486,21 @@
     list-style-type: none;
 }
 
+.Resources__Menu-Item-2-List {
+    display: grid;
+    padding-left: 0px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(18, 1fr);
+    grid-auto-flow: column;
+    list-style-type: none;
+}
+
 .Catalog__Menu-Item-2-List-Course {
+    width: 12rem;
+    min-height: 32px;
+}
+
+.Resources__Menu-Item-2-List-Course {
     width: 12rem;
     min-height: 32px;
 }
@@ -511,6 +536,9 @@
     cursor: pointer;
     text-decoration: none;
     color: var(--color-primary);
+    transform: scale(1.1);
+    transition: transform 200ms ease-in-out;
+    font-weight: 600;
 }
 
 .Catalog__Menu-Item-2-List-LinkNew {
@@ -546,6 +574,7 @@
     cursor: pointer;
     text-decoration: none;
     color: var(--color-primary);
+    font-weight: 600;
 }
 
 .Catalog__Menu-Item-3 {
@@ -682,7 +711,134 @@
 
 .Catalog__Menu-Career-List-Link:hover {
     cursor: pointer;
-    -webkit-text-decoration: none;
     text-decoration: none;
     color: var(--color-primary);
+    transition: transform 200ms ease-in-out;
+    font-weight: 600;
 }
+
+.Button__Resources {
+    cursor: pointer;
+    box-shadow: none;
+    justify-content: left;
+    align-items: center;
+    display: inline-flex;
+    position: relative;
+    font-weight: 700;
+    padding-left: 0.5rem;
+    padding-right: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    font-size: 0.8rem;
+    min-width: 40px;
+    height: 40px;
+    color: #FFD300;
+    text-align: left;
+    max-width: 170px;
+    background: transparent;
+    text-decoration: none;
+    transition: border-color 150ms ease-in, color 150ms ease-in, background-color 150ms ease-in, box-shadow 150ms ease-in;
+    border-color: transparent;
+    white-space: nowrap;
+    border-radius: 4px;
+}
+
+.Button__Resources::before {
+    border-color: #FFD300;
+    content: "";
+    transition: opacity 150ms linear;
+    border: 2px solid var(--color-white);
+    position: absolute;
+    inset: -5px;
+    z-index: 0;
+    opacity: 0;
+    border-radius: 8px;
+}
+
+.Button__Resources:hover {
+    transition: background-color 150ms ease-in, box-shadow 150ms ease-in;
+    background-color: #FFD300;
+    color: var(--color-black);
+}
+
+.Resources__Menu-Item-Span {
+    display: inline-block;
+    margin: 0px;
+    font-size: 0.875rem;
+    padding-bottom: 1.5rem;
+    padding-right: 2.5rem;
+}
+
+.Resources__Menu-Item-Heading-3 {
+    line-height: 1.3;
+    margin: 0px;
+    font-weight: bold;
+    font-size: 1rem;
+    padding-bottom: 0.25rem;
+}
+
+.Button__Community-Container {
+    border-style: solid;
+    border-color: var(--color-text);
+    overflow: hidden;
+    position: absolute;
+    background-color: var(--color-background);
+}
+
+.Button__Community-Container > div {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+}
+
+.Button__Community-List {
+    list-style: none;
+    padding: 0.75rem 0px;
+    position: absolute;
+}
+
+.Button__Community-Link {
+    border: none;
+    padding: 1rem 0px;
+    font-size: inherit;
+    box-shadow: none;
+    position: relative;
+    color: var(--color-text);
+    background-color: transparent;
+    font-weight: normal;
+    line-height: 1.5;
+    text-align: left;
+    white-space: nowrap;
+    -webkit-box-align: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    min-width: 0px;
+    text-decoration: none;
+}
+
+.Button__Community-Link::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    bottom: -4px;
+    left: -4px;
+    z-index: 0;
+    opacity: 0;
+    border-color: var(--color-primary);
+    border-radius: 4px;
+}
+
+.Button__Community-Link:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
