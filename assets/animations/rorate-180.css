@@ -1,0 +1,11 @@
+.rotate-show {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+    transform-origin: 50% calc(50% + 3px);
+}
+
+.rotate-hide {
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+    transform-origin: 50% calc(50% + 3px);
+}

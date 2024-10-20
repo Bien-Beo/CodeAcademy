@@ -50,6 +50,10 @@ footer {
     text-decoration: none;
 }
 
+.Footer__End-Item:hover {
+    font-weight: 600;
+}
+
 .Footer__End-Item::after {
     content: '|';
     margin: 0 0.375rem;
@@ -193,6 +197,8 @@ footer {
     cursor: pointer;
     text-decoration: none;
     color: var(--color-primary);
+    transform: scale(1.1);
+    transition: transform 200ms ease-in-out;
 }
 
 .Footer__Social-Media {
@@ -236,6 +242,8 @@ footer {
     -webkit-text-decoration: none;
     text-decoration: none;
     color: var(--color-primary);
+    transform: scale(1.1);
+    transition: transform 200ms ease-in-out;
 }
 
 .Footer__Layout-Line {
@@ -323,6 +331,8 @@ footer {
     cursor: pointer;
     text-decoration: none;
     color: var(--color-primary);
+    transform: scale(1.1);
+    transition: transform 200ms ease-in-out;
 }
 
 .Mobile {
