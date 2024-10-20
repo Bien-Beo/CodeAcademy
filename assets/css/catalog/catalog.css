@@ -1365,3 +1365,70 @@
     height: 20px;
     border-radius: 999px;
 }
+/* Browse the full catalog */
+.Main__Botton-Middle-Column-Right{
+    grid-column-end: span 12;
+    -ms-grid-columns: minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr);
+    display: -ms-grid;
+    display: grid;
+    grid-column-end: span 9;
+    display: block;
+    margin-bottom: 3rem;
+    -ms-grid-column-span: 12;
+
+
+}
+.Main__Botton-Middle-Column-Right-Tiltle{
+    display: flex;
+    margin-bottom: 1rem;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.Letter_Browse{
+    font-weight: 700;
+    line-height: 1.3;
+    font-size: 1.375rem;
+    margin: 0;
+    white-space: nowrap;   
+}
+.results{
+    font-size: inherit;
+    margin: 0;
+    padding-left: 0;
+    padding-top: 0.25rem;
+    white-space: nowrap;   
+}
+.Select_Most_popular{
+    pointer-events: visible;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 200px;
+    min-width: 7rem;
+}
+
+.DisplayFlex_Browese{
+    display: flex;
+}
+select {
+    width: 200px;  /* Chiều rộng */
+    height: 40px;  /* Chiều cao */
+    font-size: 16px;  /* Kích thước chữ */
+}
+
+.Main__Botton-Middle-Column-Right-Frame{
+    --color-background-current: var(--color-beige);
+    color: var(--color-text);
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.Column-Right-Frame-UL{
+    backface-visibility: hidden;
+    display: flex;
+    height: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+}
