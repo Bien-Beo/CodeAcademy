@@ -338,17 +338,42 @@
                         </li>
                         <li class="Nav__Ele">
                             <div class="Nav__Ele-Button Nav__Ele-Button-Container">
-                                <button class="Nav__Ele-Button-Component">
+                                <button id="notificationButton" class="Nav__Ele-Button-Component">
                                     <img src="./assets/img/notification.png" alt="notification" style="height: 25px; width: 25px;">
                                 </button>
                             </div>
                         </li>
                         <li class="Nav__Ele">
-                            <button class="Button__Component">
+                            <button id="buttonAvatar" class="Button__Component">
                                 <div class="Button__Component-Content">
                                     <img src="https://www.gravatar.com/avatar/e43b253ce98dd12a7d017212e9dc5a47?s=140&d=retro" alt="User profile avatar" class="Avatar__Size">
                                 </div>
                             </button>
+                            <div id="avatarContainer" class="Button__Component-Info" style="display: none; right: 0.5rem; top: 3.75rem; width: 205.047px; border-width: 1px; height: 325px;">
+                                <div class="Component__Info-Container">
+                                    <ul class="Button__Community-List">
+                                        <li><a class="Button__Community-Link" href="">
+                                            <img src="./assets/img/user.png" alt="" style="height: 24px; width: 24px; margin-right: 1rem;">
+                                            Profile
+                                        </a></li>
+                                        <li><a class="Button__Community-Link" href="">
+                                            <img src="./assets/img/setting.png" alt="" style="height: 24px; width: 24px; margin-right: 1rem;">
+                                            Account + Billing
+                                        </a></li>
+                                        <li><a class="Button__Community-Link" href="">
+                                            <img src="./assets/img/home.png" alt="" style="height: 24px; width: 24px; margin-right: 1rem;">
+                                            My Home
+                                        </a></li>
+                                        <li><a class="Button__Community-Link" href="">
+                                            <img src="./assets/img/question.png" alt="" style="height: 24px; width: 24px; margin-right: 1rem;">
+                                            Help Center
+                                        </a></li>
+                                        <li class="Logout__Line"><a class="Button__Community-Link" href="./pages/login.html">
+                                            Log Out
+                                        </a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </li>
                         <li class="Nav__Ele">
                             <a href="" class="Button__Start">Start free trial</a>
@@ -445,6 +470,62 @@
                                 <i class="fa-regular fa-circle-question" style="margin-right: 0.5rem; margin-top: 2px;"></i>
                                 Help Center
                             </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="notificationContainer" style="top: 61px; left: 1330px; display: none;" class="Notifications__Position">
+                    <div class="Notifications__Style">
+                        <div class="Notifications__Box">
+                            <div aria-label="1 unread notifications" aria-modal="true" data-autofocus="true" role="dialog" tabindex="-1" class="Notifications__Container">
+                                <div class="Notifications__Container-Header">
+                                    <h1>My Notifications</h1>
+                                    <div>
+                                        <button aria-label="Clear all 1 notifications" class="Notifications__Button-ClearAll" type="button">Clear All</button>
+                                    </div>
+                                </div>
+                                <div style="padding-left: 2rem; padding-right: 2rem;">
+                                    <svg fill="currentColor" role="img" aria-hidden="true" style="display: flex; width: 100%; height: 1px;">
+                                        <title>Checker Dense</title>
+                                        <pattern id="CheckerDense-pattern-:r20:" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
+                                            <rect width="1" height="1" fill="currentColor"></rect>
+                                            <rect x="2" y="2" width="1" height="1" fill="currentColor"></rect>
+                                        </pattern>
+                                        <rect width="100%" height="100%" fill="url(#CheckerDense-pattern-:r20:)"></rect>
+                                    </svg>
+                                </div>
+                                <div style="overflow: auto; max-height: 520px;">
+                                    <div style="padding-bottom: 1rem;">
+                                        <ul class="Notifications__Content"> 
+                                            <li>
+                                                <div class="Notifications__Content-Item">
+                                                    <a class="Notifications__Content-Link" href="">
+                                                        <div>
+                                                            <img src="https://static-assets.codecademy.com/assets/notifications/marketing_icon.svg" style="border-radius: 50%; border: 1px solid var(--color-border); height: 3rem; width: 3rem;" alt="">
+                                                            <div style="flex: 1 1 0%; padding-left: 0.75rem;">
+                                                                <span class="Style__Text-Span">Upskill in tech — get 50% off Pro today.</span>
+                                                                <span class="Notifications__Content-SubTitle">3 days</span>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <button class="Notifications__Content-Button-Close">
+                                                        <img src="./assets/img/close.png" alt="" style="height: 12px; width: 12px;">
+                                                    </button>
+                                                </div>
+                                                <div style="padding-left: 2rem; padding-right: 2rem;">
+                                                    <svg fill="currentColor" role="img" aria-hidden="true" style="display: flex; width: 100%; height: 1px;">
+                                                        <title>Checker Dense</title>
+                                                        <pattern id="CheckerDense-pattern-:r20:" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
+                                                            <rect width="1" height="1" fill="currentColor"></rect>
+                                                            <rect x="2" y="2" width="1" height="1" fill="currentColor"></rect>
+                                                        </pattern>
+                                                        <rect width="100%" height="100%" fill="url(#CheckerDense-pattern-:r20:)"></rect>
+                                                    </svg>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
