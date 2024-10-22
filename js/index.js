@@ -7,8 +7,8 @@ $(document).ready(function() {
             const span = $(this).find(".Button__Nav-Text");
 
             // Các nút khác
-            const otherMenus = ["#catalogSubMenu", "#resourcesSubMenu", "#communitySubMenu", "#pricingSubMenu", "searchContainer"].filter(id => id !== subMenuId);
-            const otherIcons = [$("#catalog"), $("#resources"), $("#community"), $("#pricing"), $("magnifyingGlass")].filter(id => `#${id.attr('id')}` !== buttonId);
+            const otherMenus = ["#catalogSubMenu", "#resourcesSubMenu", "#communitySubMenu", "#pricingSubMenu", "#searchContainer", "#notificationContainer", "#avatarContainer"].filter(id => id !== subMenuId);
+            const otherIcons = [$("#catalog"), $("#resources"), $("#community"), $("#pricing"), $("magnifyingGlass"), $("#notificationButton"), $("#buttonAvatar")].filter(id => `#${id.attr('id')}` !== buttonId);
 
             // Ẩn các submenu khác
             otherMenus.forEach(id => $(id).slideUp(300));
@@ -36,6 +36,8 @@ $(document).ready(function() {
     toggleSubMenu("#community", "#communitySubMenu");
     toggleSubMenu("#pricing", "#pricingSubMenu");
     toggleSubMenu("#magnifyingGlass", "#searchContainer");
+    toggleSubMenu("#notificationButton", "#notificationContainer");
+    toggleSubMenu("#buttonAvatar", "#avatarContainer");
 
     // Ẩn các menu khi nhấn vào bất kỳ vị trí nào bên ngoài
     $(document).click(function(event) {
@@ -63,6 +65,16 @@ $(document).ready(function() {
             $("#searchContainer").slideUp(300);
             $("#magnifyingGlass").find(".Button__Nav-Icon").removeClass("rotate-show").addClass("rotate-hide");
             $("#magnifyingGlass").find(".Button__Nav-Text").css("font-weight", "normal");
+        }
+        if (!$(event.target).closest("#notificationContainer, #notificationButton").length) {
+            $("#notificationContainer").slideUp(300);
+            $("#notificationButton").find(".Button__Nav-Icon").removeClass("rotate-show").addClass("rotate-hide");
+            $("#notificationButton").find(".Button__Nav-Text").css("font-weight", "normal");
+        }
+        if (!$(event.target).closest("#avatarContainer, #buttonAvatar").length) {
+            $("#avatarContainer").slideUp(300);
+            $("#buttonAvatar").find(".Button__Nav-Icon").removeClass("rotate-show").addClass("rotate-hide");
+            $("#buttonAvatar").find(".Button__Nav-Text").css("font-weight", "normal");
         }
     });
 });
