@@ -7,8 +7,8 @@ $(document).ready(function() {
             const span = $(this).find(".Button__Nav-Text");
 
             // Các nút khác
-            const otherMenus = ["#catalogSubMenu", "#resourcesSubMenu", "#communitySubMenu", "#pricingSubMenu"].filter(id => id !== subMenuId);
-            const otherIcons = [$("#catalog"), $("#resources"), $("#community"), $("#pricing")].filter(id => `#${id.attr('id')}` !== buttonId);
+            const otherMenus = ["#catalogSubMenu", "#resourcesSubMenu", "#communitySubMenu", "#pricingSubMenu", "searchContainer"].filter(id => id !== subMenuId);
+            const otherIcons = [$("#catalog"), $("#resources"), $("#community"), $("#pricing"), $("magnifyingGlass")].filter(id => `#${id.attr('id')}` !== buttonId);
 
             // Ẩn các submenu khác
             otherMenus.forEach(id => $(id).slideUp(300));
@@ -35,6 +35,7 @@ $(document).ready(function() {
     toggleSubMenu("#resources", "#resourcesSubMenu");
     toggleSubMenu("#community", "#communitySubMenu");
     toggleSubMenu("#pricing", "#pricingSubMenu");
+    toggleSubMenu("#magnifyingGlass", "#searchContainer");
 
     // Ẩn các menu khi nhấn vào bất kỳ vị trí nào bên ngoài
     $(document).click(function(event) {
@@ -57,6 +58,11 @@ $(document).ready(function() {
             $("#pricingSubMenu").slideUp(300);
             $("#pricing").find(".Button__Nav-Icon").removeClass("rotate-show").addClass("rotate-hide");
             $("#pricing").find(".Button__Nav-Text").css("font-weight", "normal");
+        }
+        if (!$(event.target).closest("#searchContainer, #magnifyingGlass").length) {
+            $("#searchContainer").slideUp(300);
+            $("#magnifyingGlass").find(".Button__Nav-Icon").removeClass("rotate-show").addClass("rotate-hide");
+            $("#magnifyingGlass").find(".Button__Nav-Text").css("font-weight", "normal");
         }
     });
 });
