@@ -41,6 +41,14 @@
     .Catalog__Menu-Career-List-Item {
         padding-left: 2rem;
     }
+    .Search__Question-Header {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .Search__Question-Content {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -98,6 +106,14 @@
     .Catalog__Menu-Career-List-Item {
         padding-left: 4rem;
     }
+    .Search__Question-Header {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .Search__Question-Content {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -121,6 +137,28 @@
     }
     .Catalog__Menu-Career-List-Item {
         padding-left: 3rem;
+    }
+    .Search__Container {
+        max-height: calc(-80px + 100vh);
+    }
+    .Search__Question-Header {
+        padding-bottom: 1.5rem;
+    }
+    .Size__MagnifyingGlass {
+        width: 28px;
+        height: 28px;
+    }
+    .Search__Question-Layout input {
+        font-size: 1.625rem;
+    }
+    .Search__Question-Content {
+        padding-bottom: 1.5rem;
+    }
+    .Search__Question-Footer-Left {
+        flex-direction: row;
+    }
+    .Search__Question-Footer-Left-Content > span {
+        font-size: 1rem;
     }
 }
 
@@ -225,6 +263,14 @@
         margin-left: 1.5rem;
         margin-right: 1.5rem;
         margin-bottom: 1px;
+    }
+    .Search__Question-Header {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+    .Search__Question-Content {
+        padding-left: 6rem;
+        padding-right: 6rem;
     }
 }
 

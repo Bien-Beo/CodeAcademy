@@ -18,15 +18,6 @@
     --color-secondary: #10162F;
     --color-background-hover: rgba(16, 22, 47, 0.12);
     --color-background-selected: rgba(16, 22, 47, 0.04);
-    --color-blue-100: #D3F2FF;
-    --color-white-100: rgba(255, 255, 255, 0.04);
-    --color-white-400: rgba(255, 255, 255, 0.33);
-    --color-white-600: rgba(255, 255, 255, 0.65);
-    --color-blue-400: #3388FF;
-    --color-navy-500: rgba(16, 22, 47, 0.63);
-    --color-navy-800: #10162F;
-    --color-navy-300: rgba(16, 22, 47, 0.28);
-    --color-hyper-500: #3A10E5;
     --color-text-disabled: var(--color-navy-500);
 }
 
@@ -46,6 +37,11 @@ button, input {
 
 span {
     font-family: "Apercu", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+hr {
+    transition: opacity 0.3s ease; 
+    border-top: var(--color-border) 1px solid;
 }
 
 .all-display {
