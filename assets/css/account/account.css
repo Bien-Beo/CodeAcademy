@@ -1,0 +1,263 @@
+.Account__Wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+.Account__Wrapper-Center {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 1440px;
+}
+
+.Account__Wrapper-FlexBox {
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    flex-direction: column;
+}
+
+.Account__Nav-Responsive {
+    min-height: 48px;
+    position: relative;
+    z-index: 1;
+}
+
+.Account__Nav-Responsive > .Account__Nav-Content {
+    border: 1px solid var(--color-secondary);
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+}
+
+.Account__Nav-Content > button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+    font-size: inherit;
+    text-decoration: none;
+    box-shadow: none;
+    color: var(--color-text);
+    border: none;
+    padding: 0;
+    font-size: inherit;
+    white-space: initial;
+    box-shadow: none;
+    display: inline-block;
+    position: relative;
+    color: var(--color-text);
+    background-color: transparent;
+    width: 100%;
+}
+
+.Account__Nav-Content > button:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.Account__Nav-Content > button:before {
+    content: '';
+    border: 2px solid var(--color-secondary);
+    border-color: var(--color-primary);
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    bottom: -4px;
+    left: -4px;
+    z-index: 0;
+    opacity: 0;
+    border-radius: 4px;
+}
+
+.Account__Button-FlexBox {
+    display: flex;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    background-color: var(--color-background);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Account__Button-FlexBox > span {
+    font-size: inherit;
+    display: inline-block;
+    font-weight: 700;
+    line-height: 1.3;
+    font-size: 1.25rem;
+    margin: 0;
+    display: block;
+}
+
+.Account__Button-SubList {
+    display: inline-block;
+    list-style: none;
+    padding: 0px 0px 1.5rem;
+    min-width: 192px;
+    border-radius: 2px;
+    background-color: var(--color-background);
+    position: relative;
+    z-index: 1;
+    border: none;
+    margin: 0px;
+    width: 100%;
+}
+
+.Account__Button-SubList-Link {
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+    font-size: inherit;
+    text-decoration: none;
+    box-shadow: none;
+    color: var(--color-text);
+    cursor: pointer;
+    transition: color 150ms linear, background-color 150ms linear, border-color 150ms linear;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    background-color: var(--color-background);
+    font-size: 1rem;
+    min-height: 48px;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+.Account__Button-SubList-Link:hover {
+    color: var(--color-primary);
+}
+
+.Account__Button-SubList-Link::before {
+    min-height: 48px;
+}
+
+.Page__Current > .Account__Button-SubList-Link::before {
+    content: '';
+    background-color: var(--color-secondary);
+}
+
+.Account__Button-SubList-Link::before {
+    display: inline-block;
+    width: 6px;
+    position: absolute;
+    left: 0;
+    background-color: inherit;
+}
+
+.Page__Current > .Account__Button-SubList-Link:after {
+    content: '';
+    border: 2px solid var(--color-secondary);
+    border-color: var(--color-primary);
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    bottom: 4px;
+    left: 4px;
+    z-index: -1;
+    opacity: 0;
+    border-radius: 4px;
+}
+
+.Account__Nav {
+    margin-right: 1.5rem;
+    display: none;
+}
+
+.Account__Nav-SideBar {
+    padding-left: 1.5rem;
+    display: inline-block;
+    width: 100%;
+    background-color: inherit;
+    list-style: none;
+    border: 1px solid var(--color-border);
+    padding: 0;
+    min-width: 192px;
+    border-radius: 2px;
+    background-color: var(--color-background);
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.Account__Content {
+    border: 1px solid var(--color-border);
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    width: 100%;
+    background-color: var(--color-white);
+}
+
+.Account__Content-Header {
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 4rem;
+    margin: 0;
+    font-size: 1.625rem;
+    margin-bottom: 2rem;
+}
+
+.Account__Content-Item-Header {
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.Account__Content-Item-Header > h2 {
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0px;
+    font-size: 1.25rem;
+}
+
+.Account__Content-Item-Header > button {
+    cursor: pointer;
+    background: none transparent;
+    text-decoration: none;
+    border: none;
+    padding: 0px;
+    font-size: inherit;
+    white-space: nowrap;
+    box-shadow: none;
+    display: inline-block;
+    position: relative;
+    color: var(--color-primary);
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+.Account__Content-Item-Header > button::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    bottom: -4px;
+    left: -4px;
+    z-index: 0;
+    opacity: 0;
+    border-color: var(--color-primary);
+    border-radius: 4px;
+}
+
+.Account__Content-Item-Header > button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
