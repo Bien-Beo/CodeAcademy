@@ -1,0 +1,183 @@
+.Account__Content {
+    border: 1px solid var(--color-border);
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    width: 100%;
+    background-color: var(--color-white);
+}
+
+.Account__Content-Header {
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 4rem;
+    margin: 0;
+    font-size: 1.625rem;
+    margin-bottom: 2rem;
+}
+
+.Account__Wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+.Account__Wrapper-Center {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 1440px;
+}
+
+.Account__Wrapper-FlexBox {
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    flex-direction: column;
+}
+
+.Account__Nav {
+    margin-right: 1.5rem;
+    display: none;
+}
+
+.Account__Nav-SideBar {
+    padding-left: 1.5rem;
+    display: inline-block;
+    width: 100%;
+    background-color: inherit;
+    list-style: none;
+    border: 1px solid var(--color-border);
+    padding: 0;
+    min-width: 192px;
+    border-radius: 2px;
+    background-color: var(--color-background);
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.Account__Button-SubList-Link {
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+    font-size: inherit;
+    text-decoration: none;
+    box-shadow: none;
+    color: var(--color-text);
+    cursor: pointer;
+    transition: color 150ms linear, background-color 150ms linear, border-color 150ms linear;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    background-color: var(--color-background);
+    font-size: 1rem;
+    min-height: 48px;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+.Account__Button-SubList-Link:hover {
+    color: var(--color-primary);
+}
+
+.Account__Button-SubList-Link::before {
+    min-height: 48px;
+}
+
+.Page__Current > .Account__Button-SubList-Link::before {
+    content: '';
+    background-color: var(--color-secondary);
+}
+
+.Account__Button-SubList-Link::before {
+    display: inline-block;
+    width: 6px;
+    position: absolute;
+    left: 0;
+    background-color: inherit;
+}
+
+.Page__Current > .Account__Button-SubList-Link:after {
+    content: '';
+    border: 2px solid var(--color-secondary);
+    border-color: var(--color-primary);
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    bottom: 4px;
+    left: 4px;
+    z-index: -1;
+    opacity: 0;
+    border-radius: 4px;
+}   
+
+.Linked__Content {
+    border: 1px solid var(--color-secondary);
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    width: 100%;
+    background-color: var(--color-white);
+}
+
+.Delete__Span {
+    font-size: inherit;
+    display: inline-block;
+    margin: 0px 0px 2rem;
+}
+
+.Delete__Btn {
+    cursor: pointer;
+    box-shadow: none;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    position: relative;
+    font-weight: 700;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    font-size: 1rem;
+    min-width: 40px;
+    height: 40px;
+    color: var(--color-white);
+    background: none;
+    text-decoration: none;
+    transition: border-color 150ms ease-in, color 150ms ease-in, background-color 150ms ease-in, box-shadow 150ms ease-in;
+    border-color: transparent;
+    white-space: nowrap;
+    border-radius: 4px;
+    background-color: var(--color-primary);;
+}
+
+.Delete__Btn::before {
+    content: "";
+    transition: opacity 150ms linear;
+    border: 2px solid var(--color-secondary);
+    position: absolute;
+    inset: -5px;
+    z-index: 0;
+    opacity: 0;
+    border-radius: 8px;
+}
+
+.Delete__Btn:hover {
+    transition: background-color 150ms ease-in, box-shadow 150ms ease-in;
+    color: var(--color-background);
+    background-color: #5533FF;
+}

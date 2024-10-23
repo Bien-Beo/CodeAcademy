@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign up | Codeacademy</title>
+    <title>My Account | Codeacademy</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../assets/css/css-base/header.css">
-    <link rel="stylesheet" href="../assets/css/signup/signup.css">
+    <link rel="stylesheet" href="../assets/css/account/account.css">
     <link rel="stylesheet" href="../assets/css/css-base/footer.css">
     <link rel="stylesheet" href="../assets/css/css-base/base.css">
     <link rel="stylesheet" href="../assets/css/css-base/responsive.css">
-    <link rel="stylesheet" href="../assets/css/signup/responsive.css">
+    <link rel="stylesheet" href="../assets/css/account/responsive.css">
     <link rel="stylesheet" href="../assets/css/index/responsive.css">
     <link rel="stylesheet" href="../assets/animations/rorate-180.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -24,7 +24,7 @@
                 <nav class="Box__Header-Nav">
                     <ul class="Nav__List">
                         <li class="Nav__Ele" style="margin-left: 0; margin-right: 0;">
-                            <a href="#" class="Logo__Header">
+                            <a href="../index.html" class="Logo__Header">
                                 <img src="../assets/img/logo.png" alt="Codecademy Logo" class="Logo__Header-Img">
                             </a>
                         </li>
@@ -356,8 +356,8 @@
                             <div id="avatarContainer" class="Button__Component-Info" style="display: none; right: 0.5rem; top: 3.75rem; width: 205.047px; border-width: 1px; height: 325px;">
                                 <div class="Component__Info-Container">
                                     <ul class="Button__Community-List">
-                                        <li><a class="Button__Community-Link" href="">
-                                            <img src="../assets/img/user.png" alt="" style="height: 24px; width: 24px; margin-right: 1rem;">
+                                        <li><a class="Button__Community-Link" href="#">
+                                            <img src="../assets/img/user.png" alt="User" style="height: 24px; width: 24px; margin-right: 1rem;">
                                             Profile
                                         </a></li>
                                         <li><a class="Button__Community-Link" href="">
@@ -379,7 +379,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="Nav__Ele">
+                        <li class="Nav__Ele" style="margin-right: 0;">
                             <a href="" class="Button__Start">Start free trial</a>
                         </li>
                     </ul>
@@ -536,61 +536,82 @@
             </div>
             <hr id="hrElement" style="opacity: 0;">
         </header>
-        <main>
-            <div class="Sign-up">
-                <form>
-                    <div class="title">
-                        <h2>Get started for free</h2><br>
-                        <p>* Required</p><br>
+        <main class="Account__Wrapper">
+            <div class="Account__Wrapper">
+                <div class="Account__Wrapper-Center">
+                    <div class="Account__Wrapper-FlexBox">
+                        <nav class="Account__Nav-Responsive">
+                            <div class="Account__Nav-Content">
+                                <button>
+                                    <div class="Account__Button-FlexBox">
+                                        <span>Account</span>
+                                        <div>
+                                            <i class="fa-solid fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                </button>
+                                <div class="" style="height: 0;">
+                                    <ul class="Account__Button-SubList">
+                                        <li class="Page__Current"><a href="" class="Account__Button-SubList-Link" style="font-weight: 700; background-color: rgba(16, 22, 47, 0.04);">
+                                            Account
+                                        </a></li>
+                                        <li><a href="" class="Account__Button-SubList-Link">
+                                            Goal Settings
+                                        </a></li>
+                                        <li><a href="" class="Account__Button-SubList-Link">
+                                            Mail Settings
+                                        </a></li>
+                                        <li><a href="" class="Account__Button-SubList-Link">
+                                            Linked Accounts
+                                        </a></li>
+                                        <li><a href="" class="Account__Button-SubList-Link">
+                                            Delete Account
+                                        </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                        <nav class="Account__Nav">
+                            <ul class="Account__Nav-SideBar">
+                                <li class="Page__Current"><a href="" class="Account__Button-SubList-Link" style="font-weight: 700; background-color: rgba(16, 22, 47, 0.04);">
+                                    Account
+                                </a></li>
+                                <li><a href="" class="Account__Button-SubList-Link">
+                                    Goal Settings
+                                </a></li>
+                                <li><a href="" class="Account__Button-SubList-Link">
+                                    Mail Settings
+                                </a></li>
+                                <li><a href="" class="Account__Button-SubList-Link">
+                                    Linked Accounts
+                                </a></li>
+                                <li><a href="" class="Account__Button-SubList-Link">
+                                    Delete Account
+                                </a></li>
+                            </ul>
+                        </nav>
+                        <div class="Account__Content">
+                            <h1 class="Account__Content-Header">Account</h1>
+                            <div class="Account__Content-Item-Header">
+                                <h2>Email</h2>
+                                <button>Change</button>
+                            </div>
+                            <div class="">
+                                <span style="display: inline-block; margin: 0px; font-size: 1rem;">
+                                    tranngocbien2809@gmail.com
+                                </span>
+                            </div>
+                            <div class="Account__Content-Item-Header">
+                                <h2>Password</h2>
+                                <button>Change</button>
+                            </div>
+                            <div>
+                                <span style="display: inline-block; margin: 0px; font-size: 0.625rem; letter-spacing: 0.125rem;">
+                                    ●●●●●●
+                                </span>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        
-                        <label for="username">Email*</label><br>
-                        <input class="username" type="text" >
-                    </div><br>
-                    <div>
-                        <label for="password">Password*</label><br>
-                        <input class="password" type="password" >
-                    </div><br>
-                    <div class="signup">
-                        <input type="button" value="Sign Up">
-                    </div><br>
-                    <div class="terms">
-                        <p>
-                            By signing up for Codecademy, you agree to Codecademy's 
-                            <a href="https://www.codecademy.com/terms"> Terms of Service</a> & 
-                            <a href="https://www.codecademy.com/policy">  Privacy Policy.</a>
-                        </p>
-                    </div>
-                </form><br>
-                <div>
-                    <h3>Or sign up using:</h3><br>
-                    <div class="sign-up-method">
-                        <div>
-                            <button class="sign-up-method-button">
-                                <img src="../assets/img/google.png" alt="google" width="50px" height="40px">
-                            </button>
-                        </div>
-                        <div>
-                            <button class="sign-up-method-button">
-                                <img src="../assets/img/facebook.png" alt="facebook" width="50px" height="40px">
-                            </button>
-                        </div>
-                        <div>
-                            <button class="sign-up-method-button">
-                                <img src="../assets/img/github.png" alt="github" width="50px" height="40px">
-                            </button>
-                        </div>
-                        <div>
-                            <button class="sign-up-method-button">
-                                <img src="../assets/img/apple.png" alt="apple" width="50px" height="40px">
-                            </button>
-                        </div>
-                    </div>
-                </div><br>
-                <div>
-                    <span>Already have an account?</span>
-                    <a href="./login.html"><b>Log in</b></a>
                 </div>
             </div>
         </main>
@@ -775,4 +796,4 @@
         </footer>
     </div>
 </body>
-</html>
+</html>\

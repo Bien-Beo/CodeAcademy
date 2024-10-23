@@ -3,19 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign up | Codeacademy</title>
+    <title>Events | Codeacademy</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../assets/css/css-base/header.css">
-    <link rel="stylesheet" href="../assets/css/signup/signup.css">
-    <link rel="stylesheet" href="../assets/css/css-base/footer.css">
+    <link rel="stylesheet" href="../assets/css/index/container.css">
     <link rel="stylesheet" href="../assets/css/css-base/base.css">
+    <link rel="stylesheet" href="../assets/css/css-base/footer.css">
     <link rel="stylesheet" href="../assets/css/css-base/responsive.css">
-    <link rel="stylesheet" href="../assets/css/signup/responsive.css">
-    <link rel="stylesheet" href="../assets/css/index/responsive.css">
-    <link rel="stylesheet" href="../assets/animations/rorate-180.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="../js/index.js"></script>
-    <script src="../js/Line__Header.js"></script>
+    <link rel="stylesheet" href="../assets/css/project/project.css">
 </head>
 <body>
     <div class="all-display">
@@ -48,7 +43,7 @@
                                                                 <h2 class="Catalog__Menu-Item-Header">Popular course topics</h2>
                                                                 <span class="Catalog__Menu-Item-Text">Explore free or paid courses in topics that interest you.</span>
                                                             </div>
-                                                            <a href="./catalog.html" class="Button__Explore">Explore all courses</a>
+                                                            <a href="./pages/catalog.html" class="Button__Explore">Explore all courses</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -176,8 +171,8 @@
                                                                 <h2 class="Catalog__Menu-Item-Header">Docs</h2>
                                                                 <span class="Catalog__Menu-Item-Text">Find definitions, code syntax, and more -- or contribute your own code documentation.</span>
                                                             </div>
-                                                            <a href="./catalog.html" class="Button__Resources" style="margin-bottom: 0;">View all docs →</a>
-                                                            <a href="./catalog.html" class="Button__Resources">Contribute to docs →</a>
+                                                            <a href="./pages/catalog.html" class="Button__Resources" style="margin-bottom: 0;">View all docs →</a>
+                                                            <a href="./pages/catalog.html" class="Button__Resources">Contribute to docs →</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -335,262 +330,230 @@
                         </li>
                         <li class="Nav__Ele ml-auto">
                             <div class="Nav__Ele-Button Nav__Ele-Button-Container">
-                                <button id="magnifyingGlass" class="Nav__Ele-Button-Component">
+                                <button class="Nav__Ele-Button-Component">
                                     <img src="../assets/img/magnifying-glass.png" alt="magnifying-glass" style="height: 32px; width: 32px;">
                                 </button>
                             </div>
                         </li>
                         <li class="Nav__Ele">
                             <div class="Nav__Ele-Button Nav__Ele-Button-Container">
-                                <button id="notificationButton" class="Nav__Ele-Button-Component">
+                                <button class="Nav__Ele-Button-Component">
                                     <img src="../assets/img/notification.png" alt="notification" style="height: 25px; width: 25px;">
                                 </button>
                             </div>
                         </li>
                         <li class="Nav__Ele">
-                            <button id="buttonAvatar" class="Button__Component">
+                            <button class="Button__Component">
                                 <div class="Button__Component-Content">
                                     <img src="https://www.gravatar.com/avatar/e43b253ce98dd12a7d017212e9dc5a47?s=140&d=retro" alt="User profile avatar" class="Avatar__Size">
                                 </div>
                             </button>
-                            <div id="avatarContainer" class="Button__Component-Info" style="display: none; right: 0.5rem; top: 3.75rem; width: 205.047px; border-width: 1px; height: 325px;">
-                                <div class="Component__Info-Container">
-                                    <ul class="Button__Community-List">
-                                        <li><a class="Button__Community-Link" href="">
-                                            <img src="../assets/img/user.png" alt="" style="height: 24px; width: 24px; margin-right: 1rem;">
-                                            Profile
-                                        </a></li>
-                                        <li><a class="Button__Community-Link" href="">
-                                            <img src="../assets/img/setting.png" alt="" style="height: 24px; width: 24px; margin-right: 1rem;">
-                                            Account + Billing
-                                        </a></li>
-                                        <li><a class="Button__Community-Link" href="../index.html">
-                                            <img src="../assets/img/home.png" alt="" style="height: 24px; width: 24px; margin-right: 1rem;">
-                                            My Home
-                                        </a></li>
-                                        <li><a class="Button__Community-Link" href="">
-                                            <img src="../assets/img/question.png" alt="" style="height: 24px; width: 24px; margin-right: 1rem;">
-                                            Help Center
-                                        </a></li>
-                                        <li class="Logout__Line"><a class="Button__Community-Link" href="./login.html">
-                                            Log Out
-                                        </a></li>
-                                    </ul>
-                                </div>
-                            </div>
                         </li>
                         <li class="Nav__Ele">
                             <a href="" class="Button__Start">Start free trial</a>
                         </li>
                     </ul>
                 </nav>
-                <div id="searchContainer" class="Search__Container" style="display: none;">
-                    <div style="border: none; width: auto;">
-                        <div class="Search__Question-Header">
-                            <div class="Search__Question-Layout">
-                                <div style="display: flex; justify-items: center; align-items: center; height: 100%;">
-                                    <img src="../assets/img/magnifying-glass.png" alt="" class="Size__MagnifyingGlass"></div>
-                                <form action="" style="margin-left: 0.5rem; width: 100%;">
-                                    <input id="searchInput" placeholder="What are you learning today?" type="search">
-                                </form>
-                                <div style="display: inline-flex; position: relative;">
-                                    <div class="Clear__Search-Container">
-                                        <button class="Clear__Search-Button" type="button" aria-label="Clear search">
-                                            <img src="../assets/img/close.png" alt="" style="width: 16px; height: 16px;">
-                                        </button>
+            </div>
+        </header>
+        <main>
+            <div class="Container Container__Box">
+                <div class="Container__Box-Layout">
+                    <div class="SideBar">
+                        <div class="SideBar__Box">
+                            <nav class="SideBar__Nav">
+                                <ul class="SideBar__List">
+                                    <div class="pb-05rem">
+                                        <li class="Page__Current">
+                                            <button class="SideBar__Button" style="font-weight: 600;">
+                                                <img src="../assets/img/dashboard.png" alt="Dashboard" style="height: 22px; width: 22px;" class="mr-10">
+                                                <span>Dashboard</span>
+                                            </button>
+                                        </li>
                                     </div>
+                                    <div class="pb-05rem">
+                                        <li>
+                                            <button class="SideBar__Button" style="background-color: inherit;">
+                                                <img src="../assets/img/book.png" alt="Book" style="height: 25px; width: 25px;" class="mr-10">
+                                                <span>My learning</span>
+                                            </button>
+                                        </li>
+                                    </div>
+                                    <div class="pb-05rem">
+                                        <li>
+                                            <button class="SideBar__Button" style="background-color: inherit;">
+                                                <img src="../assets/img/calendar.png" alt="Calendar" style="height: 25px; width: 25px;" class="mr-10">
+                                                <span>Events</span>
+                                            </button>
+                                        </li>
+                                    </div>
+                                    <div class="pb-05rem">
+                                        <li>
+                                            <button class="SideBar__Button" style="background-color: inherit;">
+                                                <img src="../assets/img/puzzle.png" alt="Puzzle" style="height: 25px; width: 25px;" class="mr-10">
+                                                <span style="display: flex;">Projects
+                                                    <div class="SideBar__Button-Upgrade">Upgrade</div>
+                                                </span>
+                                            </button>
+                                        </li>
+                                    </div>
+                                    <div class="pb-05rem">
+                                        <li>
+                                            <button class="SideBar__Button" style="background-color: inherit;">
+                                                <img src="../assets/img/workspace.png" alt="Workspaces" style="height: 22px; width: 22px;" class="mr-10">
+                                                <span>Workspaces</span>
+                                            </button>
+                                        </li>
+                                    </div>
+                                </ul>
+                            </nav>
+                            <div class="SideBar__Footer">
+                                <div class="SideBar__Footer-Content">
+                                    <h2>
+                                        Try Plus or Pro with a 7-day free trial
+                                    </h2>
+                                    <span class="Style__Text-Span">Go deeper and learn job-ready skills. Practice with real-world projects, take assessments, and earn certificates.</span>
                                 </div>
+                                <button>Try for free</button>
                             </div>
                         </div>
                     </div>
-                    <div class="Search__Question-Content">
-                        <ul class="Search__Question-List">
-                            <li style="margin-bottom: 1.5rem;">
-                                <h2 class="Search__Question-H2">Popular searches</h2>
-                                <ul class="Search__Question-List-Layout">
-                                    <li><a href="" class="Search__Question-Link">
-                                        <img src="../assets/img/magnifying-glass.png" alt="">
-                                        <span>Artificial Intelligence</span>
-                                    </a></li>
-                                    <li><a href="" class="Search__Question-Link">
-                                        <img src="../assets/img/magnifying-glass.png" alt="">
-                                        <span>Data Science</span>
-                                    </a></li>
-                                    <li><a href="" class="Search__Question-Link">
-                                        <img src="../assets/img/magnifying-glass.png" alt="">
-                                        <span>Python</span>
-                                    </a></li>
-                                    <li><a href="" class="Search__Question-Link">
-                                        <img src="../assets/img/magnifying-glass.png" alt="">
-                                        <span>Web Development</span>
-                                    </a></li>
-                                    <li><a href="" class="Search__Question-Link">
-                                        <img src="../assets/img/magnifying-glass.png" alt="">
-                                        <span>HTML</span>
-                                    </a></li>
-                                    <li><a href="" class="Search__Question-Link">
-                                        <img src="../assets/img/magnifying-glass.png" alt="">
-                                        <span>Java</span>
-                                    </a></li>
-                                </ul>
-                            </li>
-                            <li style="margin-bottom: 1.5rem;">
-                                <h2 class="Search__Question-H2">What our members are learning</h2>
-                                <ul class="Search__Question-List-Layout">
-                                    <li><a href="" class="Search__Question-Link">
-                                        <span style="margin: 0px 0.75rem 0px 0px;">Learn Python 3</span>
-                                        <div class="Search__Question-Label">Course</div>
-                                    </a></li>
-                                    <li><a href="" class="Search__Question-Link">
-                                        <span style="margin: 0px 0.75rem 0px 0px;">Business Intelligence Data Analyst</span>
-                                        <div class="Search__Question-Label">Career Path</div>
-                                    </a></li>
-                                    <li><a href="" class="Search__Question-Link">
-                                        <span style="margin: 0px 0.75rem 0px 0px;">Code Foundations</span>
-                                        <div class="Search__Question-Label">Skill Path</div>
-                                    </a></li>
-                                    <li><a href="" class="Search__Question-Link">
-                                        <span style="margin: 0px 0.75rem 0px 0px;">What is Programming?</span>
-                                        <div class="Search__Question-Label">Article</div>
-                                    </a></li>
-                                    <li><a href="" class="Search__Question-Link">
-                                        <span style="margin: 0px 0.75rem 0px 0px;">HTML | Elements</span>
-                                        <div class="Search__Question-Label">Doc</div>
-                                    </a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <div class="Search__Question-Footer">
-                            <div class="Search__Question-Footer-Left">
-                                <span>Not sure where to begin?</span>
-                                <a href="">
-                                    <div class="Search__Question-Footer-Left-Content">
-                                        <span>Take our quiz</span>
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                    </div>
-                                </a>
-                            </div>
-                            <a href="" class="Search__Question-Footer-Right">
-                                <i class="fa-regular fa-circle-question" style="margin-right: 0.5rem; margin-top: 2px;"></i>
-                                Help Center
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div id="notificationContainer" style="top: 61px; left: 1330px; display: none;" class="Notifications__Position">
-                    <div class="Notifications__Style">
-                        <div class="Notifications__Box">
-                            <div aria-label="1 unread notifications" aria-modal="true" data-autofocus="true" role="dialog" tabindex="-1" class="Notifications__Container">
-                                <div class="Notifications__Container-Header">
-                                    <h1>My Notifications</h1>
-                                    <div>
-                                        <button aria-label="Clear all 1 notifications" class="Notifications__Button-ClearAll" type="button">Clear All</button>
-                                    </div>
+                    <div class="Project">
+                        <div class="MinHeight">
+                            <div class="Project-Flex">
+                                <div class="Project-Tiltle">
+                                    <h2 class="Project-Tiltle-H2">Projects help you build your tech portfolio</h2>
                                 </div>
-                                <div style="padding-left: 2rem; padding-right: 2rem;">
-                                    <svg fill="currentColor" role="img" aria-hidden="true" style="display: flex; width: 100%; height: 1px;">
-                                        <title>Checker Dense</title>
-                                        <pattern id="CheckerDense-pattern-:r20:" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
-                                            <rect width="1" height="1" fill="currentColor"></rect>
-                                            <rect x="2" y="2" width="1" height="1" fill="currentColor"></rect>
-                                        </pattern>
-                                        <rect width="100%" height="100%" fill="url(#CheckerDense-pattern-:r20:)"></rect>
-                                    </svg>
-                                </div>
-                                <div style="overflow: auto; max-height: 520px;">
-                                    <div style="padding-bottom: 1rem;">
-                                        <ul class="Notifications__Content"> 
-                                            <li>
-                                                <div class="Notifications__Content-Item">
-                                                    <a class="Notifications__Content-Link" href="">
-                                                        <div>
-                                                            <img src="https://static-assets.codecademy.com/assets/notifications/marketing_icon.svg" style="border-radius: 50%; border: 1px solid var(--color-border); height: 3rem; width: 3rem;" alt="">
-                                                            <div style="flex: 1 1 0%; padding-left: 0.75rem;">
-                                                                <span class="Style__Text-Span">Upskill in tech — get 50% off Pro today.</span>
-                                                                <span class="Notifications__Content-SubTitle">3 days</span>
+                                <h3 class="Project-Tiltle-H3">
+                                    With a Plus or Pro account, you can work on real-world projects to apply your learning and showcase your skills. Get started with one of our handpicked options.
+                                </h3>
+                                <div class="Project-Content">
+                                    <div data-testid="popular-projects" class="Project-Content-FlexBox">
+                                        <ul aria-label="popular projects" class="Project-Content-FlexBox-UL">
+                                            <li class="Project-Content-FlexBox-LI">
+                                                <a href="/projects/practice/learn-phaser-create-an-adventure" class="Project-Content-FlexBox-A">
+                                                    <div class="Project-Content-Flex">
+                                                        <div class="Project-Content-Flex-BG">
+                                                            <span class="Project-Content-Flex-Span">Portfolio Project</span>
+                                                            <div class="Project-Content-Tiltle">
+                                                                <h3 class="Project-Content-Tiltle-H3">
+                                                                    <span class="Project-Content-Tiltle-Span">Build Your Own Reddit App</span>
+                                                                </h3>
                                                             </div>
+                                                            <span class="Project-Content-Flex-Span2">
+                                                                <span class="Project-Content-Flex-Span-Letter">Use real data from the Reddit API and display it using React and Redux.</span>
+                                                            </span>
                                                         </div>
-                                                    </a>
-                                                    <button class="Notifications__Content-Button-Close">
-                                                        <img src="../assets/img/close.png" alt="" style="height: 12px; width: 12px;">
-                                                    </button>
-                                                </div>
-                                                <div style="padding-left: 2rem; padding-right: 2rem;">
-                                                    <svg fill="currentColor" role="img" aria-hidden="true" style="display: flex; width: 100%; height: 1px;">
-                                                        <title>Checker Dense</title>
-                                                        <pattern id="CheckerDense-pattern-:r20:" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
-                                                            <rect width="1" height="1" fill="currentColor"></rect>
-                                                            <rect x="2" y="2" width="1" height="1" fill="currentColor"></rect>
-                                                        </pattern>
-                                                        <rect width="100%" height="100%" fill="url(#CheckerDense-pattern-:r20:)"></rect>
-                                                    </svg>
-                                                </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="Project-Content-FlexBox-LI">
+                                                <a href="/projects/practice/learn-phaser-create-an-adventure" class="Project-Content-FlexBox-A">
+                                                    <div class="Project-Content-Flex">
+                                                        <div class="Project-Content-Flex-BG">
+                                                            <span class="Project-Content-Flex-Span">Portfolio Project</span>
+                                                            <div class="Project-Content-Tiltle">
+                                                                <h3 class="Project-Content-Tiltle-H3">
+                                                                    <span class="Project-Content-Tiltle-Span">Create a E-Commerce App (Part Two)</span>
+                                                                </h3>
+                                                            </div>
+                                                            <span class="Project-Content-Flex-Span2">
+                                                                <span class="Project-Content-Flex-Span-Letter">Make a full-stack e-commerce app that lets users register accounts, browse products, and make purchases.</span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="Project-Content-FlexBox-LI">
+                                                <a href="/projects/practice/learn-phaser-create-an-adventure" class="Project-Content-FlexBox-A">
+                                                    <div class="Project-Content-Flex">
+                                                        <div class="Project-Content-Flex-BG">
+                                                            <span class="Project-Content-Flex-Span">Portfolio Project</span>
+                                                            <div class="Project-Content-Tiltle">
+                                                                <h3 class="Project-Content-Tiltle-H3">
+                                                                    <span class="Project-Content-Tiltle-Span">Create a Fantasy Adventure Game</span>
+                                                                </h3>
+                                                            </div>
+                                                            <span class="Project-Content-Flex-Span2">
+                                                                <span class="Project-Content-Flex-Span-Letter">Program an action-adventure fantasy story using Phaser.js.</span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="Project-Content-FlexBox-LI">
+                                                <a href="/projects/practice/learn-phaser-create-an-adventure" class="Project-Content-FlexBox-A">
+                                                    <div class="Project-Content-Flex">
+                                                        <div class="Project-Content-Flex-BG">
+                                                            <span class="Project-Content-Flex-Span">Practice Project</span>
+                                                            <div class="Project-Content-Tiltle">
+                                                                <h3 class="Project-Content-Tiltle-H3">
+                                                                    <span class="Project-Content-Tiltle-Span">Analyze and Visualize Netflix Stock Data</span>
+                                                                </h3>
+                                                            </div>
+                                                            <span class="Project-Content-Flex-Span2">
+                                                                <span class="Project-Content-Flex-Span-Letter">Act as a 'Yahoo Finance' data analyst to generate a stock profile for Netflix.</span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="Project-Content-FlexBox-LI">
+                                                <a href="/projects/practice/learn-phaser-create-an-adventure" class="Project-Content-FlexBox-A">
+                                                    <div class="Project-Content-Flex">
+                                                        <div class="Project-Content-Flex-BG">
+                                                            <span class="Project-Content-Flex-Span">Practice Project</span>
+                                                            <div class="Project-Content-Tiltle">
+                                                                <h3 class="Project-Content-Tiltle-H3">
+                                                                    <span class="Project-Content-Tiltle-Span">Classify X-rays With Machine Learning</span>
+                                                                </h3>
+                                                            </div>
+                                                            <span class="Project-Content-Flex-Span2">
+                                                                <span class="Project-Content-Flex-Span-Letter">Build a deep learning model with TensorFlow to detect and classify infections from real X-ray scans.</span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="Project-Content-FlexBox-LI">
+                                                <a href="/projects/practice/learn-phaser-create-an-adventure" class="Project-Content-FlexBox-A">
+                                                    <div class="Project-Content-Flex">
+                                                        <div class="Project-Content-Flex-BG">
+                                                            <span class="Project-Content-Flex-Span">Practice Project</span>
+                                                            <div class="Project-Content-Tiltle">
+                                                                <h3 class="Project-Content-Tiltle-H3">
+                                                                    <span class="Project-Content-Tiltle-Span">Decrypt Secret Messages</span>
+                                                                </h3>
+                                                            </div>
+                                                            <span class="Project-Content-Flex-Span2">
+                                                                <span class="Project-Content-Flex-Span-Letter">Practice decrypting intercepted data using the command line to thwart Evil Corp.</span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </a>
                                             </li>
                                         </ul>
                                     </div>
+                                    <a href="/checkout?plan_id=proGoldAnnualV2_7trial&redirect_url=%2Flearn%3Fpage%3Dprojects" class="Block__Try">
+                                        Try for free
+                                    </a>
                                 </div>
+                            </div>
+                            <div class="Block__Explore">
+                                <a href="/projects" class="Block__Explore-A">
+                                    Explore all projects 
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140" fill="#fff" role="img" aria-hidden="true" class="Block__Explore-A-SVG">
+                                        <mask id="MiniChevronRightIcon-mask-:r1m:">
+                                            <path d="M34 137.07a10 10 0 010-14.14l51.13-51.16a2.5 2.5 0 000-3.54L34 17.07A10 10 0 0148.11 2.93l56.46 56.46a15 15 0 010 21.22l-56.46 56.46a10 10 0 01-14.11 0z"></path>
+                                        </mask>
+                                        <g mask="url(#MiniChevronRightIcon-mask-:r1m:)">
+                                            <rect width="100%" height="100%" fill="currentColor"></rect>
+                                        </g>
+                                    </svg>
+                                </a>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <hr id="hrElement" style="opacity: 0;">
-        </header>
-        <main>
-            <div class="Sign-up">
-                <form>
-                    <div class="title">
-                        <h2>Get started for free</h2><br>
-                        <p>* Required</p><br>
-                    </div>
-                    <div>
-                        
-                        <label for="username">Email*</label><br>
-                        <input class="username" type="text" >
-                    </div><br>
-                    <div>
-                        <label for="password">Password*</label><br>
-                        <input class="password" type="password" >
-                    </div><br>
-                    <div class="signup">
-                        <input type="button" value="Sign Up">
-                    </div><br>
-                    <div class="terms">
-                        <p>
-                            By signing up for Codecademy, you agree to Codecademy's 
-                            <a href="https://www.codecademy.com/terms"> Terms of Service</a> & 
-                            <a href="https://www.codecademy.com/policy">  Privacy Policy.</a>
-                        </p>
-                    </div>
-                </form><br>
-                <div>
-                    <h3>Or sign up using:</h3><br>
-                    <div class="sign-up-method">
-                        <div>
-                            <button class="sign-up-method-button">
-                                <img src="../assets/img/google.png" alt="google" width="50px" height="40px">
-                            </button>
-                        </div>
-                        <div>
-                            <button class="sign-up-method-button">
-                                <img src="../assets/img/facebook.png" alt="facebook" width="50px" height="40px">
-                            </button>
-                        </div>
-                        <div>
-                            <button class="sign-up-method-button">
-                                <img src="../assets/img/github.png" alt="github" width="50px" height="40px">
-                            </button>
-                        </div>
-                        <div>
-                            <button class="sign-up-method-button">
-                                <img src="../assets/img/apple.png" alt="apple" width="50px" height="40px">
-                            </button>
-                        </div>
-                    </div>
-                </div><br>
-                <div>
-                    <span>Already have an account?</span>
-                    <a href="./login.html"><b>Log in</b></a>
                 </div>
             </div>
         </main>
@@ -774,5 +737,7 @@
             </div>
         </footer>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
 </body>
-</html>
+</html>\

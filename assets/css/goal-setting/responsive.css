@@ -1,0 +1,40 @@
+@media only screen and (min-width: 480px) {
+    .Account__Wrapper-Center {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .Account__Wrapper-Center {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .Goal__Choice {
+        grid-template-columns: 1fr 1fr;
+    }
+    .Goal__Weekly-Target {
+        margin-bottom: 128px;
+        height: 2.5625rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .Account__Wrapper-FlexBox {
+        flex-direction: row;
+    }
+    .Account__Nav {
+        display: block;
+    }
+    .Account__Content {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .Account__Wrapper-Center {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+}
