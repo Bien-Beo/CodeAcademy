@@ -134,49 +134,19 @@
     background-color: var(--color-white);
 }
 
-.Linked__Content-List {
-    display: flex;
-    align-items: center;
-}
-
-.Linked__Content-Icon {
-    padding-right: 16px;
-    padding-bottom: 16px;
-}
-
-.Linked__Content-Title {
-    width: 90px;
-    padding-right: 16px;
-    padding-bottom: 16px;
-}
-
-.Linked__Content-Title > h2 {
-    font-weight: 700;
-    line-height: 1.2;
-    font-size: 2.75rem;
-    margin: 0;
-    font-weight: 400;
-    font-size: 1rem;
-}
-
-.Linked__Content-Btn-Unlink > button {
-    cursor: pointer;
-    border: none;
-    background: none;
-    padding: 0;
+.Delete__Span {
     font-size: inherit;
-    text-decoration: none;
+    display: inline-block;
+    margin: 0px 0px 2rem;
+}
+
+.Delete__Btn {
+    cursor: pointer;
     box-shadow: none;
-    color: var(--color-text);
-    transition: border-color 150ms ease-in, color 150ms ease-in, background-color 150ms ease-in, box-shadow 150ms ease-in;
-    border: 2px solid var(--color-secondary);
-    border-color: transparent;
-    white-space: nowrap;
     justify-content: center;
     align-items: center;
     display: inline-flex;
     position: relative;
-    border-radius: 4px;
     font-weight: 700;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -185,79 +155,29 @@
     font-size: 1rem;
     min-width: 40px;
     height: 40px;
-    color: var(--color-background);
-    background-color: var(--color-primary);
-    margin-bottom: 20px;
+    color: var(--color-white);
+    background: none;
+    text-decoration: none;
+    transition: border-color 150ms ease-in, color 150ms ease-in, background-color 150ms ease-in, box-shadow 150ms ease-in;
+    border-color: transparent;
+    white-space: nowrap;
+    border-radius: 4px;
+    background-color: var(--color-primary);;
 }
 
-.Linked__Content-Btn-Unlink > button:before {
+.Delete__Btn::before {
     content: "";
     transition: opacity 150ms linear;
     border: 2px solid var(--color-secondary);
     position: absolute;
-    top: -5px;
-    right: -5px;
-    bottom: -5px;
-    left: -5px;
+    inset: -5px;
     z-index: 0;
     opacity: 0;
     border-radius: 8px;
 }
 
-.Linked__Content-Btn-Unlink > button:hover {
-    -webkit-transition: background-color 150ms ease-in, box-shadow 150ms ease-in;
+.Delete__Btn:hover {
     transition: background-color 150ms ease-in, box-shadow 150ms ease-in;
     color: var(--color-background);
     background-color: #5533FF;
-}
-
-.Linked__Content-Btn-Link > button {
-    cursor: pointer;
-    border: none;
-    background: none;
-    padding: 0;
-    font-size: inherit;
-    text-decoration: none;
-    box-shadow: none;
-    color: var(--color-text);
-    transition: border-color 150ms ease-in, color 150ms ease-in, background-color 150ms ease-in, box-shadow 150ms ease-in;
-    border: 2px solid var(--color-secondary);
-    border-color: transparent;
-    white-space: nowrap;
-    justify-content: center;
-    align-items: center;
-    display: inline-flex;
-    position: relative;
-    border-radius: 4px;
-    font-weight: 700;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
-    font-size: 1rem;
-    min-width: 40px;
-    height: 40px;
-    color: var(--color-background);
-    background-color: var(--color-secondary);
-    margin-bottom: 20px;
-}
-
-.Linked__Content-Btn-Link >button:before {
-    content: "";
-    transition: opacity 150ms linear;
-    border: 2px solid var(--color-secondary);
-    position: absolute;
-    top: -5px;
-    right: -5px;
-    bottom: -5px;
-    left: -5px;
-    z-index: 0;
-    opacity: 0;
-    border-radius: 8px;
-}
-
-.Linked__Content-Btn-Link >button:hover {
-    transition: background-color 150ms ease-in, box-shadow 150ms ease-in;
-    color: var(--color-background);
-    background-color: rgba(16, 22, 47, 0.86);
 }
