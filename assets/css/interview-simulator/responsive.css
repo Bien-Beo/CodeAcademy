@@ -1,0 +1,69 @@
+@media only screen and (min-width: 480px) {
+    .Interview__Main {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .Interview__Main {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .Interview__Introduction-LayoutGrid-Right {
+        display: flex;
+    }
+    .Interview__List-LayoutGrid {
+        grid-column-gap: 2rem;
+        column-gap: min(calc(100% / 11), 2rem);
+    }
+    .Interview__List-LayoutGrid > li:first-child {
+        display: grid;
+        grid-column-end: span 6;
+    }
+    .Interview__List-LayoutGrid > li:nth-child(2),
+    .Interview__List-LayoutGrid > li:nth-child(3),
+    .Interview__List-LayoutGrid > li:nth-child(4) {
+        display: grid;
+        grid-column-end: span 6;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .Interview__Introduction-LayoutGrid-Left {
+        grid-column-end: span 6;
+    }
+    .Interview__Introduction-LayoutGrid-Right {
+        justify-content: flex-start;
+        grid-column-end: span 6;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .Interview__Main {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+    .Interview__List-LayoutGrid > li:first-child{
+        grid-column-end: span 4;
+    }
+    .Interview__List-LayoutGrid > li:nth-child(2),
+    .Interview__List-LayoutGrid > li:nth-child(3),
+    .Interview__List-LayoutGrid > li:nth-child(4) {
+        grid-column-end: span 4;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .Interview__Introduction-LayoutGrid-Right {
+        margin-left: 4rem;
+    }
+    .Interview__List-LayoutGrid > li:first-child {
+        grid-column-end: span 3;
+    }
+    .Interview__List-LayoutGrid > li:nth-child(2),
+    .Interview__List-LayoutGrid > li:nth-child(3),
+    .Interview__List-LayoutGrid > li:nth-child(4) {
+        grid-column-end: span 3;
+    }
+}
