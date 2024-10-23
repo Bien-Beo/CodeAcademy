@@ -1,0 +1,381 @@
+.Account__Content {
+    border: 1px solid var(--color-border);
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    width: 100%;
+    background-color: var(--color-white);
+}
+
+.Account__Content-Header {
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 4rem;
+    margin: 0;
+    font-size: 1.625rem;
+    margin-bottom: 2rem;
+}
+
+.Account__Wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+.Account__Wrapper-Center {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 1440px;
+}
+
+.Account__Wrapper-FlexBox {
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    flex-direction: column;
+}
+
+.Account__Nav {
+    margin-right: 1.5rem;
+    display: none;
+}
+
+.Account__Nav-SideBar {
+    padding-left: 1.5rem;
+    display: inline-block;
+    width: 100%;
+    background-color: inherit;
+    list-style: none;
+    border: 1px solid var(--color-border);
+    padding: 0;
+    min-width: 192px;
+    border-radius: 2px;
+    background-color: var(--color-background);
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.Account__Button-SubList-Link {
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+    font-size: inherit;
+    text-decoration: none;
+    box-shadow: none;
+    color: var(--color-text);
+    cursor: pointer;
+    transition: color 150ms linear, background-color 150ms linear, border-color 150ms linear;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    background-color: var(--color-background);
+    font-size: 1rem;
+    min-height: 48px;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+.Account__Button-SubList-Link:hover {
+    color: var(--color-primary);
+}
+
+.Account__Button-SubList-Link::before {
+    min-height: 48px;
+}
+
+.Page__Current > .Account__Button-SubList-Link::before {
+    content: '';
+    background-color: var(--color-secondary);
+}
+
+.Account__Button-SubList-Link::before {
+    display: inline-block;
+    width: 6px;
+    position: absolute;
+    left: 0;
+    background-color: inherit;
+}
+
+.Page__Current > .Account__Button-SubList-Link:after {
+    content: '';
+    border: 2px solid var(--color-secondary);
+    border-color: var(--color-primary);
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    bottom: 4px;
+    left: 4px;
+    z-index: -1;
+    opacity: 0;
+    border-radius: 4px;
+}   
+
+.Mail__Setting-Header {
+    user-select: none;
+    cursor: pointer;
+    margin: 0.25rem;
+    padding: 0.25rem 0px;
+    font-weight: 400;
+    font-size: 1rem;
+    align-items: flex-start;
+    display: flex;
+    color: var(--color-text);
+}
+
+.Mail__Setting-Description {
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--color-text);
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+}
+
+.Mail__Setting-Header > input {
+    height: 22px;
+    width: 22px;
+    margin-right: 0.5rem;
+}
+
+.Mail__Setting-Header > strong {
+    font-weight: 700;
+    font-size: inherit;
+    display: inline-block;
+    margin: 0px;
+}
+
+.Mail__Option-Radio {
+    padding-top: 0.5rem;
+    padding-left: 6rem;
+}
+
+.Mail__Option-Radio-Header-Wrapper {
+    display: flex;
+    margin-bottom: 0.25rem;
+    justify-content: space-between;
+}
+
+.Mail__Option-Radio-Header-Label {
+    font-weight: 400;
+    font-size: 1rem;
+    display: block;
+    color: var(--color-text);
+    line-height: 1.5;
+}
+
+.Mail__Option-Radio-Header-Label > span {
+    font-size: inherit;
+    display: inline-block;
+    margin: 0px;
+}
+
+.Mail__Option-Radio-Item {
+    margin: 0.25rem 0px;
+    font-weight: normal;
+    display: flex;
+    width: 100%;
+}
+
+.Mail__Option-Radio-Item > input {
+    margin-right: 0.5rem;
+    width: 22px;
+}
+
+.Mail__Option-Radio-Item > label {
+    outline: none;
+    cursor: pointer;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-weight: 400;
+    font-size: 1rem;
+    align-items: center;
+    display: flex;
+    width: max-content;
+    min-width: auto;
+    position: relative;
+    color: var(--color-text);
+    background-color: transparent;
+}
+
+.Mail__Line {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-color: var(--color-background-disabled);
+}
+
+.Mail__Option-List {
+    width: 100%;
+    min-width: 7rem;
+    position: relative;
+}
+
+.Mail__Option-List > select {
+    padding-left: 0.5rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 1rem;
+    width: 100%;
+    min-width: auto;
+    color: var(--color-text);
+    background-color: var(--color-background);
+    padding-right: 3rem;
+    height: auto;
+    cursor: pointer;
+    appearance: none;
+    outline: none;
+    transition: background-color 350ms ease-in-out, box-shadow 350ms ease-in-out;
+    border-radius: 4px;
+    border-color: currentcolor;
+}
+
+.Mail__Option-List-DropDown {
+    display: flex;
+    padding-right: 0.75rem;
+    color: var(--color-text);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    align-items: center;
+    pointer-events: none;
+}
+
+.Mail__Unsubscribe-FlexBox {
+    display: flex;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.Mail__Unsubscribe-ToggleLabel {
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    width: fit-content;
+    flex-direction: row-reverse;
+}
+
+.Mail__Unsubscribe-ToggleTrack {
+    cursor: inherit;
+    transition: background-color 0.2s ease;
+    border: none;
+    border-color: var(--color-primary);
+    position: relative;
+    border-radius: 999px;
+    width: 60px;
+    height: 30px;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    background-color: rgba(16, 22, 47, 0.63);
+}
+
+.Mail__Unsubscribe-ToggleTrack:after {
+    content: "";
+    transition: opacity 0.2s ease;
+    border-width: 2px;
+    border-style: solid;
+    border-color: inherit;
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    opacity: 0;
+    border-radius: inherit;
+}
+
+.Mail__Unsubscribe-ToggleInput {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    clip-path: inset(50%);
+    border: 0;
+}
+
+.Mail__Circle {
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--color-background);
+    border-radius: 999px;
+    width: 40%;
+    background-color: var(--color-white);
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    left: 5%;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.Btn__Update-Email {
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+    font-size: inherit;
+    text-decoration: none;
+    box-shadow: none;
+    color: var(--color-text);
+    transition: border-color 150ms ease-in, color 150ms ease-in, background-color 150ms ease-in, box-shadow 150ms ease-in;
+    border: 2px solid var(--color-secondary);
+    border-color: transparent;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    position: relative;
+    border-radius: 4px;
+    font-weight: 700;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    font-size: 1rem;
+    min-width: 40px;
+    height: 40px;
+    color: var(--color-background);
+    background-color: var(--color-primary);
+}
+
+.Btn__Update-Email:before {
+    content: "";
+    transition: opacity 150ms linear;
+    border: 2px solid var(--color-secondary);
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    z-index: 0;
+    opacity: 0;
+    border-radius: 8px;
+}
+
+.Btn__Update-Email:hover {
+    transition: background-color 150ms ease-in, box-shadow 150ms ease-in;
+    color: var(--color-background);
+    background-color: #5533FF;
+}

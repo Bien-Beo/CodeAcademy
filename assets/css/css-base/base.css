@@ -13,12 +13,11 @@
     --elements-headerZ: 15;
     --headerHeight: 4rem;
     --color-border: #10162F;
-    --color-green-100: #EAFDC6;
     --color-primary: #3A10E5;
     --color-secondary: #10162F;
     --color-background-hover: rgba(16, 22, 47, 0.12);
-    --color-background-selected: rgba(16, 22, 47, 0.04);
-    --color-text-disabled: var(--color-navy-500);
+    --color-background-selected: rgba(16, 22, 47, 0.04)
+    --color-primary-hover: #5533FF;
 }
 
 body {
