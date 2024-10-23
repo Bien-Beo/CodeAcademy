@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Home | Codeacademy</title>
+    <title>Events | Codeacademy</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./assets/css/myhome/header.css">
-    <link rel="stylesheet" href="./assets/css/myhome/container.css">
-    <link rel="stylesheet" href="./assets/css/events.css">
-    <link rel="stylesheet" href="./assets/css/myhome/footer.css">
-    <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/css-base/header.css">
+    <link rel="stylesheet" href="../assets/css/index/container.css">
+    <link rel="stylesheet" href="../assets/css/css-base/base.css">
+    <link rel="stylesheet" href="../assets/css/css-base/footer.css">
+    <link rel="stylesheet" href="../assets/css/css-base/responsive.css">
+    <link rel="stylesheet" href="../assets/css/events/events.css">
 </head>
 <body>
     <div class="all-display">
@@ -18,44 +18,308 @@
             <div id="Box__Header" class="Box__Header-Normal">
                 <nav class="Box__Header-Nav">
                     <ul class="Nav__List">
-                        <li class="Nav__Ele">
-                            <a href="./pages/setting/profile.html" class="Logo__Header">
-                                <img src="./assets/img/logo.png" alt="Codecademy Logo" class="Logo__Header-Img">
+                        <li class="Nav__Ele" style="margin-left: 0; margin-right: 0;">
+                            <a href="#" class="Logo__Header">
+                                <img src="../assets/img/logo.png" alt="Codecademy Logo" class="Logo__Header-Img">
                             </a>
                         </li>
                         <li class="Nav__Ele">
-                            <a href="" class="Nav__Ele-Link">My Home</a>
+                            <a href="#" class="Nav__Ele-Link">My Home</a>
                         </li>
                         <li class="Nav__Ele">
                             <div>
-                                <button class="Button__Nav">
+                                <button id="catalog" class="Button__Nav">
                                     <span class="Button__Nav-Text">Catalog</span>
                                     <i class="fas fa-caret-down Button__Nav-Icon"></i>
                                 </button>
+                                <div id="catalogSubMenu" class="Catalog__Menu-Container" style="top: 4.5rem; min-width: 64rem; left: -15rem; border-width: 1px; height: fit-content; display: none;"> 
+                                    <ul class="Catalog__Menu-Layout">
+                                        <li class="Catalog__Menu-Item">
+                                            <div class="Catalog__Menu-Item-Layout">
+                                                <div class="Catalog__Menu-Item-Layout-Column-1">
+                                                    <div class="Catalog__Menu-Item-1">
+                                                        <div class="Catalog__Menu-Item-1-Container">
+                                                            <div style="display: flex; flex-direction: column;">
+                                                                <h2 class="Catalog__Menu-Item-Header">Popular course topics</h2>
+                                                                <span class="Catalog__Menu-Item-Text">Explore free or paid courses in topics that interest you.</span>
+                                                            </div>
+                                                            <a href="./pages/catalog.html" class="Button__Explore">Explore all courses</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="Catalog__Menu-Item-2">
+                                                    <ul class="Catalog__Menu-Item-2-List">
+                                                        <li class="Catalog__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">Python</a>
+                                                        </li>
+                                                        <li class="Catalog__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">JavaScript</a>
+                                                        </li>
+                                                        <li class="Catalog__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">HTML & CSS</a>
+                                                        </li>
+                                                        <li class="Catalog__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">SQL</a>
+                                                        </li>
+                                                        <li class="Catalog__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">Java</a>
+                                                        </li>
+                                                        <li class="Catalog__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">C++</a>
+                                                        </li>
+                                                        <li class="Catalog__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">C#</a>
+                                                        </li>
+                                                        <li class="Catalog__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">Bash</a>
+                                                        </li>
+                                                        <li class="Catalog__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">C</a>
+                                                        </li>
+                                                        <li class="Catalog__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">PHP</a>
+                                                        </li>
+                                                        <li class="Catalog__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">R</a>
+                                                        </li>
+                                                        <li class="Catalog__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">Swift</a>
+                                                        </li>
+                                                        <li style="width: 12rem; min-height: 36px;">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-LinkNew">Cloud Computing</a>
+                                                        </li>
+                                                        <li style="width: 12rem; min-height: 36px;">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-LinkNew">AI</a>
+                                                        </li>
+                                                        <li style="width: 12rem; min-height: 36px;">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-LinkNew">Web Development</a>
+                                                        </li>
+                                                        <li style="width: 12rem; min-height: 36px;">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-LinkNew">Data Science</a>
+                                                        </li>
+                                                        <li style="width: 12rem; min-height: 36px;">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-LinkNew">Web Design</a>
+                                                        </li>
+                                                        <li style="width: 12rem; min-height: 36px;">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-LinkNew">Professional Skills</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="Catalog__Menu-Item-3">
+                                                    <a href="" class="Catalog__Menu-Item-3-Link">
+                                                        <div class="Catalog__Menu-Item-3-Link-Content">
+                                                            <div class="Catalog__Menu-Item-3-New">New</div>
+                                                            Build your cybersecurity skills with new, free video-based courses.
+                                                        </div>
+                                                        <i class="fa-solid fa-arrow-right"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="Catalog__Menu-Item">
+                                            <div class="Catalog__Menu-Item-Layout">
+                                                <div class="Catalog__Menu-Career-Layout">
+                                                    <div class="Catalog__Menu-Career-Container">
+                                                        <div style="display: flex; flex-direction: column;">
+                                                            <h2 class="Catalog__Menu-Item-Header">Top career paths</h2>
+                                                            <span class="Catalog__Menu-Item-Text">Choose your career. We'll teach you the skills to get job-ready.</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="Catalog__Menu-Career-List-Layout">
+                                                    <ul class="Catalog__Menu-Career-List-Item">
+                                                        <li class="Catalog__Menu-Career-List-Content">
+                                                            <a href="" class="Catalog__Menu-Career-List-Link">Full-Stack Engineer</a>
+                                                        </li>
+                                                        <li class="Catalog__Menu-Career-List-Content">
+                                                            <a href="" class="Catalog__Menu-Career-List-Link">Back-End Engineer</a>
+                                                        </li>
+                                                        <li class="Catalog__Menu-Career-List-Content">
+                                                            <a href="" class="Catalog__Menu-Career-List-Link">iOS Developer</a>
+                                                        </li>
+                                                        <li class="Catalog__Menu-Career-List-Content">
+                                                            <a href="" class="Catalog__Menu-Career-List-Link">Front-End Engineer</a>
+                                                        </li>
+                                                        <li class="Catalog__Menu-Career-List-Content">
+                                                            <a href="" class="Catalog__Menu-Career-List-Link">Computer Science</a>
+                                                        </li>
+                                                        <li class="Catalog__Menu-Career-List-Content">
+                                                            <a href="" class="Catalog__Menu-Career-List-Link">Data Scientist</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </li>
                         <li class="Nav__Ele">
                             <div>
-                                <button class="Button__Nav">
+                                <button id="resources" class="Button__Nav">
                                     <span class="Button__Nav-Text">Resources</span>
                                     <i class="fas fa-caret-down Button__Nav-Icon"></i>
                                 </button>
+                                <div id="resourcesSubMenu" class="Catalog__Menu-Container" style="top: 4.5rem; min-width: 64rem; left: -20rem; border-width: 1px; height: fit-content; display: none;"> 
+                                    <ul class="Catalog__Menu-Layout">
+                                        <li class="Catalog__Menu-Item">
+                                            <div class="Catalog__Menu-Item-Layout">
+                                                <div class="Catalog__Menu-Item-Layout-Column-1">
+                                                    <div class="Catalog__Menu-Item-1">
+                                                        <div class="Catalog__Menu-Item-1-Container">
+                                                            <div style="display: flex; flex-direction: column; margin-bottom: auto;">
+                                                                <h2 class="Catalog__Menu-Item-Header">Docs</h2>
+                                                                <span class="Catalog__Menu-Item-Text">Find definitions, code syntax, and more -- or contribute your own code documentation.</span>
+                                                            </div>
+                                                            <a href="./pages/catalog.html" class="Button__Resources" style="margin-bottom: 0;">View all docs →</a>
+                                                            <a href="./pages/catalog.html" class="Button__Resources">Contribute to docs →</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="Catalog__Menu-Item-2">
+                                                    <ul class="Resources__Menu-Item-2-List">
+                                                        <li class="Resources__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">Python</a>
+                                                        </li>
+                                                        <li class="Resources__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">JavaScript</a>
+                                                        </li>
+                                                        <li class="Resources__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">HTML & CSS</a>
+                                                        </li>
+                                                        <li class="Resources__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">SQL</a>
+                                                        </li>
+                                                        <li class="Resources__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">Java</a>
+                                                        </li>
+                                                        <li class="Resources__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">C++</a>
+                                                        </li>
+                                                        <li class="Resources__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">C#</a>
+                                                        </li>
+                                                        <li class="Resources__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">Bash</a>
+                                                        </li>
+                                                        <li class="Resources__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">C</a>
+                                                        </li>
+                                                        <li class="Resources__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">PHP</a>
+                                                        </li>
+                                                        <li class="Resources__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">R</a>
+                                                        </li>
+                                                        <li class="Resources__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">Swift</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="Catalog__Menu-Item"  style="border-top: 1px solid #000;">
+                                            <div class="Catalog__Menu-Item-Layout">
+                                                <div class="Catalog__Menu-Career-Layout">
+                                                    <div class="Catalog__Menu-Career-Container">
+                                                        <div style="display: flex; flex-direction: column;">
+                                                            <h2 class="Catalog__Menu-Item-Header">Learning & practice tools</h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="Catalog__Menu-Career-List-Layout">
+                                                    <ul class="Catalog__Menu-Career-List-Item">
+                                                        <li class="Catalog__Menu-Career-List-Content">
+                                                            <a href="" class="Catalog__Menu-Career-List-Link"><h3 class="Resources__Menu-Item-Heading-3">Articles</h3></a>
+                                                            <span class="Resources__Menu-Item-Span">Learn about technical concepts.</span>
+                                                        </li>
+                                                        <li class="Catalog__Menu-Career-List-Content">
+                                                            <a href="" class="Catalog__Menu-Career-List-Link"><h3 class="Resources__Menu-Item-Heading-3">Cheatsheets</h3></a>
+                                                            <span class="Resources__Menu-Item-Span">Review concepts from your courses.</span>
+                                                        </li>
+                                                        <li class="Catalog__Menu-Career-List-Content">
+                                                            <a href="" class="Catalog__Menu-Career-List-Link"><h3 class="Resources__Menu-Item-Heading-3">Code challenges</h3></a>
+                                                            <span class="Resources__Menu-Item-Span">Test your knowledge and prep for interviews.</span>
+                                                        </li>
+                                                        <li class="Catalog__Menu-Career-List-Content">
+                                                            <a href="" class="Catalog__Menu-Career-List-Link"><h3 class="Resources__Menu-Item-Heading-3">Projects</h3></a>
+                                                            <span class="Resources__Menu-Item-Span">Practice and build your portfolio.</span>
+                                                        </li>
+                                                        <li class="Catalog__Menu-Career-List-Content">
+                                                            <a href="" class="Catalog__Menu-Career-List-Link"><h3 class="Resources__Menu-Item-Heading-3">Videos</h3></a>
+                                                            <span class="Resources__Menu-Item-Span">Watch tutorials, project walkthroughs, and more.</span>
+                                                        </li>
+                                                        <li class="Catalog__Menu-Career-List-Content">
+                                                            <a href="" class="Catalog__Menu-Career-List-Link"><h3 class="Resources__Menu-Item-Heading-3">Workspaces</h3></a>
+                                                            <span class="Resources__Menu-Item-Span">Build and share projects in your browser.</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </li>
                         <li class="Nav__Ele">
                             <div>
-                                <button class="Button__Nav">
+                                <button id="community" class="Button__Nav">
                                     <span class="Button__Nav-Text">Community</span>
                                     <i class="fas fa-caret-down Button__Nav-Icon"></i>
                                 </button>
+                                <div id="communitySubMenu" class="Button__Community-Container" style="top: 3.25rem; width: 195.25px; border-width: 1px; height: 366px; display: none;">
+                                    <div>
+                                        <ul class="Button__Community-List">
+                                            <li><a href="" class="Button__Community-Link">
+                                                <img src="../assets/img/comment.png" alt="" style="height: 24px; width: 24px; margin-right: 1rem;">
+                                                Forums
+                                            </a></li>
+                                            <li><a href="" class="Button__Community-Link">
+                                                <img src="../assets/img/discord-lite.png" alt="" style="height: 24px; width: 24px; margin-right: 1rem;">
+                                                Discord
+                                            </a></li>
+                                            <li><a href="" class="Button__Community-Link">
+                                                <img src="../assets/img/party.png" alt="" style="height: 24px; width: 24px; margin-right: 1rem;">
+                                                Clubs
+                                            </a></li>
+                                            <li><a href="" class="Button__Community-Link">
+                                                <img src="../assets/img/calendar-mini.png" alt="" style="height: 24px; width: 24px; margin-right: 1rem;">
+                                                Events
+                                            </a></li>
+                                            <li><a href="" class="Button__Community-Link">
+                                                <img src="../assets/img/book-mini.png" alt="" style="height: 24px; width: 24px; margin-right: 1rem;">
+                                                Learner Stories
+                                            </a></li>
+                                            <li><a href="" class="Button__Community-Link">
+                                                <img src="../assets/img/woman.png" alt="" style="height: 24px; width: 24px; margin-right: 1rem;">
+                                                Code Crew
+                                            </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </li>
                         <li class="Nav__Ele">
                             <div>
-                                <button class="Button__Nav">
+                                <button id="pricing" class="Button__Nav">
                                     <span class="Button__Nav-Text">Pricing</span>
                                     <i class="fas fa-caret-down Button__Nav-Icon"></i>
                                 </button>
+                                <div id="pricingSubMenu" class="Button__Community-Container" style="top: 3.25rem; width: 149.219px; border-width: 1px; height: 195px; display: none;">
+                                    <div>
+                                        <ul class="Button__Community-List">
+                                            <li><a href="" class="Button__Community-Link"> 
+                                                For Individuals
+                                            </a></li>
+                                            <li><a href="" class="Button__Community-Link"> 
+                                                For Students
+                                            </a></li>
+                                            <li><a href="" class="Button__Community-Link"> 
+                                                For Business
+                                            </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </li>
                         <li class="Nav__Ele">
@@ -67,14 +331,14 @@
                         <li class="Nav__Ele ml-auto">
                             <div class="Nav__Ele-Button Nav__Ele-Button-Container">
                                 <button class="Nav__Ele-Button-Component">
-                                    <img src="./assets/img/magnifying-glass.png" alt="magnifying-glass" style="height: 32px; width: 32px;">
+                                    <img src="../assets/img/magnifying-glass.png" alt="magnifying-glass" style="height: 32px; width: 32px;">
                                 </button>
                             </div>
                         </li>
                         <li class="Nav__Ele">
                             <div class="Nav__Ele-Button Nav__Ele-Button-Container">
                                 <button class="Nav__Ele-Button-Component">
-                                    <img src="./assets/img/notification.png" alt="notification" style="height: 25px; width: 25px;">
+                                    <img src="../assets/img/notification.png" alt="notification" style="height: 25px; width: 25px;">
                                 </button>
                             </div>
                         </li>
@@ -94,87 +358,612 @@
         </header>
         <main>
             <div class="Container Container__Box">
-                <div class="SideBar">
-                    <div class="SideBar__Box">
-                        <nav class="SideBar__Nav">
-                            <ul class="SideBar__List">
-                                <div class="pb-05rem">
-                                    <li class="Page__Current">
-                                        <button class="SideBar__Button" style="font-weight: 700;">
-                                            <img src="./assets/img/dashboard.png" alt="Dashboard" style="height: 22px; width: 22px;" class="mr-10">
-                                            <span>Dashboard</span>
-                                        </button>
-                                    </li>
+                <div class="Container__Box-Layout">
+                    <div class="SideBar">
+                        <div class="SideBar__Box">
+                            <nav class="SideBar__Nav">
+                                <ul class="SideBar__List">
+                                    <div class="pb-05rem">
+                                        <li class="Page__Current">
+                                            <button class="SideBar__Button" style="font-weight: 600;">
+                                                <img src="../assets/img/dashboard.png" alt="Dashboard" style="height: 22px; width: 22px;" class="mr-10">
+                                                <span>Dashboard</span>
+                                            </button>
+                                        </li>
+                                    </div>
+                                    <div class="pb-05rem">
+                                        <li>
+                                            <button class="SideBar__Button" style="background-color: inherit;">
+                                                <img src="../assets/img/book.png" alt="Book" style="height: 25px; width: 25px;" class="mr-10">
+                                                <span>My learning</span>
+                                            </button>
+                                        </li>
+                                    </div>
+                                    <div class="pb-05rem">
+                                        <li>
+                                            <button class="SideBar__Button" style="background-color: inherit;">
+                                                <img src="../assets/img/calendar.png" alt="Calendar" style="height: 25px; width: 25px;" class="mr-10">
+                                                <span>Events</span>
+                                            </button>
+                                        </li>
+                                    </div>
+                                    <div class="pb-05rem">
+                                        <li>
+                                            <button class="SideBar__Button" style="background-color: inherit;">
+                                                <img src="../assets/img/puzzle.png" alt="Puzzle" style="height: 25px; width: 25px;" class="mr-10">
+                                                <span style="display: flex;">Projects
+                                                    <div class="SideBar__Button-Upgrade">Upgrade</div>
+                                                </span>
+                                            </button>
+                                        </li>
+                                    </div>
+                                    <div class="pb-05rem">
+                                        <li>
+                                            <button class="SideBar__Button" style="background-color: inherit;">
+                                                <img src="../assets/img/workspace.png" alt="Workspaces" style="height: 22px; width: 22px;" class="mr-10">
+                                                <span>Workspaces</span>
+                                            </button>
+                                        </li>
+                                    </div>
+                                </ul>
+                            </nav>
+                            <div class="SideBar__Footer">
+                                <div class="SideBar__Footer-Content">
+                                    <h2>
+                                        Try Plus or Pro with a 7-day free trial
+                                    </h2>
+                                    <span class="Style__Text-Span">Go deeper and learn job-ready skills. Practice with real-world projects, take assessments, and earn certificates.</span>
                                 </div>
-                                <div class="pb-05rem">
-                                    <li>
-                                        <button class="SideBar__Button" style="background-color: inherit;">
-                                            <img src="./assets/img/book.png" alt="Book" style="height: 25px; width: 25px;" class="mr-10">
-                                            <span>My learning</span>
-                                        </button>
-                                    </li>
-                                </div>
-                                <div class="pb-05rem">
-                                    <li>
-                                        <button class="SideBar__Button" style="background-color: inherit;">
-                                            <img src="./assets/img/calendar.png" alt="Calendar" style="height: 25px; width: 25px;" class="mr-10">
-                                            <span>Events</span>
-                                        </button>
-                                    </li>
-                                </div>
-                                <div class="pb-05rem">
-                                    <li>
-                                        <button class="SideBar__Button" style="background-color: inherit;">
-                                            <img src="./assets/img/puzzle.png" alt="Puzzle" style="height: 25px; width: 25px;" class="mr-10">
-                                            <span style="display: flex;">Projects
-                                                <div class="SideBar__Button-Upgrade">Upgrade</div>
-                                            </span>
-                                        </button>
-                                    </li>
-                                </div>
-                                <div class="pb-05rem">
-                                    <li>
-                                        <button class="SideBar__Button" style="background-color: inherit;">
-                                            <img src="./assets/img/workspace.png" alt="Workspaces" style="height: 22px; width: 22px;" class="mr-10">
-                                            <span>Workspaces</span>
-                                        </button>
-                                    </li>
-                                </div>
-                            </ul>
-                        </nav>
-                        <div class="SideBar__Footer">
-                            <div class="SideBar__Footer-Content">
-                                <h2>
-                                    Try Plus or Pro with a 7-day free trial
-                                </h2>
-                                <span class="Style__Text-Span">Go deeper and learn job-ready skills. Practice with real-world projects, take assessments, and earn certificates.</span>
+                                <button>Try for free</button>
                             </div>
-                            <button>Try for free</button>
                         </div>
                     </div>
-                </div>
-                <div class="Content">
-                    <div class="Content__Box">
-                        <div class="Events__Content-Layout">
-                            <div class="Events__Content-Layout-Column">
-                                <div class="Events__Content-Item Item-1">
-                                    <div>
-                                        <div class="Events__Content-Item-Header">
-                                            <h2 class="Header__Style">Your upcoming events</h2>
-                                            <span class="Span__Style">Find your community by joining an event. When we learn together, we learn more.</span>
+                    <div class="Container__Right">
+                        <div class="Container__Right-Block">
+                            <div class="Container__Right-Block-Colums">
+                                <div class="Right-Block-Colums-Frame">
+                                    <div class="Container__Right-Block-Header">
+                                        <div class="Container__Right-Block-Header-Tiltle">
+                                            <div class="Header-Tiltle-Frame">
+                                                <h2 class="Header-Tiltle-Frame-H2">Your upcoming events</h2>
+                                                <span class="Header-Tiltle-Frame-Span">Find your community by joining an event. When we learn together, we learn more.</span>
+                                            </div>
+                                        </div>
+                                        <div class="Right__Header-Flex">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" role="img" aria-hidden="true" class="Header-FlexBox-SVG">
+                                                <mask id="CalendarIcon-mask-:r11:">
+                                                    <rect x="0.75" y="3.75" width="22.5" height="19.5" rx="1.5" ry="1.5" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></rect>
+                                                    <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M.75 9.75h22.5M6.75 6V.75M17.25 6V.75M5.625 13.5h0m0 0a.375.375 0 10.375.375.375.375 0 00-.375-.375m0 5.25h0m0 0a.375.375 0 10.375.375.375.375 0 00-.375-.375M12 13.5h0m0 0a.375.375 0 10.375.375A.375.375 0 0012 13.5m0 5.25h0m0 0a.375.375 0 10.375.375.375.375 0 00-.375-.375m6.375-5.25h0m0 0a.375.375 0 10.375.375.375.375 0 00-.375-.375m0 5.25h0m0 0a.375.375 0 10.375.375.375.375 0 00-.375-.375"></path>
+                                                </mask>
+                                                <g mask="url(#CalendarIcon-mask-:r11:)">
+                                                    <rect width="100%" height="100%" fill="currentColor"></rect>
+                                                </g>
+                                            </svg>
+                                            <span class="gamut-13x8zes-StyledText e8i0p5k0">Sign up for an event</span>
                                         </div>
                                     </div>
-                                    <div>
-                                        <img src="./assets/img/calendar.png" alt="Calendar Logo" style="height: 30px; width: 30px;">
-                                        <span style="display: inline-block; margin: 0px; font-size: 1rem;">Sign up for an event</span>
+                                    <div class="Event__Content">
+                                        <div class="Event__Content-Tiltle">
+                                            <div class="Event__Content-Tiltle-locationColoms">
+                                                <h2 class="Event__Content-Tiltle-Letter">Recommended community events</h2>
+                                                <span class="Event__Content-Tiltle-SVG"></span>
+                                            </div>
+                                            <div class="Event__Content-Tiltle-View">
+                                                <a href="/events" class="Event__Content-Tiltle-View-A">
+                                                    <div class="Tiltle-View-A-Frame">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#fff" role="img" aria-hidden="true" class="Tiltle-View-A-Frame-Frame">
+                                                            <mask id="MiniArrowRightIcon-mask-:r5:">
+                                                                <path d="M11.665 3.192l4 4a1.143 1.143 0 010 1.616l-4 4a1.143 1.143 0 01-1.616-1.616l1.561-1.561a.286.286 0 00-.202-.488H1.143a1.143 1.143 0 010-2.286h10.265a.286.286 0 00.202-.488l-1.56-1.561a1.143 1.143 0 011.615-1.616z"></path>
+                                                            </mask>
+                                                            <g mask="url(#MiniArrowRightIcon-mask-:r5:)">
+                                                                <rect width="100%" height="100%" fill="currentColor"></rect>
+                                                            </g>
+                                                        </svg>
+                                                        View all events
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="Event__Content-BG">
+                                            <ul class="Event__Content-UL">
+                                                <li class="Event__Content-LI">
+                                                    <div class="Event__Content-LI-Frame">
+                                                        <a href="https://community.codecademy.com/c/events/codecademy-coding-hangout-c55b7d" target="_blank" class="Event__Content-LI-A">
+                                                            <div class="Event__Content-LI-A-Flex">
+                                                                <div class="Event__Content-LI-A-Padding">
+                                                                    <h3 class="Event__Content-LI-A-Tiltle">Codecademy Coding Hangout: Chill Study Beats</h3>
+                                                                    <div class="Event__Content-LI-A-Days">
+                                                                        <div class="Event__Content-LI-A-Days-Flex">
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" role="img" aria-hidden="true" class="Event__Content-LI-A-Days-SVG">
+                                                                                <mask id="CalendarIcon-mask-:r17:">
+                                                                                    <rect x="0.75" y="3.75" width="22.5" height="19.5" rx="1.5" ry="1.5" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></rect>
+                                                                                    <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M.75 9.75h22.5M6.75 6V.75M17.25 6V.75M5.625 13.5h0m0 0a.375.375 0 10.375.375.375.375 0 00-.375-.375m0 5.25h0m0 0a.375.375 0 10.375.375.375.375 0 00-.375-.375M12 13.5h0m0 0a.375.375 0 10.375.375A.375.375 0 0012 13.5m0 5.25h0m0 0a.375.375 0 10.375.375.375.375 0 00-.375-.375m6.375-5.25h0m0 0a.375.375 0 10.375.375.375.375 0 00-.375-.375m0 5.25h0m0 0a.375.375 0 10.375.375.375.375 0 00-.375-.375"></path>
+                                                                                </mask>
+                                                                                <g mask="url(#CalendarIcon-mask-:r17:)">
+                                                                                    <rect width="100%" height="100%" fill="currentColor"></rect>
+                                                                                </g>
+                                                                            </svg>
+                                                                            Oct 23, 2024
+                                                                        </div>
+                                                                        11pm-12am
+                                                                    </div>
+                                                                    <span class="Event__Content-LI-Middle">
+                                                                        Join us for a Codecademy Coding Hangout! This casual, open-to-all session is the perfect opportunity to work on your coding projects, practice exercises, and connect with fellow learners in a relaxed and supportive environment.What to Expect:Chill Study Time: A laid-back atmosphere where you can focus on your coding at your own pace.Peer Interaction: Engage with other Codecademy learners, share ideas, and collaborate on projects.Casual Support: Get help from peers and mentors in a friendly, informal setting.Resource Exchange: Discover and share tips, tools, and resources to enhance your coding skills.Who Should Attend:Codecademy learners of all levels looking for a relaxed and collaborative coding environment.Anyone interested in meeting other coding enthusiasts and sharing their learning journey.Current members who want to work on their projects while enjoying a casual community vibe.How to Join:Click on the "Join" button on the right hand side of the screen.Come hang out, code, and connect with the Codecademy community. We can't wait to see you there!
+                                                                    </span>
+                                                                </div>
+                                                                <div tabindex="0" class="Event__Content-LI-A-Footer">
+                                                                    <div aria-label="youtube event" aria-hidden="false" class="Event__Content-LI-A-Footer-FlexBox">
+                                                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#fff" role="img" aria-hidden="true" class="Event__Content-LI-A-Footer-FlexBox-SVG">
+                                                                            <mask id="YoutubePlayIcon-mask-:r18:">
+                                                                                <path d="M23.25 7.44A3.44 3.44 0 0019.81 4H4.19A3.44 3.44 0 00.75 7.44v9.12A3.44 3.44 0 004.19 20h15.62a3.44 3.44 0 003.44-3.44zM9.5 15.94V7.28l6.77 4.33z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                                                            </mask>
+                                                                            <g mask="url(#YoutubePlayIcon-mask-:r18:)">
+                                                                                <rect width="100%" height="100%" fill="currentColor"></rect>
+                                                                            </g>
+                                                                        </svg>
+                                                                        YouTube
+                                                                    </div>
+                                                                    <span class="Event__Content-LI-A-Footer-Span">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" role="img" aria-hidden="true" class="Event__Content-LI-A-Footer-SVG">
+                                                                            <mask id="PeopleIcon-mask-:r11:">
+                                                                                <path d="M14.251 4.416a4.125 4.125 0 11.756 7.305M15 13.667a6.757 6.757 0 018.25 6.583" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                                                                <path d="M14.248 6.834a6.807 6.807 0 003.627 1.041 6.843 6.843 0 002.712-.558M.75 20.25a6.75 6.75 0 0113.5 0M3.388 8.2l-.012.778a5.9 5.9 0 01-.859 3.272m9.106-4.264v1a5.9 5.9 0 00.86 3.272M3.388 8.2A5.483 5.483 0 007.5 6.305a5.483 5.483 0 004.112 1.9" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                                                                <circle cx="7.5" cy="7.875" r="4.125" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></circle>
+                                                                            </mask>
+                                                                            <g mask="url(#PeopleIcon-mask-:r11:)">
+                                                                                <rect width="100%" height="100%" fill="currentColor"></rect>
+                                                                            </g>
+                                                                        </svg>
+                                                                        98
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li class="Event__Content-LI">
+                                                    <div class="Event__Content-LI-Frame">
+                                                        <a href="https://community.codecademy.com/c/events/codecademy-coding-hangout-c55b7d" target="_blank" class="Event__Content-LI-A">
+                                                            <div class="Event__Content-LI-A-Flex">
+                                                                <div class="Event__Content-LI-A-Padding">
+                                                                    <h3 class="Event__Content-LI-A-Tiltle">Boston Club | Introductions and Looking Forward</h3>
+                                                                    <div class="Event__Content-LI-A-Days">
+                                                                        <div class="Event__Content-LI-A-Days-Flex">
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" role="img" aria-hidden="true" class="Event__Content-LI-A-Days-SVG">
+                                                                                <mask id="CalendarIcon-mask-:r17:">
+                                                                                    <rect x="0.75" y="3.75" width="22.5" height="19.5" rx="1.5" ry="1.5" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></rect>
+                                                                                    <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M.75 9.75h22.5M6.75 6V.75M17.25 6V.75M5.625 13.5h0m0 0a.375.375 0 10.375.375.375.375 0 00-.375-.375m0 5.25h0m0 0a.375.375 0 10.375.375.375.375 0 00-.375-.375M12 13.5h0m0 0a.375.375 0 10.375.375A.375.375 0 0012 13.5m0 5.25h0m0 0a.375.375 0 10.375.375.375.375 0 00-.375-.375m6.375-5.25h0m0 0a.375.375 0 10.375.375.375.375 0 00-.375-.375m0 5.25h0m0 0a.375.375 0 10.375.375.375.375 0 00-.375-.375"></path>
+                                                                                </mask>
+                                                                                <g mask="url(#CalendarIcon-mask-:r17:)">
+                                                                                    <rect width="100%" height="100%" fill="currentColor"></rect>
+                                                                                </g>
+                                                                            </svg>
+                                                                            Oct 24, 2024
+                                                                        </div>
+                                                                        6-7am
+                                                                    </div>
+                                                                    <span class="Event__Content-LI-Middle">
+                                                                        Please join me as I host Codecademy Boston's first live event!I'll begin with introducing myself and discussing my experience with coding and the technology industry, how I became an engineer and why I chose to become a club captain. I'll provide an overview of our space and how to navigate it for those who may be new to the platform as well.This first event will be more focused on getting to know one another so attendees are also  encouraged and should feel comfortable to introduce themselves, discuss their own interests, what they're actively learning and what they might hope to get out of the community as well.After introductions and some conversation, I'd like to discuss and gather feedback and suggestions for future events as well as explore how all of us can use the community and platform to support one another.I hope to see you there!
+                                                                    </span>
+                                                                </div>
+                                                                <div tabindex="0" class="Event__Content-LI-A-Footer">
+                                                                    <div aria-label="youtube event" aria-hidden="false" class="Event__Content-LI-A-Footer-FlexBox">
+                                                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#fff" role="img" aria-hidden="true" class="Event__Content-LI-A-Footer-FlexBox-SVG">
+                                                                            <mask id="YoutubePlayIcon-mask-:r18:">
+                                                                                <path d="M23.25 7.44A3.44 3.44 0 0019.81 4H4.19A3.44 3.44 0 00.75 7.44v9.12A3.44 3.44 0 004.19 20h15.62a3.44 3.44 0 003.44-3.44zM9.5 15.94V7.28l6.77 4.33z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                                                            </mask>
+                                                                            <g mask="url(#YoutubePlayIcon-mask-:r18:)">
+                                                                                <rect width="100%" height="100%" fill="currentColor"></rect>
+                                                                            </g>
+                                                                        </svg>
+                                                                        YouTube
+                                                                    </div>
+                                                                    <span class="Event__Content-LI-A-Footer-Span">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" role="img" aria-hidden="true" class="Event__Content-LI-A-Footer-SVG">
+                                                                            <mask id="PeopleIcon-mask-:r11:">
+                                                                                <path d="M14.251 4.416a4.125 4.125 0 11.756 7.305M15 13.667a6.757 6.757 0 018.25 6.583" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                                                                <path d="M14.248 6.834a6.807 6.807 0 003.627 1.041 6.843 6.843 0 002.712-.558M.75 20.25a6.75 6.75 0 0113.5 0M3.388 8.2l-.012.778a5.9 5.9 0 01-.859 3.272m9.106-4.264v1a5.9 5.9 0 00.86 3.272M3.388 8.2A5.483 5.483 0 007.5 6.305a5.483 5.483 0 004.112 1.9" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                                                                <circle cx="7.5" cy="7.875" r="4.125" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></circle>
+                                                                            </mask>
+                                                                            <g mask="url(#PeopleIcon-mask-:r11:)">
+                                                                                <rect width="100%" height="100%" fill="currentColor"></rect>
+                                                                            </g>
+                                                                        </svg>
+                                                                        11
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li class="Event__Content-LI">
+                                                    <div class="Event__Content-LI-Frame">
+                                                        <a href="https://community.codecademy.com/c/events/codecademy-coding-hangout-c55b7d" target="_blank" class="Event__Content-LI-A">
+                                                            <div class="Event__Content-LI-A-Flex">
+                                                                <div class="Event__Content-LI-A-Padding">
+                                                                    <h3 class="Event__Content-LI-A-Tiltle">Full-Stack Club | Code Connect</h3>
+                                                                    <div class="Event__Content-LI-A-Days">
+                                                                        <div class="Event__Content-LI-A-Days-Flex">
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" role="img" aria-hidden="true" class="Event__Content-LI-A-Days-SVG">
+                                                                                <mask id="CalendarIcon-mask-:r17:">
+                                                                                    <rect x="0.75" y="3.75" width="22.5" height="19.5" rx="1.5" ry="1.5" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></rect>
+                                                                                    <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M.75 9.75h22.5M6.75 6V.75M17.25 6V.75M5.625 13.5h0m0 0a.375.375 0 10.375.375.375.375 0 00-.375-.375m0 5.25h0m0 0a.375.375 0 10.375.375.375.375 0 00-.375-.375M12 13.5h0m0 0a.375.375 0 10.375.375A.375.375 0 0012 13.5m0 5.25h0m0 0a.375.375 0 10.375.375.375.375 0 00-.375-.375m6.375-5.25h0m0 0a.375.375 0 10.375.375.375.375 0 00-.375-.375m0 5.25h0m0 0a.375.375 0 10.375.375.375.375 0 00-.375-.375"></path>
+                                                                                </mask>
+                                                                                <g mask="url(#CalendarIcon-mask-:r17:)">
+                                                                                    <rect width="100%" height="100%" fill="currentColor"></rect>
+                                                                                </g>
+                                                                            </svg>
+                                                                            Oct 24, 2024
+                                                                        </div>
+                                                                        10-11pm
+                                                                    </div>
+                                                                    <span class="Event__Content-LI-Middle">
+                                                                        🥳 Join us for a chatty study session!This event is to give you an opportunity to work on your coding projects, practice exercises, and connect with fellow learners in a relaxed and supportive environment. This event will be similar to a study session but with the floor open to chat and share with other learners. (Sorry no lo-fi girl here! 🤪) What to Expect:👋 Say Hello: Introduce yourself and share what you'll be working on!😎 Study: Focus on your coding at your own pace or..🗣️ Get Chatty: The floor will be open to chat, ask questions, and engage with other Codecademy learners!All are welcome to regardless of what you're studying or your experience level!Come hang out, code, and connect with the Codecademy community.
+                                                                    </span>
+                                                                </div>
+                                                                <div tabindex="0" class="Event__Content-LI-A-Footer">
+                                                                    <div aria-label="youtube event" aria-hidden="false" class="Event__Content-LI-A-Footer-FlexBox">
+                                                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#fff" role="img" aria-hidden="true" class="Event__Content-LI-A-Footer-FlexBox-SVG">
+                                                                            <mask id="YoutubePlayIcon-mask-:r18:">
+                                                                                <path d="M23.25 7.44A3.44 3.44 0 0019.81 4H4.19A3.44 3.44 0 00.75 7.44v9.12A3.44 3.44 0 004.19 20h15.62a3.44 3.44 0 003.44-3.44zM9.5 15.94V7.28l6.77 4.33z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                                                            </mask>
+                                                                            <g mask="url(#YoutubePlayIcon-mask-:r18:)">
+                                                                                <rect width="100%" height="100%" fill="currentColor"></rect>
+                                                                            </g>
+                                                                        </svg>
+                                                                        YouTube
+                                                                    </div>
+                                                                    <span class="Event__Content-LI-A-Footer-Span">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" role="img" aria-hidden="true" class="Event__Content-LI-A-Footer-SVG">
+                                                                            <mask id="PeopleIcon-mask-:r11:">
+                                                                                <path d="M14.251 4.416a4.125 4.125 0 11.756 7.305M15 13.667a6.757 6.757 0 018.25 6.583" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                                                                <path d="M14.248 6.834a6.807 6.807 0 003.627 1.041 6.843 6.843 0 002.712-.558M.75 20.25a6.75 6.75 0 0113.5 0M3.388 8.2l-.012.778a5.9 5.9 0 01-.859 3.272m9.106-4.264v1a5.9 5.9 0 00.86 3.272M3.388 8.2A5.483 5.483 0 007.5 6.305a5.483 5.483 0 004.112 1.9" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                                                                <circle cx="7.5" cy="7.875" r="4.125" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></circle>
+                                                                            </mask>
+                                                                            <g mask="url(#PeopleIcon-mask-:r11:)">
+                                                                                <rect width="100%" height="100%" fill="currentColor"></rect>
+                                                                            </g>
+                                                                        </svg>
+                                                                        44
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li class="Event__Content-LI">
+                                                    <div class="Event__Content-LI-Frame">
+                                                        <a href="https://community.codecademy.com/c/events/codecademy-coding-hangout-c55b7d" target="_blank" class="Event__Content-LI-A">
+                                                            <div class="Event__Content-LI-A-Flex">
+                                                                <div class="Event__Content-LI-A-Padding">
+                                                                    <h3 class="Event__Content-LI-A-Tiltle">Expert Insights: Space X & United States Air Force Cybersecurity with Garry Carman</h3>
+                                                                    <div class="Event__Content-LI-A-Days">
+                                                                        <div class="Event__Content-LI-A-Days-Flex">
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" role="img" aria-hidden="true" class="Event__Content-LI-A-Days-SVG">
+                                                                                <mask id="CalendarIcon-mask-:r17:">
+                                                                                    <rect x="0.75" y="3.75" width="22.5" height="19.5" rx="1.5" ry="1.5" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></rect>
+                                                                                    <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M.75 9.75h22.5M6.75 6V.75M17.25 6V.75M5.625 13.5h0m0 0a.375.375 0 10.375.375.375.375 0 00-.375-.375m0 5.25h0m0 0a.375.375 0 10.375.375.375.375 0 00-.375-.375M12 13.5h0m0 0a.375.375 0 10.375.375A.375.375 0 0012 13.5m0 5.25h0m0 0a.375.375 0 10.375.375.375.375 0 00-.375-.375m6.375-5.25h0m0 0a.375.375 0 10.375.375.375.375 0 00-.375-.375m0 5.25h0m0 0a.375.375 0 10.375.375.375.375 0 00-.375-.375"></path>
+                                                                                </mask>
+                                                                                <g mask="url(#CalendarIcon-mask-:r17:)">
+                                                                                    <rect width="100%" height="100%" fill="currentColor"></rect>
+                                                                                </g>
+                                                                            </svg>
+                                                                            Oct 25, 2024
+                                                                        </div>
+                                                                        1-2am
+                                                                    </div>
+                                                                    <span class="Event__Content-LI-Middle">
+                                                                        Join us for the final event of Cybersecurity Awareness Month as we welcome Garry Carman for an exclusive fireside chat! Garry will take us through his 11-year career with the United States Air Force and his current role as an Information System Security Manager at SpaceX. Gain valuable insights into his transition from System Administration (SA) to Cybersecurity, his responsibilities at SpaceX, and the essential skills needed to succeed in this dynamic field. Don’t miss this opportunity to learn from his unique experiences!Zoom Passcode: 75086211:10 - 11:35 AM: Garry’s Cybersecurity BackgroundWe'll explore Garry's career transition and delve into key topics, including:What inspired him to move from SA to Cybersecurity at the Air Force.The skills and training required to make that transition.His current role at SpaceX and the day-to-day responsibilities of an Information System Security Manager.Recommendations for those interested in pursuing a career in Cybersecurity.And more!11:35 - 11:55 AM: Live Q&AThe floor will be open for live questions from the audience. Feel free to also post any of your questions for Garry on this event comment thread! 11:55 - 12:00 PM: ClosingHow to Participate:RSVP for the event.Write your questions on the event post.Join the live event via Zoom link! See you all there!  #cybersecurityawareness #cybersecurity #cybersecurityawarenessmonth
+                                                                    </span>
+                                                                </div>
+                                                                <div tabindex="0" class="Event__Content-LI-A-Footer">
+                                                                    <div aria-label="youtube event" aria-hidden="false" class="Event__Content-LI-A-Footer-FlexBox">
+                                                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#fff" role="img" aria-hidden="true" class="Event__Content-LI-A-Footer-FlexBox-SVG">
+                                                                            <mask id="YoutubePlayIcon-mask-:r18:">
+                                                                                <path d="M23.25 7.44A3.44 3.44 0 0019.81 4H4.19A3.44 3.44 0 00.75 7.44v9.12A3.44 3.44 0 004.19 20h15.62a3.44 3.44 0 003.44-3.44zM9.5 15.94V7.28l6.77 4.33z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                                                            </mask>
+                                                                            <g mask="url(#YoutubePlayIcon-mask-:r18:)">
+                                                                                <rect width="100%" height="100%" fill="currentColor"></rect>
+                                                                            </g>
+                                                                        </svg>
+                                                                        YouTube
+                                                                    </div>
+                                                                    <span class="Event__Content-LI-A-Footer-Span">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" role="img" aria-hidden="true" class="Event__Content-LI-A-Footer-SVG">
+                                                                            <mask id="PeopleIcon-mask-:r11:">
+                                                                                <path d="M14.251 4.416a4.125 4.125 0 11.756 7.305M15 13.667a6.757 6.757 0 018.25 6.583" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                                                                <path d="M14.248 6.834a6.807 6.807 0 003.627 1.041 6.843 6.843 0 002.712-.558M.75 20.25a6.75 6.75 0 0113.5 0M3.388 8.2l-.012.778a5.9 5.9 0 01-.859 3.272m9.106-4.264v1a5.9 5.9 0 00.86 3.272M3.388 8.2A5.483 5.483 0 007.5 6.305a5.483 5.483 0 004.112 1.9" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                                                                <circle cx="7.5" cy="7.875" r="4.125" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></circle>
+                                                                            </mask>
+                                                                            <g mask="url(#PeopleIcon-mask-:r11:)">
+                                                                                <rect width="100%" height="100%" fill="currentColor"></rect>
+                                                                            </g>
+                                                                        </svg>
+                                                                        100+
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li class="Event__Content-LI">
+                                                    <div class="Event__Content-LI-Frame">
+                                                        <a href="https://community.codecademy.com/c/events/codecademy-coding-hangout-c55b7d" target="_blank" class="Event__Content-LI-A">
+                                                            <div class="Event__Content-LI-A-Flex">
+                                                                <div class="Event__Content-LI-A-Padding">
+                                                                    <h3 class="Event__Content-LI-A-Tiltle"> Python Club | Technical SEO in Python for Beginners</h3>
+                                                                    <div class="Event__Content-LI-A-Days">
+                                                                        <div class="Event__Content-LI-A-Days-Flex">
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" role="img" aria-hidden="true" class="Event__Content-LI-A-Days-SVG">
+                                                                                <mask id="CalendarIcon-mask-:r17:">
+                                                                                    <rect x="0.75" y="3.75" width="22.5" height="19.5" rx="1.5" ry="1.5" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></rect>
+                                                                                    <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M.75 9.75h22.5M6.75 6V.75M17.25 6V.75M5.625 13.5h0m0 0a.375.375 0 10.375.375.375.375 0 00-.375-.375m0 5.25h0m0 0a.375.375 0 10.375.375.375.375 0 00-.375-.375M12 13.5h0m0 0a.375.375 0 10.375.375A.375.375 0 0012 13.5m0 5.25h0m0 0a.375.375 0 10.375.375.375.375 0 00-.375-.375m6.375-5.25h0m0 0a.375.375 0 10.375.375.375.375 0 00-.375-.375m0 5.25h0m0 0a.375.375 0 10.375.375.375.375 0 00-.375-.375"></path>
+                                                                                </mask>
+                                                                                <g mask="url(#CalendarIcon-mask-:r17:)">
+                                                                                    <rect width="100%" height="100%" fill="currentColor"></rect>
+                                                                                </g>
+                                                                            </svg>
+                                                                            Oct 23, 2024
+                                                                        </div>
+                                                                        3-4pm
+                                                                    </div>
+                                                                    <span class="Event__Content-LI-Middle">
+                                                                        👋 Hi! As a marketer, I enjoy hosting events about projects that are somewhat related to my day job, hence this event. 🖱️ In this workshop, we will look at technical SEO (search engine optimisation - of interest to digital marketers!) in Python to help us analyse a website of our choice. ✒️ For illustrative purposes, I will be using my personal (non-coding related) blog to perform an SEO audit and you may choose to code along using a website of your choice - your own blog or site might be a great option to perform technical SEO on, to make sure everything is running the way you’d like it to. See you there! AgendaConcepts Technical SEO code along Q&A
+                                                                    </span>
+                                                                </div>
+                                                                <div tabindex="0" class="Event__Content-LI-A-Footer">
+                                                                    <div aria-label="youtube event" aria-hidden="false" class="Event__Content-LI-A-Footer-FlexBox">
+                                                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#fff" role="img" aria-hidden="true" class="Event__Content-LI-A-Footer-FlexBox-SVG">
+                                                                            <mask id="YoutubePlayIcon-mask-:r18:">
+                                                                                <path d="M23.25 7.44A3.44 3.44 0 0019.81 4H4.19A3.44 3.44 0 00.75 7.44v9.12A3.44 3.44 0 004.19 20h15.62a3.44 3.44 0 003.44-3.44zM9.5 15.94V7.28l6.77 4.33z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                                                            </mask>
+                                                                            <g mask="url(#YoutubePlayIcon-mask-:r18:)">
+                                                                                <rect width="100%" height="100%" fill="currentColor"></rect>
+                                                                            </g>
+                                                                        </svg>
+                                                                        YouTube
+                                                                    </div>
+                                                                    <span class="Event__Content-LI-A-Footer-Span">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" role="img" aria-hidden="true" class="Event__Content-LI-A-Footer-SVG">
+                                                                            <mask id="PeopleIcon-mask-:r11:">
+                                                                                <path d="M14.251 4.416a4.125 4.125 0 11.756 7.305M15 13.667a6.757 6.757 0 018.25 6.583" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                                                                <path d="M14.248 6.834a6.807 6.807 0 003.627 1.041 6.843 6.843 0 002.712-.558M.75 20.25a6.75 6.75 0 0113.5 0M3.388 8.2l-.012.778a5.9 5.9 0 01-.859 3.272m9.106-4.264v1a5.9 5.9 0 00.86 3.272M3.388 8.2A5.483 5.483 0 007.5 6.305a5.483 5.483 0 004.112 1.9" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                                                                <circle cx="7.5" cy="7.875" r="4.125" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></circle>
+                                                                            </mask>
+                                                                            <g mask="url(#PeopleIcon-mask-:r11:)">
+                                                                                <rect width="100%" height="100%" fill="currentColor"></rect>
+                                                                            </g>
+                                                                        </svg>
+                                                                        20
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li class="Event__Content-LI">
+                                                    <div class="Event__Content-LI-Frame">
+                                                        <a href="https://community.codecademy.com/c/events/codecademy-coding-hangout-c55b7d" target="_blank" class="Event__Content-LI-A">
+                                                            <div class="Event__Content-LI-A-Flex">
+                                                                <div class="Event__Content-LI-A-Padding">
+                                                                    <h3 class="Event__Content-LI-A-Tiltle"> Full-Stack Club | Full-Stack Development with Next.js: A Hands-On Introduction</h3>
+                                                                    <div class="Event__Content-LI-A-Days">
+                                                                        <div class="Event__Content-LI-A-Days-Flex">
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" role="img" aria-hidden="true" class="Event__Content-LI-A-Days-SVG">
+                                                                                <mask id="CalendarIcon-mask-:r17:">
+                                                                                    <rect x="0.75" y="3.75" width="22.5" height="19.5" rx="1.5" ry="1.5" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></rect>
+                                                                                    <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M.75 9.75h22.5M6.75 6V.75M17.25 6V.75M5.625 13.5h0m0 0a.375.375 0 10.375.375.375.375 0 00-.375-.375m0 5.25h0m0 0a.375.375 0 10.375.375.375.375 0 00-.375-.375M12 13.5h0m0 0a.375.375 0 10.375.375A.375.375 0 0012 13.5m0 5.25h0m0 0a.375.375 0 10.375.375.375.375 0 00-.375-.375m6.375-5.25h0m0 0a.375.375 0 10.375.375.375.375 0 00-.375-.375m0 5.25h0m0 0a.375.375 0 10.375.375.375.375 0 00-.375-.375"></path>
+                                                                                </mask>
+                                                                                <g mask="url(#CalendarIcon-mask-:r17:)">
+                                                                                    <rect width="100%" height="100%" fill="currentColor"></rect>
+                                                                                </g>
+                                                                            </svg>
+                                                                            Oct 28, 2024
+                                                                        </div>
+                                                                        1-2am
+                                                                    </div>
+                                                                    <span class="Event__Content-LI-Middle">
+                                                                        Full-Stack Development with Next.js: A Hands-On Introduction In this one-hour session, we'll dive into the fundamentals of Next.js, a powerful framework for building modern full-stack web applications with React. We’ll explore its core features like server-side rendering (SSR), static site generation (SSG), and API routes. Whether you're new to Next.js or looking to sharpen your skills, this session is a great opportunity to level up your full-stack development abilities.Key Takeaways:Understanding the basics of Next.js framework.Hands-on experience with file-based routing and API routes.How to leverage SSR and SSG for improved performance and SEO.
+                                                                    </span>
+                                                                </div>
+                                                                <div tabindex="0" class="Event__Content-LI-A-Footer">
+                                                                    <div aria-label="youtube event" aria-hidden="false" class="Event__Content-LI-A-Footer-FlexBox">
+                                                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#fff" role="img" aria-hidden="true" class="Event__Content-LI-A-Footer-FlexBox-SVG">
+                                                                            <mask id="YoutubePlayIcon-mask-:r18:">
+                                                                                <path d="M23.25 7.44A3.44 3.44 0 0019.81 4H4.19A3.44 3.44 0 00.75 7.44v9.12A3.44 3.44 0 004.19 20h15.62a3.44 3.44 0 003.44-3.44zM9.5 15.94V7.28l6.77 4.33z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                                                            </mask>
+                                                                            <g mask="url(#YoutubePlayIcon-mask-:r18:)">
+                                                                                <rect width="100%" height="100%" fill="currentColor"></rect>
+                                                                            </g>
+                                                                        </svg>
+                                                                        YouTube
+                                                                    </div>
+                                                                    <span class="Event__Content-LI-A-Footer-Span">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" role="img" aria-hidden="true" class="Event__Content-LI-A-Footer-SVG">
+                                                                            <mask id="PeopleIcon-mask-:r11:">
+                                                                                <path d="M14.251 4.416a4.125 4.125 0 11.756 7.305M15 13.667a6.757 6.757 0 018.25 6.583" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                                                                <path d="M14.248 6.834a6.807 6.807 0 003.627 1.041 6.843 6.843 0 002.712-.558M.75 20.25a6.75 6.75 0 0113.5 0M3.388 8.2l-.012.778a5.9 5.9 0 01-.859 3.272m9.106-4.264v1a5.9 5.9 0 00.86 3.272M3.388 8.2A5.483 5.483 0 007.5 6.305a5.483 5.483 0 004.112 1.9" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                                                                <circle cx="7.5" cy="7.875" r="4.125" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></circle>
+                                                                            </mask>
+                                                                            <g mask="url(#PeopleIcon-mask-:r11:)">
+                                                                                <rect width="100%" height="100%" fill="currentColor"></rect>
+                                                                            </g>
+                                                                        </svg>
+                                                                        6
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li class="Event__Content-LI">
+                                                    <div class="Event__Content-LI-Frame">
+                                                        <a href="https://community.codecademy.com/c/events/codecademy-coding-hangout-c55b7d" target="_blank" class="Event__Content-LI-A">
+                                                            <div class="Event__Content-LI-A-Flex">
+                                                                <div class="Event__Content-LI-A-Padding">
+                                                                    <h3 class="Event__Content-LI-A-Tiltle"> #Computer-Science | Meet & Greet: Let's Build Together!</h3>
+                                                                    <div class="Event__Content-LI-A-Days">
+                                                                        <div class="Event__Content-LI-A-Days-Flex">
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" role="img" aria-hidden="true" class="Event__Content-LI-A-Days-SVG">
+                                                                                <mask id="CalendarIcon-mask-:r17:">
+                                                                                    <rect x="0.75" y="3.75" width="22.5" height="19.5" rx="1.5" ry="1.5" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></rect>
+                                                                                    <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M.75 9.75h22.5M6.75 6V.75M17.25 6V.75M5.625 13.5h0m0 0a.375.375 0 10.375.375.375.375 0 00-.375-.375m0 5.25h0m0 0a.375.375 0 10.375.375.375.375 0 00-.375-.375M12 13.5h0m0 0a.375.375 0 10.375.375A.375.375 0 0012 13.5m0 5.25h0m0 0a.375.375 0 10.375.375.375.375 0 00-.375-.375m6.375-5.25h0m0 0a.375.375 0 10.375.375.375.375 0 00-.375-.375m0 5.25h0m0 0a.375.375 0 10.375.375.375.375 0 00-.375-.375"></path>
+                                                                                </mask>
+                                                                                <g mask="url(#CalendarIcon-mask-:r17:)">
+                                                                                    <rect width="100%" height="100%" fill="currentColor"></rect>
+                                                                                </g>
+                                                                            </svg>
+                                                                            Oct 28, 2024
+                                                                        </div>
+                                                                        1-2am
+                                                                    </div>
+                                                                    <span class="Event__Content-LI-Middle">
+                                                                        🚀 Join Us for the First Computer Science Club Event! 🚀Date: October 27, 2024Time: 19:00 Central European Time (CET)Hello, fellow coders and tech enthusiasts! 👋We’re kicking things off with our very first Computer Science Club event, and YOU are invited! Whether you're just getting started or a seasoned pro, this is your chance to connect, collaborate, and dive into an exciting world of coding projects.🎉 What’s in store for our first event?Meet the Crew: Get to know your fellow club members from all walks of life!Warm-Up Session: A fun and collaborative conversation to break the ice and get the creative juices flowing.Pitch Your Project Ideas: This is your chance to offer up ideas for our first club project! I’ll select three awesome suggestions, and at our next event, we’ll hold a vote to decide which project we'll build together.✨ Special Announcement: The owner of the winning project idea (voted at the next event) will receive a gift of 3 months of Pro Codecademy membership! 🎁 It's the perfect way to level up your coding skills even further.This is just the beginning. The Computer Science Club is all about learning, growing, and building cool stuff. We’ll work on real-world projects together, share knowledge, and create a supportive community for everyone to thrive.Stay tuned for more details, and don’t forget to bring your best project ideas!Let’s make some coding magic happen! 💻✨
+                                                                    </span>
+                                                                </div>
+                                                                <div tabindex="0" class="Event__Content-LI-A-Footer">
+                                                                    <div aria-label="youtube event" aria-hidden="false" class="Event__Content-LI-A-Footer-FlexBox">
+                                                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#fff" role="img" aria-hidden="true" class="Event__Content-LI-A-Footer-FlexBox-SVG">
+                                                                            <mask id="YoutubePlayIcon-mask-:r18:">
+                                                                                <path d="M23.25 7.44A3.44 3.44 0 0019.81 4H4.19A3.44 3.44 0 00.75 7.44v9.12A3.44 3.44 0 004.19 20h15.62a3.44 3.44 0 003.44-3.44zM9.5 15.94V7.28l6.77 4.33z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                                                            </mask>
+                                                                            <g mask="url(#YoutubePlayIcon-mask-:r18:)">
+                                                                                <rect width="100%" height="100%" fill="currentColor"></rect>
+                                                                            </g>
+                                                                        </svg>
+                                                                        YouTube
+                                                                    </div>
+                                                                    <span class="Event__Content-LI-A-Footer-Span">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" role="img" aria-hidden="true" class="Event__Content-LI-A-Footer-SVG">
+                                                                            <mask id="PeopleIcon-mask-:r11:">
+                                                                                <path d="M14.251 4.416a4.125 4.125 0 11.756 7.305M15 13.667a6.757 6.757 0 018.25 6.583" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                                                                <path d="M14.248 6.834a6.807 6.807 0 003.627 1.041 6.843 6.843 0 002.712-.558M.75 20.25a6.75 6.75 0 0113.5 0M3.388 8.2l-.012.778a5.9 5.9 0 01-.859 3.272m9.106-4.264v1a5.9 5.9 0 00.86 3.272M3.388 8.2A5.483 5.483 0 007.5 6.305a5.483 5.483 0 004.112 1.9" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                                                                <circle cx="7.5" cy="7.875" r="4.125" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></circle>
+                                                                            </mask>
+                                                                            <g mask="url(#PeopleIcon-mask-:r11:)">
+                                                                                <rect width="100%" height="100%" fill="currentColor"></rect>
+                                                                            </g>
+                                                                        </svg>
+                                                                        36
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li class="Event__Content-LI">
+                                                    <div class="Event__Content-LI-Frame">
+                                                        <a href="https://community.codecademy.com/c/events/codecademy-coding-hangout-c55b7d" target="_blank" class="Event__Content-LI-A">
+                                                            <div class="Event__Content-LI-A-Flex">
+                                                                <div class="Event__Content-LI-A-Padding">
+                                                                    <h3 class="Event__Content-LI-A-Tiltle"> Full-Stack | Weekly Accountability Meeting</h3>
+                                                                    <div class="Event__Content-LI-A-Days">
+                                                                        <div class="Event__Content-LI-A-Days-Flex">
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" role="img" aria-hidden="true" class="Event__Content-LI-A-Days-SVG">
+                                                                                <mask id="CalendarIcon-mask-:r17:">
+                                                                                    <rect x="0.75" y="3.75" width="22.5" height="19.5" rx="1.5" ry="1.5" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></rect>
+                                                                                    <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M.75 9.75h22.5M6.75 6V.75M17.25 6V.75M5.625 13.5h0m0 0a.375.375 0 10.375.375.375.375 0 00-.375-.375m0 5.25h0m0 0a.375.375 0 10.375.375.375.375 0 00-.375-.375M12 13.5h0m0 0a.375.375 0 10.375.375A.375.375 0 0012 13.5m0 5.25h0m0 0a.375.375 0 10.375.375.375.375 0 00-.375-.375m6.375-5.25h0m0 0a.375.375 0 10.375.375.375.375 0 00-.375-.375m0 5.25h0m0 0a.375.375 0 10.375.375.375.375 0 00-.375-.375"></path>
+                                                                                </mask>
+                                                                                <g mask="url(#CalendarIcon-mask-:r17:)">
+                                                                                    <rect width="100%" height="100%" fill="currentColor"></rect>
+                                                                                </g>
+                                                                            </svg>
+                                                                            Oct 28, 2024
+                                                                        </div>
+                                                                        11pm-12am
+                                                                    </div>
+                                                                    <span class="Event__Content-LI-Middle">
+                                                                        Come join us for a weekly session for us to focus on our individual progress. Share what you've been learning as we help to support each other and drive progress.Take turns to go over and give a brief summary of what lesson you accomplished in the previous week. 👨‍🎓Ask some questions about things you've been struggling with and get over that hump that's been ailing you. 🕵️We're here to boost each other and take advantage of this community that is here for all of our fellow learners. Come be productive with us!
+                                                                    </span>
+                                                                </div>
+                                                                <div tabindex="0" class="Event__Content-LI-A-Footer">
+                                                                    <div aria-label="youtube event" aria-hidden="false" class="Event__Content-LI-A-Footer-FlexBox">
+                                                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#fff" role="img" aria-hidden="true" class="Event__Content-LI-A-Footer-FlexBox-SVG">
+                                                                            <mask id="YoutubePlayIcon-mask-:r18:">
+                                                                                <path d="M23.25 7.44A3.44 3.44 0 0019.81 4H4.19A3.44 3.44 0 00.75 7.44v9.12A3.44 3.44 0 004.19 20h15.62a3.44 3.44 0 003.44-3.44zM9.5 15.94V7.28l6.77 4.33z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                                                            </mask>
+                                                                            <g mask="url(#YoutubePlayIcon-mask-:r18:)">
+                                                                                <rect width="100%" height="100%" fill="currentColor"></rect>
+                                                                            </g>
+                                                                        </svg>
+                                                                        YouTube
+                                                                    </div>
+                                                                    <span class="Event__Content-LI-A-Footer-Span">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" role="img" aria-hidden="true" class="Event__Content-LI-A-Footer-SVG">
+                                                                            <mask id="PeopleIcon-mask-:r11:">
+                                                                                <path d="M14.251 4.416a4.125 4.125 0 11.756 7.305M15 13.667a6.757 6.757 0 018.25 6.583" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                                                                <path d="M14.248 6.834a6.807 6.807 0 003.627 1.041 6.843 6.843 0 002.712-.558M.75 20.25a6.75 6.75 0 0113.5 0M3.388 8.2l-.012.778a5.9 5.9 0 01-.859 3.272m9.106-4.264v1a5.9 5.9 0 00.86 3.272M3.388 8.2A5.483 5.483 0 007.5 6.305a5.483 5.483 0 004.112 1.9" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                                                                <circle cx="7.5" cy="7.875" r="4.125" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></circle>
+                                                                            </mask>
+                                                                            <g mask="url(#PeopleIcon-mask-:r11:)">
+                                                                                <rect width="100%" height="100%" fill="currentColor"></rect>
+                                                                            </g>
+                                                                        </svg>
+                                                                        82
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li class="Event__Content-LI">
+                                                    <div class="Event__Content-LI-Frame">
+                                                        <a href="https://community.codecademy.com/c/events/codecademy-coding-hangout-c55b7d" target="_blank" class="Event__Content-LI-A">
+                                                            <div class="Event__Content-LI-A-Flex">
+                                                                <div class="Event__Content-LI-A-Padding">
+                                                                    <h3 class="Event__Content-LI-A-Tiltle"> Part Two | Python for Beginners Workshop (w/ Izzy of Audible)</h3>
+                                                                    <div class="Event__Content-LI-A-Days">
+                                                                        <div class="Event__Content-LI-A-Days-Flex">
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" role="img" aria-hidden="true" class="Event__Content-LI-A-Days-SVG">
+                                                                                <mask id="CalendarIcon-mask-:r17:">
+                                                                                    <rect x="0.75" y="3.75" width="22.5" height="19.5" rx="1.5" ry="1.5" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></rect>
+                                                                                    <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M.75 9.75h22.5M6.75 6V.75M17.25 6V.75M5.625 13.5h0m0 0a.375.375 0 10.375.375.375.375 0 00-.375-.375m0 5.25h0m0 0a.375.375 0 10.375.375.375.375 0 00-.375-.375M12 13.5h0m0 0a.375.375 0 10.375.375A.375.375 0 0012 13.5m0 5.25h0m0 0a.375.375 0 10.375.375.375.375 0 00-.375-.375m6.375-5.25h0m0 0a.375.375 0 10.375.375.375.375 0 00-.375-.375m0 5.25h0m0 0a.375.375 0 10.375.375.375.375 0 00-.375-.375"></path>
+                                                                                </mask>
+                                                                                <g mask="url(#CalendarIcon-mask-:r17:)">
+                                                                                    <rect width="100%" height="100%" fill="currentColor"></rect>
+                                                                                </g>
+                                                                            </svg>
+                                                                            Oct 30, 2024
+                                                                        </div>
+                                                                        2-3:30am
+                                                                    </div>
+                                                                    <span class="Event__Content-LI-Middle">
+                                                                        Back by popular demand! After receiving overwhelming feedback and requests for a sequel, we’re thrilled to welcome back Izzy Miles, seasoned software engineer at Audible, for another Python for Beginners workshop. Whether you joined the first session or are new to this one, all are welcome!This event offers a unique opportunity to dive into the basics of Python and linear algebra for data science, while connecting with fellow enthusiasts. Don’t miss out on the chance to learn, innovate, and network!Links:Google Colab: Linear-Algebra-Workshop.ipynbWe will review the above link. If you have any questions for Izzy prior to the event, please leave them below. Be sure to RSVP to join! See you then.
+                                                                    </span>
+                                                                </div>
+                                                                <div tabindex="0" class="Event__Content-LI-A-Footer">
+                                                                    <div aria-label="youtube event" aria-hidden="false" class="Event__Content-LI-A-Footer-FlexBox">
+                                                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#fff" role="img" aria-hidden="true" class="Event__Content-LI-A-Footer-FlexBox-SVG">
+                                                                            <mask id="YoutubePlayIcon-mask-:r18:">
+                                                                                <path d="M23.25 7.44A3.44 3.44 0 0019.81 4H4.19A3.44 3.44 0 00.75 7.44v9.12A3.44 3.44 0 004.19 20h15.62a3.44 3.44 0 003.44-3.44zM9.5 15.94V7.28l6.77 4.33z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                                                            </mask>
+                                                                            <g mask="url(#YoutubePlayIcon-mask-:r18:)">
+                                                                                <rect width="100%" height="100%" fill="currentColor"></rect>
+                                                                            </g>
+                                                                        </svg>
+                                                                        YouTube
+                                                                    </div>
+                                                                    <span class="Event__Content-LI-A-Footer-Span">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" role="img" aria-hidden="true" class="Event__Content-LI-A-Footer-SVG">
+                                                                            <mask id="PeopleIcon-mask-:r11:">
+                                                                                <path d="M14.251 4.416a4.125 4.125 0 11.756 7.305M15 13.667a6.757 6.757 0 018.25 6.583" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                                                                <path d="M14.248 6.834a6.807 6.807 0 003.627 1.041 6.843 6.843 0 002.712-.558M.75 20.25a6.75 6.75 0 0113.5 0M3.388 8.2l-.012.778a5.9 5.9 0 01-.859 3.272m9.106-4.264v1a5.9 5.9 0 00.86 3.272M3.388 8.2A5.483 5.483 0 007.5 6.305a5.483 5.483 0 004.112 1.9" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                                                                                <circle cx="7.5" cy="7.875" r="4.125" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></circle>
+                                                                            </mask>
+                                                                            <g mask="url(#PeopleIcon-mask-:r11:)">
+                                                                                <rect width="100%" height="100%" fill="currentColor"></rect>
+                                                                            </g>
+                                                                        </svg>
+                                                                        25
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="Events__Content-Item Item-2">
-                                    <div>
-                                        <div class="Item-2__Header"></div>
-                                        <div></div>
-                                    </div>
-                                    <div></div>
                                 </div>
                             </div>
                         </div>
@@ -259,7 +1048,7 @@
                             </div>
                             <div class="Footer__Logo">
                                 <div class="Footer__Logo-Box">
-                                    <img src="./assets/img/logo.png" alt="">
+                                    <img src="../assets/img/logo.png" alt="">
                                     <span>from skillsoft</span>
                                 </div>
                             </div>
@@ -332,7 +1121,7 @@
                                         <div>
                                             <div class="Mobile__Box">
                                                 <a class="Mobile__Link" href="">
-                                                    <img src="./assets/img/download.png" alt="">
+                                                    <img src="../assets/img/download.png" alt="">
                                                 </a>
                                             </div>
                                         </div>
@@ -362,5 +1151,7 @@
             </div>
         </footer>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>\
