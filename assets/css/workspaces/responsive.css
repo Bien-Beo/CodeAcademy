@@ -1,0 +1,12 @@
+@media only screen and (min-width: 1200px) {
+    .Workspaces__Header-FlexBox {
+        flex-direction: column;
+    }
+    .Workspaces__Header-Text {
+        align-self: auto;
+        padding-bottom: 1rem;
+    }
+    .Workspaces__Header-NewWorkSpace {
+        align-self: flex-end;
+    }
+}
