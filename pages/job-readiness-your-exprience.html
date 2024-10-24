@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Home | Codeacademy</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <title>Job-readiness checker | Codeacademy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./assets/fonts/font.css">
-    <link rel="stylesheet" href="./assets/css/css-base/header.css">
-    <link rel="stylesheet" href="./assets/css/index/container.css">
-    <link rel="stylesheet" href="./assets/css/css-base/footer.css">
-    <link rel="stylesheet" href="./assets/css/css-base/base.css">
-    <link rel="stylesheet" href="./assets/css/css-base/responsive.css">
-    <link rel="stylesheet" href="./assets/css/index/responsive.css">
-    <link rel="stylesheet" href="./assets/animations/rorate-180.css">
-    <script src="./js/Line__Header.js"></script>
+    <link rel="stylesheet" href="../assets/css/css-base/header.css">
+    <link rel="stylesheet" href="../assets/css/index/container.css">
+    <link rel="stylesheet" href="../assets/css/job-readiness/job-readiness.css">
+    <link rel="stylesheet" href="../assets/css/job-readiness-your-exprience/job-readiness-your-exprience.css">
+    <link rel="stylesheet" href="../assets/css/css-base/footer.css">
+    <link rel="stylesheet" href="../assets/css/css-base/base.css">
+    <link rel="stylesheet" href="../assets/css/css-base/responsive.css">
+    <link rel="stylesheet" href="../assets/css/index/responsive.css">
+    <link rel="stylesheet" href="../assets/css/job-readiness/responsive.css">
+    <link rel="stylesheet" href="../assets/css/job-readiness-your-exprience/responsive.css">
+    <link rel="stylesheet" href="../assets/animations/rorate-180.css">
+    <script src="../js/Line__Header.js"></script>
 </head>
 <body>
     <div class="all-display">
@@ -535,482 +538,116 @@
             </div>
             <hr id="hrElement" style="opacity: 0;">
         </header>
-        <main>
-            <div class="Container Container__Box">
-                <div class="Container__Box-Layout">
-                    <div class="SideBar">
-                        <div class="SideBar__Box">
-                            <nav class="SideBar__Nav">
-                                <ul class="SideBar__List">
-                                    <div class="pb-05rem">
-                                        <li class="Page__Current">
-                                            <button class="SideBar__Button" style="font-weight: 600;">
-                                                <img src="./assets/img/dashboard.png" alt="Dashboard" style="height: 22px; width: 22px;" class="mr-10">
-                                                <span>Dashboard</span>
-                                            </button>
-                                        </li>
-                                    </div>
-                                    <div class="pb-05rem">
-                                        <li>
-                                            <button class="SideBar__Button" style="background-color: inherit;">
-                                                <img src="./assets/img/book.png" alt="Book" style="height: 25px; width: 25px;" class="mr-10">
-                                                <span>My learning</span>
-                                            </button>
-                                        </li>
-                                    </div>
-                                    <div class="pb-05rem">
-                                        <li>
-                                            <a href="./pages/events.html">
-                                                <button class="SideBar__Button" style="background-color: inherit;">
-                                                    <img src="./assets/img/calendar.png" alt="Calendar" style="height: 25px; width: 25px;" class="mr-10">
-                                                    <span>Events</span>
-                                                </button>
-                                            </a>
-                                        </li>
-                                    </div>
-                                    <div class="pb-05rem">
-                                        <li>
-                                            <button class="SideBar__Button" style="background-color: inherit;">
-                                                <img src="./assets/img/puzzle.png" alt="Puzzle" style="height: 25px; width: 25px;" class="mr-10">
-                                                <span style="display: flex;">Projects
-                                                    <div class="SideBar__Button-Upgrade">Upgrade</div>
-                                                </span>
-                                            </button>
-                                        </li>
-                                    </div>
-                                    <div class="pb-05rem">
-                                        <li>
-                                            <a href="./pages/workspaces.html">
-                                                <button class="SideBar__Button" style="background-color: inherit;">
-                                                    <img src="./assets/img/workspace.png" alt="Workspaces" style="height: 22px; width: 22px;" class="mr-10">
-                                                    <span>Workspaces</span>
-                                                </button>
-                                            </a>
-                                        </li>
-                                    </div>
-                                </ul>
-                            </nav>
-                            <div class="SideBar__Footer">
-                                <div class="SideBar__Footer-Content">
-                                    <h2>
-                                        Try Plus or Pro with a 7-day free trial
-                                    </h2>
-                                    <span class="Style__Text-Span">Go deeper and learn job-ready skills. Practice with real-world projects, take assessments, and earn certificates.</span>
+        <main style="position: relative; z-index: 1;">
+            <div class="Job__Content-Wrapper">
+                <div class="Job__Content-Head-LayoutGrid">
+                    <div class="Job__Content-Head-Left">
+                        <div style="padding-bottom: 2rem;">
+                            <h1 class="Interview__Introduction-Header">Job-readiness checker
+                                <div class="Beta__Box">
+                                    <span class="Beta__Span">Beta</span>
                                 </div>
-                                <button>Try for free</button>
+                            </h1>
+                            <div class="Interview__Introduction-PowerBy-FlexBox">
+                                <span class="PowerBy">Powered by</span>
+                                <div style="display: flex; align-items: center; padding-left: 1rem;">
+                                    <img src="../assets/img/chatgpt.png" alt="ChatGPT Logo" style="height: 20px; width: 20px; margin-right: 5px;">
+                                    <b>OpenAI</b>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="Job__Content-Description">
+                            Add a LinkedIn or ZipRecruiter job posting to analyze how your skills fit the job. You’ll need to add more information for jobs found on other websites.
+                            <a class="LearnMore" href="">Learn more</a>
+                        </span>
+                        <div style="display: flex;">
+                            <div style="margin-right: 1rem; width: 100%;">
+                                <div style="color: var(--color-text); position: relative;">
+                                    <input placeholder="Example: www.linkedin.com/jobs..." class="Job__Input" type="text" value="">
+                                </div>
+                            </div>
+                            <div>
+                                <button class="GetReport" disabled>
+                                    Get report
+                                </button>
                             </div>
                         </div>
                     </div>
-                    <div class="Content">
-                        <div class="Content__Box">
-                            <div class="Content__Item">
-                                <div class="Content__Item-Header">
-                                    <h2>Keep learning</h2>
-                                </div>
-                                <div class="Content__Item-Progress-Wrapper">
-                                    <div class="Content__Item-Progress-Bar">
-                                        <label>Progress: 4%</label>
-                                        <svg fill="currentColor" role="img" aria-hidden="true" class="SVG__ProgressBar">
-                                            <title>Diagonal A Dense</title>
-                                            <pattern id="DiagonalADense-pattern" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
-                                                <rect width="1" height="1" fill="currentColor"></rect>
-                                                <rect x="2" y="2" width="1" height="1" fill="currentColor"></rect>
-                                                <rect x="1" y="2" width="1" height="1" fill="currentColor"></rect>
-                                                <rect x="1" y="3" width="1" height="1" fill="currentColor"></rect>
-                                                <rect y="3" width="1" height="1" fill="currentColor"></rect>
-                                                <rect x="3" width="1" height="1" fill="currentColor"></rect>
-                                                <rect x="3" y="1" width="1" height="1" fill="currentColor"></rect>
-                                                <rect x="2" y="1" width="1" height="1" fill="currentColor"></rect>
-                                            </pattern>
-                                            <rect width="100%" height="100%" fill="url(#DiagonalADense-pattern)"></rect>
-                                        </svg>
-                                        <div data-testid="progress-bar-bar" class="Data__ProgressBar">
-                                            <span aria-hidden="true">74%</span>
-                                        </div>
-                                    </div>
-                                    <div class="Content__Item-Container">
-                                        <div class="Content__Item-Box">
-                                            <div class="Content__Item-Box-Grid">
-                                                <div class="Content__Item-Box-Flex">
-                                                    <p>Course</p>
-                                                    <h3>Learn JavaScript</h3>
-                                                    <p>Current Module: Introduction</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="Content__Item-Button">
-                                        <a href="">View syllabus</a>
-                                        <a href="">
-                                            Resume
-                                            <div class="Content__Item-Icon">
-                                                <svg class="Content__Item-SVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <button class="Button__Component-View">
-                                    View all learning in progress 
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="#3A10E5" role="img" aria-hidden="true" class="" style="height: 16px; width: 16px" viewBox="0 0 320 512"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
-                                </button>
-                            </div>
-                            <div class="Content__Item">
-                                <div class="Content__Item-Header">
-                                    <h2>Follow your progress</h2>
-                                </div>
-                                <div class="Layout__Grid">
-                                    <div class="Layout__Grid-Item-Left">
-                                        <div class="Layout__Grid-Item-Left-Box">
-                                            <div class="Layout__Grid-Item-Left-Child1">
-                                                <span>Skills</span>
-                                            </div>
-                                            <div class="Layout__Grid-Item-Left-Child2"></div>
-                                            <div class="">
-                                                <div class="" style="margin-top: 2rem;">
-                                                    <div class="Flex__Box-Width">
-                                                        <div class="Skills__Content">
-                                                            <span>Take action to stay motivated</span>
-                                                            <span>Move forward in your learning and watch your skills grow.</span>
-                                                            <a href="">Continue in Learn JavaScript</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="Layout__Grid-Item-Right">
-                                        <div class="Layout__Grid-Item-Right-Box">
-                                            <div class="Layout__Grid-Item-Right-Child1">
-                                                <span>No weekly target set yet</span>
-                                            </div>
-                                            <div>
-                                                <a href="" class="Button__SetTarget">Set target</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="Layout__Grid-Item-Right">
-                                        <div class="Layout__Grid-Item-Right-Box">
-                                            <div class="Layout__Grid-Item-Right-Child1">
-                                                <span>Your goal</span>
-                                                <a href="" class="Button__Edit">
-                                                    <div class="Flex__Box-Height">
-                                                        Edit
-                                                        <i class="fa-solid fa-pen-to-square ml-10" style="margin-left: 10px;"></i>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <span>Build a project</span>
-                                        </div>
-                                    </div>
-                                    <div class="Layout__Grid-Item-Right">
-                                        <div class="" style="display: flex; justify-content: center;">
-                                            <a href="" class="Button__ViewAchievements">
-                                                <div class="Flex__Box-Height">
-                                                    <span>View achievements</span>
-                                                    <i class="fa-solid fa-chevron-right ml-10" style="margin-top: 4px;"></i>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
+                    <div class="Job__Content-Head-Right-GridBox">
+                        <div style="height: max-content;">
+                            <div class="Job__Content-Head-Right-Wrapper">
+                                <div>
+                                    <h2 class="Job__Content-Right-Header">Get 1 report free</h2>
+                                    <span class="Job__Content-Right-Span">Simply add your experience and a job link. Get a personalized report about the skills you need for your dream job.</span>
                                 </div>
                             </div>
-                            <div class="Content__Item">
-                                <div class="Content__Item-Header">
-                                    <h2>Recommended for you</h2>
-                                    <div style="display: flex;">
-                                        <div class="Related__Topics">
-                                            <span>Related topics:</span>
-                                            <ul>
-                                                <li>
-                                                    <a href="">HTML & CSS</a>
-                                                    <span class="Style__Text"> | </span>
-                                                </li>
-                                                <li>
-                                                    <a href="">JavaScript</a>
-                                                    <span class="Style__Text"> | </span>
-                                                </li>
-                                                <li>
-                                                    <a href="">PHP</a>
-                                                </li>
-                                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div style="position: relative; z-index: 0; margin-top: 1.5rem;">
+                    <div style="display: flex; margin-bottom: 1.5rem; position: relative;">
+                        <a href="" class="TabButton">
+                            Saved reports
+                        </a>
+                        <a href="" class="TabButton" data-selected>
+                            Your experience
+                            <div class="Btn__Online-New"></div>
+                        </a>
+                        <div style="border-bottom: 1px solid #000; width: 100%; border-top: none;border-left: none;border-right: none;"></div>
+                    </div>
+                    <div class="YourExprience__Main-LayoutGrid">
+                        <div class="YourExprience__Main-Left-LayoutGrid">
+                            <span>For a more tailored report, include as much relevant information as you can about what you’ve achieved and how you’ve applied your skills.</span>
+                            <form action="" class="YourExprience__Main-Form">
+                                <div class="YourExprience__Main-Form-LayoutGrid">
+                                    <div class="YourExprience__Main-Item-LayoutGrid">
+                                        <div>
+                                            <div style="display: flex;margin-bottom: 0.25rem;justify-content: space-between;">
+                                                <label for="">
+                                                    Work and volunteer experience
+                                                    <span aria-hidden="true" class="optional"> &nbsp;(optional)</span>
+                                                </label>
+                                            </div>
+                                            <textarea name="employment" aria-invalid="false" aria-required="false" for="employment" placeholder="Example: Data Entry Specialist for Retail Company XYZ, Oct 2019-Jul 2021, edited directly in HTML code" id="employment"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="YourExprience__Main-Item-LayoutGrid">
+                                        <div>
+                                            <div style="display: flex;margin-bottom: 0.25rem;justify-content: space-between;">
+                                                <label for="">
+                                                    Projects and skills
+                                                    <span aria-hidden="true" class="optional"> &nbsp;(optional)</span>
+                                                </label>
+                                            </div>
+                                            <textarea name="skills" aria-invalid="false" aria-required="false" for="skills" placeholder="Example: Markdown, technical writing, advanced user of cross-referenced spreadsheets" id="skills"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="YourExprience__Main-Item-LayoutGrid">
+                                        <div>
+                                            <div style="display: flex;margin-bottom: 0.25rem;justify-content: space-between;">
+                                                <label for="">
+                                                    Education
+                                                    <span aria-hidden="true" class="optional"> &nbsp;(optional)</span>
+                                                </label>
+                                            </div>
+                                            <textarea name="education" aria-invalid="false" aria-required="false" for="education" placeholder="Example: BA degree in English" id="education"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="Btn__SaveExperience-LayoutGrid">
+                                        <div>
+                                            <button class="Btn__SaveExperience" type="submit">Save experience</button>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="Cotainer__SkillPath">
-                                    <div class="FlexBox__Column">
-                                        <ul class="Cotainer__SkillPath-List">
-                                            <li class="Cotainer__SkillPath-Item">
-                                                <a href="" style="text-decoration: none;">
-                                                    <div class="Cotainer__SkillPath-Item-CardWrapper">
-                                                        <div class="Cotainer__SkillPath-Header">
-                                                            <span>Skill path</span>
-                                                        </div>
-                                                        <div class="Cotainer__SkillPath-GridBox">
-                                                            <div class="FlexBox__Column">
-                                                                <div>
-                                                                    <h3>Create a Back-End App with JavaScript</h3>
-                                                                    <span>Learn how to build back-end web APIs using Express.js, Node.js, SQL, and a Node.js-SQLite database library.</span>
-                                                                </div>
-                                                                <div class="mt-auto">
-                                                                    <div class="CheckerDense-Box">
-                                                                        <svg fill="currentColor" role="img" aria-hidden="true" class="CheckerDense">
-                                                                            <title>Checker Dense</title>
-                                                                            <pattern id="CheckerDense:" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
-                                                                                <rect width="1" height="1" fill="currentColor"></rect>
-                                                                                <rect x="2" y="2" width="1" height="1" fill="currentColor"></rect>
-                                                                            </pattern>
-                                                                            <rect width="100%" height="100%" fill="url(#CheckerDense:)"></rect>
-                                                                        </svg>
-                                                                    </div>
-                                                                    <span class="Style__Text-Span">Includes <b>8 Courses</b></span>
-                                                                    <div class="CheckerDense-Box">
-                                                                        <svg fill="currentColor" role="img" aria-hidden="true" class="CheckerDense">
-                                                                            <title>Checker Dense</title>
-                                                                            <pattern id="CheckerDense:" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
-                                                                                <rect width="1" height="1" fill="currentColor"></rect>
-                                                                                <rect x="2" y="2" width="1" height="1" fill="currentColor"></rect>
-                                                                            </pattern>
-                                                                            <rect width="100%" height="100%" fill="url(#CheckerDense:)"></rect>
-                                                                        </svg>
-                                                                    </div>
-                                                                    <div class="FlexBox__Align-Center">
-                                                                        <div style="display: flex; padding-right: 0.25rem;">
-                                                                            <img src="./assets/img/certificate.png" alt="Certificate" style="width: 18px; height: 18px;">
-                                                                        </div>
-                                                                        <span>With <b>Certificate</b></span>
-                                                                    </div>
-                                                                    <div class="CheckerDense-Box">
-                                                                        <svg fill="currentColor" role="img" aria-hidden="true" class="CheckerDense">
-                                                                            <title>Checker Dense</title>
-                                                                            <pattern id="CheckerDense:" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
-                                                                                <rect width="1" height="1" fill="currentColor"></rect>
-                                                                                <rect x="2" y="2" width="1" height="1" fill="currentColor"></rect>
-                                                                            </pattern>
-                                                                            <rect width="100%" height="100%" fill="url(#CheckerDense:)"></rect>
-                                                                        </svg>
-                                                                    </div>
-                                                                    <div class="FlexBox__Two-Ele-Wrap">
-                                                                        <div class="FlexBox__Align-Center">
-                                                                            <div style="display: flex; padding-right: 0.25rem;">
-                                                                                <img src="./assets/img/rank.png" alt="Rank" style="width: 20px; height: 20px;">
-                                                                            </div>
-                                                                            <span><b>Beginner</b>  Friendly</span>
-                                                                        </div>
-                                                                        <div class="Hours">
-                                                                            <span><b>30</b> hours</span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="Cotainer__SkillPath-Item">
-                                                <a href="" style="text-decoration: none;">
-                                                    <div class="Cotainer__SkillPath-Item-CardWrapper">
-                                                        <div class="Cotainer__SkillPath-Header">
-                                                            <span>Skill path</span>
-                                                        </div>
-                                                        <div class="Cotainer__SkillPath-GridBox">
-                                                            <div class="FlexBox__Column">
-                                                                <div>
-                                                                    <h3>Create a Font-End App with React</h3>
-                                                                    <span>Learn how to build font-end web apps JavaScript and React.</span>
-                                                                </div>
-                                                                <div class="mt-auto">
-                                                                    <div class="CheckerDense-Box">
-                                                                        <svg fill="currentColor" role="img" aria-hidden="true" class="CheckerDense">
-                                                                            <title>Checker Dense</title>
-                                                                            <pattern id="CheckerDense:" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
-                                                                                <rect width="1" height="1" fill="currentColor"></rect>
-                                                                                <rect x="2" y="2" width="1" height="1" fill="currentColor"></rect>
-                                                                            </pattern>
-                                                                            <rect width="100%" height="100%" fill="url(#CheckerDense:)"></rect>
-                                                                        </svg>
-                                                                    </div>
-                                                                    <span class="Style__Text-Span">Includes <b>9 Courses</b></span>
-                                                                    <div class="CheckerDense-Box">
-                                                                        <svg fill="currentColor" role="img" aria-hidden="true" class="CheckerDense">
-                                                                            <title>Checker Dense</title>
-                                                                            <pattern id="CheckerDense:" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
-                                                                                <rect width="1" height="1" fill="currentColor"></rect>
-                                                                                <rect x="2" y="2" width="1" height="1" fill="currentColor"></rect>
-                                                                            </pattern>
-                                                                            <rect width="100%" height="100%" fill="url(#CheckerDense:)"></rect>
-                                                                        </svg>
-                                                                    </div>
-                                                                    <div class="FlexBox__Align-Center">
-                                                                        <div style="display: flex; padding-right: 0.25rem;">
-                                                                            <img src="./assets/img/certificate.png" alt="Certificate" style="width: 18px; height: 18px;">
-                                                                        </div>
-                                                                        <span>With <b>Certificate</b></span>
-                                                                    </div>
-                                                                    <div class="CheckerDense-Box">
-                                                                        <svg fill="currentColor" role="img" aria-hidden="true" class="CheckerDense">
-                                                                            <title>Checker Dense</title>
-                                                                            <pattern id="CheckerDense:" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
-                                                                                <rect width="1" height="1" fill="currentColor"></rect>
-                                                                                <rect x="2" y="2" width="1" height="1" fill="currentColor"></rect>
-                                                                            </pattern>
-                                                                            <rect width="100%" height="100%" fill="url(#CheckerDense:)"></rect>
-                                                                        </svg>
-                                                                    </div>
-                                                                    <div class="FlexBox__Two-Ele-Wrap">
-                                                                        <div class="FlexBox__Align-Center">
-                                                                            <div style="display: flex; padding-right: 0.25rem;">
-                                                                                <img src="./assets/img/rank.png" alt="Rank" style="width: 20px; height: 20px;">
-                                                                            </div>
-                                                                            <span><b>Intermediate</b></span>
-                                                                        </div>
-                                                                        <div class="Hours">
-                                                                            <span><b>37</b> hours</span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li class="Cotainer__SkillPath-Item">
-                                                <a href="" style="text-decoration: none;">
-                                                    <div class="Cotainer__SkillPath-Item-CardWrapper">
-                                                        <div class="Cotainer__SkillPath-Header">
-                                                            <span>Skill path</span>
-                                                        </div>
-                                                        <div class="Cotainer__SkillPath-GridBox">
-                                                            <div  class="FlexBox__Column">
-                                                                <div>
-                                                                    <h3>Create Video Games with Phaser.js</h3>
-                                                                    <span>It's easy to get lost in the flow of a good game. But behind every power-up and boss battle is simple code that brings the...</span>
-                                                                </div>
-                                                                <div class="mt-auto">
-                                                                    <div class="CheckerDense-Box">
-                                                                        <svg fill="currentColor" role="img" aria-hidden="true" class="CheckerDense">
-                                                                            <title>Checker Dense</title>
-                                                                            <pattern id="CheckerDense:" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
-                                                                                <rect width="1" height="1" fill="currentColor"></rect>
-                                                                                <rect x="2" y="2" width="1" height="1" fill="currentColor"></rect>
-                                                                            </pattern>
-                                                                            <rect width="100%" height="100%" fill="url(#CheckerDense:)"></rect>
-                                                                        </svg>
-                                                                    </div>
-                                                                        <span class="Style__Text-Span">Includes <b>8 Courses</b></span>
-                                                                    <div class="CheckerDense-Box">
-                                                                        <svg fill="currentColor" role="img" aria-hidden="true" class="CheckerDense">
-                                                                            <title>Checker Dense</title>
-                                                                            <pattern id="CheckerDense:" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
-                                                                                <rect width="1" height="1" fill="currentColor"></rect>
-                                                                                <rect x="2" y="2" width="1" height="1" fill="currentColor"></rect>
-                                                                            </pattern>
-                                                                            <rect width="100%" height="100%" fill="url(#CheckerDense:)"></rect>
-                                                                        </svg>
-                                                                    </div>
-                                                                    <div class="FlexBox__Align-Center">
-                                                                        <div style="display: flex; padding-right: 0.25rem;">
-                                                                            <img src="./assets/img/certificate.png" alt="Certificate" style="width: 18px; height: 18px;">
-                                                                        </div>
-                                                                        <span>With <b>Certificate</b></span>
-                                                                    </div>
-                                                                    <div class="CheckerDense-Box">
-                                                                        <svg fill="currentColor" role="img" aria-hidden="true" class="CheckerDense">
-                                                                            <title>Checker Dense</title>
-                                                                            <pattern id="CheckerDense:" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
-                                                                                <rect width="1" height="1" fill="currentColor"></rect>
-                                                                                <rect x="2" y="2" width="1" height="1" fill="currentColor"></rect>
-                                                                            </pattern>
-                                                                            <rect width="100%" height="100%" fill="url(#CheckerDense:)"></rect>
-                                                                        </svg>
-                                                                    </div>
-                                                                    <div class="FlexBox__Two-Ele-Wrap">
-                                                                        <div class="FlexBox__Align-Center">
-                                                                            <div style="display: flex; padding-right: 0.25rem;">
-                                                                                <img src="./assets/img/rank.png" alt="Rank" style="width: 20px; height: 20px;">
-                                                                            </div>
-                                                                            <span><b>Beginner</b>  Friendly</span>
-                                                                        </div>
-                                                                        <div class="Hours">
-                                                                            <span><b>27</b> hours</span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                        <div class="ViewMore">
-                                            <button class="Style__Text ViewMore__Button">
-                                                <span>View more</span>
-                                                <div>
-                                                    <i class="fas fa-chevron-down"></i>
-                                                </div>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="Content__Item">
-                                <div class="Content__Item-Header">
-                                    <h2>Discover more features</h2>
-                                </div>
-                                <ul class="Content__Item-List">
-                                    <li class="Content__Item-List-Ele">
-                                        <a href="" style="text-decoration: none;">
-                                            <div class="Content__Item-List-Ele-Box">
-                                                <div class="FlexBox__Two-Ele">
-                                                    <div style="display: flex;">
-                                                        <img src="./assets/img/people.png" alt="" style="width: 24px; height: 24px; margin-right: 1rem;">
-                                                        <div class="FlexBox__Column-Width">
-                                                            <span>Interview Simulator</span>
-                                                            <span>Practice your interviewing skills and get real-time, AI-powered feedback.</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="Content__Item-Icon">
-                                                        <i class="fa-solid fa-chevron-right"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="Content__Item-List-Ele">
-                                        <a href="" style="text-decoration: none;">
-                                            <div class="Content__Item-List-Ele-Box">
-                                                <div class="FlexBox__Two-Ele">
-                                                    <div  style="display: flex;">
-                                                        <img src="./assets/img/gauge.png" alt="" style="width: 26px; height: 26px; margin-right: 1rem;">
-                                                        <div class="FlexBox__Column-Width">
-                                                            <span>Job-readiness checker</span>
-                                                            <span>Analyze any job posting to check for the skills you need to ... </span>
-                                                        </div>
-                                                    </div>
-                                                    <div  class="Content__Item-Icon">
-                                                        <i class="fa-solid fa-chevron-right"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="Content__Item-List-Ele">
-                                        <a href="" style="text-decoration: none;">
-                                            <div class="Content__Item-List-Ele-Box">
-                                                <div class="FlexBox__Two-Ele">
-                                                    <div  style="display: flex;">
-                                                        <img src="./assets/img/discord.png" alt="" style="width: 24px; height: 24px; margin-right: 1rem;">
-                                                        <div class="FlexBox__Column-Width">
-                                                            <span>Discord</span>
-                                                            <span>connect with peers around the globe, code together, and help...</span>
-                                                        </div>
-                                                    </div>
-                                                    <div  class="Content__Item-Icon">
-                                                        <img src="./assets/img/share.png" alt="" style="width: 20px; height: 20px;">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
+                            </form>
+                        </div>
+                        <div class="YourExprience__Main-Right-LayoutGrid">
+                            <div>
+                                <h2 class="YourExprience__Main-Right-Header">Tips</h2>
+                                <ul>
+                                    <li>Include dates to show the length of your work experience.</li>
+                                    <li>Highlight your impact with details, numbers, and percentages.</li>
+                                    <li>Use resume keywords to explain how you contributed to projects.</li>
                                 </ul>
                             </div>
                         </div>
@@ -1199,6 +836,6 @@
         </footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="./js/index.js"></script>
+    <script src="../js/index.js"></script>
 </body>
 </html>\

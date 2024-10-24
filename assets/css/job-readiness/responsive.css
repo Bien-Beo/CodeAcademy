@@ -1,0 +1,47 @@
+@media only screen and (min-width: 480px) {
+    .Job__Content-Wrapper {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .Job__Content-Wrapper {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .Job__List-Card {
+        grid-column-gap: 2rem;
+        column-gap: min(calc(100% / 11), 2rem);
+    }
+    .Job__List-Card-Item {
+        grid-column-end: span 6;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .Job__Content-Head-Left {
+        grid-column-end: span 6;
+    }
+    .Job__Content-Head-Right-GridBox {
+        margin-top: 0;
+        justify-items: right;
+        grid-column-end: span 6;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .Job__Content-Wrapper {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+    .Job__List-Card-Item {
+        grid-column-end: span 4;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .Job__List-Card-Item {
+        grid-column-end: span 3;
+    }
+}
