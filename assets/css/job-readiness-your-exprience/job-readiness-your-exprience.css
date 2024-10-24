@@ -1,0 +1,185 @@
+.YourExprience__Main-LayoutGrid {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    display: grid;
+    width: 100%;
+    grid-column-gap: 2rem;
+    column-gap: min(calc(100% / 11), 2rem);
+}
+
+.YourExprience__Main-Left-LayoutGrid {
+    grid-column-end: span 12;
+    grid-template-columns: minmax(0, 1fr);
+    display: grid;
+    grid-column-end: span 12;
+}
+
+.YourExprience__Main-Left-LayoutGrid > span {
+    font-size: inherit;
+    display: inline-block;
+    margin: 0;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.YourExprience__Main-Form {
+    display: flex;
+    flex-direction: column;
+}
+
+.YourExprience__Main-Form-LayoutGrid {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    display: grid;
+    width: 100%;
+    row-gap: 1rem;
+    grid-column-gap: 0.5rem;
+    column-gap: min(calc(100% / 11), 0.5rem);
+}
+
+.YourExprience__Main-Item-LayoutGrid {
+    grid-column-end: span 12;
+    grid-template-columns: minmax(0, 1fr);
+    display: grid;
+    grid-row-end: span 1;
+    grid-column-end: span 12;
+}
+
+.YourExprience__Main-Item-LayoutGrid > div {
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
+    padding-bottom: 0.5rem;
+    position: relative;
+    width: 100%;
+    height: max-content;
+}
+
+.optional {
+    font-size: inherit;
+    display: inline-block;
+    margin: 0;
+}
+
+label {
+    font-weight: 400;
+    font-size: 1rem;
+    display: block;
+    color: var(--color-text);
+    line-height: 1.5;
+}
+
+textarea {
+    outline: none;
+    transition: background-color 350ms ease-in-out, box-shadow 350ms ease-in-out;
+    border: 1px solid var(--color-secondary);
+    border-color: rgba(16, 22, 47, 0.63);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 1rem;
+    width: 100%;
+    min-width: auto;
+    border-radius: 4px;
+    color: var(--color-text);
+    background-color: var(--color-background);
+    position: initial;
+    border-radius: 'md';
+}
+
+.Btn__SaveExperience-LayoutGrid {
+    grid-column-end: span 12;
+    grid-template-columns: minmax(0, 1fr);
+    display: grid;
+    grid-column-end: span 12;
+}
+
+.Btn__SaveExperience-LayoutGrid > div {
+    display: grid;
+    margin-bottom: 0.5rem;
+    justify-self: flex-end;
+    align-self: center;
+}
+
+.Btn__SaveExperience {
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+    font-size: inherit;
+    text-decoration: none;
+    box-shadow: none;
+    color: var(--color-text);
+    transition: border-color 150ms ease-in, color 150ms ease-in, background-color 150ms ease-in, box-shadow 150ms ease-in;
+    border: 2px solid var(--color-secondary);
+    border-color: transparent;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    position: relative;
+    border-radius: 4px;
+    font-weight: 700;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    font-size: 1rem;
+    min-width: 40px;
+    height: 40px;
+    color: var(--color-background);
+    background-color: var(--color-primary);
+}
+
+.Btn__SaveExperience:before {
+    content: "";
+    transition: opacity 150ms linear;
+    border: 2px solid var(--color-secondary);
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    z-index: 0;
+    opacity: 0;
+    border-radius: 8px;
+}
+
+.Btn__SaveExperience:hover {
+    transition: background-color 150ms ease-in, box-shadow 150ms ease-in;
+    color: var(--color-background);
+    background-color: #5533FF;
+}
+
+.YourExprience__Main-Right-LayoutGrid {
+    grid-column-end: span 12;
+    grid-template-columns: minmax(0, 1fr);
+    display: grid;
+    grid-column-end: span 12;
+}
+
+.YourExprience__Main-Right-Header {
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 2.75rem;
+    margin: 0;
+    font-size: 1.375rem;
+    margin-bottom: 1rem;
+}
+
+ol, ul, dl {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}

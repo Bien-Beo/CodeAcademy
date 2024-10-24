@@ -1,0 +1,12 @@
+@media only screen and (min-width: 768px) {
+    .YourExprience__Main-Left-LayoutGrid {
+        grid-column-end: span 6;
+    }
+    .YourExprience__Main-Form-LayoutGrid {
+        grid-column-gap: 2rem;
+        column-gap: min(calc(100% / 11), 2rem);
+    }
+    .YourExprience__Main-Right-LayoutGrid {
+        grid-column-end: span 5;
+    }
+}

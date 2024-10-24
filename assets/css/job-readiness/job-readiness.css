@@ -1,0 +1,285 @@
+.Job__Content-Wrapper {
+    padding: 0 1rem 4rem;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    max-width: 1440px;
+}
+
+.Job__Content-Head-LayoutGrid {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    width: 100%;
+    padding-top: 3rem;
+    grid-column-gap: 2rem;
+    column-gap: min(calc(100% / 11), 2rem);
+}
+
+.Job__Content-Head-Left {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-column-end: span 12;
+}
+
+.Interview__Introduction-Header {
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 4rem;
+    margin: 0;
+}
+
+.Interview__Introduction-PowerBy-FlexBox {
+    display: flex;
+    align-items: center;
+}
+
+.PowerBy, .Job__Content-Description, .Beta__Span {
+    font-size: inherit;
+    display: inline-block;
+    margin: 0;
+}
+
+.Job__Content-Description {
+    margin-bottom: 2rem;
+    font-size: 0.92rem;
+}
+
+.PowerBy {
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Ubuntu", sans-serif;
+    font-size: 1rem;
+}
+
+.Beta__Box {
+    border: 1px solid rgba(16, 22, 47, 0.75);
+    padding: 0.75rem 0.5rem;
+    border-radius: 16px;
+    display: inline-flex;
+    height: 14px;
+    position: relative;
+    top: -1rem;
+    align-items: center;
+}
+
+.Beta__Span {
+    font-family: "Inter", "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-weight: lighter;
+    font-size: 0.875rem;
+    color: rgba(16, 22, 47, 0.75);
+}
+
+.LearnMore, .GetReport, .TabButton {
+    border: none;
+    padding: 0;
+    font-size: inherit;
+    text-decoration: none;
+    box-shadow: none;
+    background: none;
+    position: relative;
+}
+
+.LearnMore {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
+.LearnMore:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.Job__Input {
+    outline: none;
+    transition: background-color 350ms ease-in-out, box-shadow 350ms ease-in-out;
+    border: 1px solid var(--color-border);
+    padding: 0.75rem 0.5rem;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 1rem;
+    width: 100%;
+    border-radius: 4px;
+    color: var(--color-text);
+    background-color: var(--color-background);
+}
+
+.GetReport:disabled {
+    color: rgba(16, 22, 47, 0.63);
+    background-color: rgba(16, 22, 47, 0.12);
+    cursor: not-allowed;
+    user-select: none;
+}
+
+.GetReport {
+    cursor: pointer;
+    border: 2px solid transparent;
+    color: var(--color-background);
+    background-color: var(--color-primary);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    border-radius: 4px;
+    min-width: 120px;
+    height: 50px;
+}
+
+.GetReport:before {
+    content: "";
+    transition: opacity 150ms linear;
+    border: 2px solid var(--color-secondary);
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    z-index: 0;
+    opacity: 0;
+    border-radius: 8px;
+}
+
+.Job__Content-Head-Right-GridBox {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-column-end: span 12;
+    grid-row-end: span 2;
+    margin: 2rem 0 1.5rem;
+    justify-items: left;
+}
+
+.Job__Content-Head-Right-Wrapper {
+    display: inline-block;
+    max-width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.Job__Content-Head-Right-Wrapper > div {
+    border: 1px solid rgba(16, 22, 47, 0.28);
+    padding: 2rem;
+    max-width: 502px;
+    background: #FFFAE5;
+}
+
+.Job__Content-Right-Header, .Job__List-Card-Header {
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.Job__Content-Right-Header {
+    font-size: 1.625rem;
+    padding-bottom: 1rem;
+}
+
+.Job__Content-Right-Span, .Job__List-Card-Title {
+    font-size: inherit;
+    margin: 0;
+}
+
+.Job__Content-Right-Span {
+    padding-top: 1rem;
+}
+
+.TabButton[data-selected] {
+    border-bottom-width: 4px;
+    border-color: var(--color-primary);
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+}
+
+.TabButton {
+    color: var(--color-text);
+    text-overflow: ellipsis;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    border-bottom: 1px solid var(--color-text);
+    white-space: nowrap;
+}
+
+.TabButton:hover {
+    background-color: rgba(16, 22, 47, 0.04);
+}
+
+.Btn__Online-New {
+    margin-left: 0.5rem;
+    border-radius: 999px;
+    width: 8px;
+    height: 8px;
+    background-color: #3A10E5;
+}
+
+.Job__Content-Main-Text {
+    font-size: 0.92rem;
+    margin: 1rem auto;
+    display: block;
+    max-width: 816px;
+    text-align: center;
+}
+
+.Job__List-Card {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    width: 100%;
+    padding-left: 0;
+    row-gap: 2rem;
+    column-gap: min(calc(100% / 11), 1rem);
+}
+
+.Job__List-Card-Item {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-column-end: span 12;
+}
+
+.Job__List-Card-Item > div {
+    border: 1px dashed #10162f63;
+    padding: 1.5rem;
+    border-radius: 4px;
+    min-width: 288px;
+    height: 320px;
+    background: #FFFAE5;
+    color: var(--color-text);
+}
+
+.Job__List-Card-Info {
+    display: flex;
+    margin: 0.75rem 0;
+    align-items: center;
+}
+
+.Job__List-Card-Avatar, .Job__List-Card-Name {
+    border: 1px solid #10162f63;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.Job__List-Card-Name {
+    padding: 0 5rem;
+    height: 10px;
+}
+
+.Job__List-Card-Avatar > span, .Job__List-Card-Name > span {
+    font-size: inherit;
+    margin: 0;
+    font-family: "Inter", "Roboto", -apple-system, "Segoe UI", sans-serif;
+    white-space: nowrap;
+}
+
+.Job__List-Card-Comment {
+    display: flex;
+    margin: 0.75rem 0;
+    flex-direction: column;
+}
+
+.Job__List-Card-Comment-1, .Job__List-Card-Comment-2, .Job__List-Card-Comment-3, .Job__List-Card-Comment-4 {
+    margin-top: 0.5rem;
+    background: #10162f09;
+    height: 16px;
+}
+
+.Job__List-Card-Comment-1 { width: 120px; }
+.Job__List-Card-Comment-2 { width: 190px; }
+.Job__List-Card-Comment-3 { width: 220px; }
+.Job__List-Card-Comment-4 { width: 170px; }
