@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project | Codeacademy</title>
+    <title>Events | Codeacademy</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../assets/css/css-base/header.css">
     <link rel="stylesheet" href="../assets/css/index/container.css">
     <link rel="stylesheet" href="../assets/css/css-base/base.css">
     <link rel="stylesheet" href="../assets/css/css-base/footer.css">
     <link rel="stylesheet" href="../assets/css/css-base/responsive.css">
-    <link rel="stylesheet" href="../assets/css/project/project.css">
+    <link rel="stylesheet" href="../assets/css/Python/python.css">
 </head>
 <body>
     <div class="all-display">
@@ -356,201 +356,395 @@
                 </nav>
             </div>
         </header>
-        <main>
-            <div class="Container Container__Box">
-                <div class="Container__Box-Layout">
-                    <div class="SideBar">
-                        <div class="SideBar__Box">
-                            <nav class="SideBar__Nav">
-                                <ul class="SideBar__List">
-                                    <div class="pb-05rem">
-                                        <li class="Page__Current">
-                                            <button class="SideBar__Button" style="font-weight: 600;">
-                                                <img src="../assets/img/dashboard.png" alt="Dashboard" style="height: 22px; width: 22px;" class="mr-10">
-                                                <span>Dashboard</span>
-                                            </button>
-                                        </li>
+        <main class="Main">
+            <div class="Main__Container">
+                <div class="Left-Padding">
+                    <div class="Left-Margin">
+                        <nav aria-label="Secondary">
+                            <div data-testid="desktop-menu" class="Left__Display">
+                                <div class="Left__Related">
+                                    <button aria-expanded="true" class="Left__Related-Button" type="button">
+                                        <div class="Left__Related-Tiltle">
+                                            <span class="Left__Related-Tiltle-Letter" style="flex: 1 1 0%; font-weight: bold;">Related topics</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140" fill="#fff" role="img" aria-hidden="true" class="Left__Related-Tiltle-SVG">
+                                                <mask id="MiniChevronDownIcon-mask-:r25:">
+                                                    <path d="M137.07 34a10 10 0 00-14.14 0L71.77 85.13a2.5 2.5 0 01-3.54 0L17.07 34A10 10 0 002.93 48.11l56.46 56.47a15 15 0 0021.22 0l56.46-56.47a10 10 0 000-14.11z"></path>
+                                                </mask>
+                                                <g mask="url(#MiniChevronDownIcon-mask-:r25:)">
+                                                    <rect width="100%" height="100%" fill="currentColor"></rect>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                    <div class="Left__Related-Content" style="height: auto;">
+                                        <menu class="Related-Content-Menu">
+                                            <li class="Related-Content-LI">
+                                                <a href="/catalog/subject/data-science" class="Related-Content-LI-A">
+                                                    <div class="Related-Content-LI-A-Letter">Data science</div>
+                                                </a>
+                                            </li>
+                                            <li class="Related-Content-LI">
+                                                <a href="/catalog/subject/data-science" class="Related-Content-LI-A">
+                                                    <div class="Related-Content-LI-A-Letter">AI</div>
+                                                </a>
+                                            </li>
+                                            <li class="Related-Content-LI">
+                                                <a href="/catalog/subject/data-science" class="Related-Content-LI-A">
+                                                    <div class="Related-Content-LI-A-Letter">Computer science</div>
+                                                </a>
+                                            </li>
+                                            <li class="Related-Content-LI">
+                                                <a href="/catalog/subject/data-science" class="Related-Content-LI-A">
+                                                    <div class="Related-Content-LI-A-Letter">Machine learning</div>
+                                                </a>
+                                            </li>
+                                            <li class="Related-Content-LI">
+                                                <a href="/catalog/subject/data-science" class="Related-Content-LI-A">
+                                                    <div class="Related-Content-LI-A-Letter">Data visualization</div>
+                                                </a>
+                                            </li>
+                                            <li class="Related-Content-LI">
+                                                <a href="/catalog/subject/data-science" class="Related-Content-LI-A">
+                                                    <div class="Related-Content-LI-A-Letter">
+                                                        Cybersecurity
+                                                        <div class="Related-Content-LI-A-Letter-New" >New</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </menu>
                                     </div>
-                                    <div class="pb-05rem">
-                                        <li>
-                                            <button class="SideBar__Button" style="background-color: inherit;">
-                                                <img src="../assets/img/book.png" alt="Book" style="height: 25px; width: 25px;" class="mr-10">
-                                                <span>My learning</span>
-                                            </button>
-                                        </li>
-                                    </div>
-                                    <div class="pb-05rem">
-                                        <li>
-                                            <button class="SideBar__Button" style="background-color: inherit;">
-                                                <img src="../assets/img/calendar.png" alt="Calendar" style="height: 25px; width: 25px;" class="mr-10">
-                                                <span>Events</span>
-                                            </button>
-                                        </li>
-                                    </div>
-                                    <div class="pb-05rem">
-                                        <li>
-                                            <button class="SideBar__Button" style="background-color: inherit;">
-                                                <img src="../assets/img/puzzle.png" alt="Puzzle" style="height: 25px; width: 25px;" class="mr-10">
-                                                <span style="display: flex;">Projects
-                                                    <div class="SideBar__Button-Upgrade">Upgrade</div>
-                                                </span>
-                                            </button>
-                                        </li>
-                                    </div>
-                                    <div class="pb-05rem">
-                                        <li>
-                                            <button class="SideBar__Button" style="background-color: inherit;">
-                                                <img src="../assets/img/workspace.png" alt="Workspaces" style="height: 22px; width: 22px;" class="mr-10">
-                                                <span>Workspaces</span>
-                                            </button>
-                                        </li>
-                                    </div>
-                                </ul>
-                            </nav>
-                            <div class="SideBar__Footer">
-                                <div class="SideBar__Footer-Content">
-                                    <h2>
-                                        Try Plus or Pro with a 7-day free trial
-                                    </h2>
-                                    <span class="Style__Text-Span">Go deeper and learn job-ready skills. Practice with real-world projects, take assessments, and earn certificates.</span>
                                 </div>
-                                <button>Try for free</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="Project">
-                        <div class="MinHeight">
-                            <div class="Project-Flex">
-                                <div class="Project-Tiltle">
-                                    <h2 class="Project-Tiltle-H2">Projects help you build your tech portfolio</h2>
-                                </div>
-                                <h3 class="Project-Tiltle-H3">
-                                    With a Plus or Pro account, you can work on real-world projects to apply your learning and showcase your skills. Get started with one of our handpicked options.
-                                </h3>
-                                <div class="Project-Content">
-                                    <div data-testid="popular-projects" class="Project-Content-FlexBox">
-                                        <ul aria-label="popular projects" class="Project-Content-FlexBox-UL">
-                                            <li class="Project-Content-FlexBox-LI">
-                                                <a href="/projects/practice/learn-phaser-create-an-adventure" class="Project-Content-FlexBox-A">
-                                                    <div class="Project-Content-Flex">
-                                                        <div class="Project-Content-Flex-BG">
-                                                            <span class="Project-Content-Flex-Span">Portfolio Project</span>
-                                                            <div class="Project-Content-Tiltle">
-                                                                <h3 class="Project-Content-Tiltle-H3">
-                                                                    <span class="Project-Content-Tiltle-Span">Build Your Own Reddit App</span>
-                                                                </h3>
-                                                            </div>
-                                                            <span class="Project-Content-Flex-Span2">
-                                                                <span class="Project-Content-Flex-Span-Letter">Use real data from the Reddit API and display it using React and Redux.</span>
-                                                            </span>
-                                                        </div>
+                                <div class="Left__Related">
+                                    <button aria-expanded="true" class="Left__Related-Button" type="button">
+                                        <div class="Left__Related-Tiltle">
+                                            <span class="Left__Related-Tiltle-Letter" style="flex: 1 1 0%; font-weight: bold;">Top languages & subjects</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140" fill="#fff" role="img" aria-hidden="true" class="Left__Related-Tiltle-SVG">
+                                                <mask id="MiniChevronDownIcon-mask-:r25:">
+                                                    <path d="M137.07 34a10 10 0 00-14.14 0L71.77 85.13a2.5 2.5 0 01-3.54 0L17.07 34A10 10 0 002.93 48.11l56.46 56.47a15 15 0 0021.22 0l56.46-56.47a10 10 0 000-14.11z"></path>
+                                                </mask>
+                                                <g mask="url(#MiniChevronDownIcon-mask-:r25:)">
+                                                    <rect width="100%" height="100%" fill="currentColor"></rect>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                    <div class="Left__Related-Content" style="height: auto;">
+                                        <menu class="Related-Content-Menu">
+                                            <li class="Related-Content-LI">
+                                                <a href="/catalog/subject/data-science" class="Related-Content-LI-A">
+                                                    <div class="Related-Content-LI-A-Letter">Python</div>
+                                                </a>
+                                            </li>
+                                            <li class="Related-Content-LI">
+                                                <a href="/catalog/subject/data-science" class="Related-Content-LI-A">
+                                                    <div class="Related-Content-LI-A-Letter">AI</div>
+                                                </a>
+                                            </li>
+                                            <li class="Related-Content-LI">
+                                                <a href="/catalog/subject/data-science" class="Related-Content-LI-A">
+                                                    <div class="Related-Content-LI-A-Letter">HTML & CSS</div>
+                                                </a>
+                                            </li>
+                                            <li class="Related-Content-LI">
+                                                <a href="/catalog/subject/data-science" class="Related-Content-LI-A">
+                                                    <div class="Related-Content-LI-A-Letter">Web development</div>
+                                                </a>
+                                            </li>
+                                            <li class="Related-Content-LI">
+                                                <a href="/catalog/subject/data-science" class="Related-Content-LI-A">
+                                                    <div class="Related-Content-LI-A-Letter">Java</div>
+                                                </a>
+                                            </li>
+                                            <li class="Related-Content-LI">
+                                                <a href="/catalog/subject/data-science" class="Related-Content-LI-A">
+                                                    <div class="Related-Content-LI-A-Letter">
+                                                        C++
                                                     </div>
                                                 </a>
                                             </li>
-                                            <li class="Project-Content-FlexBox-LI">
-                                                <a href="/projects/practice/learn-phaser-create-an-adventure" class="Project-Content-FlexBox-A">
-                                                    <div class="Project-Content-Flex">
-                                                        <div class="Project-Content-Flex-BG">
-                                                            <span class="Project-Content-Flex-Span">Portfolio Project</span>
-                                                            <div class="Project-Content-Tiltle">
-                                                                <h3 class="Project-Content-Tiltle-H3">
-                                                                    <span class="Project-Content-Tiltle-Span">Create a E-Commerce App (Part Two)</span>
-                                                                </h3>
-                                                            </div>
-                                                            <span class="Project-Content-Flex-Span2">
-                                                                <span class="Project-Content-Flex-Span-Letter">Make a full-stack e-commerce app that lets users register accounts, browse products, and make purchases.</span>
-                                                            </span>
-                                                        </div>
-                                                    </div>
+                                            <li class="Related-Content-LI">
+                                                <a href="/catalog/subject/data-science" class="Related-Content-LI-A">
+                                                    <div class="Related-Content-LI-A-Letter">SQL</div>
                                                 </a>
                                             </li>
-                                            <li class="Project-Content-FlexBox-LI">
-                                                <a href="/projects/practice/learn-phaser-create-an-adventure" class="Project-Content-FlexBox-A">
-                                                    <div class="Project-Content-Flex">
-                                                        <div class="Project-Content-Flex-BG">
-                                                            <span class="Project-Content-Flex-Span">Portfolio Project</span>
-                                                            <div class="Project-Content-Tiltle">
-                                                                <h3 class="Project-Content-Tiltle-H3">
-                                                                    <span class="Project-Content-Tiltle-Span">Create a Fantasy Adventure Game</span>
-                                                                </h3>
-                                                            </div>
-                                                            <span class="Project-Content-Flex-Span2">
-                                                                <span class="Project-Content-Flex-Span-Letter">Program an action-adventure fantasy story using Phaser.js.</span>
-                                                            </span>
-                                                        </div>
-                                                    </div>
+                                            <li class="Related-Content-LI">
+                                                <a href="/catalog/subject/data-science" class="Related-Content-LI-A">
+                                                    <div class="Related-Content-LI-A-Letter">C#</div>
                                                 </a>
                                             </li>
-                                            <li class="Project-Content-FlexBox-LI">
-                                                <a href="/projects/practice/learn-phaser-create-an-adventure" class="Project-Content-FlexBox-A">
-                                                    <div class="Project-Content-Flex">
-                                                        <div class="Project-Content-Flex-BG">
-                                                            <span class="Project-Content-Flex-Span">Practice Project</span>
-                                                            <div class="Project-Content-Tiltle">
-                                                                <h3 class="Project-Content-Tiltle-H3">
-                                                                    <span class="Project-Content-Tiltle-Span">Analyze and Visualize Netflix Stock Data</span>
-                                                                </h3>
-                                                            </div>
-                                                            <span class="Project-Content-Flex-Span2">
-                                                                <span class="Project-Content-Flex-Span-Letter">Act as a 'Yahoo Finance' data analyst to generate a stock profile for Netflix.</span>
-                                                            </span>
-                                                        </div>
-                                                    </div>
+                                            <li class="Related-Content-LI">
+                                                <a href="/catalog/subject/data-science" class="Related-Content-LI-A">
+                                                    <div class="Related-Content-LI-A-Letter">Web design</div>
                                                 </a>
                                             </li>
-                                            <li class="Project-Content-FlexBox-LI">
-                                                <a href="/projects/practice/learn-phaser-create-an-adventure" class="Project-Content-FlexBox-A">
-                                                    <div class="Project-Content-Flex">
-                                                        <div class="Project-Content-Flex-BG">
-                                                            <span class="Project-Content-Flex-Span">Practice Project</span>
-                                                            <div class="Project-Content-Tiltle">
-                                                                <h3 class="Project-Content-Tiltle-H3">
-                                                                    <span class="Project-Content-Tiltle-Span">Classify X-rays With Machine Learning</span>
-                                                                </h3>
-                                                            </div>
-                                                            <span class="Project-Content-Flex-Span2">
-                                                                <span class="Project-Content-Flex-Span-Letter">Build a deep learning model with TensorFlow to detect and classify infections from real X-ray scans.</span>
-                                                            </span>
-                                                        </div>
-                                                    </div>
+                                            <li class="Related-Content-LI">
+                                                <a href="/catalog/subject/data-science" class="Related-Content-LI-A">
+                                                    <div class="Related-Content-LI-A-Letter">C</div>
                                                 </a>
                                             </li>
-                                            <li class="Project-Content-FlexBox-LI">
-                                                <a href="/projects/practice/learn-phaser-create-an-adventure" class="Project-Content-FlexBox-A">
-                                                    <div class="Project-Content-Flex">
-                                                        <div class="Project-Content-Flex-BG">
-                                                            <span class="Project-Content-Flex-Span">Practice Project</span>
-                                                            <div class="Project-Content-Tiltle">
-                                                                <h3 class="Project-Content-Tiltle-H3">
-                                                                    <span class="Project-Content-Tiltle-Span">Decrypt Secret Messages</span>
-                                                                </h3>
-                                                            </div>
-                                                            <span class="Project-Content-Flex-Span2">
-                                                                <span class="Project-Content-Flex-Span-Letter">Practice decrypting intercepted data using the command line to thwart Evil Corp.</span>
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                        </ul>
+                                        </menu>
                                     </div>
-                                    <a href="/checkout?plan_id=proGoldAnnualV2_7trial&redirect_url=%2Flearn%3Fpage%3Dprojects" class="Block__Try">
-                                        Try for free
+                                </div>
+                                <div class="Left__View">
+                                    <a href="/catalog" class="Left__View-A">
+                                        View full catalog
+                                    </a>
+                                </div>
+                                <div class="Left__Where">
+                                    <a href="/welcome/find-a-course" class="Left__Where-A">
+                                        Where do I begin?
                                     </a>
                                 </div>
                             </div>
-                            <div class="Block__Explore">
-                                <a href="/projects" class="Block__Explore-A">
-                                    Explore all projects 
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140" fill="#fff" role="img" aria-hidden="true" class="Block__Explore-A-SVG">
-                                        <mask id="MiniChevronRightIcon-mask-:r1m:">
-                                            <path d="M34 137.07a10 10 0 010-14.14l51.13-51.16a2.5 2.5 0 000-3.54L34 17.07A10 10 0 0148.11 2.93l56.46 56.46a15 15 0 010 21.22l-56.46 56.46a10 10 0 01-14.11 0z"></path>
+                        </nav>
+                    </div>
+                </div>
+                <div class="Right">
+                    <div class="Right__Margin">
+                        <svg fill="currentColor" role="img" aria-hidden="true" class="Right__Margin-SVG">
+                            <title>Dot Regular</title>
+                            <pattern id="DotRegular-pattern-:r27:" x="0" y="0" width="8" height="8" patternUnits="userSpaceOnUse">
+                                <circle cx="0.5" cy="0.5" r="0.5" fill="currentColor"></circle>
+                            </pattern>
+                            <rect width="100%" height="100%" fill="url(#DotRegular-pattern-:r27:)"></rect>
+                        </svg>
+                        <div class="Right__Colums">
+                            <div class="Right__Content">
+                                <div class="Right__Content-Margin">
+                                    <div class="Catalog_python">
+                                       <ol class="Catalog_python-ol">
+                                            <li class="Catalog_python-li">
+                                                <a data-testid="breadcrumb-Catalog" href="/catalog" class="Catalog_python-A">
+                                                    Catalog
+                                                </a>
+                                                <span aria-hidden="true" class="Catalog_python-Span">/</span>
+                                            </li>
+                                            <li class="Catalog_python-li">
+                                                <div aria-current="location" class="Letter-Python">Python</div>
+                                            </li>
+                                       </ol>
+                                    </div>
+                                    <div class="Right__Content-Tiltle">
+                                        <h1 class="Right__Content-Tiltle-A">Python</h1>
+                                    </div>
+                                    <span class="Right__Content-Span">
+                                        Python is a general-purpose, versatile, and powerful programming language. It’s a great first language because Python code is concise and easy to read. Whatever you want to do, python can do it. From web development to machine learning to data science, Python is the language for you.
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="Right__Box">
+                                <div class="Right__Box-Frame">
+                                    <svg fill="currentColor" role="img" aria-hidden="true" class="Right__Box-Frame-SVG">
+                                        <pattern id="DiagonalADense-pattern-:R9lakpalb9l6:" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
+                                            <rect width="1" height="1" fill="currentColor"></rect>
+                                            <rect x="2" y="2" width="1" height="1" fill="currentColor"></rect>
+                                            <rect x="1" y="2" width="1" height="1" fill="currentColor"></rect>
+                                            <rect x="1" y="3" width="1" height="1" fill="currentColor"></rect>
+                                            <rect y="3" width="1" height="1" fill="currentColor"></rect>
+                                            <rect x="3" width="1" height="1" fill="currentColor"></rect>
+                                            <rect x="3" y="1" width="1" height="1" fill="currentColor"></rect>
+                                            <rect x="2" y="1" width="1" height="1" fill="currentColor"></rect>
+                                        </pattern>
+                                        <rect width="100%" height="100%" fill="url(#DiagonalADense-pattern-:R9lakpalb9l6:)"></rect>
+                                    </svg>
+                                    <div class="Right__Box-Frame-SetUp">
+                                        <h2 class="Right__Box-Frame-SetUp-H2">Related resources</h2>
+                                        <ul class="Right__Box-Frame-SetUp-UL">
+                                            <li>
+                                                <span class="Text_Span">Docs:</span>
+                                                <span class="Text_Span2">
+                                                    <a href="https://www.codecademy.com/resources/docs/python" class="Text_Span-A">Python</a>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="Text_Span2">
+                                                    <a href="https://www.codecademy.com/resources/docs/python" class="Text_Span-A">Cheatsheets</a>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="Text_Span2">
+                                                    <a href="https://www.codecademy.com/resources/docs/python" class="Text_Span-A">Articles</a>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="Text_Span2">
+                                                    <a href="https://www.codecademy.com/resources/docs/python" class="Text_Span-A">Community Forums</a>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="Text_Span2">
+                                                    <a href="https://www.codecademy.com/resources/docs/python" class="Text_Span-A">Projects</a>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <h2 class="question__H2">Need guidance? Ask our AI Learning Assistant</h2>
+                        <ul class="question__UL">
+                            <li class="question__LI">
+                                <button class="question__LI-Button" type="button">
+                                    <svg viewBox="0 0 16 16" fill="#fff" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" class="question_SVG">
+                                        <mask id="SparkleIcon-mask-:R6l6l9alb9l6:">
+                                            <path clip-rule="evenodd" d="M11.773.762a.5.5 0 01.968 0c.22.841.462 1.358.823 1.74.364.385.896.685 1.803.99a.5.5 0 010 .947c-.906.305-1.44.605-1.803.99-.361.382-.603.898-.823 1.74a.5.5 0 01-.967 0c-.22-.842-.463-1.358-.824-1.74-.363-.385-.896-.685-1.803-.99a.5.5 0 010-.948c.907-.304 1.44-.604 1.803-.988.361-.383.603-.9.823-1.74V.762zM5.368 3.548a.5.5 0 01.967 0c.397 1.522.847 2.516 1.554 3.267.708.752 1.722 1.311 3.354 1.861a.5.5 0 010 .948c-1.632.55-2.646 1.109-3.354 1.861-.707.751-1.157 1.745-1.554 3.267a.5.5 0 01-.967 0c-.397-1.522-.847-2.516-1.553-3.267-.709-.752-1.723-1.312-3.355-1.861a.5.5 0 010-.948c1.632-.55 2.647-1.109 3.355-1.861.706-.751 1.156-1.745 1.553-3.267zm7.9 6.765a.5.5 0 00-.483.37c-.16.6-.332.948-.576 1.2-.246.256-.617.466-1.282.684a.5.5 0 000 .95c.665.218 1.036.428 1.282.684.244.253.416.6.576 1.2a.5.5 0 00.966 0c.16-.6.331-.947.575-1.2.247-.256.617-.466 1.282-.684a.5.5 0 000-.95c-.665-.218-1.035-.428-1.282-.684-.244-.252-.415-.6-.575-1.2a.5.5 0 00-.483-.37z"></path>
                                         </mask>
-                                        <g mask="url(#MiniChevronRightIcon-mask-:r1m:)">
+                                        <g mask="url(#SparkleIcon-mask-:R6l6l9alb9l6:)">
                                             <rect width="100%" height="100%" fill="currentColor"></rect>
                                         </g>
                                     </svg>
-                                </a>
+                                    I'm new to Python, what should I learn?
+                                </button>
+                            </li>
+                            <li class="question__LI">
+                                <button class="question__LI-Button" type="button">
+                                    <svg viewBox="0 0 16 16" fill="#fff" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" class="question_SVG">
+                                        <mask id="SparkleIcon-mask-:R6l6l9alb9l6:">
+                                            <path clip-rule="evenodd" d="M11.773.762a.5.5 0 01.968 0c.22.841.462 1.358.823 1.74.364.385.896.685 1.803.99a.5.5 0 010 .947c-.906.305-1.44.605-1.803.99-.361.382-.603.898-.823 1.74a.5.5 0 01-.967 0c-.22-.842-.463-1.358-.824-1.74-.363-.385-.896-.685-1.803-.99a.5.5 0 010-.948c.907-.304 1.44-.604 1.803-.988.361-.383.603-.9.823-1.74V.762zM5.368 3.548a.5.5 0 01.967 0c.397 1.522.847 2.516 1.554 3.267.708.752 1.722 1.311 3.354 1.861a.5.5 0 010 .948c-1.632.55-2.646 1.109-3.354 1.861-.707.751-1.157 1.745-1.554 3.267a.5.5 0 01-.967 0c-.397-1.522-.847-2.516-1.553-3.267-.709-.752-1.723-1.312-3.355-1.861a.5.5 0 010-.948c1.632-.55 2.647-1.109 3.355-1.861.706-.751 1.156-1.745 1.553-3.267zm7.9 6.765a.5.5 0 00-.483.37c-.16.6-.332.948-.576 1.2-.246.256-.617.466-1.282.684a.5.5 0 000 .95c.665.218 1.036.428 1.282.684.244.253.416.6.576 1.2a.5.5 0 00.966 0c.16-.6.331-.947.575-1.2.247-.256.617-.466 1.282-.684a.5.5 0 000-.95c-.665-.218-1.035-.428-1.282-.684-.244-.252-.415-.6-.575-1.2a.5.5 0 00-.483-.37z"></path>
+                                        </mask>
+                                        <g mask="url(#SparkleIcon-mask-:R6l6l9alb9l6:)">
+                                            <rect width="100%" height="100%" fill="currentColor"></rect>
+                                        </g>
+                                    </svg>
+                                    What job can I get with Python?
+                                </button>
+                            </li>
+                            <li class="question__LI">
+                                <button class="question__LI-Button" type="button">
+                                    <svg viewBox="0 0 16 16" fill="#fff" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" class="question_SVG">
+                                        <mask id="SparkleIcon-mask-:R6l6l9alb9l6:">
+                                            <path clip-rule="evenodd" d="M11.773.762a.5.5 0 01.968 0c.22.841.462 1.358.823 1.74.364.385.896.685 1.803.99a.5.5 0 010 .947c-.906.305-1.44.605-1.803.99-.361.382-.603.898-.823 1.74a.5.5 0 01-.967 0c-.22-.842-.463-1.358-.824-1.74-.363-.385-.896-.685-1.803-.99a.5.5 0 010-.948c.907-.304 1.44-.604 1.803-.988.361-.383.603-.9.823-1.74V.762zM5.368 3.548a.5.5 0 01.967 0c.397 1.522.847 2.516 1.554 3.267.708.752 1.722 1.311 3.354 1.861a.5.5 0 010 .948c-1.632.55-2.646 1.109-3.354 1.861-.707.751-1.157 1.745-1.554 3.267a.5.5 0 01-.967 0c-.397-1.522-.847-2.516-1.553-3.267-.709-.752-1.723-1.312-3.355-1.861a.5.5 0 010-.948c1.632-.55 2.647-1.109 3.355-1.861.706-.751 1.156-1.745 1.553-3.267zm7.9 6.765a.5.5 0 00-.483.37c-.16.6-.332.948-.576 1.2-.246.256-.617.466-1.282.684a.5.5 0 000 .95c.665.218 1.036.428 1.282.684.244.253.416.6.576 1.2a.5.5 0 00.966 0c.16-.6.331-.947.575-1.2.247-.256.617-.466 1.282-.684a.5.5 0 000-.95c-.665-.218-1.035-.428-1.282-.684-.244-.252-.415-.6-.575-1.2a.5.5 0 00-.483-.37z"></path>
+                                        </mask>
+                                        <g mask="url(#SparkleIcon-mask-:R6l6l9alb9l6:)">
+                                            <rect width="100%" height="100%" fill="currentColor"></rect>
+                                        </g>
+                                    </svg>
+                                    What can I build with Python?
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="Main__Footer">
+                        <h2 class="Main__Footer-Tiltle">Get started with Python</h2>
+                        <div class="Main__Footer-Display">
+                            <div class="Main__Footer-Colunms">
+                                <div class="Main__Footer-Colunms-SetUp">
+                                    <div class="Main__Footer-Colunms-SetUp-Margin">
+                                        <div class="Colunms-SetUp-Display">
+                                            <a href="/learn/learn-python-3" class="Colunms-SetUp-Display-A">
+                                                <div class="Colunms-SetUp-Frame">
+                                                    <div class="Main__Footer-Colunms-Tiltle">
+                                                        <span class="Main__Footer-Colunms-Tiltle-Letter">Course</span>
+                                                    </div>
+                                                    <div class="Main__Footer-Content">
+                                                        <div class="Main__Footer-Content-Set">
+                                                            <div class="Main__Footer-Content-Letter">
+                                                                <h3 class="Main__Footer-Content-Letter-H3">Learn Python 3</h3>
+                                                                <span class="Main__Footer-Content-Letter-Span">
+                                                                    Learn the basics of Python 3.12, one of the most powerful, versatile, and in-demand programming languages today.
+                                                                </span>
+                                                            </div>
+                                                            <div class="Main__Footer-Content-Margin">
+                                                                <div class="Border_flex-Featured-Dot">
+                                                                    <svg fill="currentColor" role="img" aria-hidden="true" class="Border_flex-Featured-Dot-Svg">
+                                                                        <title>Checker Dense</title>
+                                                                        <pattern id="CheckerDense-pattern-:Ral9l9l1l9llalb9l6:" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
+                                                                            <rect width="1" height="1" fill="currentColor"></rect>
+                                                                            <rect x="2" y="2" width="1" height="1" fill="currentColor"></rect>
+                                                                        </pattern>
+                                                                        <rect width="100%" height="100%" fill="url(#CheckerDense-pattern-:Ral9l9l1l9llalb9l6:)"></rect>
+                                                                    </svg>
+                                                                </div>
+                                                                <span data-testid="card-difficulty" aria-label="Beginner Friendly" class="Border_flex-Featured-Tail-Lettle">
+                                                                    Includes
+                                                                    <b>9 Courses</b>
+                                                                </span>
+                                                                <div class="Border_flex-Featured-Dot">
+                                                                    <svg fill="currentColor" role="img" aria-hidden="true" class="Border_flex-Featured-Dot-Svg">
+                                                                        <title>Checker Dense</title>
+                                                                        <pattern id="CheckerDense-pattern-:Ral9l9l1l9llalb9l6:" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
+                                                                            <rect width="1" height="1" fill="currentColor"></rect>
+                                                                            <rect x="2" y="2" width="1" height="1" fill="currentColor"></rect>
+                                                                        </pattern>
+                                                                        <rect width="100%" height="100%" fill="url(#CheckerDense-pattern-:Ral9l9l1l9llalb9l6:)"></rect>
+                                                                    </svg>
+                                                                </div>
+                                                                <div class="Border_flex-Featured-Tail-Flex">
+                                                                    <div class="Border_flex-Featured-Tail-PictureColums">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" role="img" aria-hidden="true" class="Border_flex-Featured-Tail-PictureColums-SVG">
+                                                                            <mask id="CertificateIcon-mask-:R9kd9lbl2l9llalb9l6:">
+                                                                                <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.25 17.25H.75V.75h22.5v4.5M.75 9.75l7.5 7.5m7.5-16.5l4.5 4.5m-4.013 11.233l-.8 5.879a.751.751 0 001.269.666l2.049-2.05 2.049 2.05a.751.751 0 001.269-.666l-.8-5.879"></path>
+                                                                                <circle cx="18.75" cy="12.75" r="4.5" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></circle>
+                                                                                <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M.75 8.25l7.5-7.5m10.5 11.625h0m0 0a.375.375 0 10.375.375.375.375 0 00-.375-.375"></path>
+                                                                            </mask>
+                                                                            <g mask="url(#CertificateIcon-mask-:R9kd9lbl2l9llalb9l6:)">
+                                                                                <rect width="100%" height="100%" fill="currentColor"></rect>
+                                                                            </g>
+                                                                        </svg>
+                                                                    </div>
+                                                                    <span aria-label="With Professional Certification" class="Border_flex-Featured-Tail-Lettle-Hours">
+                                                                        With 
+                                                                        <b>Certification</b>
+                                                                    </span>
+                                                                </div>
+                                                                <div class="Border_flex-Featured-Dot">
+                                                                    <svg fill="currentColor" role="img" aria-hidden="true" class="Border_flex-Featured-Dot-Svg">
+                                                                        <title>Checker Dense</title>
+                                                                        <pattern id="CheckerDense-pattern-:Ral9l9l1l9llalb9l6:" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
+                                                                            <rect width="1" height="1" fill="currentColor"></rect>
+                                                                            <rect x="2" y="2" width="1" height="1" fill="currentColor"></rect>
+                                                                        </pattern>
+                                                                        <rect width="100%" height="100%" fill="url(#CheckerDense-pattern-:Ral9l9l1l9llalb9l6:)"></rect>
+                                                                    </svg>
+                                                                </div>
+                                                                <div class="Border_flex-Featured-Tail">
+                                                                    <div class="Border_flex-Featured-Tail-Flex">
+                                                                        <div class="Border_flex-Featured-Tail-PictureColums">
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0.25 0.25 13.5 13.5" style="background-color:transparent" fill="#fff" role="img" aria-hidden="true" class="Border_flex-Featured-Tail-PictureColums-SVG">
+                                                                               <mask id="LevelIcon-mask-:Rj6t9l9l1l9llalb9l6:">
+                                                                                <path d="M4.975 7.45H1.15v5.4h3.825m4.05-8.1h-4.05v8.1h4.05m0-11.7h3.825v11.7H9.025z" stroke-width="0.9" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                               </mask> 
+                                                                               <g mask="url(#LevelIcon-mask-:Rj6t9l9l1l9llalb9l6:)">
+                                                                                <rect width="100%" height="100%" fill="currentColor"></rect>
+                                                                               </g>
+                                                                            </svg>
+                                                                        </div>
+                                                                        <span data-testid="card-difficulty" aria-label="Beginner Friendly" class="Border_flex-Featured-Tail-Lettle">
+                                                                            <b>Beginner</b>
+                                                                             Friendly
+                                                                        </span>
+                                                                    </div>
+                                                                    <span aria-label="3 hours" class="Border_flex-Featured-Tail-Lettle-Hours">
+                                                                        <b>17</b>
+                                                                        hours
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="Main__Footer-Content-IMG">
+                                                            <img aria-hidden="true" src="https://static-assets.codecademy.com/Courses/Course-Cards/pillars.svg" class="Main__Footer-Content-IMG-Set">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Main__Footer-Box">
+                                    <a href="https://www.codecademy.com/resources/blog/what-is-python-used-for/" class="Main__Footer-Box-A">
+                                        <div class="Main__Footer-Box-Margin">
+                                            <div >
+                                                <span class="Main__Footer-Box-Note">Blog Post</span>
+                                            </div>
+                                            <div class="Main__Footer-Box-Tiltle">
+                                                <span class="Main__Footer-Box-Tiltle-Letter">What is Python used for?</span>
+                                            </div>
+                                            <span class="Main__Footer-Box-Content">2 November 2022</span>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
