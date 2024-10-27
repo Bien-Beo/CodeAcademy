@@ -1,0 +1,43 @@
+@media only screen and (min-width: 480px) {
+    .MyLearning__Option-FlexBox {
+        display: flex;
+    }
+    .MyLearning__Option-Box {
+        width: 179px;
+    }
+    .MyLearning__RowEl-li {
+        flex-direction: column;
+        display: flex;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .MyLearning__RowEl-div {
+        gap: 2.5rem;
+        flex-direction: row;
+        display: flex;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .MyLearning__Dropdown-Header-GridBox {
+        grid-template-columns: minmax(0px, 1fr) min-content;
+    }
+    .MyLearning__Dropdown-Footer-FlexBox {
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .MyLearning__List-Progress-Box {
+        width: 72px;
+    }
+    .MyLearning__List-Progress-Icon-Box {
+        margin-left: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .MyLearning__Dropdown-Content-List-FlexBox > p {
+        white-space: normal;
+    }
+}
+ 

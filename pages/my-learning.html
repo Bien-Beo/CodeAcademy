@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Learning | Codeacademy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../assets/css/css-base/header.css">
+    <link rel="stylesheet" href="../assets/css/index/container.css">
+    <link rel="stylesheet" href="../assets/css/my-learning/my-learning.css">
+    <link rel="stylesheet" href="../assets/css/css-base/base.css">
+    <link rel="stylesheet" href="../assets/css/css-base/footer.css">
+    <link rel="stylesheet" href="../assets/css/css-base/responsive.css">
+    <link rel="stylesheet" href="../assets/css/my-learning/responsive.css">
+</head>
+<body>
+    <div class="all-display">
+        <header class="Header__Position">
+            <div id="Box__Header" class="Box__Header-Normal">
+                <nav class="Box__Header-Nav">
+                    <ul class="Nav__List">
+                        <li class="Nav__Ele" style="margin-left: 0; margin-right: 0;">
+                            <a href="#" class="Logo__Header">
+                                <img src="../assets/img/logo.png" alt="Codecademy Logo" class="Logo__Header-Img">
+                            </a>
+                        </li>
+                        <li class="Nav__Ele">
+                            <a href="#" class="Nav__Ele-Link">My Home</a>
+                        </li>
+                        <li class="Nav__Ele">
+                            <div>
+                                <button id="catalog" class="Button__Nav">
+                                    <span class="Button__Nav-Text">Catalog</span>
+                                    <i class="fas fa-caret-down Button__Nav-Icon"></i>
+                                </button>
+                                <div id="catalogSubMenu" class="Catalog__Menu-Container" style="top: 4.5rem; min-width: 64rem; left: -15rem; border-width: 1px; height: fit-content; display: none;"> 
+                                    <ul class="Catalog__Menu-Layout">
+                                        <li class="Catalog__Menu-Item">
+                                            <div class="Catalog__Menu-Item-Layout">
+                                                <div class="Catalog__Menu-Item-Layout-Column-1">
+                                                    <div class="Catalog__Menu-Item-1">
+                                                        <div class="Catalog__Menu-Item-1-Container">
+                                                            <div style="display: flex; flex-direction: column;">
+                                                                <h2 class="Catalog__Menu-Item-Header">Popular course topics</h2>
+                                                                <span class="Catalog__Menu-Item-Text">Explore free or paid courses in topics that interest you.</span>
+                                                            </div>
+                                                            <a href="./pages/catalog.html" class="Button__Explore">Explore all courses</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="Catalog__Menu-Item-2">
+                                                    <ul class="Catalog__Menu-Item-2-List">
+                                                        <li class="Catalog__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">Python</a>
+                                                        </li>
+                                                        <li class="Catalog__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">JavaScript</a>
+                                                        </li>
+                                                        <li class="Catalog__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">HTML & CSS</a>
+                                                        </li>
+                                                        <li class="Catalog__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">SQL</a>
+                                                        </li>
+                                                        <li class="Catalog__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">Java</a>
+                                                        </li>
+                                                        <li class="Catalog__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">C++</a>
+                                                        </li>
+                                                        <li class="Catalog__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">C#</a>
+                                                        </li>
+                                                        <li class="Catalog__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">Bash</a>
+                                                        </li>
+                                                        <li class="Catalog__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">C</a>
+                                                        </li>
+                                                        <li class="Catalog__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">PHP</a>
+                                                        </li>
+                                                        <li class="Catalog__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">R</a>
+                                                        </li>
+                                                        <li class="Catalog__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">Swift</a>
+                                                        </li>
+                                                        <li style="width: 12rem; min-height: 36px;">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-LinkNew">Cloud Computing</a>
+                                                        </li>
+                                                        <li style="width: 12rem; min-height: 36px;">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-LinkNew">AI</a>
+                                                        </li>
+                                                        <li style="width: 12rem; min-height: 36px;">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-LinkNew">Web Development</a>
+                                                        </li>
+                                                        <li style="width: 12rem; min-height: 36px;">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-LinkNew">Data Science</a>
+                                                        </li>
+                                                        <li style="width: 12rem; min-height: 36px;">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-LinkNew">Web Design</a>
+                                                        </li>
+                                                        <li style="width: 12rem; min-height: 36px;">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-LinkNew">Professional Skills</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="Catalog__Menu-Item-3">
+                                                    <a href="" class="Catalog__Menu-Item-3-Link">
+                                                        <div class="Catalog__Menu-Item-3-Link-Content">
+                                                            <div class="Catalog__Menu-Item-3-New">New</div>
+                                                            Build your cybersecurity skills with new, free video-based courses.
+                                                        </div>
+                                                        <i class="fa-solid fa-arrow-right"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="Catalog__Menu-Item">
+                                            <div class="Catalog__Menu-Item-Layout">
+                                                <div class="Catalog__Menu-Career-Layout">
+                                                    <div class="Catalog__Menu-Career-Container">
+                                                        <div style="display: flex; flex-direction: column;">
+                                                            <h2 class="Catalog__Menu-Item-Header">Top career paths</h2>
+                                                            <span class="Catalog__Menu-Item-Text">Choose your career. We'll teach you the skills to get job-ready.</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="Catalog__Menu-Career-List-Layout">
+                                                    <ul class="Catalog__Menu-Career-List-Item">
+                                                        <li class="Catalog__Menu-Career-List-Content">
+                                                            <a href="" class="Catalog__Menu-Career-List-Link">Full-Stack Engineer</a>
+                                                        </li>
+                                                        <li class="Catalog__Menu-Career-List-Content">
+                                                            <a href="" class="Catalog__Menu-Career-List-Link">Back-End Engineer</a>
+                                                        </li>
+                                                        <li class="Catalog__Menu-Career-List-Content">
+                                                            <a href="" class="Catalog__Menu-Career-List-Link">iOS Developer</a>
+                                                        </li>
+                                                        <li class="Catalog__Menu-Career-List-Content">
+                                                            <a href="" class="Catalog__Menu-Career-List-Link">Front-End Engineer</a>
+                                                        </li>
+                                                        <li class="Catalog__Menu-Career-List-Content">
+                                                            <a href="" class="Catalog__Menu-Career-List-Link">Computer Science</a>
+                                                        </li>
+                                                        <li class="Catalog__Menu-Career-List-Content">
+                                                            <a href="" class="Catalog__Menu-Career-List-Link">Data Scientist</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="Nav__Ele">
+                            <div>
+                                <button id="resources" class="Button__Nav">
+                                    <span class="Button__Nav-Text">Resources</span>
+                                    <i class="fas fa-caret-down Button__Nav-Icon"></i>
+                                </button>
+                                <div id="resourcesSubMenu" class="Catalog__Menu-Container" style="top: 4.5rem; min-width: 64rem; left: -20rem; border-width: 1px; height: fit-content; display: none;"> 
+                                    <ul class="Catalog__Menu-Layout">
+                                        <li class="Catalog__Menu-Item">
+                                            <div class="Catalog__Menu-Item-Layout">
+                                                <div class="Catalog__Menu-Item-Layout-Column-1">
+                                                    <div class="Catalog__Menu-Item-1">
+                                                        <div class="Catalog__Menu-Item-1-Container">
+                                                            <div style="display: flex; flex-direction: column; margin-bottom: auto;">
+                                                                <h2 class="Catalog__Menu-Item-Header">Docs</h2>
+                                                                <span class="Catalog__Menu-Item-Text">Find definitions, code syntax, and more -- or contribute your own code documentation.</span>
+                                                            </div>
+                                                            <a href="./pages/catalog.html" class="Button__Resources" style="margin-bottom: 0;">View all docs →</a>
+                                                            <a href="./pages/catalog.html" class="Button__Resources">Contribute to docs →</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="Catalog__Menu-Item-2">
+                                                    <ul class="Resources__Menu-Item-2-List">
+                                                        <li class="Resources__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">Python</a>
+                                                        </li>
+                                                        <li class="Resources__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">JavaScript</a>
+                                                        </li>
+                                                        <li class="Resources__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">HTML & CSS</a>
+                                                        </li>
+                                                        <li class="Resources__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">SQL</a>
+                                                        </li>
+                                                        <li class="Resources__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">Java</a>
+                                                        </li>
+                                                        <li class="Resources__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">C++</a>
+                                                        </li>
+                                                        <li class="Resources__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">C#</a>
+                                                        </li>
+                                                        <li class="Resources__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">Bash</a>
+                                                        </li>
+                                                        <li class="Resources__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">C</a>
+                                                        </li>
+                                                        <li class="Resources__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">PHP</a>
+                                                        </li>
+                                                        <li class="Resources__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">R</a>
+                                                        </li>
+                                                        <li class="Resources__Menu-Item-2-List-Course">
+                                                            <a href="" class="Catalog__Menu-Item-2-List-Link">Swift</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="Catalog__Menu-Item"  style="border-top: 1px solid #000;">
+                                            <div class="Catalog__Menu-Item-Layout">
+                                                <div class="Catalog__Menu-Career-Layout">
+                                                    <div class="Catalog__Menu-Career-Container">
+                                                        <div style="display: flex; flex-direction: column;">
+                                                            <h2 class="Catalog__Menu-Item-Header">Learning & practice tools</h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="Catalog__Menu-Career-List-Layout">
+                                                    <ul class="Catalog__Menu-Career-List-Item">
+                                                        <li class="Catalog__Menu-Career-List-Content">
+                                                            <a href="" class="Catalog__Menu-Career-List-Link"><h3 class="Resources__Menu-Item-Heading-3">Articles</h3></a>
+                                                            <span class="Resources__Menu-Item-Span">Learn about technical concepts.</span>
+                                                        </li>
+                                                        <li class="Catalog__Menu-Career-List-Content">
+                                                            <a href="" class="Catalog__Menu-Career-List-Link"><h3 class="Resources__Menu-Item-Heading-3">Cheatsheets</h3></a>
+                                                            <span class="Resources__Menu-Item-Span">Review concepts from your courses.</span>
+                                                        </li>
+                                                        <li class="Catalog__Menu-Career-List-Content">
+                                                            <a href="" class="Catalog__Menu-Career-List-Link"><h3 class="Resources__Menu-Item-Heading-3">Code challenges</h3></a>
+                                                            <span class="Resources__Menu-Item-Span">Test your knowledge and prep for interviews.</span>
+                                                        </li>
+                                                        <li class="Catalog__Menu-Career-List-Content">
+                                                            <a href="" class="Catalog__Menu-Career-List-Link"><h3 class="Resources__Menu-Item-Heading-3">Projects</h3></a>
+                                                            <span class="Resources__Menu-Item-Span">Practice and build your portfolio.</span>
+                                                        </li>
+                                                        <li class="Catalog__Menu-Career-List-Content">
+                                                            <a href="" class="Catalog__Menu-Career-List-Link"><h3 class="Resources__Menu-Item-Heading-3">Videos</h3></a>
+                                                            <span class="Resources__Menu-Item-Span">Watch tutorials, project walkthroughs, and more.</span>
+                                                        </li>
+                                                        <li class="Catalog__Menu-Career-List-Content">
+                                                            <a href="" class="Catalog__Menu-Career-List-Link"><h3 class="Resources__Menu-Item-Heading-3">Workspaces</h3></a>
+                                                            <span class="Resources__Menu-Item-Span">Build and share projects in your browser.</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="Nav__Ele">
+                            <div>
+                                <button id="community" class="Button__Nav">
+                                    <span class="Button__Nav-Text">Community</span>
+                                    <i class="fas fa-caret-down Button__Nav-Icon"></i>
+                                </button>
+                                <div id="communitySubMenu" class="Button__Community-Container" style="top: 3.25rem; width: 195.25px; border-width: 1px; height: 366px; display: none;">
+                                    <div>
+                                        <ul class="Button__Community-List">
+                                            <li><a href="" class="Button__Community-Link">
+                                                <img src="../assets/img/comment.png" alt="" style="height: 24px; width: 24px; margin-right: 1rem;">
+                                                Forums
+                                            </a></li>
+                                            <li><a href="" class="Button__Community-Link">
+                                                <img src="../assets/img/discord-lite.png" alt="" style="height: 24px; width: 24px; margin-right: 1rem;">
+                                                Discord
+                                            </a></li>
+                                            <li><a href="" class="Button__Community-Link">
+                                                <img src="../assets/img/party.png" alt="" style="height: 24px; width: 24px; margin-right: 1rem;">
+                                                Clubs
+                                            </a></li>
+                                            <li><a href="" class="Button__Community-Link">
+                                                <img src="../assets/img/calendar-mini.png" alt="" style="height: 24px; width: 24px; margin-right: 1rem;">
+                                                Events
+                                            </a></li>
+                                            <li><a href="" class="Button__Community-Link">
+                                                <img src="../assets/img/book-mini.png" alt="" style="height: 24px; width: 24px; margin-right: 1rem;">
+                                                Learner Stories
+                                            </a></li>
+                                            <li><a href="" class="Button__Community-Link">
+                                                <img src="../assets/img/woman.png" alt="" style="height: 24px; width: 24px; margin-right: 1rem;">
+                                                Code Crew
+                                            </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="Nav__Ele">
+                            <div>
+                                <button id="pricing" class="Button__Nav">
+                                    <span class="Button__Nav-Text">Pricing</span>
+                                    <i class="fas fa-caret-down Button__Nav-Icon"></i>
+                                </button>
+                                <div id="pricingSubMenu" class="Button__Community-Container" style="top: 3.25rem; width: 149.219px; border-width: 1px; height: 195px; display: none;">
+                                    <div>
+                                        <ul class="Button__Community-List">
+                                            <li><a href="" class="Button__Community-Link"> 
+                                                For Individuals
+                                            </a></li>
+                                            <li><a href="" class="Button__Community-Link"> 
+                                                For Students
+                                            </a></li>
+                                            <li><a href="" class="Button__Community-Link"> 
+                                                For Business
+                                            </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="Nav__Ele">
+                            <a href="./notfound.html" class="Nav__Ele-Link">Career Center</a>
+                        </li>
+                        <li class="Nav__Ele">
+                            <a href="" class="Nav__Ele-Link">For Business</a>
+                        </li>
+                        <li class="Nav__Ele ml-auto">
+                            <div class="Nav__Ele-Button Nav__Ele-Button-Container">
+                                <button class="Nav__Ele-Button-Component">
+                                    <img src="../assets/img/magnifying-glass.png" alt="magnifying-glass" style="height: 32px; width: 32px;">
+                                </button>
+                            </div>
+                        </li>
+                        <li class="Nav__Ele">
+                            <div class="Nav__Ele-Button Nav__Ele-Button-Container">
+                                <button class="Nav__Ele-Button-Component">
+                                    <img src="../assets/img/notification.png" alt="notification" style="height: 25px; width: 25px;">
+                                </button>
+                            </div>
+                        </li>
+                        <li class="Nav__Ele">
+                            <button class="Button__Component">
+                                <div class="Button__Component-Content">
+                                    <img src="https://www.gravatar.com/avatar/e43b253ce98dd12a7d017212e9dc5a47?s=140&d=retro" alt="User profile avatar" class="Avatar__Size">
+                                </div>
+                            </button>
+                        </li>
+                        <li class="Nav__Ele">
+                            <a href="" class="Button__Start">Start free trial</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="Container Container__Box">
+                <div class="Container__Box-Layout" style="width: 100%;">
+                    <div class="SideBar">
+                        <div class="SideBar__Box">
+                            <nav class="SideBar__Nav">
+                                <ul class="SideBar__List">
+                                    <div class="pb-05rem">
+                                        <li class="Page__Current">
+                                            <button class="SideBar__Button" style="font-weight: 600;">
+                                                <img src="../assets/img/dashboard.png" alt="Dashboard" style="height: 22px; width: 22px;" class="mr-10">
+                                                <span>Dashboard</span>
+                                            </button>
+                                        </li>
+                                    </div>
+                                    <div class="pb-05rem">
+                                        <li>
+                                            <button class="SideBar__Button" style="background-color: inherit;">
+                                                <img src="../assets/img/book.png" alt="Book" style="height: 25px; width: 25px;" class="mr-10">
+                                                <span>My learning</span>
+                                            </button>
+                                        </li>
+                                    </div>
+                                    <div class="pb-05rem">
+                                        <li>
+                                            <button class="SideBar__Button" style="background-color: inherit;">
+                                                <img src="../assets/img/calendar.png" alt="Calendar" style="height: 25px; width: 25px;" class="mr-10">
+                                                <span>Events</span>
+                                            </button>
+                                        </li>
+                                    </div>
+                                    <div class="pb-05rem">
+                                        <li>
+                                            <button class="SideBar__Button" style="background-color: inherit;">
+                                                <img src="../assets/img/puzzle.png" alt="Puzzle" style="height: 25px; width: 25px;" class="mr-10">
+                                                <span style="display: flex;">Projects
+                                                    <div class="SideBar__Button-Upgrade">Upgrade</div>
+                                                </span>
+                                            </button>
+                                        </li>
+                                    </div>
+                                    <div class="pb-05rem">
+                                        <li>
+                                            <button class="SideBar__Button" style="background-color: inherit;">
+                                                <img src="../assets/img/workspace.png" alt="Workspaces" style="height: 22px; width: 22px;" class="mr-10">
+                                                <span>Workspaces</span>
+                                            </button>
+                                        </li>
+                                    </div>
+                                </ul>
+                            </nav>
+                            <div class="SideBar__Footer">
+                                <div class="SideBar__Footer-Content">
+                                    <h2>
+                                        Try Plus or Pro with a 7-day free trial
+                                    </h2>
+                                    <span class="Style__Text-Span">Go deeper and learn job-ready skills. Practice with real-world projects, take assessments, and earn certificates.</span>
+                                </div>
+                                <button>Try for free</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="MyLearning-Box">
+                        <div style="min-height: calc(100vh - var(--elements-headerHeight));">
+                            <div class="MyLearning-FlexBox">
+                                <div class="MyLearning-Header-FlexBox">
+                                    <h2>My learning</h2>
+                                    <div style="display: flex;">
+                                        <button class="MyLearning-Btn-Edit">
+                                            <div style="display: flex; align-items: center;">
+                                                <span class="MyLearning-Btn-Edit-Content">Edit</span>
+                                                <i class="fa-solid fa-pen-to-square" style="padding-left: 0.5rem;"></i>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div style="position: relative; z-index: 0;">
+                                    <div class="MyLearning-TabListBase">
+                                        <div style="display: flex;">
+                                            <div style="display: flex;">
+                                                <button class="MyLearning-TabButton" data-selected>
+                                                    <span>In progress</span>
+                                                </button>
+                                            </div>
+                                            <div style="display: flex;">
+                                                <button class="MyLearning-TabButton">
+                                                    <span>Completed</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="MyLearning__Option-FlexBox">
+                                            <div class="MyLearning__Option-Box">
+                                                <select name="" id="">
+                                                    <option value="">Last added</option>
+                                                    <option value="">Most progress</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <div style="overflow: hidden; width: 100%; position: relative;">
+                                                <div style="overflow: inherit; max-width: 100%; position: relative;">
+                                                    <ul class="MyLearning__ListEl">
+                                                        <div class="MyLearning__ListEl-Box">
+                                                            <li class="MyLearning__RowEl-li">
+                                                                <div class="MyLearning__RowEl-div">
+                                                                    <button class="MyLearning__List-Btn">
+                                                                        <div class="MyLearning__List-FlexBox">
+                                                                            <div class="MyLearning__List-FlexBox-Header">
+                                                                                <div style="display: flex; flex-direction: column;">
+                                                                                    <div style="display: flex;">
+                                                                                        <span class="MyLearning__List-Header-Span">Course</span>
+                                                                                    </div>
+                                                                                    <h3 class="MyLearning__List-Header-H3">Learn HTML</h3>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div style="display: flex; min-width: fit-content;">
+                                                                                <div class="MyLearning__List-Progress-FlexBox">
+                                                                                    <span class="MyLearning__List-Progress-Span">0%</span>
+                                                                                    <div class="MyLearning__List-Progress-Box">
+                                                                                        <div class="MyLearning__List-Progress-Wrapper">
+                                                                                            <svg fill="currentColor" role="img" aria-hidden="true" class="MyLearning__List-Progress-Svg">
+                                                                                                <title>Diagonal A Dense</title>
+                                                                                                <pattern id="DiagonalADense-pattern-:r3f:" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
+                                                                                                    <rect width="1" height="1" fill="currentColor"></rect>
+                                                                                                    <rect x="2" y="2" width="1" height="1" fill="currentColor"></rect>
+                                                                                                    <rect x="1" y="2" width="1" height="1" fill="currentColor"></rect>
+                                                                                                    <rect x="1" y="3" width="1" height="1" fill="currentColor"></rect>
+                                                                                                    <rect y="3" width="1" height="1" fill="currentColor"></rect>
+                                                                                                    <rect x="3" width="1" height="1" fill="currentColor"></rect>
+                                                                                                    <rect x="3" y="1" width="1" height="1" fill="currentColor"></rect>
+                                                                                                    <rect x="2" y="1" width="1" height="1" fill="currentColor"></rect>
+                                                                                                </pattern>
+                                                                                                <rect width="100%" height="100%" fill="url(#DiagonalADense-pattern-:r3f:)"></rect>
+                                                                                            </svg>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="MyLearning__List-Progress-Icon-Box">
+                                                                                    <div style="transform-origin: center center; align-self: center; height: 16px; width: 24px; transform: rotate(180deg) translateZ(0px);">
+                                                                                        <i class="fa-solid fa-chevron-down fa-xl"></i>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="overflow: hidden; height: auto;">
+                                                                    <div style="padding: 1rem 1.5rem 1.5rem;">
+                                                                        <div style="border: 1px #E0E0E0 solid; border-radius: 4px;">
+                                                                            <div style="padding: 1.5rem;">
+                                                                                <div class="MyLearning__Dropdown-Header-GridBox">
+                                                                                    <span>Elements and Structure</span>
+                                                                                </div>
+                                                                                <div style="padding: 1rem 1rem 1.5rem; gap: 0.5rem; display: grid;">
+                                                                                    <div class="MyLearning__Dropdown-Content-List-Box">
+                                                                                        <div style="opacity: 1; transform: none;">
+                                                                                            <a class="MyLearning__Dropdown-Content-List-Link" href="">
+                                                                                                <div style="flex: 0 0 auto; margin-left: -2px;">
+                                                                                                    <div class="MyLearning__Dropdown-Content-List-Icon">
+                                                                                                        <img src="" alt="">
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="MyLearning__Dropdown-Content-List-Title-FlexBox">
+                                                                                                    <p>lesson</p>
+                                                                                                </div>
+                                                                                                <div class="MyLearning__Dropdown-Content-List-FlexBox">
+                                                                                                    <p>Introduction to HTML</p>
+                                                                                                </div>
+                                                                                            </a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="MyLearning__Dropdown-Content-List-Box">
+                                                                                        <div style="opacity: 1; transform: none;">
+                                                                                            <a class="MyLearning__Dropdown-Content-List-Link" href="">
+                                                                                                <div style="flex: 0 0 auto; margin-left: -2px;">
+                                                                                                    <div class="MyLearning__Dropdown-Content-List-Icon">
+                                                                                                        <img src="" alt="">
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="MyLearning__Dropdown-Content-List-Title-FlexBox">
+                                                                                                    <p>lesson</p>
+                                                                                                </div>
+                                                                                                <div class="MyLearning__Dropdown-Content-List-FlexBox">
+                                                                                                    <p>Introduction to HTML</p>
+                                                                                                </div>
+                                                                                            </a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="MyLearning__Dropdown-Content-List-Box">
+                                                                                        <div style="opacity: 1; transform: none;">
+                                                                                            <a class="MyLearning__Dropdown-Content-List-Link" href="">
+                                                                                                <div style="flex: 0 0 auto; margin-left: -2px;">
+                                                                                                    <div class="MyLearning__Dropdown-Content-List-Icon">
+                                                                                                        <img src="" alt="">
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="MyLearning__Dropdown-Content-List-Title-FlexBox">
+                                                                                                    <p>lesson</p>
+                                                                                                </div>
+                                                                                                <div class="MyLearning__Dropdown-Content-List-FlexBox">
+                                                                                                    <p>Introduction to HTML</p>
+                                                                                                </div>
+                                                                                            </a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="MyLearning__Dropdown-Content-List-Box">
+                                                                                        <div style="opacity: 1; transform: none;">
+                                                                                            <a class="MyLearning__Dropdown-Content-List-Link" href="">
+                                                                                                <div style="flex: 0 0 auto; margin-left: -2px;">
+                                                                                                    <div class="MyLearning__Dropdown-Content-List-Icon">
+                                                                                                        <img src="" alt="">
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="MyLearning__Dropdown-Content-List-Title-FlexBox">
+                                                                                                    <p>lesson</p>
+                                                                                                </div>
+                                                                                                <div class="MyLearning__Dropdown-Content-List-FlexBox">
+                                                                                                    <p>Introduction to HTML</p>
+                                                                                                </div>
+                                                                                            </a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="MyLearning__Dropdown-Content-List-Box">
+                                                                                        <div style="opacity: 1; transform: none;">
+                                                                                            <a class="MyLearning__Dropdown-Content-List-Link" href="">
+                                                                                                <div style="flex: 0 0 auto; margin-left: -2px;">
+                                                                                                    <div class="MyLearning__Dropdown-Content-List-Icon">
+                                                                                                        <img src="" alt="">
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="MyLearning__Dropdown-Content-List-Title-FlexBox">
+                                                                                                    <p>lesson</p>
+                                                                                                </div>
+                                                                                                <div class="MyLearning__Dropdown-Content-List-FlexBox">
+                                                                                                    <p>Introduction to HTML</p>
+                                                                                                </div>
+                                                                                            </a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="MyLearning__Dropdown-Footer-FlexBox">
+                                                                                    <a class="MyLearning__Dropdown-Footer-Btn-Start" href="">
+                                                                                        Start module practice
+                                                                                    </a>
+                                                                                    <span>0 / 34 concepts practiced</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="MyLearning__Dropdown-Nav-FlexBox">
+                                                                            <div class="MyLearning__Dropdown-Nav-PinToTop">
+                                                                                <button class="MyLearning__Dropdown-Nav-Btn-PinToTop">
+                                                                                    <div style="display: flex; justify-content: center; align-items: center; height: 100%; align-items: center;">
+                                                                                        <img src="" alt="">
+                                                                                        <span style="font-size: inherit; display: inline-block; margin: 0px; color: var(--color-black);">Pin to top</span>
+                                                                                    </div>
+                                                                                </button>
+                                                                            </div>
+                                                                            <div style="display: flex; justify-content: flex-end; align-items: end;">
+                                                                                <a class="MyLearning__Dropdown-Nav-View" href="">View syllabus</a>
+                                                                                <a class="MyLearning__Dropdown-Nav-Start" href="">Start</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </div>
+                                                        <div class="MyLearning__ListEl-Box">
+                                                            <li class="MyLearning__RowEl">
+                                                                <div class="MyLearning__RowEl-div">
+                                                                    <button class="MyLearning__List-Btn">
+                                                                        <div class="MyLearning__List-FlexBox">
+                                                                            <div class="MyLearning__List-FlexBox-Header">
+                                                                                <div style="display: flex; flex-direction: column;">
+                                                                                    <div style="display: flex;">
+                                                                                        <span class="MyLearning__List-Header-Span">Course</span>
+                                                                                    </div>
+                                                                                    <h3 class="MyLearning__List-Header-H3">Learn HTML</h3>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div style="display: flex; min-width: fit-content;">
+                                                                                <div class="MyLearning__List-Progress-FlexBox">
+                                                                                    <span class="MyLearning__List-Progress-Span">0%</span>
+                                                                                    <div class="MyLearning__List-Progress-Box">
+                                                                                        <div class="MyLearning__List-Progress-Wrapper">
+                                                                                            <svg fill="currentColor" role="img" aria-hidden="true" class="MyLearning__List-Progress-Svg">
+                                                                                                <title>Diagonal A Dense</title>
+                                                                                                <pattern id="DiagonalADense-pattern-:r3f:" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
+                                                                                                    <rect width="1" height="1" fill="currentColor"></rect>
+                                                                                                    <rect x="2" y="2" width="1" height="1" fill="currentColor"></rect>
+                                                                                                    <rect x="1" y="2" width="1" height="1" fill="currentColor"></rect>
+                                                                                                    <rect x="1" y="3" width="1" height="1" fill="currentColor"></rect>
+                                                                                                    <rect y="3" width="1" height="1" fill="currentColor"></rect>
+                                                                                                    <rect x="3" width="1" height="1" fill="currentColor"></rect>
+                                                                                                    <rect x="3" y="1" width="1" height="1" fill="currentColor"></rect>
+                                                                                                    <rect x="2" y="1" width="1" height="1" fill="currentColor"></rect>
+                                                                                                </pattern>
+                                                                                                <rect width="100%" height="100%" fill="url(#DiagonalADense-pattern-:r3f:)"></rect>
+                                                                                            </svg>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="MyLearning__List-Progress-Icon-Box">
+                                                                                    <div style="transform-origin: center center; align-self: center; height: 16px; width: 24px; transform: rotate(180deg) translateZ(0px);">
+                                                                                        <i class="fa-solid fa-chevron-down fa-xl"></i>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </button>
+                                                                </div>
+                                                            </li>
+                                                        </div>
+                                                        <div class="MyLearning__ListEl-Box">
+                                                            <li class="MyLearning__RowEl">
+                                                                <div class="MyLearning__RowEl-div">
+                                                                    <button class="MyLearning__List-Btn">
+                                                                        <div class="MyLearning__List-FlexBox">
+                                                                            <div class="MyLearning__List-FlexBox-Header">
+                                                                                <div style="display: flex; flex-direction: column;">
+                                                                                    <div style="display: flex;">
+                                                                                        <span class="MyLearning__List-Header-Span">Course</span>
+                                                                                    </div>
+                                                                                    <h3 class="MyLearning__List-Header-H3">Learn HTML</h3>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div style="display: flex; min-width: fit-content;">
+                                                                                <div class="MyLearning__List-Progress-FlexBox">
+                                                                                    <span class="MyLearning__List-Progress-Span">0%</span>
+                                                                                    <div class="MyLearning__List-Progress-Box">
+                                                                                        <div class="MyLearning__List-Progress-Wrapper">
+                                                                                            <svg fill="currentColor" role="img" aria-hidden="true" class="MyLearning__List-Progress-Svg">
+                                                                                                <title>Diagonal A Dense</title>
+                                                                                                <pattern id="DiagonalADense-pattern-:r3f:" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
+                                                                                                    <rect width="1" height="1" fill="currentColor"></rect>
+                                                                                                    <rect x="2" y="2" width="1" height="1" fill="currentColor"></rect>
+                                                                                                    <rect x="1" y="2" width="1" height="1" fill="currentColor"></rect>
+                                                                                                    <rect x="1" y="3" width="1" height="1" fill="currentColor"></rect>
+                                                                                                    <rect y="3" width="1" height="1" fill="currentColor"></rect>
+                                                                                                    <rect x="3" width="1" height="1" fill="currentColor"></rect>
+                                                                                                    <rect x="3" y="1" width="1" height="1" fill="currentColor"></rect>
+                                                                                                    <rect x="2" y="1" width="1" height="1" fill="currentColor"></rect>
+                                                                                                </pattern>
+                                                                                                <rect width="100%" height="100%" fill="url(#DiagonalADense-pattern-:r3f:)"></rect>
+                                                                                            </svg>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="MyLearning__List-Progress-Icon-Box">
+                                                                                    <div style="transform-origin: center center; align-self: center; height: 16px; width: 24px; transform: rotate(180deg) translateZ(0px);">
+                                                                                        <i class="fa-solid fa-chevron-down fa-xl"></i>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </button>
+                                                                </div>
+                                                            </li>
+                                                        </div>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="Footer__Container">
+                <div class="Footer__Layout-Grid">
+                    <div class="Footer__Layout-Grid-Column">
+                        <div class="Footer__Layout-Grid-Left">
+                            <div class="Company">
+                                <h2 class="Footer__H2">Company</h2>
+                                <ul class="Footer__List-Left">
+                                    <li class="Footer__List-Left-Item"><a class="Footer__List-Left-Item-Link" href="">About</a></li>
+                                    <li class="Footer__List-Left-Item"><a class="Footer__List-Left-Item-Link" href="">Careers</a></li>
+                                    <li class="Footer__List-Left-Item"><a class="Footer__List-Left-Item-Link" href="">Affiliates</a></li>
+                                    <li class="Footer__List-Left-Item">
+                                        <ul class="Footer__Social-Media">
+                                            <li>
+                                                <a class="Footer__Social-Media-Link" href=""><i class="fa-brands fa-x-twitter"></i></a>
+                                            </li>
+                                            <li>
+                                                <a class="Footer__Social-Media-Link" href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                            </li>
+                                            <li>
+                                                <a class="Footer__Social-Media-Link" href=""><i class="fa-brands fa-instagram"></i></a>
+                                            </li>
+                                            <li>
+                                                <a class="Footer__Social-Media-Link" href=""><i class="fa-brands fa-youtube"></i></a>
+                                            </li>
+                                            <li>
+                                                <a class="Footer__Social-Media-Link" href=""><i class="fa-brands fa-tiktok"></i></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="Resources"> 
+                                <div>
+                                    <h2 class="Footer__H2">Resources</h2>
+                                    <ul  class="Footer__List-Left">
+                                        <li class="Footer__List-Left-Item"><a class="Footer__List-Left-Item-Link" href="">Articles</a></li>
+                                        <li class="Footer__List-Left-Item"><a class="Footer__List-Left-Item-Link" href="">Blog</a></li>
+                                        <li class="Footer__List-Left-Item"><a class="Footer__List-Left-Item-Link" href="">Cheatsheets</a></li>
+                                        <li class="Footer__List-Left-Item"><a class="Footer__List-Left-Item-Link" href="">Code challenges</a></li>
+                                        <li class="Footer__List-Left-Item"><a class="Footer__List-Left-Item-Link" href="">Docs</a></li>
+                                        <li class="Footer__List-Left-Item"><a class="Footer__List-Left-Item-Link" href="">Projects</a></li>
+                                        <li class="Footer__List-Left-Item"><a class="Footer__List-Left-Item-Link" href="">Video</a></li>
+                                        <li class="Footer__List-Left-Item"><a class="Footer__List-Left-Item-Link" href="">Workspaces</a></li>
+                                    </ul>
+                                </div>
+                                <div class="Support">
+                                    <h2 class="Footer__H2">Support</h2>
+                                    <ul  class="Footer__List-Left">
+                                        <li class="Footer__List-Left-Item"><a class="Footer__List-Left-Item-Link" href="">Help Center</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="Plans">
+                                <div>
+                                    <h2 class="Footer__H2">Plans</h2>
+                                    <ul  class="Footer__List-Left">
+                                        <li class="Footer__List-Left-Item"><a class="Footer__List-Left-Item-Link" href="">For individuals</a></li>
+                                        <li class="Footer__List-Left-Item"><a class="Footer__List-Left-Item-Link" href="">For student</a></li>
+                                        <li class="Footer__List-Left-Item"><a class="Footer__List-Left-Item-Link" href="">For business</a></li>
+                                        <li class="Footer__List-Left-Item"><a class="Footer__List-Left-Item-Link" href="">Discounts</a></li>
+                                    </ul>
+                                </div>
+                                <div class="Community">
+                                    <h2 class="Footer__H2">Community</h2>
+                                    <ul  class="Footer__List-Left">
+                                        <li class="Footer__List-Left-Item"><a class="Footer__List-Left-Item-Link" href="">Clubs</a></li>
+                                        <li class="Footer__List-Left-Item"><a class="Footer__List-Left-Item-Link" href="">Code Crew</a></li>
+                                        <li class="Footer__List-Left-Item"><a class="Footer__List-Left-Item-Link" href="">Discord</a></li>
+                                        <li class="Footer__List-Left-Item"><a class="Footer__List-Left-Item-Link" href="">Events</a></li>
+                                        <li class="Footer__List-Left-Item"><a class="Footer__List-Left-Item-Link" href="">Forums</a></li>
+                                        <li class="Footer__List-Left-Item"><a class="Footer__List-Left-Item-Link" href="">Learner Stories</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="Footer__Logo">
+                                <div class="Footer__Logo-Box">
+                                    <img src="../assets/img/logo.png" alt="">
+                                    <span>from skillsoft</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Footer__Layout-Grid-Column">
+                        <div  class="Footer__Layout-Line">
+                            <div class="Footer__Layout-Grid-Right">
+                                <div class="Subjects">
+                                    <h2 class="Footer__H2">Subjects</h2>
+                                    <ul class="Footer__List-Right">
+                                        <li class="Footer__List-Right-Item"><a class="Footer__List-Right-Link" href="">AI</a></li>
+                                        <li class="Footer__List-Right-Item"><a class="Footer__List-Right-Link" href="">Cloud Computing</a></li>
+                                        <li class="Footer__List-Right-Item"><a class="Footer__List-Right-Link" href="">Code Foundations</a></li>
+                                        <li class="Footer__List-Right-Item"><a class="Footer__List-Right-Link" href="">Computer Science</a></li>
+                                        <li class="Footer__List-Right-Item"><a class="Footer__List-Right-Link" href="">Cybersecurity</a></li>
+                                        <li class="Footer__List-Right-Item"><a class="Footer__List-Right-Link" href="">Data Analytics</a></li>
+                                        <li class="Footer__List-Right-Item"><a class="Footer__List-Right-Link" href="">Data Science</a></li>
+                                        <li class="Footer__List-Right-Item"><a class="Footer__List-Right-Link" href="">Data Visualization</a></li>
+                                        <li class="Footer__List-Right-Item"><a class="Footer__List-Right-Link" href="">Developer Tools</a></li>
+                                        <li class="Footer__List-Right-Item"><a class="Footer__List-Right-Link" href="">DevOps</a></li>
+                                        <li class="Footer__List-Right-Item"><a class="Footer__List-Right-Link" href="">Game Development</a></li>
+                                        <li class="Footer__List-Right-Item"><a class="Footer__List-Right-Link" href="">IT</a></li>
+                                        <li class="Footer__List-Right-Item"><a class="Footer__List-Right-Link" href="">Machine Learning</a></li>
+                                        <li class="Footer__List-Right-Item"><a class="Footer__List-Right-Link" href="">Math</a></li>
+                                        <li class="Footer__List-Right-Item"><a class="Footer__List-Right-Link" href="">Mobile Development</a></li>
+                                        <li class="Footer__List-Right-Item"><a class="Footer__List-Right-Link" href="">Web Design</a></li>
+                                        <li class="Footer__List-Right-Item"><a class="Footer__List-Right-Link" href="">Web Development</a></li>
+                                    </ul>
+                                </div>
+                                <div class="Languages">
+                                    <div>
+                                        <h2 class="Footer__H2">Languages</h2>
+                                        <ul class="Footer__List-Right">
+                                            <li class="Footer__List-Right-Item"><a class="Footer__List-Right-Link" href="">Bash</a></li>
+                                            <li class="Footer__List-Right-Item"><a class="Footer__List-Right-Link" href="">C</a></li>
+                                            <li class="Footer__List-Right-Item"><a class="Footer__List-Right-Link" href="">C++</a></li>
+                                            <li class="Footer__List-Right-Item"><a class="Footer__List-Right-Link" href="">C#</a></li>
+                                            <li class="Footer__List-Right-Item"><a class="Footer__List-Right-Link" href="">Go</a></li>
+                                            <li class="Footer__List-Right-Item"><a class="Footer__List-Right-Link" href="">HTML & CSS</a></li>
+                                            <li class="Footer__List-Right-Item"><a class="Footer__List-Right-Link" href="">Java</a></li>
+                                            <li class="Footer__List-Right-Item"><a class="Footer__List-Right-Link" href="">JavaScript</a></li>
+                                            <li class="Footer__List-Right-Item"><a class="Footer__List-Right-Link" href="">Kotlin</a></li>
+                                            <li class="Footer__List-Right-Item"><a class="Footer__List-Right-Link" href="">PHP</a></li>
+                                            <li class="Footer__List-Right-Item"><a class="Footer__List-Right-Link" href="">Python</a></li>
+                                            <li class="Footer__List-Right-Item"><a class="Footer__List-Right-Link" href="">R</a></li>
+                                            <li class="Footer__List-Right-Item"><a class="Footer__List-Right-Link" href="">Ruby</a></li>
+                                            <li class="Footer__List-Right-Item"><a class="Footer__List-Right-Link" href="">SQL</a></li>
+                                            <li class="Footer__List-Right-Item"><a class="Footer__List-Right-Link" href="">Swift</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="Career">
+                                    <div>
+                                        <h2 class="Footer__H2">Career building</h2>
+                                        <ul class="Footer__List-Right">
+                                            <li class="Footer__List-Right-Item"><a class="Footer__List-Right-Link" href="">Career paths</a></li>
+                                            <li class="Footer__List-Right-Item"><a class="Footer__List-Right-Link" href="">Career center</a></li>
+                                            <li class="Footer__List-Right-Item"><a class="Footer__List-Right-Link" href="">Interview prep</a></li>
+                                            <li class="Footer__List-Right-Item"><a class="Footer__List-Right-Link" href="">Professionnal cenrtificatin</a></li>
+                                            <li class="Footer__List-Right-Item"><a class="Footer__List-Right-Link" href="">Compare to bootcamps</a></li>
+                                            <li class="Footer__List-Right-Item"><a class="Footer__List-Right-Link" href="">-</a></li>
+                                            <li class="Footer__List-Right-Item"><a class="Footer__List-Right-Link" href="">Full Catalog</a></li>
+                                            <li class="Footer__List-Right-Item"><a class="Footer__List-Right-Link" href="">Beta Content</a></li>
+                                            <li class="Footer__List-Right-Item"><a class="Footer__List-Right-Link" href="">Roadmap</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="Mobile">
+                                        <h2 class="Footer__H2">Mobile</h2>
+                                        <div>
+                                            <div class="Mobile__Box">
+                                                <a class="Mobile__Link" href="">
+                                                    <img src="../assets/img/download.png" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Footer__End">
+                    <ul class="Footer__End-List">
+                        <li>
+                            <a href="" class="Footer__End-Item">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="" class="Footer__End-Item">Cookie Policy</a>
+                        </li>
+                        <li>
+                            <a href="" class="Footer__End-Item">Do Not Sell My Personal Information</a>
+                        </li>
+                        <li>
+                            <a href="" class="Footer__End-Item">Terms</a>
+                        </li>
+                    </ul>
+                    <div class="Footer__End-MadeWith">Made with  <span>❤️</span> in NYC ©  2024  Codecademy</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>\
