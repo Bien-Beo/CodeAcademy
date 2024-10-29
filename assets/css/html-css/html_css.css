@@ -1470,7 +1470,7 @@
 }
 
 .Beginner-Setup{
-    display: -webkit-box;
+    isplay: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
