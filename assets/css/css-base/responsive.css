@@ -49,6 +49,23 @@
         padding-left: 2rem;
         padding-right: 2rem;
     }
+    .Nav__Ele-Small {
+        display: flex;
+    }
+    .Nav__Ele-Small-Magnifying {
+        display: flex;
+    }
+    .SubMenu__ContentContainer-Box {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .Layout__Grid-Item-Right-Child1 {
+        flex-direction: row;
+        align-items: center;
+    }
+    .Related__Topics {
+        justify-content: end;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -114,9 +131,44 @@
         padding-left: 4rem;
         padding-right: 4rem;
     }
+    .SubMenu__ContentContainer-Box {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    .Footer__Layout-Grid {
+        padding: 1rem 0;
+    }
+    .Support {
+        margin-top: 1.5rem;
+        display: unset;
+    }
+    .Subjects,
+    .Languages,
+    .Career {
+        grid-column-end: span 4;
+    }
+    .Mobile {
+        display: unset;
+    }
+    .Footer__Logo-Box {
+        display: unset;
+    }
+    .Footer__Logo-Box > span {
+        font-size: 0.80rem;
+        margin-top: 0;
+    }
+    .Footer__Logo-Box > img {
+        height: 50px;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
+    :root {
+        --headerHeight: 5rem;
+    }
+    .Container__Box-Layout {
+        gap: 1.5rem;
+    }
     .Catalog__Menu-Item-1 {
         padding-left: 3rem;
         padding-right: 3rem;
@@ -160,12 +212,37 @@
     .Search__Question-Footer-Left-Content > span {
         font-size: 1rem;
     }
+    .Nav__Ele-Small:first-of-type {
+        margin-left: 0;
+    }
+    .Nav__Ele-Small-Menu:last-of-type {
+        margin-right: 0px;
+    }
+    .SubMenu__List-Item:first-of-type {
+        margin-left: 0px;
+    }
+    .Cotainer__SkillPath {
+        display: block;
+    }
+    .Footer__Layout-Grid-Column {
+        grid-column-end: span 6;
+    }
+    .Footer__Layout-Line {
+        border-left: 1px solid var( --color-border);
+        border-top: none;
+        margin-left: 0;
+        margin-top: 0;
+        padding-left: 2rem;
+        padding-top: 0;
+    }
+    .Footer__End {
+        align-items: baseline;
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
-    :root {
-        --headerHeight: 5rem;
-    }
     .Logo__Header-Img {
         position: relative;
         left: -10px;
@@ -176,9 +253,6 @@
     }
     .Box__Header-Normal {
         display: block;
-    }
-    .Container__Box-Layout {
-        gap: 1.5rem;
     }
     .Box__Header-Nav,
     .Container__Box {
@@ -209,7 +283,7 @@
         grid-column-end: span 4;
     }
     .Footer__Layout-Line {
-        border-left: 1px solid var(--color-navy);
+        border-left: 1px solid var( --color-border);
         border-top: none;
         margin-left: 0;
         margin-top: 0;
@@ -272,6 +346,9 @@
         padding-left: 6rem;
         padding-right: 6rem;
     }
+    .Box__Header-Small {
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -282,30 +359,12 @@
         grid-column-end: span 4;
         grid-column-start: 9;
     }
-    .Layout__Grid-Item-Right-Child1 {
-        flex-direction: row;
-        align-items: center;
-    }
-    .Related__Topics {
-        justify-content: end;
-    }
-    .Cotainer__SkillPath {
-        display: block;
-    }
     .Content__Item-List-Ele {
         grid-column-end: span 6;
     }    
     .Footer__Container {
         padding-left: 6rem;
         padding-right: 6rem;
-    }
-    .Footer__Layout-Grid {
-        padding: 2rem 0;
-    }
-    .Footer__End {
-        align-items: baseline;
-        display: flex;
-        justify-content: space-between;
     }
     .Footer__End-List {
         justify-content: flex-start;
@@ -314,9 +373,6 @@
     .Footer__End-MadeWith {
         display: inline-block;
         text-align: right;
-    }
-    .Footer__Layout-Grid-Column {
-        grid-column-end: span 6;
     }
     .Support,
     .Community {

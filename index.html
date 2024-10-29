@@ -533,6 +533,38 @@
                     </div>
                 </div>
             </div>
+            <div class="Box__Header-Small">
+                <nav class="Box__Header-Nav">
+                    <ul class="Nav__List">
+                        <li class="Nav__Ele-Small">
+                            <a href="./index.html" class="Logo__Header">
+                                <img src="./assets/img/logo.png" alt="Codecademy Logo" class="Logo__Header-Img" style="transform: translateX(-10px);">
+                            </a>
+                        </li>
+                        <li class="Nav__Ele-Small-Magnifying">
+                            <div class="Nav__Ele-Button Nav__Ele-Button-Container">
+                                <button id="magnifyingGlass" class="Nav__Ele-Button-Component">
+                                    <img src="./assets/img/magnifying-glass.png" alt="magnifying-glass" style="height: 32px; width: 32px;">
+                                </button>
+                            </div>
+                        </li>
+                        <li class="Nav__Ele-Small">
+                            <div class="Nav__Ele-Button Nav__Ele-Button-Container">
+                                <button id="notificationButton" class="Nav__Ele-Button-Component">
+                                    <img src="./assets/img/notification.png" alt="notification" style="height: 25px; width: 25px;">
+                                </button>
+                            </div>
+                        </li>
+                        <li class="Nav__Ele-Small-Menu">
+                            <div class="Nav__Ele-Button Nav__Ele-Button-Container">
+                                <button id="menuButton" class="Nav__Ele-Button-Component">
+                                    <img src="./assets/img/menu.png" alt="menu" style="height: 25px; width: 25px;">
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
             <hr id="hrElement" style="opacity: 0;">
         </header>
         <main>
@@ -552,10 +584,12 @@
                                     </div>
                                     <div class="pb-05rem">
                                         <li>
-                                            <button class="SideBar__Button" style="background-color: inherit;">
-                                                <img src="./assets/img/book.png" alt="Book" style="height: 25px; width: 25px;" class="mr-10">
-                                                <span>My learning</span>
-                                            </button>
+                                            <a href="./pages/my-learning.html">
+                                                <button class="SideBar__Button" style="background-color: inherit;">
+                                                    <img src="./assets/img/book.png" alt="Book" style="height: 25px; width: 25px;" class="mr-10">
+                                                    <span>My learning</span>
+                                                </button>
+                                            </a>
                                         </li>
                                     </div>
                                     <div class="pb-05rem">
@@ -570,12 +604,14 @@
                                     </div>
                                     <div class="pb-05rem">
                                         <li>
-                                            <button class="SideBar__Button" style="background-color: inherit;">
-                                                <img src="./assets/img/puzzle.png" alt="Puzzle" style="height: 25px; width: 25px;" class="mr-10">
-                                                <span style="display: flex;">Projects
-                                                    <div class="SideBar__Button-Upgrade">Upgrade</div>
-                                                </span>
-                                            </button>
+                                            <a href="./pages/projects.html">
+                                                <button class="SideBar__Button" style="background-color: inherit;">
+                                                    <img src="./assets/img/puzzle.png" alt="Puzzle" style="height: 25px; width: 25px;" class="mr-10">
+                                                    <span style="display: flex;">Projects
+                                                        <div class="SideBar__Button-Upgrade">Upgrade</div>
+                                                    </span>
+                                                </button>
+                                            </a>
                                         </li>
                                     </div>
                                     <div class="pb-05rem">
@@ -1200,5 +1236,91 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/index.js"></script>
+    <script src="./js/showSubMenu.js"></script>
+    <div id="subMenuContent" class="Sub__Menu">
+        <div class="Sub__Menu__FlexBox-OverlayContainer">
+            <div style="color: var(--color-text); background-color: var(--color-background-current);">
+                <nav class="Sub__Menu-Nav">
+                    <div class="Box__Header-Nav">
+                        <ul class="Sub__Menu-List">
+                            <li class="Nav__Ele-Small">
+                                <a href="./index.html" class="Logo__Header">
+                                    <img src="./assets/img/logo.png" alt="Codecademy Logo" class="Logo__Header-Img">
+                                </a>
+                            </li>
+                            <li class="Nav__Ele-Small-SubMenu">
+                                <div class="Nav__Ele-Button Nav__Ele-Button-Container">
+                                    <button id="closeButton" class="Nav__Ele-Button-Component">
+                                        <img src="./assets/img/close.png" alt="close" style="height: 20px; width: 20px;">
+                                    </button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="SubMenu__ContentContainer">
+                        <ul style="margin: 0px; padding: 0px; list-style: none;">
+                            <li class="SubMenu__ContentContainer-Box">
+                                <ul style="margin: 0px; padding: 0px; list-style: none;">
+                                    <li class="SubMenu__List-Item">
+                                        <a class="Sub__Menu__List-Link" href="">
+                                            <img style="width: 24px; height: 24px; margin-right: 1rem;" src="./assets/img/home.png" alt="home">
+                                            My Home
+                                        </a>
+                                    </li>
+                                    <li class="SubMenu__List-Item">
+                                        <a class="Sub__Menu__List-Link" href="">
+                                            <img style="width: 24px; height: 24px; margin-right: 1rem;" src="./assets/img/submenu-catalog.png" alt="catalog">
+                                            Catalog
+                                        </a>
+                                    </li>
+                                    <li class="SubMenu__List-Item">
+                                        <a class="Sub__Menu__List-Link" href="">
+                                            <img style="width: 24px; height: 24px; margin-right: 1rem;" src="./assets/img/book-mini.png" alt="resources">
+                                            Resources
+                                        </a>
+                                    </li>
+                                    <li class="SubMenu__List-Item"> 
+                                        <a class="Sub__Menu__List-Link" href="">
+                                            <img style="width: 24px; height: 24px; margin-right: 1rem;" src="./assets/img/people.png" alt="community">
+                                            Community
+                                        </a>
+                                    </li>
+                                    <li class="SubMenu__List-Item">
+                                        <a class="Sub__Menu__List-Link" href="">
+                                            <img style="width: 24px; height: 24px; margin-right: 1rem;" src="./assets/img/pricing.png" alt="pricing">
+                                            Pricing
+                                        </a>
+                                    </li>
+                                    <li class="SubMenu__List-Item">
+                                        <a class="Sub__Menu__List-Link" href="">
+                                            <img style="width: 24px; height: 24px; margin-right: 1rem;" src="./assets/img/briefcase.png" alt="career center">
+                                            Career Center
+                                        </a>
+                                    </li>
+                                    <li class="SubMenu__List-Item">
+                                        <a class="Sub__Menu__List-Link" href="">
+                                            <img style="width: 24px; height: 24px; margin-right: 1rem;" src="./assets/img/building.png" alt="building">
+                                            For Business
+                                        </a>
+                                    </li>
+                                    <li class="SubMenu__List-Item">
+                                        <a class="Sub__Menu__List-Link" href="">
+                                            <img src="https://www.gravatar.com/avatar/e43b253ce98dd12a7d017212e9dc5a47?s=140&d=retro" alt="User profile avatar" style=" margin-right: 1rem;" class="Avatar__Size-SubMenu">
+                                            Trần Ngọc Biên
+                                        </a>
+                                    </li>
+                                    <li class="SubMenu__List-Item">
+                                        <a class="Sub__Menu__Start" href="">
+                                            Start free trial
+                                        </a>
+                                    </li>
+                                </ul>   
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
 </body>
-</html>\
+</html>
