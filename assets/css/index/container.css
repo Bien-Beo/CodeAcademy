@@ -23,6 +23,7 @@
     display: flex;
     margin-right: 0.75rem;
     padding-bottom: 1.5rem;
+    display: none;
     width: 288px;
     align-self: flex-start;
     position: sticky;
@@ -871,7 +872,7 @@
 }
 
 .Cotainer__SkillPath {
-    display: none;
+    display: block;
 }
 
 .Cotainer__SkillPath-List {
@@ -1143,7 +1144,7 @@
 
 .Content__Item-List-Ele-Box {
     border: 1px solid var(--color-secondary);
-    border-color: var(--color-secondary-hover);
+    border-color: rgba(16, 22, 47, 0.86);
     padding: 1.5rem;
     border-radius: 4px;
     color: var(--color-text);
@@ -1220,3 +1221,164 @@
     width: 100%;
 }
 
+.Btn__SubNav-Box {
+    display: block;
+    background-color: #FFF0E5;
+    position: sticky;
+    top: calc(var(--headerHeight));
+    z-index: 2;
+}
+
+.Btn__SubNav-Style {
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+    text-decoration: none;
+    box-shadow: none;
+    color: var(--color-text);
+    transition: border-color 150ms ease-in, color 150ms ease-in, background-color 150ms ease-in, box-shadow 150ms ease-in;
+    border: 2px solid var(--color-secondary);
+    border-color: transparent;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    position: relative;
+    border-radius: 4px;
+    font-weight: 700;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    font-size: 14px;
+    min-width: 40px;
+    height: 40px;
+    border-color: var(--color-secondary);
+    color: var(--color-secondary);
+    background-color: transparent;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    width: calc(100vw - 2rem);
+    margin-left: 1rem;
+}
+
+.Btn__SubNav-Style:before {
+    content: "";
+    transition: opacity 150ms linear;
+    border: 2px solid var(--color-secondary);
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    z-index: 0;
+    opacity: 0;
+    border-radius: 8px;
+}
+
+.Btn__SubNav-Style:hover {
+    transition: background-color 150ms ease-in, box-shadow 150ms ease-in;
+    background-color: var(--color-background-hover);
+}
+
+.TryPlus-Box {
+    margin-bottom: 1.5rem;
+    display: block;
+    width: 100%;
+}
+
+.TryPlus-FlexBox {
+    display: flex;
+    border: solid;
+    border-width: 1px;
+    border-color: var( --color-border);
+    background: #FFFAE5;
+    padding: 1.5rem;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    border-radius: 8px;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.TryPlus__Header-FlexBox {
+    display: flex;
+    gap: 0.25rem;
+    align-self: stretch;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.TryPlus__Header-FlexBox > h2 {
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 2.75rem;
+    font-weight: 700;
+    line-height: 1.3;
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.TryPlus__Header-FlexBox > span {
+    font-size: inherit;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 0.875rem;
+    margin: 0;
+}
+
+.TryPlus__Button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+    font-size: inherit;
+    text-decoration: none;
+    box-shadow: none;
+    color: var(--color-text);
+    transition: border-color 150ms ease-in, color 150ms ease-in, background-color 150ms ease-in, box-shadow 150ms ease-in;
+    border: 2px solid var(--color-secondary);
+    border-color: transparent;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    position: relative;
+    border-radius: 4px;
+    font-weight: 700;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    font-size: 1rem;
+    min-width: 40px;
+    height: 40px;
+    color: var(--color-background);
+    background-color: var(--color-secondary);
+    align-self: stretch;
+}
+
+.TryPlus__Button:hover {
+    transition: background-color 150ms ease-in, box-shadow 150ms ease-in;
+    color: var(--color-background);
+    background-color: rgba(16, 22, 47, 0.86);
+}
+
+.TryPlus__Button:before {
+    content: "";
+    transition: opacity 150ms linear;
+    border: 2px solid var(--color-secondary);
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    z-index: 0;
+    opacity: 0;
+    border-radius: 8px;
+}
