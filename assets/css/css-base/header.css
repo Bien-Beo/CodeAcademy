@@ -93,7 +93,7 @@
 .Nav__Ele-Link {
     border: none;
     padding: 1rem 0px;
-    font-size: inherit;
+    font-size: 0.9375em;
     box-shadow: none;
     position: relative;
     color: var(--color-text);
@@ -204,6 +204,16 @@
     border-style: none;
 }
 
+.Avatar__Size-SubMenu {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    border-radius: 50%;
+    object-fit: cover;
+    vertical-align: middle;
+    border-style: none;
+}
+
 .Button__Nav {
     cursor: pointer;
     background: none transparent;
@@ -244,7 +254,7 @@
 }
 
 .Button__Nav-Text {
-    font-size: inherit;
+    font-size: 0.9375em;
     display: inline-block;
     margin: 0px;
     font-weight: normal;
@@ -1358,4 +1368,196 @@
     width: calc(100% - 3rem);
     height: 1px;
     background-color: #9E9E9E;
+}
+
+.Box__Header-Small {
+    display: block;
+    height: var(--headerHeight);
+    transition: background-color 150ms ease-in-out, border-bottom-color 150ms ease-in-out;
+    border-bottom: 1px solid var(--color-secondary);
+    width: 100%;
+    top: 0;
+    z-index: 2;
+    background-color: var(--color-background);
+    border-color: var(--color-background-current);
+    background-color: var(--color-background-current);
+}
+
+.Nav__Ele-Small {
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.Nav__Ele-Small-Magnifying,
+.Nav__Ele-Small-SubMenu {
+    margin-left: auto;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    position: relative;
+}
+
+.Nav__Ele-Small-Menu {
+    margin-left: 0px;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    position: relative;
+}
+
+.Sub__Menu {
+    height: 0px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 1;
+    display: none;
+}
+
+.Sub__Menu__FlexBox-OverlayContainer {
+    justify-content: center;
+    align-items: center;
+    inset: 0px;
+    display: block;
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    opacity: 1;
+    background-color: var(--color-background);
+}
+
+.Sub__Menu-Nav {
+    display: block;
+    height: var(--headerHeight);
+    transition: background-color 150ms ease-in-out, border-bottom-color 150ms ease-in-out;
+    border-bottom: 1px solid var(--color-secondary);
+    width: 100%;
+    top: 0;
+    z-index: 2;
+    background-color: var(--color-background);
+    border-color: var(--color-background-current);
+    background-color: var(--color-background-current);
+}
+
+.Sub__Menu-List {
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    list-style: none;
+}
+
+.SubMenu__ContentContainer {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    max-width: 1440px;
+    padding: 0px;
+    flex-direction: column;
+    display: flex;
+}
+
+.SubMenu__ContentContainer-Box {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 1440px;
+}
+
+.SubMenu__List-Item {
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    position: relative;
+}
+
+.Sub__Menu__List-Link {
+    border: none;
+    padding: 1rem 0px;
+    font-size: inherit;
+    box-shadow: none;
+    position: relative;
+    color: var(--color-text);
+    background-color: transparent;
+    font-weight: normal;
+    line-height: 1.5;
+    text-align: left;
+    white-space: nowrap;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    min-width: 0px;
+    text-decoration: none;
+}
+
+.Sub__Menu__List-Link::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    bottom: -4px;
+    left: -4px;
+    z-index: 0;
+    opacity: 0;
+    border-color: var(--color-primary);
+    border-radius: 4px;
+}
+
+.Sub__Menu__List-Link:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.Sub__Menu__Start {
+    cursor: pointer;
+    box-shadow: none;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    position: relative;
+    font-weight: 700;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    font-size: 1rem;
+    min-width: 40px;
+    height: 40px;
+    color: var(--color-background);
+    margin-top: 1.5rem;
+    background: var(--color-primary);
+    text-decoration: none;
+    transition: border-color 150ms ease-in, color 150ms ease-in, background-color 150ms ease-in, box-shadow 150ms ease-in;
+    border-color: transparent;
+    white-space: nowrap;
+    border-radius: 4px;
+}
+
+.Sub__Menu__Start::before {
+    content: "";
+    transition: opacity 150ms linear;
+    border: 2px solid var(--color-secondary);
+    position: absolute;
+    inset: -5px;
+    z-index: 0;
+    opacity: 0;
+    border-radius: 8px;
+}
+
+.Sub__Menu__Start:hover {
+    transition: background-color 150ms ease-in, box-shadow 150ms ease-in;
+    color: var(--color-background);
+    background-color: var(--color-primary-hover);
 }

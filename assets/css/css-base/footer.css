@@ -99,9 +99,6 @@ footer {
     display: none;
 }
 
-.Community {
-}
-
 .Plans {
     grid-column-end: span 12;
     grid-template-columns: minmax(0, 1fr);
@@ -115,7 +112,6 @@ footer {
     grid-column-end: span 12;
     grid-template-columns: minmax(0, 1fr);
     display: grid;
-    display: none;
     order: 4;
     margin-top: auto;
     grid-template-rows: min-content;
@@ -124,7 +120,6 @@ footer {
 
 .Footer__Logo-Box {
     margin-top: auto;
-    display: none;
 }
 
 .Footer__Logo-Box > img {
@@ -168,7 +163,6 @@ footer {
 .Footer__List-Left-Item-Link {
     border: none;
     padding: 0;
-    font-size: inherit;
     white-space: initial;
     box-shadow: none;
     display: inline-block;
@@ -176,7 +170,7 @@ footer {
     color: var(--color-text);
     background-color: transparent;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .Footer__List-Left-Item-Link:before {
@@ -303,7 +297,7 @@ footer {
     text-decoration: none;
     border: none; 
     padding: 0;
-    font-size: 16px;
+    font-size: 15px;
     white-space: initial;
     box-shadow: none;
     display: inline-block;
