@@ -162,6 +162,10 @@
         font-size: 0.80rem;
         margin-top: 0;
     }
+    .Notifications__Container-Header {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -248,6 +252,10 @@
     }
     .Footer__Logo-Box {
         display: block;
+    }
+    .Notifications__Container-Header {
+        padding-left: 4rem;
+        padding-right: 4rem;
     }
 }
 
@@ -351,6 +359,10 @@
     .Search__Question-Content {
         padding-left: 6rem;
         padding-right: 6rem;
+    }
+    .Notifications__Container-Header {
+        padding-left: 5rem;
+        padding-right: 5rem;
     }
 }
 

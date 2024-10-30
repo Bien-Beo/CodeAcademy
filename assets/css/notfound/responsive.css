@@ -1,0 +1,42 @@
+.Error {
+    width: 300px;
+}
+
+.NotFound__Content {
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 480px) {
+    .Error {
+        width: 412px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .Error {
+        width: 512px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
+    .NotFound__Content {
+        flex-direction: row;
+        gap: 1rem;
+    }
+    .Error {
+        width: 450px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .NotFound__Content {
+
+    }
+    .Error {
+        width: 512px;
+    }
+}
