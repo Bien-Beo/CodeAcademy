@@ -758,7 +758,7 @@
             </div>
             <div id="overlayContainer" class="OverlayContainer" style="display: none;">
                 <div id="myHomeMenuContainer" class="SideBar__Responsive-Box">
-                    <div>
+                    <div class="myHomeMenuWidth">
                         <div class="SideBar__Responsive-Header-FlexBox">
                             <h1 class="SideBar__Responsive-Header-Logo-Box">
                                 <img src="./assets/img/logo.png" alt="Logo" style="height: 60px; margin-bottom: 2rem;">
@@ -837,7 +837,7 @@
                             <nav class="SideBar__Nav">
                                 <ul class="SideBar__List">
                                     <div class="pb-05rem">
-                                        <li class="Page__Current">
+                                        <li id="SideBar__Animation-Item-1" style="position: relative;" class="Page__Current">
                                             <button class="SideBar__Button" style="font-weight: 600;">
                                                 <img src="./assets/img/dashboard.png" alt="Dashboard" style="height: 22px; width: 22px;" class="mr-10">
                                                 <span>Dashboard</span>
@@ -845,7 +845,7 @@
                                         </li>
                                     </div>
                                     <div class="pb-05rem">
-                                        <li>
+                                        <li id="SideBar__Animation-Item-2" style="position: relative; display: none;">
                                             <a href="./pages/my-learning.html" style="text-decoration: none;">
                                                 <button class="SideBar__Button" style="background-color: inherit;">
                                                     <img src="./assets/img/book.png" alt="Book" style="height: 25px; width: 25px;" class="mr-10">
@@ -855,7 +855,7 @@
                                         </li>
                                     </div>
                                     <div class="pb-05rem">
-                                        <li>
+                                        <li id="SideBar__Animation-Item-3" style="position: relative; display: none;">
                                             <a href="./pages/events.html" style="text-decoration: none;">
                                                 <button class="SideBar__Button" style="background-color: inherit;">
                                                     <img src="./assets/img/calendar.png" alt="Calendar" style="height: 25px; width: 25px;" class="mr-10">
@@ -865,7 +865,7 @@
                                         </li>
                                     </div>
                                     <div class="pb-05rem">
-                                        <li>
+                                        <li id="SideBar__Animation-Item-4" style="position: relative; display: none;">
                                             <a href="./pages/projects.html" style="text-decoration: none;">
                                                 <button class="SideBar__Button" style="background-color: inherit;">
                                                     <img src="./assets/img/puzzle.png" alt="Puzzle" style="height: 25px; width: 25px;" class="mr-10">
@@ -877,7 +877,7 @@
                                         </li>
                                     </div>
                                     <div class="pb-05rem">
-                                        <li>
+                                        <li id="SideBar__Animation-Item-5" style="position: relative; display: none;">
                                             <a href="./pages/workspaces.html" style="text-decoration: none;">
                                                 <button class="SideBar__Button" style="background-color: inherit;">
                                                     <img src="./assets/img/workspace.png" alt="Workspaces" style="height: 22px; width: 22px;" class="mr-10">
@@ -888,7 +888,7 @@
                                     </div>
                                 </ul>
                             </nav>
-                            <div class="SideBar__Footer">
+                            <div id="SideBar__Animation-Item-6" style="display: none;" class="SideBar__Footer">
                                 <div class="SideBar__Footer-Content">
                                     <h2>
                                         Try Plus or Pro with a 7-day free trial
@@ -923,7 +923,7 @@
                                             <rect width="100%" height="100%" fill="url(#DiagonalADense-pattern)"></rect>
                                         </svg>
                                         <div data-testid="progress-bar-bar" class="Data__ProgressBar">
-                                            <span aria-hidden="true">74%</span>
+                                            <span class="Data__ProgressBar-PersentContent" aria-hidden="true"></span>
                                         </div>
                                     </div>
                                     <div class="Content__Item-Container">
@@ -1629,5 +1629,8 @@
     <script src="./js/index.js"></script>
     <script src="./js/showSubMenu.js"></script>
     <script src="./js/handleMyHomeMenu.js"></script>
+    <script src="./js/animation-barprogress.js"></script>
+    <script src="./js/animation-sidebar.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 </body>
 </html>

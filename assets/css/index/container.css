@@ -1,5 +1,6 @@
 .Container__Box-Layout {
     display: flex;
+    width: 100%;
 }
 
 .Container__Box {
@@ -149,6 +150,7 @@
     width: 100%;
     flex-direction: column;
     align-items: flex-start;
+    position: relative;
 }
 
 .SideBar__Footer-Content {
@@ -1203,7 +1205,7 @@
 .Data__ProgressBar {
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
-    width: 74%;
+    width: 0%;
     box-shadow: 0.5px 0 0 0.5px var(--color-border);
     transition: width 0.5s;
     align-items: center;
@@ -1384,6 +1386,7 @@
 }
 
 .SideBar__Responsive-Box {
+    width: 100vw;
     overflow: clip;
     display: flex;
     background-color: var(--color-background);

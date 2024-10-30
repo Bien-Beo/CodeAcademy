@@ -6,6 +6,8 @@
     width: 100%;
     height: 100%;
     max-width: 1440px;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .Profile__Wrapper-MarginTop {

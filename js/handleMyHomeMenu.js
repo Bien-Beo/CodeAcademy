@@ -3,8 +3,8 @@ $(document).ready(function() {
     const closeMyHomeMenu = $("#closeMyHomeMenu");
     const myHomeMenuContainer = $("#myHomeMenuContainer");
     const overlayContainer = $("#overlayContainer");
+    const myHomeMenuWidth = $(".myHomeMenuWidth");
 
-    // Đặt độ rộng ban đầu của menu là 0 và ẩn
     myHomeMenuContainer.css({
         width: "0rem",
         display: "none"
@@ -12,24 +12,31 @@ $(document).ready(function() {
 
     openMyHomeMenu.click(function() {
         overlayContainer.show();
-        // Dừng mọi animation hiện tại, sau đó hiện và mở rộng menu
-        myHomeMenuContainer.stop(true, true).css("display", "block").animate({ width: "30rem" }, 800);  
+
+        // Kiểm tra chiều rộng màn hình để thay đổi độ rộng của menu
+        const menuWidth = window.innerWidth < 480 ? "100vw" : "30rem";
+
+        // Đặt min-width cho myHomeMenuWidth nếu màn hình dưới 480px
+        if (window.innerWidth < 480) {
+            myHomeMenuWidth.css("min-width", `${window.innerWidth}px`);
+        } else {
+            myHomeMenuWidth.css("min-width", "30rem");
+        }
+
+        myHomeMenuContainer.stop(true, true).css("display", "block").animate({ width: menuWidth }, 800);  
     });
 
     closeMyHomeMenu.click(function() {
         closeMenu();
     });
 
-    // Đóng menu khi nhấn vào overlay
     overlayContainer.click(function(event) {
-        // Kiểm tra nếu nhấn ra ngoài myHomeMenuContainer
         if (!$(event.target).closest(myHomeMenuContainer).length) {
             closeMenu();
         }
     });
 
     function closeMenu() {
-        // Thu gọn menu rồi ẩn đi sau khi hoàn tất animation
         myHomeMenuContainer.stop(true, true).animate({ width: "0rem" }, 500, function() {
             $(this).css("display", "none");
             overlayContainer.hide();

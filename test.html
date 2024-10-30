@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Animation</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        #sidebar {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            position: relative;
+            width: 200px; /* Chiều rộng sidebar */
+            background-color: #e0e0e0; /* Màu nền cho sidebar */
+        }
+
+        #sidebar li {
+            position: relative;
+            padding: 10px;
+            background-color: #f0f0f0;
+            margin: 5px 0;
+            transition: top 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+    <ul id="sidebar">
+        <li id="SideBar__Animation-Item-1">Item 1</li>
+        <li id="SideBar__Animation-Item-2">Item 2</li>
+        <li id="SideBar__Animation-Item-3">Item 3</li>
+        <li id="SideBar__Animation-Item-4">Item 4</li>
+        <li id="SideBar__Animation-Item-5">Item 5</li>
+    </ul>
+
+    <script>
+        $(document).ready(function() {
+            const items = [
+                $("#SideBar__Animation-Item-1"),
+                $("#SideBar__Animation-Item-2"),
+                $("#SideBar__Animation-Item-3"),
+                $("#SideBar__Animation-Item-4"),
+                $("#SideBar__Animation-Item-5")
+            ];
+
+            const animationDuration = 500; // Thời gian cho mỗi bước animation
+            const offset = 10; // Độ cao để item bắt đầu cao hơn vị trí của nó
+
+            function animateItem(index) {
+                if (index >= items.length) return; // Dừng nếu đã đi qua tất cả các item
+
+                const item = items[index];
+                const originalPosition = item.position().top; // Lấy vị trí gốc của item
+
+                // Bắt đầu animation
+                item.css("top", originalPosition - offset + "px"); // Di chuyển lên một chút
+                item.animate({ top: originalPosition + "px" }, animationDuration, function() {
+                    // Di chuyển xuống một đoạn ngắn
+                    item.animate({ top: originalPosition + offset + "px" }, animationDuration, function() {
+                        // Quay về vị trí gốc
+                        item.animate({ top: originalPosition + "px" }, animationDuration, function() {
+                            // Gọi animation cho item tiếp theo
+                            animateItem(index + 1);
+                        });
+                    });
+                });
+            }
+
+            // Khởi động animation cho item đầu tiên
+            animateItem(0);
+        });
+    </script>
+</body>
+</html>
