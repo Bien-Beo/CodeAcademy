@@ -24,6 +24,17 @@
     .MyLearning__Dropdown-Footer-FlexBox {
         flex-direction: row;
     }
+    .MyLearning__Dropdown-Nav-FlexBox {
+        display: flex;
+        margin-top: 1.5rem;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .MyLearning__Dropdown-Nav-View-Box {
+        display: flex;
+        justify-content: flex-end;
+        align-items: end;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -32,6 +43,12 @@
     }
     .MyLearning__List-Progress-Icon-Box {
         margin-left: 1.5rem;
+    }
+    .MyLearning__Dropdown-Nav-Start-Responsive {
+        display: none;
+    }
+    .MyLearning__Dropdown-Nav-Start-Show {
+        display: flex !important;
     }
 }
 
