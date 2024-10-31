@@ -37,6 +37,7 @@ footer {
     padding-left: 0;
 }
 
+.Footer__End-Item-Last,
 .Footer__End-Item {
     border: none;
     padding: 0;
@@ -50,6 +51,7 @@ footer {
     text-decoration: none;
 }
 
+.Footer__End-Item-Last:hover,
 .Footer__End-Item:hover {
     font-weight: 600;
 }
@@ -99,9 +101,6 @@ footer {
     display: none;
 }
 
-.Community {
-}
-
 .Plans {
     grid-column-end: span 12;
     grid-template-columns: minmax(0, 1fr);
@@ -115,7 +114,6 @@ footer {
     grid-column-end: span 12;
     grid-template-columns: minmax(0, 1fr);
     display: grid;
-    display: none;
     order: 4;
     margin-top: auto;
     grid-template-rows: min-content;
@@ -124,7 +122,6 @@ footer {
 
 .Footer__Logo-Box {
     margin-top: auto;
-    display: none;
 }
 
 .Footer__Logo-Box > img {

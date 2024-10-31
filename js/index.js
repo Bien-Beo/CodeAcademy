@@ -7,8 +7,8 @@ $(document).ready(function() {
             const span = $(this).find(".Button__Nav-Text");
 
             // Các nút khác
-            const otherMenus = ["#catalogSubMenu", "#resourcesSubMenu", "#communitySubMenu", "#pricingSubMenu", "#searchContainer", "#notificationContainer", "#avatarContainer"].filter(id => id !== subMenuId);
-            const otherIcons = [$("#catalog"), $("#resources"), $("#community"), $("#pricing"), $("magnifyingGlass"), $("#notificationButton"), $("#buttonAvatar")].filter(id => `#${id.attr('id')}` !== buttonId);
+            const otherMenus = ["#catalogSubMenu", "#resourcesSubMenu", "#communitySubMenu", "#pricingSubMenu", "#searchContainer", "#searchSubMenuContainer", "#notificationContainer", "notificationSubMenuContainer", "#avatarContainer"].filter(id => id !== subMenuId);
+            const otherIcons = [$("#catalog"), $("#resources"), $("#community"), $("#pricing"), $("magnifyingGlass"), $("#magnifyingGlassSubMenu"), $("#notificationButton"), $("#notificationButtonSubMenu"), $("#buttonAvatar")].filter(id => `#${id.attr('id')}` !== buttonId);
 
             // Ẩn các submenu khác
             otherMenus.forEach(id => $(id).slideUp(300));
@@ -36,7 +36,9 @@ $(document).ready(function() {
     toggleSubMenu("#community", "#communitySubMenu");
     toggleSubMenu("#pricing", "#pricingSubMenu");
     toggleSubMenu("#magnifyingGlass", "#searchContainer");
+    toggleSubMenu("#magnifyingGlassSubMenu", "#searchSubMenuContainer");
     toggleSubMenu("#notificationButton", "#notificationContainer");
+    toggleSubMenu("#notificationButtonSubMenu", "#notificationSubMenuContainer");
     toggleSubMenu("#buttonAvatar", "#avatarContainer");
 
     // Ẩn các menu khi nhấn vào bất kỳ vị trí nào bên ngoài
@@ -75,6 +77,16 @@ $(document).ready(function() {
             $("#avatarContainer").slideUp(300);
             $("#buttonAvatar").find(".Button__Nav-Icon").removeClass("rotate-show").addClass("rotate-hide");
             $("#buttonAvatar").find(".Button__Nav-Text").css("font-weight", "normal");
+        }
+        if (!$(event.target).closest("#searchSubMenuContainer, #magnifyingGlassSubMenu").length) {
+            $("#searchSubMenuContainer").slideUp(300);
+            $("#magnifyingGlassSubMenu").find(".Button__Nav-Icon").removeClass("rotate-show").addClass("rotate-hide");
+            $("#magnifyingGlassSubMenu").find(".Button__Nav-Text").css("font-weight", "normal");
+        }
+        if (!$(event.target).closest("#notificationSubMenuContainer, #notificationButtonSubMenu").length) {
+            $("#notificationSubMenuContainer").slideUp(300);
+            $("#notificationButtonSubMenu").find(".Button__Nav-Icon").removeClass("rotate-show").addClass("rotate-hide");
+            $("#notificationButtonSubMenu").find(".Button__Nav-Text").css("font-weight", "normal");
         }
     });
 });

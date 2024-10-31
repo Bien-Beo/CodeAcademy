@@ -1,7 +1,14 @@
-@media only screen and (min-width: 1200px) {
+.Workspaces__Header-FlexBox {
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 480px) {
     .Workspaces__Header-FlexBox {
-        flex-direction: column;
+        flex-direction: row;
     }
+}
+
+@media only screen and (min-width: 1200px) {
     .Workspaces__Header-Text {
         align-self: auto;
         padding-bottom: 1rem;

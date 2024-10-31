@@ -876,6 +876,7 @@
     border-top-color: #EEEEEE;
     border-bottom-color: var(--color-text);
     position: absolute;
+    z-index: 999;
 }
 
 .Search__Question-Header {

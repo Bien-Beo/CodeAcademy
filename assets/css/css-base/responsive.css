@@ -66,6 +66,14 @@
     .Related__Topics {
         justify-content: end;
     }
+    .Footer__Logo-Box {
+        display: flex;
+        flex-direction: column;
+    }
+    .Footer__Logo-Box > img {
+        height: 60px;
+        width: 150px;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -150,15 +158,13 @@
     .Mobile {
         display: unset;
     }
-    .Footer__Logo-Box {
-        display: unset;
-    }
     .Footer__Logo-Box > span {
         font-size: 0.80rem;
         margin-top: 0;
     }
-    .Footer__Logo-Box > img {
-        height: 50px;
+    .Notifications__Container-Header {
+        padding-left: 3rem;
+        padding-right: 3rem;
     }
 }
 
@@ -240,6 +246,17 @@
         display: flex;
         justify-content: space-between;
     }
+    
+    .Footer__Logo-Box > img {
+        height: 60px;
+    }
+    .Footer__Logo-Box {
+        display: block;
+    }
+    .Notifications__Container-Header {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -249,10 +266,7 @@
     }
     .Layout__Grid-Item-Left {
         grid-row-end: span 6;
-        grid-column-end: span 8;
-    }
-    .Box__Header-Normal {
-        display: block;
+        grid-column-end: span 12;
     }
     .Box__Header-Nav,
     .Container__Box {
@@ -346,8 +360,9 @@
         padding-left: 6rem;
         padding-right: 6rem;
     }
-    .Box__Header-Small {
-        display: none;
+    .Notifications__Container-Header {
+        padding-left: 5rem;
+        padding-right: 5rem;
     }
 }
 
@@ -420,6 +435,12 @@
     }
     .Button__EditProfile {
         display: unset;
+    }
+    .Box__Header-Small {
+        display: none;
+    }
+    .Box__Header-Normal {
+        display: block;
     }
 }
 

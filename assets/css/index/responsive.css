@@ -1,0 +1,95 @@
+.Logo {
+    display: none;
+}
+
+.Resources {
+    display: none;
+}
+
+.Footer__Logo {
+    display: none;
+}
+
+.Logo__Responsive-More {
+    margin-top: 50%;
+}
+
+.Logo__Responsive-More > .Footer__Logo-Box > img {
+    height: 50px;
+    transform: translateX(-10px);
+}
+
+.Logo__Responsive-More > .Footer__Logo-Box > span {
+    font-size: 14px;
+    margin-left: 0;
+}
+
+@media only screen and (min-width: 480px) {
+    .Btn__SubNav-Style {
+        width: calc(100vw - 4rem);
+        margin-left: 2rem;
+    }
+    .Logo__Mini {
+        display: none;
+    }
+    .Logo {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .Btn__SubNav-Style {
+        width: calc(100vw - 8rem);
+        margin-left: 4rem;
+    }
+    .SkillPath-Item-More {
+        display: none;
+    }
+    .Mobile__Responsive-More {
+        display: none;
+    }
+    .Support__Ressponsive-More,
+    .Resources__Responsive-More {
+        display: none;
+    }
+    .Resources {
+        display: grid;
+    }
+    .Logo__Responsive-More {
+        display: none;
+    }
+    .Footer__Logo {
+        display: grid;
+    }
+}
+
+@media (max-width: 824px) {
+    .Content__Item-Button {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .SideBar__Box {
+        display: block;
+    }
+    .TryPlus-Box {
+        display: none;
+    }
+    .Btn__SubNav-Box {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .SkillPath-Item-More {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .SkillPath-Item-More {
+        display: block;
+    }
+}
+
