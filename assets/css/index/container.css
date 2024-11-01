@@ -428,7 +428,7 @@
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 16px;
-    border-bottom-left-radius: 0px;
+    border-bottom-left-radius: 16px;
     background: none;
     background-color: rgb(58, 16, 229);
     text-decoration: none;
@@ -830,7 +830,7 @@
 .Related__Topics {
     display: flex;
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content: end;
 }
 
 .Related__Topics > span {
@@ -838,6 +838,7 @@
     display: inline-block;
     margin: 0px 0.5rem 0px 0px;
     font-weight: 600;
+    text-align: right;
 }
 
 .Related__Topics > ul {
@@ -845,6 +846,7 @@
     padding: 0px;
     flex-wrap: wrap;
     list-style-type: none;
+    justify-content: right;
 }
 
 .Related__Topics a {

@@ -1,0 +1,85 @@
+.Main__Botton-left {
+    display: none;
+}
+
+@media only screen and (min-width: 480px) {
+    .Main__Botton {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .Catalog__SubMenu-Box {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .Main__Botton {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .Catalog__SubMenu-Box {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .Main__Botton-Colums {
+        display: flex;
+        flex-direction: column;
+    }
+    .splide__list {
+        flex-direction: column;
+    }
+    .splide__slide {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .Main__Botton {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+    .Catalog__SubMenu-Box {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+    .Main__Botton-Colums {
+        display: block;
+    }
+    .splide__list {
+        flex-direction: row;
+    }
+    .splide__slide {
+        width: calc(33.3333% - 1.33333rem);
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .Catalog__SubMenu-Box {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+    .Border_flex_Box-first-Lettle {
+        max-width: 17.5rem;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .desktopMenu {
+        display: block;
+    }
+    .Catalog__SubMenu-Box {
+        display: none;
+    }
+    .Main__Botton-left {
+        display: block;
+    }
+    .Main__Botton {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+    .Main__Botton-Colums {
+        display: grid;
+    }
+}
+
