@@ -1,7 +1,5 @@
 .Main{
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
+    
     display: flex;
     overflow: clip;
     margin-bottom: 2rem;
@@ -36,12 +34,12 @@
 .Main__FlexBox-VariableProvider{
     color: var(--color-white);
     padding: 1rem;
-    display: -webkit-box;
+    
     display: -webkit-flex;
     display: flex;
     background-color: var( --color-text);
     -webkit-align-items: center;
-    -webkit-box-align: center;
+    
    
     align-items: center;
     -webkit-flex-direction: column;
@@ -75,7 +73,7 @@
     margin-top: 1.5rem;
     margin-bottom: 0;
     flex-wrap: wrap;
-    -webkit-box-pack: center;
+    
     justify-content: center;
 }
 .Main__FlexBox-FourBox-1{
@@ -95,9 +93,9 @@
     border: 2px solid var(--color-secondary);
     
     
-    -webkit-box-pack: center;
     
-    -webkit-box-align: center;
+    
+    
     
     align-items: center;
     
@@ -178,7 +176,7 @@
     top: 0;
     right: 0;
     bottom: 0;
-    -webkit-box-align: center;
+    
     align-items: center;
 }
 
@@ -242,7 +240,7 @@
 }
 
 .desktopMenu{
-    display:block;
+    display:none;
 }
 
 .Main__Botton-left-Cover{
@@ -315,7 +313,7 @@
 
 .Main__Botton-left-Content-text-letter{
     display:flex;
-    -webkit-box-align: center;
+    
     align-items: center;
 }
 
@@ -350,9 +348,9 @@
     transition: border-color 150ms ease-in, color 150ms ease-in, background-color 150ms ease-in, box-shadow 150ms ease-in;
     border: 2px solid var(--color-secondary);
     white-space: nowrap;
-    -webkit-box-pack: center;
+    
     justify-content: center;
-    -webkit-box-align: center;
+    
     align-items: center;
     display: inline-flex;
     position: relative;
@@ -385,11 +383,11 @@
     display:block;
 }
 .Main__Botton-right-Header-Box{
-    -webkit-box-pack: justify;
+    
     justify-content: space-between;
     display: flex;
     padding-bottom: 0.5rem;
-    -webkit-box-align: baseline;
+    
     align-items: baseline;
 }
 
@@ -547,10 +545,10 @@
     display: flex;
     height: 11.25rem;
     background-color: var(--color-background-current);
-    -webkit-box-pack: center;
+    
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
+    
+    
     align-items: center;
     border-radius: 4px;
     background-image: url(https://static-assets.codecademy.com/assets/components/cards/explore-category-card/subject/artificial-intelligence.svg);
@@ -571,10 +569,10 @@
     display: flex;
     height: 11.25rem;
     background-color: var(--color-background-current);
-    -webkit-box-pack: center;
+    
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
+    
+    
     align-items: center;
     border-radius: 4px;
     background-image: url(https://static-assets.codecademy.com/assets/components/cards/explore-category-card/language/python.svg);
@@ -594,10 +592,10 @@
     display: flex;
     height: 11.25rem;
     background-color: var(--color-background-current);
-    -webkit-box-pack: center;
+    
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
+    
+    
     align-items: center;
     border-radius: 4px;
     background-image: url(https://static-assets.codecademy.com/assets/components/cards/explore-category-card/language/javascript.svg);
@@ -610,7 +608,6 @@
 .Border_flex_Box-first-Lettle{
     padding: 1.5rem;
     width: 100%;
-    max-width: 17.5rem;
     background-color: var(--color-white);
 }
 
@@ -741,7 +738,7 @@
     margin: 0;
     margin-bottom: 1rem;
     overflow: hidden;
-    display: -webkit-box;
+    
     -webkit-box-orient: vertical;
     text-decoration: none;
 }
@@ -767,12 +764,12 @@
 .Border_flex-Featured-Tail{
     display: flex;
     flex-wrap: wrap;
-    -webkit-box-pack: justify;
+    
     justify-content: space-between;
 }
 .Border_flex-Featured-Tail-Flex{
     display: flex;
-    -webkit-box-align: center;
+    
     align-items: center;
 }
 .Border_flex-Featured-Tail-PictureColums{
@@ -850,7 +847,7 @@
     margin-left: 0.75rem;
     border-radius: 16px;
     box-shadow: -12px 12px var(--color-background-current), -12px 12px 0 1px var(--color-border);
-    -webkit-box-pack: justify;
+    
     justify-content: space-between;
     padding-left: 3rem;
     padding-right: 3rem;
@@ -869,7 +866,7 @@
     font-family: "Suisse", "Apercu", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     font-weight: 400;
     white-space: nowrap;
-    -webkit-box-pack: center;
+    
     justify-content: center;
     align-items: center;
     display: flex;
@@ -945,7 +942,7 @@
 }
 .BoxRecently-Letter-title-Last-Frame{
     display: flex;
-    -webkit-box-align: center;
+    
     align-items: center;
 }
 
@@ -995,7 +992,6 @@
 
 .Main__Botton-Middle-Column-Left-FLexBox{
     display: flex;
-    overflow: auto;
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
     position: sticky;
@@ -1008,7 +1004,7 @@
 
 .Main__Botton-Middle-Column-Left-FLexBox-Tiltle{
     display: flex;
-    -webkit-box-align: center;
+    
     align-items: center;
 }
 .Main__Botton-Middle-Column-Left-FLexBox-Tiltle-SVG{
@@ -1031,9 +1027,9 @@
     transition: border-color 150ms ease-in, color 150ms ease-in, background-color 150ms ease-in, box-shadow 150ms ease-in;
     border: 2px solid var(--color-secondary);
     white-space: nowrap;
-    -webkit-box-pack: center;
+    
     justify-content: center;
-    -webkit-box-align: center;
+    
     align-items: center;
     display: inline-flex;
     position: relative;
@@ -1090,7 +1086,7 @@
 
 .Level-Frame{
     display: flex;
-    -webkit-box-align: center;
+    
     align-items: center;
 }
 
@@ -1248,11 +1244,11 @@
     transition: border-color 150ms ease-in, color 150ms ease-in, background-color 150ms ease-in, box-shadow 150ms ease-in;
     border: 2px solid var(--color-secondary);
     white-space: nowrap;
-    -webkit-box-pack: center;
+    
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
+    
+    
     align-items: center;
     display: inline-flex;
     position: relative;
@@ -1278,8 +1274,8 @@
     -webkit-justify-content: center;
     justify-content: center;
     -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
+    
+    
     align-items: center;
     display: inline-flex;
     position: relative;
@@ -1332,12 +1328,10 @@
     font-weight: 400;
     font-size: 1rem;
     -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
+    
+    
     align-items: center;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
+    
     display: flex;
     width: -webkit-max-content;
     width: -moz-max-content;
@@ -1457,9 +1451,7 @@ select {
     grid-column-end: span 4;
 }
 .Button__Box{
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
+    
     display: flex;
     width: auto;
     min-height: 302px;
@@ -1516,12 +1508,10 @@ select {
     margin-top: 3rem;
 }
 .Block__Footer-Flex{
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
+    
     display: flex;
     min-width: initial;
-    -webkit-box-pack: center;
+    
     -ms-flex-pack: center;
     -webkit-justify-content: center;
     justify-content: center;
@@ -1551,13 +1541,13 @@ select {
     border: 2px solid var(--color-secondary);
     border-color: transparent;
     white-space: nowrap;
-    -webkit-box-pack: center;
+    
     -ms-flex-pack: center;
     -webkit-justify-content: center;
     justify-content: center;
     -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
+    
+    
     align-items: center;
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
@@ -1610,13 +1600,13 @@ select {
     border: 2px solid var(--color-secondary);
     border-color: transparent;
     white-space: nowrap;
-    -webkit-box-pack: center;
+    
     -ms-flex-pack: center;
     -webkit-justify-content: center;
     justify-content: center;
     -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
+    
+    
     align-items: center;
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
@@ -1653,4 +1643,178 @@ select {
 .greater_than_sign{
     width: 14px;
     height: 14px;
+}
+
+.Catalog__SubMenu-Box {
+    grid-column-end: span 12;
+    grid-template-columns: minmax(0, 1fr);
+    display: grid;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    grid-column-end: span 12;
+}
+
+.Btn__Catatlog-SubMenu {
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+    font-size: inherit;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    box-shadow: none;
+    color: var(--color-text);
+    transition: border-color 150ms ease-in, color 150ms ease-in, background-color 150ms ease-in, box-shadow 150ms ease-in;
+    border: 2px solid var(--color-secondary);
+    border-color: transparent;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    position: relative;
+    border-radius: 4px;
+    font-weight: 700;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    font-size: 1rem;
+    min-width: 40px;
+    height: 40px;
+    border-color: var(--color-secondary);
+    color: var(--color-secondary);
+    background-color: transparent;
+    width: 100%;
+}
+
+.Btn__Catatlog-SubMenu:before {
+    content: "";
+    transition: opacity 150ms linear;
+    border: 2px solid var(--color-secondary);
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    z-index: 0;
+    opacity: 0;
+    border-radius: 8px;
+}
+
+.Btn__Catatlog-SubMenu:hover {
+    transition: background-color 150ms ease-in, box-shadow 150ms ease-in;
+    background-color: var(--color-background-hover);
+}
+
+.Catalog__SubMenu-Content-FlexBox {
+    overflow: clip;
+    display: flex;
+    background-color: var(--color-background-current);
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    flex-direction: column;
+    width: 30rem;
+    z-index: 999;
+    transform: translateX(-100%); /* Bắt đầu từ bên ngoài bên trái */
+    transition: transform 0.8s ease; /* Thời gian và kiểu chuyển đổi */
+}
+
+.Catalog__SubMenu-Content-AllTopics {
+    padding-left: 2rem;
+    overflow: hidden auto;
+    min-width: 30rem;
+    max-width: 100%;
+    height: 100%;
+    position: relative;
+    right: 0px;
+}
+
+.Catalog__SubMenu-Content-Box {
+    padding: 0.25rem;
+    border-radius: 2px;
+    overflow: hidden auto;
+    min-width: 30rem;
+    max-width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+}
+
+.Catalog__SubMenu-Header-FlexBox {
+    display: flex;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+    max-width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Catalog__SubMenu-Header-FlexBox > h1 {
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0px;
+    font-size: 1.375rem;
+}
+
+.Catalog__SubMenu-Header-Btn-Close {
+    cursor: pointer;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.Catalog__SubMenu-Header-Btn-Close:before {
+    content: '';
+    border: 2px solid var(--color-secondary);
+    border-color: var(--color-primary);
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    z-index: 0;
+    opacity: 0;
+    border-radius: 4px;
+}
+
+.Catalog__SubMenu-Header-Close {
+    cursor: pointer;
+    font-size: inherit;
+    box-shadow: none;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    color: var(--color-secondary);
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background: none;
+    padding: 0px;
+    text-decoration: none;
+    transition: border-color 150ms ease-in, color 150ms ease-in, background-color 150ms ease-in, box-shadow 150ms ease-in;
+    white-space: nowrap;
+    border-radius: 4px;
+    border-color: transparent;
+}
+
+.Catalog__SubMenu-Header-Close::before {
+    content: "";
+    transition: opacity 150ms linear;
+    border: 2px solid var(--color-secondary);
+    position: absolute;
+    inset: -5px;
+    z-index: 0;
+    opacity: 0;
+    border-radius: 8px;
+}
+
+.Catalog__SubMenu-Header-Close:hover {
+    transition: background-color 150ms ease-in, box-shadow 150ms ease-in;
+    color: var(--color-secondary);
+    background-color: var(--color-background-hover);
 }

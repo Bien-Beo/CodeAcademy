@@ -25,12 +25,12 @@
                 <nav class="Box__Header-Nav">
                     <ul class="Nav__List">
                         <li class="Nav__Ele" style="margin-left: 0; margin-right: 0;">
-                            <a href=".../index.html" class="Logo__Header">
+                            <a href="../index.html" class="Logo__Header">
                                 <img src="../assets/img/logo.png" alt="Codecademy Logo" class="Logo__Header-Img">
                             </a>
                         </li>
                         <li class="Nav__Ele">
-                            <a href=".../index.html" class="Nav__Ele-Link">My Home</a>
+                            <a href="../index.html" class="Nav__Ele-Link">My Home</a>
                         </li>
                         <li class="Nav__Ele">
                             <div>
@@ -840,7 +840,7 @@
                                 <ul class="SideBar__List">
                                     <div class="pb-05rem">
                                         <li id="SideBar__Animation-Item-1" style="position: relative;">
-                                            <a href=".../index.html" style="text-decoration: none;">
+                                            <a href="../index.html" style="text-decoration: none;">
                                                 <button class="SideBar__Button" style="background-color: inherit;">
                                                     <img src="../assets/img/dashboard.png" alt="Dashboard" style="height: 22px; width: 22px;" class="mr-10">
                                                     <span>Dashboard</span>
@@ -921,12 +921,12 @@
                                     <div class="MyLearning-TabListBase">
                                         <div style="display: flex;">
                                             <div style="display: flex;">
-                                                <button class="MyLearning-TabButton" data-selected>
+                                                <button id="inProgress" class="MyLearning-TabButton" data-selected>
                                                     <span>In progress</span>
                                                 </button>
                                             </div>
                                             <div style="display: flex;">
-                                                <button class="MyLearning-TabButton">
+                                                <button id="completed" class="MyLearning-TabButton">
                                                     <span>Completed</span>
                                                 </button>
                                             </div>
@@ -942,7 +942,7 @@
                                     </div>
                                     <div>
                                         <div>
-                                            <div style="overflow: hidden; width: 100%; position: relative;">
+                                            <div id="myLearning" style="overflow: hidden; width: 100%; position: relative;">
                                                 <div style="overflow: inherit; max-width: 100%; position: relative;">
                                                     <ul class="MyLearning__ListEl">
                                                         <div class="MyLearning__ListEl-Box">
@@ -1501,6 +1501,14 @@
                                                     </ul>
                                                 </div>
                                             </div>
+                                            <div id="myLearningCompleted" class="MyLearning-Complete-FlexBox" style="display: none;">
+                                                <div class="MyLearning-Complete-Header-Box">
+                                                    <h2 class="MyLearning-Complete-Header">Almost there</h2>
+                                                </div>
+                                                <h3 class="MyLearning-Complete-Content">
+                                                    Set aside some time each day to work toward your goals. Our most successful learners tell us that completing a course is all about consistency.
+                                                </h3>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -1815,6 +1823,7 @@
     <script src="../js/showSubMenu.js"></script>
     <script src="../js/showCourses.js"></script>
     <script src="../js/handleMyHomeMenu.js"></script>
+    <script src="../js/handleMyLearningComplete.js"></script>
     <script src="../js/animation-barprogress.js"></script>
     <script src="../js/animation-sidebar.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
