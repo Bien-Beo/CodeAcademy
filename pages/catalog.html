@@ -760,6 +760,295 @@
                     </div>
                 </nav>
             </div>
+            <div id="overlayContainerFilter" class="OverlayContainer" style="display: none">
+                <div id="catalogSubMenuFilterContent" class="Catalog__SubMenu-Content-FlexBox">
+                    <div class="Catalog__SubMenu-Content-Box">
+                        <div class="Catalog__SubMenu-Header-FlexBox" style="margin-bottom: 1.5rem;">
+                            <h1>
+                                <div class="Catalog__SubMenu-Filter-Header-Flexbox">
+                                    <img src="../assets/img/filter.png" alt="filter" style="width: 24px; margin-right: 1rem;">
+                                    <span>Filters</span>
+                                    <div class="Catalog__Filters-Count">0</div>
+                                    <button class="Catalog__Btn-ClearFilters">
+                                        Clear filters
+                                    </button>
+                                </div>
+                            </h1>
+                            <div style="display: inline-flex; position: relative;">
+                                <div class="Catalog__SubMenu-Header-Btn-Close">
+                                    <button id="catalogCloseSubMenuFilter" class="Catalog__SubMenu-Header-Close">
+                                        <img src="../assets/img/close.png" alt="Close" style="width: 20px;">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="Main__Botton-Middle-Column-Left" id="catalogSubMenuFilterBox">
+                            <div class="Main__Botton-Middle-Column-Left-FLexBox" style="margin-top: 1rem; margin-left: 1rem; margin-bottom: 0;">
+                                <div class="Main__Botton-Middle-Column-Left-FLexBox-Content" style="width: 100%;">
+                                    <div class="FLexBox-Content-Level" style="margin-bottom: 1.5rem;">
+                                        <div class="FLexBox-Content-Level-Tiltle">
+                                            <h4 id="fg-Level" aria-label="Filter by Level" class="Level">Level</h4>
+                                        </div>
+                                        <fieldset aria-labelledby="fg-Level" role="group" class="fieldset-Level">
+                                            <div class="Level-Frame">
+                                                <div>
+                                                    <input id="BEGINNER" type="checkbox" aria-label="Beginner" class="Level-Box" value="undefined">
+                                                    <label for="BEGINNER" spacing="tight" class="Level-Frame-Rim">
+                                                        <div class="Level-Frame-Rim-Frame">
+                                                            <svg width="19px" height="19px" viewBox="0 0 19 19" color="transparent" aria-hidden="true" class="Level-Frame-Rim-SVG">
+                                                                <path fill="currentColor" d="M1 1h19v19h-19z"></path>
+                                                                <polyline points="4 11 8 15 16 6" class="Level-Frame-Rim-SVG-polyline"></polyline>
+                                                            </svg>
+                                                        </div>
+                                                        <span id="text-BEGINNER" aria-hidden="true" class="Level-Frame-Rim-Span">Beginner</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="Level-Frame">
+                                                <div>
+                                                    <input id="BEGINNER" type="checkbox" aria-label="Beginner" class="Level-Box" value="undefined">
+                                                    <label for="BEGINNER" spacing="tight" class="Level-Frame-Rim">
+                                                        <div class="Level-Frame-Rim-Frame">
+                                                            <svg width="19px" height="19px" viewBox="0 0 19 19" color="transparent" aria-hidden="true" class="Level-Frame-Rim-SVG">
+                                                                <path fill="currentColor" d="M1 1h19v19h-19z"></path>
+                                                                <polyline points="4 11 8 15 16 6" class="Level-Frame-Rim-SVG-polyline"></polyline>
+                                                            </svg>
+                                                        </div>
+                                                        <span id="text-BEGINNER" aria-hidden="true" class="Level-Frame-Rim-Span">Intermediate</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="Level-Frame">
+                                                <div>
+                                                    <input id="BEGINNER" type="checkbox" aria-label="Beginner" class="Level-Box" value="undefined">
+                                                    <label for="BEGINNER" spacing="tight" class="Level-Frame-Rim">
+                                                        <div class="Level-Frame-Rim-Frame">
+                                                            <svg width="19px" height="19px" viewBox="0 0 19 19" color="transparent" aria-hidden="true" class="Level-Frame-Rim-SVG">
+                                                                <path fill="currentColor" d="M1 1h19v19h-19z"></path>
+                                                                <polyline points="4 11 8 15 16 6" class="Level-Frame-Rim-SVG-polyline"></polyline>
+                                                            </svg>
+                                                        </div>
+                                                        <span id="text-BEGINNER" aria-hidden="true" class="Level-Frame-Rim-Span">Advanced</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                    <hr style="width: 95%;">
+                                    <div class="FLexBox-Content-Level" style="margin-top: 1.5rem; margin-bottom: 1.5rem;">
+                                        <div class="FLexBox-Content-Level-Tiltle">
+                                            <h4 id="fg-Level" aria-label="Filter by Level" class="Level">Price</h4>
+                                            <a href="/pricing" class="View">
+                                                View plans
+                                            </a>
+                                        </div>
+                                        <fieldset aria-labelledby="fg-Level" role="group" class="fieldset-Level">
+                                            <div class="Level-Frame">
+                                                <div>
+                                                    <input id="BEGINNER" type="checkbox" aria-label="Beginner" class="Level-Box" value="undefined">
+                                                    <label for="BEGINNER" spacing="tight" class="Level-Frame-Rim">
+                                                        <div class="Level-Frame-Rim-Frame">
+                                                            <svg width="19px" height="19px" viewBox="0 0 19 19" color="transparent" aria-hidden="true" class="Level-Frame-Rim-SVG">
+                                                                <path fill="currentColor" d="M1 1h19v19h-19z"></path>
+                                                                <polyline points="4 11 8 15 16 6" class="Level-Frame-Rim-SVG-polyline"></polyline>
+                                                            </svg>
+                                                        </div>
+                                                        <span id="text-BEGINNER" aria-hidden="true" class="Level-Frame-Rim-Span">Free</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="Level-Frame">
+                                                <div>
+                                                    <input id="BEGINNER" type="checkbox" aria-label="Beginner" class="Level-Box" value="undefined">
+                                                    <label for="BEGINNER" spacing="tight" class="Level-Frame-Rim">
+                                                        <div class="Level-Frame-Rim-Frame">
+                                                            <svg width="19px" height="19px" viewBox="0 0 19 19" color="transparent" aria-hidden="true" class="Level-Frame-Rim-SVG">
+                                                                <path fill="currentColor" d="M1 1h19v19h-19z"></path>
+                                                                <polyline points="4 11 8 15 16 6" class="Level-Frame-Rim-SVG-polyline"></polyline>
+                                                            </svg>
+                                                        </div>
+                                                        <span id="text-BEGINNER" aria-hidden="true" class="Level-Frame-Rim-Span">Paid</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                    <hr style="width: 95%;">
+                                    <div class="FLexBox-Content-Level" style="margin-top: 1.5rem; margin-bottom: 1.5rem;">
+                                        <div class="FLexBox-Content-Level-Tiltle">
+                                            <h4 id="fg-Level" aria-label="Filter by Level" class="Level">Type</h4>
+                                        </div>
+                                        <fieldset aria-labelledby="fg-Level" role="group" class="fieldset-Level">
+                                            <div class="Level-Frame">
+                                                <div>
+                                                    <input id="BEGINNER" type="checkbox" aria-label="Beginner" class="Level-Box" value="undefined">
+                                                    <label for="BEGINNER" spacing="tight" class="Level-Frame-Rim">
+                                                        <div class="Level-Frame-Rim-Frame">
+                                                            <svg width="19px" height="19px" viewBox="0 0 19 19" color="transparent" aria-hidden="true" class="Level-Frame-Rim-SVG">
+                                                                <path fill="currentColor" d="M1 1h19v19h-19z"></path>
+                                                                <polyline points="4 11 8 15 16 6" class="Level-Frame-Rim-SVG-polyline"></polyline>
+                                                            </svg>
+                                                        </div>
+                                                        <span id="text-BEGINNER" aria-hidden="true" class="Level-Frame-Rim-Span">Career path</span>
+                                                    </label>
+                                                </div>
+                                                <div class="exclamation_mark">
+                                                    <div class="exclamation_mark_Frame">
+                                                        <span aria-hidden="false" aria-live="assertive" class="exclamation_mark_Frame_Span">&nbsp;</span>
+                                                        <button aria-expanded="false" aria-label="Show information" class="exclamation_mark_Frame_Button" type="button">
+                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140" fill="#fff" role="img" aria-hidden="true" class="exclamation_mark_Frame_Button_SVG">
+                                                            <mask id="MiniInfoOutlineIcon-mask-:r8:">
+                                                               <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="10">
+                                                                <path d="M5 70a65 65 0 10130 0A65 65 0 105 70zm65 0v35"></path>
+                                                                <path d="M65 45a5 5 0 1010 0 5 5 0 10-10 0z"></path>
+                                                               </g> 
+                                                            </mask>
+                                                            <g mask="url(#MiniInfoOutlineIcon-mask-:r8:)">
+                                                                <rect width="100%" height="100%" fill="currentColor"></rect>
+                                                            </g>
+                                                         </svg>   
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="Level-Frame">
+                                                <div>
+                                                    <input id="BEGINNER" type="checkbox" aria-label="Beginner" class="Level-Box" value="undefined">
+                                                    <label for="BEGINNER" spacing="tight" class="Level-Frame-Rim">
+                                                        <div class="Level-Frame-Rim-Frame">
+                                                            <svg width="19px" height="19px" viewBox="0 0 19 19" color="transparent" aria-hidden="true" class="Level-Frame-Rim-SVG">
+                                                                <path fill="currentColor" d="M1 1h19v19h-19z"></path>
+                                                                <polyline points="4 11 8 15 16 6" class="Level-Frame-Rim-SVG-polyline"></polyline>
+                                                            </svg>
+                                                        </div>
+                                                        <span id="text-BEGINNER" aria-hidden="true" class="Level-Frame-Rim-Span">Skill path</span>
+                                                    </label>
+                                                </div>
+                                                <div class="exclamation_mark">
+                                                    <div class="exclamation_mark_Frame">
+                                                        <span aria-hidden="false" aria-live="assertive" class="exclamation_mark_Frame_Span">&nbsp;</span>
+                                                        <button aria-expanded="false" aria-label="Show information" class="exclamation_mark_Frame_Button" type="button">
+                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140" fill="#fff" role="img" aria-hidden="true" class="exclamation_mark_Frame_Button_SVG">
+                                                            <mask id="MiniInfoOutlineIcon-mask-:r8:">
+                                                               <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="10">
+                                                                <path d="M5 70a65 65 0 10130 0A65 65 0 105 70zm65 0v35"></path>
+                                                                <path d="M65 45a5 5 0 1010 0 5 5 0 10-10 0z"></path>
+                                                               </g> 
+                                                            </mask>
+                                                            <g mask="url(#MiniInfoOutlineIcon-mask-:r8:)">
+                                                                <rect width="100%" height="100%" fill="currentColor"></rect>
+                                                            </g>
+                                                         </svg>   
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="Level-Frame">
+                                                <div>
+                                                    <input id="BEGINNER" type="checkbox" aria-label="Beginner" class="Level-Box" value="undefined">
+                                                    <label for="BEGINNER" spacing="tight" class="Level-Frame-Rim">
+                                                        <div class="Level-Frame-Rim-Frame">
+                                                            <svg width="19px" height="19px" viewBox="0 0 19 19" color="transparent" aria-hidden="true" class="Level-Frame-Rim-SVG">
+                                                                <path fill="currentColor" d="M1 1h19v19h-19z"></path>
+                                                                <polyline points="4 11 8 15 16 6" class="Level-Frame-Rim-SVG-polyline"></polyline>
+                                                            </svg>
+                                                        </div>
+                                                        <span id="text-BEGINNER" aria-hidden="true" class="Level-Frame-Rim-Span">Course</span>
+                                                    </label>
+                                                </div>
+                                                <div class="exclamation_mark">
+                                                    <div class="exclamation_mark_Frame">
+                                                        <span aria-hidden="false" aria-live="assertive" class="exclamation_mark_Frame_Span">&nbsp;</span>
+                                                        <button aria-expanded="false" aria-label="Show information" class="exclamation_mark_Frame_Button" type="button">
+                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140" fill="#fff" role="img" aria-hidden="true" class="exclamation_mark_Frame_Button_SVG">
+                                                            <mask id="MiniInfoOutlineIcon-mask-:r8:">
+                                                               <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="10">
+                                                                <path d="M5 70a65 65 0 10130 0A65 65 0 105 70zm65 0v35"></path>
+                                                                <path d="M65 45a5 5 0 1010 0 5 5 0 10-10 0z"></path>
+                                                               </g> 
+                                                            </mask>
+                                                            <g mask="url(#MiniInfoOutlineIcon-mask-:r8:)">
+                                                                <rect width="100%" height="100%" fill="currentColor"></rect>
+                                                            </g>
+                                                         </svg>   
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                    <hr style="width: 95%;">
+                                    <div class="FLexBox-Content-Level" style="margin-top: 1.5rem; margin-bottom: 10rem;">
+                                        <div class="FLexBox-Content-Level-Tiltle">
+                                            <h4 id="fg-Level" aria-label="Filter by Level" class="Level">Average time to complete</h4>
+                                            <div class="exclamation_mark_Frame">
+                                                <span aria-hidden="false" aria-live="assertive" class="exclamation_mark_Frame_Span">&nbsp;</span>
+                                                <button aria-expanded="false" aria-label="Show information" class="exclamation_mark_Frame_Button" type="button">
+                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140" fill="#fff" role="img" aria-hidden="true" class="exclamation_mark_Frame_Button_SVG">
+                                                    <mask id="MiniInfoOutlineIcon-mask-:r8:">
+                                                       <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="10">
+                                                        <path d="M5 70a65 65 0 10130 0A65 65 0 105 70zm65 0v35"></path>
+                                                        <path d="M65 45a5 5 0 1010 0 5 5 0 10-10 0z"></path>
+                                                       </g> 
+                                                    </mask>
+                                                    <g mask="url(#MiniInfoOutlineIcon-mask-:r8:)">
+                                                        <rect width="100%" height="100%" fill="currentColor"></rect>
+                                                    </g>
+                                                 </svg>   
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <fieldset aria-labelledby="fg-Averagetimetocomplete" role="group" class="FIeldset_Average">
+                                            <div role="radiogroup" aria-label="Average time to complete" class="FIeldset_Average_Frame">
+                                                <div class="FIeldset_Average_Frame_1">
+                                                    <input id="durationHoursAll" type="radio" class="FIeldset_Average_Frame_1_input" checked value>
+                                                    <label for="durationHoursAll" class="FIeldset_Average_Frame_1_Label">
+                                                        All
+                                                    </label>
+                                                </div>
+                                                <div class="FIeldset_Average_Frame_1">
+                                                    <input id="durationHoursAll" type="radio" class="FIeldset_Average_Frame_1_input" checked value>
+                                                    <label for="durationHoursAll" class="FIeldset_Average_Frame_1_Label">
+                                                        Less than 5 hours
+                                                    </label>
+                                                </div>
+                                                <div class="FIeldset_Average_Frame_1">
+                                                    <input id="durationHoursAll" type="radio" class="FIeldset_Average_Frame_1_input" checked value>
+                                                    <label for="durationHoursAll" class="FIeldset_Average_Frame_1_Label">
+                                                        5-10 hours
+                                                    </label>
+                                                </div>
+                                                <div class="FIeldset_Average_Frame_1">
+                                                    <input id="durationHoursAll" type="radio" class="FIeldset_Average_Frame_1_input" checked value>
+                                                    <label for="durationHoursAll" class="FIeldset_Average_Frame_1_Label">
+                                                        10-20 hours
+                                                    </label>
+                                                </div>
+                                                <div class="FIeldset_Average_Frame_1">
+                                                    <input id="durationHoursAll" type="radio" class="FIeldset_Average_Frame_1_input" checked value>
+                                                    <label for="durationHoursAll" class="FIeldset_Average_Frame_1_Label">
+                                                        20-60 hours
+                                                    </label>
+                                                </div>
+                                                <div class="FIeldset_Average_Frame_1">
+                                                    <input id="durationHoursAll" type="radio" class="FIeldset_Average_Frame_1_input" checked value>
+                                                    <label for="durationHoursAll" class="FIeldset_Average_Frame_1_Label">
+                                                        60+ hours
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                    <div class="Catalog__SubMenu-Filter-BtnShow-Box">
+                                        <button class="Catalog__SubMenu-Filter-BtnShow">Show 682 results</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div id="overlayContainer" class="OverlayContainer" style="display: none;">
                 <div id="catalogSubMenuContent"  class="Catalog__SubMenu-Content-FlexBox">
                     <div class="Catalog__SubMenu-Content-Box">
@@ -2071,10 +2360,18 @@
                                 <div class="Main__Botton-Middle-Column-Right-Tiltle">
                                     <div class="DisplayFlex_Browese">
                                         <h2 class="Letter_Browse">Browse the full catalog</h2>
-                                        <div class="">&nbsp&nbsp </div>
-                                        <span aria-live="polite" class="results">758 results</span>
+                                        <span aria-live="polite" class="results">
+                                            <button id="catalogFilter" class="Catalog__Btn-Filters">
+                                                <img src="../assets/img/filter.png" alt="filter" style="width: 20px;">
+                                                <h3>Filters</h3>
+                                            </button>
+                                            758 results
+                                            <button id="catalogClearFilter" class="Catalog__Btn-ClearFilters">
+                                                Clear filters
+                                            </button>
+                                        </span>
                                     </div>
-                                    <div class="Select_Most_popular" style="width:180px">
+                                    <div class="Select_Most_popular">
                                         <select>
                                             <option value="0">Most popular</option>
                                             <option value="1">Most recent</option>
@@ -5239,6 +5536,7 @@
     <script src="../js/showSubMenu.js"></script>
     <script src="../js/handleMyHomeMenu.js"></script>
     <script src="../js/handleCatalogMenu.js"></script>
+    <script src="../js/handleCatalogFilterSubMenu.js"></script>
     <script src="../js/animation-sidebar.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 </body>
