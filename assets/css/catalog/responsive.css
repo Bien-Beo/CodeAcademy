@@ -2,6 +2,10 @@
     display: none;
 }
 
+.Main__Botton-Middle-Column-Left {
+    display: none;
+}
+
 @media only screen and (min-width: 480px) {
     .Main__Botton {
         padding-left: 2rem;
@@ -10,6 +14,9 @@
     .Catalog__SubMenu-Box {
         padding-left: 2rem;
         padding-right: 2rem;
+    }
+    .Catalog__SubMenu-Filter-Header-Flexbox {
+        flex-direction: row;
     }
 }
 
@@ -52,6 +59,22 @@
     .splide__slide {
         width: calc(33.3333% - 1.33333rem);
     }
+    .Main__Botton-Middle-Column {
+        display: block;
+    }
+    .Main__Botton-Middle-Column-Right-Tiltle {
+        flex-direction: column;
+    }
+    .DisplayFlex_Browese {
+        flex-direction: column;
+    }
+    .Letter_Browse {
+        margin-bottom: 1rem;
+    }
+    .Select_Most_popular {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -80,6 +103,31 @@
     }
     .Main__Botton-Colums {
         display: grid;
+    }
+    .Main__Botton-Middle-Column-Left {
+        display: block;
+    }
+    .Main__Botton-Middle-Column {
+        display: grid;
+    }
+    .Main__Botton-Middle-Column-Right-Tiltle {
+        flex-direction: row;
+    }
+    .DisplayFlex_Browese {
+        flex-direction: row;
+    }
+    .Letter_Browse {
+        margin-right: 2rem;
+    }
+    #catalogClearFilter, #catalogFilter {
+        display: none;
+    }
+    .Letter_Browse {
+        margin-bottom: 0;
+    }
+    .Select_Most_popular {
+        margin-top: 0;
+        margin-bottom: 0;
     }
 }
 
