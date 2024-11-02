@@ -1,0 +1,30 @@
+.Project-Content-FlexBox-UL {
+    display: flex;
+    flex-direction: column;
+}
+
+.Project-Flex {
+    padding-top: 0;
+}
+
+@media only screen and (min-width: 480px) {
+}
+
+@media only screen and (min-width: 768px) {
+    
+}
+
+@media only screen and (min-width: 1024px) {
+    
+}
+
+@media only screen and (min-width: 1200px) {
+    
+}
+
+@media only screen and (min-width: 1440px) {
+    .Project-Content-FlexBox-UL {
+        display: grid;
+    }
+}
+

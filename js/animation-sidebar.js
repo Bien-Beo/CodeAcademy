@@ -17,20 +17,26 @@ $(document).ready(function() {
         const item = items[index];
         const originalPosition = item.position().top; // Lấy vị trí gốc của item
 
-        // Hiện item
-        item.css("top", originalPosition - offset + "px"); // Đặt vị trí ban đầu cho item
-        item.show(); // Hiện item trước khi bắt đầu animation
+        if (index === items.length - 1) { 
+            // Nếu là phần tử cuối cùng (#SideBar__Animation-Item-6), dùng fadeIn thay vì animate
+            item.css("top", originalPosition + "px"); // Đặt vị trí cho item cuối cùng
+            item.fadeIn(animationDuration * 4); // Tăng thời gian để item hiện từ từ
+        } else {
+            // Hiện item
+            item.css("top", originalPosition - offset + "px"); // Đặt vị trí ban đầu cho item
+            item.show(); // Hiện item trước khi bắt đầu animation
 
-        // Bắt đầu animation
-        item.animate({ top: originalPosition + "px" }, animationDuration, function() {
-            // Di chuyển xuống một đoạn ngắn
-            // Gọi animation cho item tiếp theo
-            animateItem(index + 1);
-            item.animate({ top: originalPosition + offset + "px" }, animationDuration, function() {
-                // Quay về vị trí gốc
-                item.animate({ top: originalPosition + "px" }, animationDuration);
+            // Bắt đầu animation
+            item.animate({ top: originalPosition + "px" }, animationDuration, function() {
+                // Di chuyển xuống một đoạn ngắn
+                animateItem(index + 1); // Gọi animation cho item tiếp theo
+                
+                item.animate({ top: originalPosition + offset + "px" }, animationDuration, function() {
+                    // Quay về vị trí gốc
+                    item.animate({ top: originalPosition + "px" }, animationDuration);
+                });
             });
-        });
+        }
     }
 
     // Khởi động animation cho item đầu tiên
