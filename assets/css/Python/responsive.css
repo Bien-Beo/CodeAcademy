@@ -1,12 +1,21 @@
 .Main__Botton-left {
     display: none;
 }
-
+.Left-Padding{
+    display:none;
+}
 .Main__Botton-Middle-Column-Left {
     display: none;
 }
-
 @media only screen and (min-width: 480px) {
+    .Right__Margin {
+        margin-left: -2rem;
+        margin-right: -2rem;
+    }
+    .Right__Colums {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
     .Main__Botton {
         padding-left: 2rem;
         padding-right: 2rem;
@@ -18,9 +27,45 @@
     .Catalog__SubMenu-Filter-Header-Flexbox {
         flex-direction: row;
     }
+    .Right__Colums {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+    .Main__Footer-Display{
+        display:block;
+    }
+    .Reponsive_Main__Footer{
+        display:none;
+    }
+    .PT_Reponsive_Main__Footer{
+        display:none;
+    }
+    
+    .Main {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    
 }
-
 @media only screen and (min-width: 768px) {
+    .Right__Margin {
+        margin-left: -3.5rem;
+        margin-right: -3.5rem;
+    }
+    .Right__Colums {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .Right__Content {
+        grid-column-end: span 8;
+    }
+    .Right__Content-Reponsive {
+        margin-top: 0px;
+        margin-right: 2rem;
+    }
+    .Right__Box {
+        display: initial;
+    }
     .Main__Botton {
         padding-left: 4rem;
         padding-right: 4rem;
@@ -39,7 +84,28 @@
     .splide__slide {
         width: 100%;
     }
+    .Main__Botton-Middle-Right-UL {
+        -ms-grid-column-gap: 2rem;
+        grid-column-gap: 2rem;
+        -webkit-column-gap: min(calc(100% / 11), 2rem);
+        column-gap: min(calc(100% / 11), 2rem);
+    }
+    .Right__Content-Margin {
+        margin-top: 0;
+        margin-right: 2rem;
+    }
+    .Reponsive__Related {
+        display: none;
+    }
+    .Main__Botton-Middle-Right-LI{
+        grid-column-end: span 6;
+    }
+    .Main {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
 }
+
 
 @media only screen and (min-width: 1024px) {
     .Main__Botton {
@@ -75,9 +141,14 @@
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
+    .Main__Botton-Middle-Right-LI{
+        grid-column-end: span 4;
+    }
 }
-
 @media only screen and (min-width: 1200px) {
+    .Right {
+        grid-column-end: span 9;
+    }
     .Catalog__SubMenu-Box {
         padding-left: 6rem;
         padding-right: 6rem;
@@ -85,9 +156,21 @@
     .Border_flex_Box-first-Lettle {
         max-width: 17.5rem;
     }
+    .Middle-Tiltle {
+        display: block;
+    }
+    .Main {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
 }
-
 @media only screen and (min-width: 1440px) {
+    .Left-Padding {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        grid-column-end: span 3;
+        display: grid;
+    }
     .desktopMenu {
         display: block;
     }
@@ -129,5 +212,36 @@
         margin-top: 0;
         margin-bottom: 0;
     }
+    .Main__Botton-Middle-Right {
+        grid-column-end: span 9;
+    }
+    .Right__Box {
+        display: block;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
