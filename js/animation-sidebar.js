@@ -40,5 +40,5 @@ $(document).ready(function() {
     }
 
     // Khởi động animation cho item đầu tiên
-    animateItem(0);
+    animateItem(1);
 });

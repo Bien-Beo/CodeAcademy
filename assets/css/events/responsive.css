@@ -32,6 +32,9 @@
     .Event__Content-Tiltle-View-A {
         padding-left: 1rem;
     }
+    .Event__Content-UL {
+        display: grid;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
