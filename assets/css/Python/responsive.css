@@ -1,9 +1,7 @@
 .Main__Botton-left {
     display: none;
 }
-.Left-Padding{
-    display:none;
-}
+
 .Main__Botton-Middle-Column-Left {
     display: none;
 }
@@ -144,6 +142,9 @@
     .Main__Botton-Middle-Right-LI{
         grid-column-end: span 4;
     }
+    .Left-Padding{
+        display:none;
+    }
 }
 @media only screen and (min-width: 1200px) {
     .Right {
@@ -217,6 +218,9 @@
     }
     .Right__Box {
         display: block;
+    }
+    .Left-Padding{
+        display:grid;
     }
 }
 
