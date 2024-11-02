@@ -798,7 +798,6 @@
 }
 .Main__Footer-Box-Margin{
     margin-right: 0px;
-    margin-right: 1rem;
     min-width: 229px;
     height: 100%;
     min-height: 11.25rem;
@@ -1744,6 +1743,7 @@
     background-color: transparent;
     padding: 0.5rem;
     margin-right: 1rem;
+    margin-left: 1rem;
 }
 
 .Catalog__Btn-Filters:before {
@@ -1969,20 +1969,11 @@
 
 .PT_Reponsive__FlexBox{
     display: flex;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    max-width: calc(-4px + 100vw);
-    padding: 1rem;
-    margin-left: -1rem;
-    transform: translateX(-1rem);
-    scroll-padding: 1rem;
 }
 .PT_Reponsive__Scroll{
     scroll-snap-align: start;
 }
 .PT_Reponsive__margin{
-    margin-left: 1rem;
-    margin-right: 1rem;
     min-width: 229px;
 }
 .PT_Reponsive-Display{
