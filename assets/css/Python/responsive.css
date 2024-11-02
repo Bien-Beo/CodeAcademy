@@ -5,6 +5,27 @@
 .Main__Botton-Middle-Column-Left {
     display: none;
 }
+.Left-Padding{
+    display:none;
+}
+.Middle-Tiltle-Span {
+    display: none;
+}
+.PT_Reponsive__FlexBox {
+    flex-direction: column;
+}
+.PT_Reponsive__Scroll2 {
+    margin-top: 2rem;
+}
+.Middle-Tiltle-SetUp {
+    display: block;
+}
+.Catalog__Btn-Filters {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 0;
+}
+
 @media only screen and (min-width: 480px) {
     .Right__Margin {
         margin-left: -2rem;
@@ -102,6 +123,35 @@
         padding-left: 4rem;
         padding-right: 4rem;
     }
+    .PT_Reponsive__FlexBox {
+        flex-direction: row;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        max-width: calc(-4px + 100vw);
+        padding: 1rem;
+        margin-left: -1rem;
+        transform: translateX(-1rem);
+        scroll-padding: 1rem;
+    }
+    .PT_Reponsive__margin{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .Main__Footer-Box-Margin {
+        margin-right: 1rem;
+    }
+    .PT_Reponsive__Scroll2 {
+        margin-top: 0;
+    }
+    .Middle-Tiltle-SetUp {
+        display: inline-flex;
+    }
+    .Catalog__Btn-Filters {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 }
 
 
@@ -141,9 +191,6 @@
     }
     .Main__Botton-Middle-Right-LI{
         grid-column-end: span 4;
-    }
-    .Left-Padding{
-        display:none;
     }
 }
 @media only screen and (min-width: 1200px) {
@@ -222,9 +269,14 @@
     .Left-Padding{
         display:grid;
     }
+    .Middle-Tiltle-Span {
+        display: inline-block;
+    }
+    .results {
+        display: none;
+    }
 }
 
-/* Dung ho taooooo */
 
 
 
