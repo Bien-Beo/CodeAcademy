@@ -1,14 +1,7 @@
-<<<<<<< HEAD
-
-.Left-Padding{
-    display:none;
-}
-=======
 .Main__Botton-left {
     display: none;
 }
 
->>>>>>> 4d29b9ca30f993b3f347a574ba37630ac79d71b6
 .Main__Botton-Middle-Column-Left {
     display: none;
 }
@@ -150,11 +143,7 @@
         grid-column-end: span 4;
     }
     .Left-Padding{
-<<<<<<< HEAD
-        display:grid;
-=======
         display:none;
->>>>>>> 4d29b9ca30f993b3f347a574ba37630ac79d71b6
     }
 }
 @media only screen and (min-width: 1200px) {
@@ -230,13 +219,8 @@
     .Right__Box {
         display: block;
     }
-<<<<<<< HEAD
-    .Main__Botton-left {
-        display: none;
-=======
     .Left-Padding{
         display:grid;
->>>>>>> 4d29b9ca30f993b3f347a574ba37630ac79d71b6
     }
 }
 
