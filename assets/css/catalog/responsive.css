@@ -5,6 +5,59 @@
 .Main__Botton-Middle-Column-Left {
     display: none;
 }
+.Catalog__SubMenu-Filter-Header-Flexbox {
+    flex-direction: row;
+}
+.DisplayFlex_Browese {
+    flex-direction: column;
+}
+.Main__Botton-Middle-Column {
+    display: block;
+}
+.Main__Botton-Middle-Column-Right-Tiltle {
+    flex-direction: column;
+}
+.Letter_Browse {
+    margin-bottom: 1rem;
+}
+.Select_Most_popular {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.Column-Right-Frame-UL {
+    display: flex;
+    flex-direction: column;
+}
+.Main__Botton-Colums {
+    display: flex;
+    flex-direction: column;
+}
+.splide__list {
+    flex-direction: column;
+}
+.Main__Botton {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.Catalog__SubMenu-Box {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.splide__slide {
+    width: 100%;
+}
+.Main__Botton-right-BoxRecently-FlexBox {
+    flex-direction: column;
+}
+.Catalog__SubMenu-Content-FlexBox {
+    width: 100%;
+}
+.Catalog__SubMenu-Content-Box {
+    min-width: 100%;
+}
+.Main__FlexBox-Ask {
+    width: 100%;
+}
 
 @media only screen and (min-width: 480px) {
     .Main__Botton {
@@ -15,8 +68,17 @@
         padding-left: 2rem;
         padding-right: 2rem;
     }
-    .Catalog__SubMenu-Filter-Header-Flexbox {
+    .Main__Botton-right-BoxRecently-FlexBox {
         flex-direction: row;
+    }
+    .Catalog__SubMenu-Content-FlexBox {
+        width: 30rem;
+    }
+    .Catalog__SubMenu-Content-Box {
+        min-width: 30rem;
+    }
+    .Main__FlexBox-Ask {
+        width: 640px;
     }
 }
 
@@ -28,16 +90,6 @@
     .Catalog__SubMenu-Box {
         padding-left: 4rem;
         padding-right: 4rem;
-    }
-    .Main__Botton-Colums {
-        display: flex;
-        flex-direction: column;
-    }
-    .splide__list {
-        flex-direction: column;
-    }
-    .splide__slide {
-        width: 100%;
     }
 }
 
@@ -59,21 +111,8 @@
     .splide__slide {
         width: calc(33.3333% - 1.33333rem);
     }
-    .Main__Botton-Middle-Column {
-        display: block;
-    }
-    .Main__Botton-Middle-Column-Right-Tiltle {
-        flex-direction: column;
-    }
-    .DisplayFlex_Browese {
-        flex-direction: column;
-    }
-    .Letter_Browse {
-        margin-bottom: 1rem;
-    }
-    .Select_Most_popular {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
+    .Column-Right-Frame-UL {
+        display: grid;
     }
 }
 

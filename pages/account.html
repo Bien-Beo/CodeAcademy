@@ -756,15 +756,15 @@
                     <div class="Account__Wrapper-FlexBox">
                         <nav class="Account__Nav-Responsive">
                             <div class="Account__Nav-Content">
-                                <button>
+                                <button id="accountListItem">
                                     <div class="Account__Button-FlexBox">
                                         <span>Account</span>
                                         <div>
-                                            <i class="fa-solid fa-chevron-down"></i>
+                                            <i id="accountListItemIcon" class="fa-solid fa-chevron-down"></i>
                                         </div>
                                     </div>
                                 </button>
-                                <div class="" style="height: 0;">
+                                <div id="accountListItemContent" class="" style="display: none;">
                                     <ul class="Account__Button-SubList">
                                         <li class="Page__Current"><a href="#" class="Account__Button-SubList-Link" style="font-weight: 700; background-color: rgba(16, 22, 47, 0.04);">
                                             Account
@@ -804,7 +804,7 @@
                                 </a></li>
                             </ul>
                         </nav>
-                        <div class="Account__Content">
+                        <div id="accountMainContent" class="Account__Content">
                             <h1 class="Account__Content-Header">Account</h1>
                             <div class="Account__Content-Item-Header">
                                 <h2>Email</h2>
@@ -1133,6 +1133,7 @@
     <script src="../js/index.js"></script>
     <script src="../js/showSubMenu.js"></script>
     <script src="../js/handleMyHomeMenu.js"></script>
+    <script src="../js/handleShowSettingAccount.js"></script>
     <script src="../js/animation-barprogress.js"></script>
     <script src="../js/animation-sidebar.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
