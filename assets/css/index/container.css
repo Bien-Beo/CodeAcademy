@@ -283,7 +283,6 @@
 .Content__Item-Progress-Bar > .bgr {
     width: 100%;
     background-repeat: repeat-x;
-    background-image: url(../../img/zigzag.png);
 }
 
 .Content__Item-Container {
