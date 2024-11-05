@@ -22,6 +22,10 @@ module.exports = {
         test: /\.scss$/, // Sử dụng style-loader, css-loader, và sass-loader cho file .scss
         use: ["style-loader", "css-loader", "sass-loader"],
       },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        type: 'asset/resource',
+      },
     ],
   },
   // Chứa các plugins sẽ cài đặt trong tương lai
