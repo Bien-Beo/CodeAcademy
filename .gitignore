@@ -1,0 +1,12 @@
+# Bỏ qua các thư mục không cần thiết
+react-webpack/node_modules/
+react-webpack/src/
+
+# Các file cấu hình và log không cần thiết
+.DS_Store
+*.log
+*.env
+
+# Bỏ qua các file lock nếu không cần
+yarn.lock
+package-lock.json
