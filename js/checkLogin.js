@@ -25,7 +25,7 @@ function validateForm() {
 }
 
 // Thêm sự kiện vào nút "Sign Up"
-document.getElementById("checkSU").addEventListener("click", function() {
+document.getElementById("checkLG").addEventListener("click", function() {
     if (validateForm()) {
         // Chuyển hướng nếu form hợp lệ
         window.location.href = "../index.html";
