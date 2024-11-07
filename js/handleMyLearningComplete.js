@@ -9,26 +9,26 @@ $(document).ready(function() {
 
     completedBtn.click(function() {
         // Ẩn nội dung "in progress" và hiển thị nội dung "completed"
-        myLearningContent.hide(1000);
-        myLearningCompleted.show(1000);
+        myLearningContent.hide(400);
+        myLearningCompleted.show(400);
 
         // Thêm data-selected vào nút "completed" và xóa khỏi nút "inProgress"
         completedBtn.attr("data-selected", true);
         inProgressBtn.removeAttr("data-selected");
 
-        $(".MyLearning__Option-FlexBox").hide(1000);
+        $(".MyLearning__Option-FlexBox").hide(400);
     });
 
     inProgressBtn.click(function() {
         // Hiển thị nội dung "in progress" và ẩn nội dung "completed"
-        myLearningContent.show(1000);
-        myLearningCompleted.hide(1000);
+        myLearningContent.show(400);
+        myLearningCompleted.hide(400);
 
         // Thêm data-selected vào nút "inProgress" và xóa khỏi nút "completed"
         inProgressBtn.attr("data-selected", true);
         completedBtn.removeAttr("data-selected");
 
         
-        $(".MyLearning__Option-FlexBox").show(1000);
+        $(".MyLearning__Option-FlexBox").show(400);
     });
 });

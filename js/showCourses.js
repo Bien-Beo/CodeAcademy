@@ -3,7 +3,7 @@ $(document).ready(function() {
     const btnCoursesContent = [$("#Course-Item-1-Content"), $("#Course-Item-2-Content"), $("#Course-Item-3-Content")];
     const iconsChevronDown = [$("#iconChevronDown-Item-1"), $("#iconChevronDown-Item-2"), $("#iconChevronDown-Item-3")];
 
-    btnCoursesContent[0].toggle(1800);
+    btnCoursesContent[0].toggle(550);
 
     // Biến để lưu trạng thái xoay của từng icon
     const rotationStates = [0, 0, 0]; 
@@ -24,7 +24,7 @@ $(document).ready(function() {
             });
 
             // Toggle nội dung với animation
-            btnCoursesContent[index].toggle(1000);
+            btnCoursesContent[index].toggle(300);
         });
     });
 });
