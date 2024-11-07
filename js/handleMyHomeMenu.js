@@ -23,7 +23,7 @@ $(document).ready(function() {
             myHomeMenuWidth.css("min-width", "30rem");
         }
 
-        myHomeMenuContainer.stop(true, true).css("display", "block").animate({ width: menuWidth }, 800);  
+        myHomeMenuContainer.stop(true, true).css("display", "block").animate({ width: menuWidth }, 400);  
     });
 
     closeMyHomeMenu.click(function() {
@@ -37,7 +37,7 @@ $(document).ready(function() {
     });
 
     function closeMenu() {
-        myHomeMenuContainer.stop(true, true).animate({ width: "0rem" }, 500, function() {
+        myHomeMenuContainer.stop(true, true).animate({ width: "0rem" }, 300, function() {
             $(this).css("display", "none");
             overlayContainer.hide();
         });
