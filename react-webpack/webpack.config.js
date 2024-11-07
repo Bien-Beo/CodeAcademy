@@ -34,4 +34,9 @@ module.exports = {
       template: "./public/help-center.html",
     }),
   ],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, 'src')
+    }
+  }
 };
