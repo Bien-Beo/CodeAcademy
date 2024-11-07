@@ -8,7 +8,7 @@ $(document).ready(function() {
         $("#SideBar__Animation-Item-6")
     ];
 
-    const animationDuration = 250; // Thời gian cho mỗi bước animation
+    const animationDuration = 100; // Thời gian cho mỗi bước animation
     const offset = 10; // Độ cao để item bắt đầu cao hơn vị trí của nó
 
     function animateItem(index) {

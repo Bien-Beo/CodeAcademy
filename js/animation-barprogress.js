@@ -2,11 +2,11 @@ $(document).ready(function() {
     const barProgress = $(".Data__ProgressBar");
     const percentContent = $(".Data__ProgressBar-PersentContent");
 
-    percentContent.text("0%"); // Đặt nội dung ban đầu là 0%
+    percentContent.text("74%"); // Đặt nội dung ban đầu là 0%
 
     const targetWidth = 74; // Giá trị mục tiêu là 74%
-    const duration = 1200; // Thời gian animation (1200ms)
-    const intervalTime = 150; // Thời gian cập nhật phần trăm (150ms)
+    const duration = 300; // Thời gian animation (500ms)
+    const intervalTime = 5000; // Thời gian cập nhật phần trăm (150ms)
     
     let currentWidth = 0; // Khởi tạo chiều rộng hiện tại
     const increment = targetWidth * (intervalTime / duration); // Tính toán giá trị tăng mỗi lần

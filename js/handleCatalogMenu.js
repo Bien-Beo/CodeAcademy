@@ -8,24 +8,24 @@ $(document).ready(function() {
     catalogSubMenu.click(function() {
         overlayContainer.show();
         catalogSubMenuContent.css("transform", "translateX(0)"); // Trượt vào màn hình
-        navigationAllTopics.show(1600);
+        navigationAllTopics.show(300);
     });
 
     catalogCloseSubMenu.click(function() {
-        navigationAllTopics.hide(200, function() {
+        navigationAllTopics.hide(300, function() {
             catalogSubMenuContent.css("transform", "translateX(-100%)"); // Trượt ra ngoài màn hình
             setTimeout(function() {
                 overlayContainer.hide(); // Ẩn overlay sau khi catalogSubMenuContent trượt xong
-            }, 800); // Delay này khớp với thời gian animation của transform
+            }, 300); // Delay này khớp với thời gian animation của transform
         });
     });
 
     overlayContainer.click(function() {
-        navigationAllTopics.hide(200, function() {
+        navigationAllTopics.hide(300, function() {
             catalogSubMenuContent.css("transform", "translateX(-100%)"); // Trượt ra ngoài màn hình
             setTimeout(function() {
                 overlayContainer.hide(); // Ẩn overlay sau khi catalogSubMenuContent trượt xong
-            }, 800); // Delay này khớp với thời gian animation của transform
+            }, 300); // Delay này khớp với thời gian animation của transform
         });
     });
 });
